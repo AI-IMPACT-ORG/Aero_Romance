@@ -1,0 +1,84 @@
+@startuml "Ærø's Healing Heart - Character Interactions"
+
+' Define participants
+participant "Katrine" as K
+participant "Dr. Marcus Nielsen" as M
+participant "Mads" as MD
+participant "Grandmother" as G
+participant "Sarah" as S
+participant "Lily" as L
+participant "Anna" as A
+participant "Sofia" as SF
+participant "Medical Board" as MB
+participant "Community" as C
+
+' Timeline starts
+== February 28 ==
+M -> K: Marriage proposal
+M -> K: Offers prestigious hospital position
+K -> K: Feels pull toward sea
+
+== March 3 ==
+K -> G: Discovers grandmother's journal
+G -> K: Reveals investigation of island illness
+G -> K: Shows potential cure for Sarah
+
+== March 15 ==
+K -> MD: First encounter at clinic
+K -> S: Meets first patient with illness
+
+== Early April ==
+MD -> K: Tours clinic
+MD -> K: Shows traditional healing network
+
+== Mid-April ==
+K -> C: Makes first successful house call
+C -> K: Shows gratitude
+K <-> MD: Growing connection
+
+== Late April ==
+A -> K: Hosts community gathering
+C -> K: Shares stories about grandmother
+C -> K: Teaches island traditions
+
+== Early May ==
+K <-> MD: Works together on emergency
+
+== May 15 ==
+MB -> K: Issues 45-day deadline
+MB -> K: Investigates protocol conflict
+
+== Late May ==
+K -> C: Performs first successful traditional healing
+C -> K: Celebrates success
+K <-> MD: Connection deepens
+
+== Early June ==
+MD -> K: Invites to family dinner
+K -> MD: First kiss
+SF -> K: Unexpected arrival
+
+== Mid-June ==
+MB -> K: Issues warning
+C -> K: Shows growing doubts
+S -> K: Condition worsens
+
+== June 28 ==
+K <-> MD: Handles medical emergency during storm
+K -> C: Saves fishing boat crew
+K -> K: Makes medical breakthrough
+
+== Early July ==
+K <-> MD: Grows closer
+SF -> K: Shows new respect
+
+== Mid-July ==
+M -> K: Returns with new job offer
+M -> K: Makes second proposal
+
+== Late July ==
+K -> K: Experiences failed medical case
+K <-> MD: Misunderstanding
+G -> K: Discovers final journal entry
+
+@enduml 

@@ -1,0 +1,358 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:character_network",
+      "@type": "ontomedia:CharacterNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:character_registry",
+        "@type": "ontomedia:CharacterRegistry",
+        "ontomedia:has_character": [
+          {
+            "@id": "ontomedia:dr_sarah_mitchell",
+            "@type": "ontomedia:Character",
+            "ontomedia:name": "Dr. Sarah Mitchell",
+            "ontomedia:description": "A dedicated doctor seeking new purpose",
+            "ontomedia:has_arc": {
+              "@id": "ontomedia:sarah_professional_arc",
+              "@type": "ontomedia:CharacterArc",
+              "ontomedia:name": "Professional Transformation",
+              "ontomedia:description": "Journey from urban medicine to rural healthcare",
+              "ontomedia:has_stage": [
+                {
+                  "@id": "ontomedia:sarah_initial_conflict",
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:name": "Initial Conflict",
+                  "ontomedia:description": "Struggling with urban medicine burnout",
+                  "ontomedia:key_developments": [
+                    "Professional dissatisfaction",
+                    "Cultural disconnection",
+                    "Search for meaning"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:sarah_adaptation",
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:name": "Adaptation",
+                  "ontomedia:description": "Learning to practice in rural setting",
+                  "ontomedia:key_developments": [
+                    "Cultural learning",
+                    "Medical adaptation",
+                    "Community integration"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:sarah_integration",
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:name": "Integration",
+                  "ontomedia:description": "Finding balance in new environment",
+                  "ontomedia:key_developments": [
+                    "Professional fulfillment",
+                    "Cultural competence",
+                    "Community belonging"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@id": "ontomedia:tom_osullivan",
+            "@type": "ontomedia:Character",
+            "ontomedia:name": "Tom O'Sullivan",
+            "ontomedia:description": "Local doctor with deep community roots",
+            "ontomedia:has_arc": {
+              "@id": "ontomedia:tom_personal_arc",
+              "@type": "ontomedia:CharacterArc",
+              "ontomedia:name": "Personal Growth",
+              "ontomedia:description": "Journey of opening up to new possibilities",
+              "ontomedia:has_stage": [
+                {
+                  "@id": "ontomedia:tom_initial_resistance",
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:name": "Initial Resistance",
+                  "ontomedia:description": "Resistant to change and new approaches",
+                  "ontomedia:key_developments": [
+                    "Professional pride",
+                    "Cultural protection",
+                    "Personal barriers"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:tom_growth",
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:name": "Growth",
+                  "ontomedia:description": "Learning to embrace change",
+                  "ontomedia:key_developments": [
+                    "Professional evolution",
+                    "Cultural adaptation",
+                    "Personal opening"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:tom_transformation",
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:name": "Transformation",
+                  "ontomedia:description": "Finding new purpose and connection",
+                  "ontomedia:key_developments": [
+                    "Professional innovation",
+                    "Cultural integration",
+                    "Personal fulfillment"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ontomedia:Character",
+            "ontomedia:character_id": "ontomedia:lily_osullivan",
+            "ontomedia:character_name": "Lily O'Sullivan",
+            "ontomedia:character_description": "Tom's sister, an artist with a deep connection to the island's culture",
+            "ontomedia:has_character_arc": {
+              "@type": "ontomedia:CharacterArc",
+              "ontomedia:arc_name": "Artistic Journey",
+              "ontomedia:arc_description": "The development of artistic expression and cultural connection",
+              "ontomedia:has_stage": [
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Artistic Discovery",
+                  "ontomedia:stage_description": "Initial discovery of artistic expression",
+                  "ontomedia:has_key_development": [
+                    "Artistic passion",
+                    "Cultural inspiration",
+                    "Personal expression",
+                    "Community connection",
+                    "Future vision",
+                    "Traditional techniques",
+                    "Island landscapes"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Artistic Growth",
+                  "ontomedia:stage_description": "Growth in artistic expression",
+                  "ontomedia:has_key_development": [
+                    "Artistic development",
+                    "Cultural integration",
+                    "Personal growth",
+                    "Community engagement",
+                    "Future exploration",
+                    "Technique refinement",
+                    "Style evolution",
+                    "Cultural fusion"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Artistic Fulfillment",
+                  "ontomedia:stage_description": "Achieving artistic fulfillment",
+                  "ontomedia:has_key_development": [
+                    "Artistic achievement",
+                    "Cultural contribution",
+                    "Personal fulfillment",
+                    "Community celebration",
+                    "Future legacy",
+                    "Mastery of craft",
+                    "Cultural preservation",
+                    "Artistic leadership"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ontomedia:Character",
+            "ontomedia:character_id": "ontomedia:family_dynamics",
+            "ontomedia:character_name": "Family Dynamics",
+            "ontomedia:character_description": "The development of family relationships and dynamics",
+            "ontomedia:has_character_arc": {
+              "@type": "ontomedia:CharacterArc",
+              "ontomedia:arc_name": "Family Integration",
+              "ontomedia:arc_description": "The development of family integration and harmony",
+              "ontomedia:has_stage": [
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Family Discovery",
+                  "ontomedia:stage_description": "Initial discovery of family connections",
+                  "ontomedia:has_key_development": [
+                    "Family history",
+                    "Personal connection",
+                    "Cultural heritage",
+                    "Community ties",
+                    "Future possibility",
+                    "Generational wisdom",
+                    "Family traditions"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Family Development",
+                  "ontomedia:stage_description": "Development of family relationships",
+                  "ontomedia:has_key_development": [
+                    "Family growth",
+                    "Personal understanding",
+                    "Cultural integration",
+                    "Community support",
+                    "Future vision",
+                    "Intergenerational bonding",
+                    "Shared experiences",
+                    "Family healing"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Family Harmony",
+                  "ontomedia:stage_description": "Achieving family harmony",
+                  "ontomedia:has_key_development": [
+                    "Family unity",
+                    "Personal fulfillment",
+                    "Cultural belonging",
+                    "Community celebration",
+                    "Future together",
+                    "Legacy preservation",
+                    "Family strength",
+                    "Cultural continuity"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ontomedia:Character",
+            "ontomedia:character_id": "ontomedia:professional_identity",
+            "ontomedia:character_name": "Professional Identity",
+            "ontomedia:character_description": "The development of professional identity and purpose",
+            "ontomedia:has_character_arc": {
+              "@type": "ontomedia:CharacterArc",
+              "ontomedia:arc_name": "Professional Evolution",
+              "ontomedia:arc_description": "The development of professional identity and purpose",
+              "ontomedia:has_stage": [
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Identity Questioning",
+                  "ontomedia:stage_description": "Initial questioning of professional identity",
+                  "ontomedia:has_key_development": [
+                    "Professional doubt",
+                    "Personal reflection",
+                    "Cultural impact",
+                    "Community influence",
+                    "Future uncertainty"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Identity Exploration",
+                  "ontomedia:stage_description": "Exploring professional identity",
+                  "ontomedia:has_key_development": [
+                    "Professional growth",
+                    "Personal development",
+                    "Cultural integration",
+                    "Community engagement",
+                    "Future vision"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:CharacterStage",
+                  "ontomedia:stage_name": "Identity Integration",
+                  "ontomedia:stage_description": "Integrating professional identity",
+                  "ontomedia:has_key_development": [
+                    "Professional acceptance",
+                    "Personal fulfillment",
+                    "Cultural belonging",
+                    "Community contribution",
+                    "Future commitment"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "ontomedia:has_network_connections": {
+        "@id": "ontomedia:character_network_connections",
+        "@type": "ontomedia:NetworkConnections",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:character_scene_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:scene_network",
+            "ontomedia:relationship": "scene_character_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_location_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:location_network",
+            "ontomedia:relationship": "location_character_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_theme_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:theme_network",
+            "ontomedia:relationship": "theme_character_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_development_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:development_network",
+            "ontomedia:relationship": "development_character_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_quality_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:quality_network",
+            "ontomedia:relationship": "quality_character_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_style_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:style_network",
+            "ontomedia:relationship": "style_character_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:character_network_validation",
+        "@type": "ontomedia:CharacterNetworkValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:character_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_type_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_progression_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

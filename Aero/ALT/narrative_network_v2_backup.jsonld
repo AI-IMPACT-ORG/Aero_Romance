@@ -1,0 +1,642 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:narrative_network",
+      "@type": "ontomedia:NarrativeNetwork",
+      "ontomedia:has_structure": {
+        "@id": "ontomedia:narrative_structure",
+        "@type": "ontomedia:NarrativeStructure",
+        "ontomedia:has_act": {
+          "@id": "ontomedia:acts",
+          "@type": "ontomedia:Acts",
+          "ontomedia:has_act": [
+            {
+              "@id": "ontomedia:act_1",
+              "@type": "ontomedia:Act",
+              "ontomedia:name": "The Escape",
+              "ontomedia:description": "Ellie's journey from Copenhagen to Ærø",
+              "ontomedia:has_development_reference": {
+                "@id": "ontomedia:act_1_development",
+                "@type": "ontomedia:DevelopmentReference",
+                "ontomedia:target": "development:act_1",
+                "ontomedia:relationship": "development_stage",
+                "ontomedia:version": "1.0"
+              },
+              "ontomedia:has_chapter": {
+                "@id": "ontomedia:act_1_chapters",
+                "@type": "ontomedia:Chapters",
+                "ontomedia:has_chapter": [
+                  {
+                    "@id": "ontomedia:chapter_1",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 1,
+                    "ontomedia:name": "The Proposal",
+                    "ontomedia:description": "Ellie faces an unwanted proposal",
+                    "ontomedia:has_scene_reference": {
+                      "@id": "ontomedia:chapter_1_scenes",
+                      "@type": "ontomedia:SceneReference",
+                      "ontomedia:target": "scene:chapter_1_scenes",
+                      "ontomedia:relationship": "scene_sequence",
+                      "ontomedia:version": "1.0"
+                    },
+                    "ontomedia:has_theme_reference": {
+                      "@id": "ontomedia:chapter_1_themes",
+                      "@type": "ontomedia:ThemeReference",
+                      "ontomedia:target": "theme:chapter_1_themes",
+                      "ontomedia:relationship": "thematic_elements",
+                      "ontomedia:version": "1.0"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:act_2",
+              "@type": "ontomedia:Act",
+              "ontomedia:name": "The Confrontation",
+              "ontomedia:description": "Facing challenges and building connections",
+              "ontomedia:season": "Late Spring to Early Summer",
+              "ontomedia:has_timeline": {
+                "@id": "ontomedia:act_2_timeline",
+                "@type": "ontomedia:Timeline",
+                "ontomedia:start_date": "April 16",
+                "ontomedia:end_date": "June 30",
+                "ontomedia:has_key_event": [
+                  {
+                    "@id": "ontomedia:act_2_event_1",
+                    "@type": "ontomedia:KeyEvent",
+                    "ontomedia:date": "April 16",
+                    "ontomedia:event": "First medical practice challenges",
+                    "ontomedia:has_impact": {
+                      "@id": "ontomedia:act_2_event_1_impact",
+                      "@type": "ontomedia:EventImpact",
+                      "ontomedia:professional": "Practice integration",
+                      "ontomedia:personal": "Community adaptation",
+                      "ontomedia:cultural": "Traditional learning"
+                    }
+                  }
+                ]
+              },
+              "ontomedia:has_chapter": {
+                "@id": "ontomedia:act_2_chapters",
+                "@type": "ontomedia:Chapters",
+                "ontomedia:has_chapter": [
+                  {
+                    "@id": "ontomedia:chapter_5",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 5,
+                    "ontomedia:name": "The Practice",
+                    "ontomedia:description": "Ellie begins work at the medical practice",
+                    "ontomedia:has_scene": [
+                      "Early morning arrival",
+                      "Team introduction",
+                      "Practice tour",
+                      "Traditional medicine observation",
+                      "Professional adaptation",
+                      "First patient consultation",
+                      "Cultural healthcare learning",
+                      "Community integration",
+                      "Evening team meeting",
+                      "Personal growth reflection",
+                      "Island sunset walk"
+                    ],
+                    "ontomedia:has_subplot": {
+                      "ontomedia:professional": "Medical team dynamics",
+                      "ontomedia:personal": "Mother's medical legacy",
+                      "ontomedia:community": "Healthcare traditions",
+                      "ontomedia:conflict": "Modern vs traditional methods",
+                      "ontomedia:emotional": "Professional identity"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_6",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 6,
+                    "ontomedia:name": "First Patient",
+                    "ontomedia:description": "Ellie's first island patient",
+                    "ontomedia:has_scene": [
+                      "Morning practice preparation",
+                      "Local patient arrival",
+                      "Medical practice introduction",
+                      "Cultural healthcare consultation",
+                      "Community trust building",
+                      "Traditional healing discussion",
+                      "Emergency situation",
+                      "Quick decision making",
+                      "Team collaboration",
+                      "Patient recovery",
+                      "Community celebration",
+                      "Evening reflection"
+                    ],
+                    "ontomedia:has_subplot": {
+                      "ontomedia:professional": "Traditional vs. modern medicine",
+                      "ontomedia:personal": "Tom's family health history",
+                      "ontomedia:community": "Island healthcare needs",
+                      "ontomedia:conflict": "Medical authority challenge",
+                      "ontomedia:emotional": "Professional validation"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_7",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 7,
+                    "ontomedia:name": "The Family",
+                    "ontomedia:description": "Ellie meets Tom and Lily",
+                    "ontomedia:has_scene": [
+                      "B&B morning visit",
+                      "Family introduction",
+                      "Lily's art studio",
+                      "Family dynamics observation",
+                      "Personal connection development",
+                      "Cultural integration moments",
+                      "Emotional development",
+                      "Unexpected medical emergency",
+                      "Team problem-solving",
+                      "Family bonding",
+                      "Evening conversation",
+                      "Future possibilities"
+                    ],
+                    "ontomedia:has_subplot": {
+                      "ontomedia:professional": "B&B medical emergency",
+                      "ontomedia:personal": "Lily's artistic journey",
+                      "ontomedia:community": "Family traditions",
+                      "ontomedia:conflict": "Parenting differences",
+                      "ontomedia:emotional": "Family connection"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_8",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 8,
+                    "ontomedia:name": "Growing Tensions",
+                    "ontomedia:description": "Professional and personal challenges intensify",
+                    "ontomedia:has_scene": [
+                      "Practice expansion planning",
+                      "Community resistance meeting",
+                      "Traditional healer consultation",
+                      "Personal doubts reflection",
+                      "Cultural conflicts resolution",
+                      "Professional crisis management",
+                      "Emotional strain moments",
+                      "Family support",
+                      "Community breakthrough",
+                      "Personal growth",
+                      "Future vision"
+                    ],
+                    "ontomedia:has_subplot": {
+                      "ontomedia:professional": "Practice modernization",
+                      "ontomedia:personal": "Tom's past relationships",
+                      "ontomedia:community": "Traditional values",
+                      "ontomedia:conflict": "Modern vs traditional medicine",
+                      "ontomedia:emotional": "Personal and professional balance"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:act_3",
+              "@type": "ontomedia:Act",
+              "ontomedia:name": "The Resolution",
+              "ontomedia:description": "Finding home and love",
+              "ontomedia:season": "Summer",
+              "ontomedia:has_timeline": {
+                "@id": "ontomedia:act_3_timeline",
+                "@type": "ontomedia:Timeline",
+                "ontomedia:start_date": "July 1",
+                "ontomedia:end_date": "August 31",
+                "ontomedia:has_key_event": [
+                  {
+                    "@id": "ontomedia:act_3_event_1",
+                    "@type": "ontomedia:KeyEvent",
+                    "ontomedia:date": "July 1-7",
+                    "ontomedia:event": "Summer Festival",
+                    "ontomedia:has_impact": {
+                      "@id": "ontomedia:act_3_event_1_impact",
+                      "@type": "ontomedia:EventImpact",
+                      "ontomedia:emotional": "Community celebration",
+                      "ontomedia:personal": "Romantic connection",
+                      "ontomedia:cultural": "Traditions integration"
+                    }
+                  }
+                ]
+              },
+              "ontomedia:has_chapter": {
+                "@id": "ontomedia:act_3_chapters",
+                "@type": "ontomedia:Chapters",
+                "ontomedia:has_chapter": [
+                  {
+                    "@id": "ontomedia:chapter_9",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 9,
+                    "ontomedia:name": "Summer Festival",
+                    "ontomedia:description": "Community celebration and romantic connection",
+                    "ontomedia:has_scene": [
+                      {
+                        "@id": "ontomedia:scene_9_1",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Festival preparation",
+                        "ontomedia:sequence": 1,
+                        "ontomedia:description": "Setting up the festival grounds and medical tent",
+                        "ontomedia:has_type_reference": {
+                          "@id": "ontomedia:scene_9_1_type",
+                          "@type": "ontomedia:SceneTypeReference",
+                          "ontomedia:target": "ontomedia:community_scenes",
+                          "ontomedia:relationship": "scene_type",
+                          "ontomedia:version": "1.0"
+                        },
+                        "ontomedia:has_development_reference": {
+                          "@id": "ontomedia:scene_9_1_development",
+                          "@type": "ontomedia:DevelopmentReference",
+                          "ontomedia:target": "ontomedia:community_integration",
+                          "ontomedia:relationship": "development_stage",
+                          "ontomedia:version": "1.0"
+                        },
+                        "ontomedia:has_validation": {
+                          "@id": "ontomedia:scene_9_1_validation",
+                          "@type": "ontomedia:SceneValidation",
+                          "ontomedia:has_elements": {
+                            "ontomedia:has_setting": true,
+                            "ontomedia:has_characters": true,
+                            "ontomedia:has_action": true,
+                            "ontomedia:has_emotion": true,
+                            "ontomedia:has_transition": true
+                          },
+                          "ontomedia:has_connections": {
+                            "ontomedia:professional": "Medical tent setup",
+                            "ontomedia:personal": "Community preparation",
+                            "ontomedia:cultural": "Festival traditions"
+                          }
+                        }
+                      },
+                      {
+                        "@id": "ontomedia:scene_9_2",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Medical tent setup",
+                        "ontomedia:sequence": 2,
+                        "ontomedia:description": "Organizing the medical facilities for the festival"
+                      }
+                    ],
+                    "ontomedia:has_subplot": {
+                      "@id": "ontomedia:chapter_9_subplots",
+                      "@type": "ontomedia:Subplots",
+                      "ontomedia:has_subplot": [
+                        {
+                          "@id": "ontomedia:subplot_9_1",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Medical tent organization",
+                          "ontomedia:type": "professional",
+                          "ontomedia:description": "Managing medical services during the festival",
+                          "ontomedia:development": "Initial setup to crisis management"
+                        },
+                        {
+                          "@id": "ontomedia:subplot_9_2",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Tom's past relationships",
+                          "ontomedia:type": "personal",
+                          "ontomedia:description": "Exploring Tom's relationship history",
+                          "ontomedia:development": "Revelation to acceptance"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_10",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 10,
+                    "ontomedia:name": "The Storm",
+                    "ontomedia:description": "A crisis tests relationships and community bonds",
+                    "ontomedia:has_scene": [
+                      {
+                        "@id": "ontomedia:scene_10_1",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Weather warning",
+                        "ontomedia:sequence": 1,
+                        "ontomedia:description": "Initial weather alerts and emergency preparation",
+                        "ontomedia:has_type_reference": {
+                          "@id": "ontomedia:scene_10_1_type",
+                          "@type": "ontomedia:SceneTypeReference",
+                          "ontomedia:target": "ontomedia:emergency_scenes",
+                          "ontomedia:relationship": "scene_type",
+                          "ontomedia:version": "1.0"
+                        },
+                        "ontomedia:has_development_reference": {
+                          "@id": "ontomedia:scene_10_1_development",
+                          "@type": "ontomedia:DevelopmentReference",
+                          "ontomedia:target": "ontomedia:crisis_management",
+                          "ontomedia:relationship": "development_stage",
+                          "ontomedia:version": "1.0"
+                        },
+                        "ontomedia:has_validation": {
+                          "@id": "ontomedia:scene_10_1_validation",
+                          "@type": "ontomedia:SceneValidation",
+                          "ontomedia:has_elements": {
+                            "ontomedia:has_setting": true,
+                            "ontomedia:has_characters": true,
+                            "ontomedia:has_action": true,
+                            "ontomedia:has_emotion": true,
+                            "ontomedia:has_transition": true
+                          },
+                          "ontomedia:has_connections": {
+                            "ontomedia:professional": "Emergency preparation",
+                            "ontomedia:personal": "Family protection",
+                            "ontomedia:community": "Island resilience"
+                          }
+                        }
+                      },
+                      {
+                        "@id": "ontomedia:scene_10_2",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Emergency preparation",
+                        "ontomedia:sequence": 2,
+                        "ontomedia:description": "Setting up emergency shelters and medical facilities"
+                      }
+                    ],
+                    "ontomedia:has_subplot": {
+                      "@id": "ontomedia:chapter_10_subplots",
+                      "@type": "ontomedia:Subplots",
+                      "ontomedia:has_subplot": [
+                        {
+                          "@id": "ontomedia:subplot_10_1",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Emergency medical response",
+                          "ontomedia:type": "professional",
+                          "ontomedia:description": "Coordinating medical care during the storm",
+                          "ontomedia:development": "Preparation to crisis management"
+                        },
+                        {
+                          "@id": "ontomedia:subplot_10_2",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Family protection",
+                          "ontomedia:type": "personal",
+                          "ontomedia:description": "Protecting loved ones during the crisis",
+                          "ontomedia:development": "Fear to protective action"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_11",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 11,
+                    "ontomedia:name": "The Revelation",
+                    "ontomedia:description": "Secrets and truths come to light",
+                    "ontomedia:has_scene": [
+                      {
+                        "@id": "ontomedia:scene_11_1",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Morning discovery",
+                        "ontomedia:sequence": 1,
+                        "ontomedia:description": "Initial discovery of historical documents",
+                        "ontomedia:has_type_reference": {
+                          "@id": "ontomedia:scene_11_1_type",
+                          "@type": "ontomedia:SceneTypeReference",
+                          "ontomedia:target": "ontomedia:reflection_scenes",
+                          "ontomedia:relationship": "scene_type",
+                          "ontomedia:version": "1.0"
+                        },
+                        "ontomedia:has_development_reference": {
+                          "@id": "ontomedia:scene_11_1_development",
+                          "@type": "ontomedia:DevelopmentReference",
+                          "ontomedia:target": "ontomedia:personal_growth",
+                          "ontomedia:relationship": "development_stage",
+                          "ontomedia:version": "1.0"
+                        },
+                        "ontomedia:has_validation": {
+                          "@id": "ontomedia:scene_11_1_validation",
+                          "@type": "ontomedia:SceneValidation",
+                          "ontomedia:has_elements": {
+                            "ontomedia:has_setting": true,
+                            "ontomedia:has_characters": true,
+                            "ontomedia:has_action": true,
+                            "ontomedia:has_emotion": true,
+                            "ontomedia:has_transition": true
+                          },
+                          "ontomedia:has_connections": {
+                            "ontomedia:professional": "Medical practice history",
+                            "ontomedia:personal": "Family legacy",
+                            "ontomedia:cultural": "Island traditions"
+                          }
+                        }
+                      },
+                      {
+                        "@id": "ontomedia:scene_11_2",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Historical research",
+                        "ontomedia:sequence": 2,
+                        "ontomedia:description": "Investigating the discovered documents"
+                      }
+                    ],
+                    "ontomedia:has_subplot": {
+                      "@id": "ontomedia:chapter_11_subplots",
+                      "@type": "ontomedia:Subplots",
+                      "ontomedia:has_subplot": [
+                        {
+                          "@id": "ontomedia:subplot_11_1",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Medical practice legacy",
+                          "ontomedia:type": "professional",
+                          "ontomedia:description": "Uncovering the history of the medical practice",
+                          "ontomedia:development": "Discovery to understanding"
+                        },
+                        {
+                          "@id": "ontomedia:subplot_11_2",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Family history",
+                          "ontomedia:type": "personal",
+                          "ontomedia:description": "Revealing family secrets and connections",
+                          "ontomedia:development": "Shock to acceptance"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_12",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 12,
+                    "ontomedia:name": "The Choice",
+                    "ontomedia:description": "Decisions about the future",
+                    "ontomedia:has_scene": [
+                      {
+                        "@id": "ontomedia:scene_12_1",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Career opportunity arrival",
+                        "ontomedia:sequence": 1,
+                        "ontomedia:description": "Receiving a career opportunity from Copenhagen"
+                      },
+                      {
+                        "@id": "ontomedia:scene_12_2",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Personal reflection",
+                        "ontomedia:sequence": 2,
+                        "ontomedia:description": "Contemplating the future and personal desires"
+                      }
+                    ],
+                    "ontomedia:has_subplot": {
+                      "@id": "ontomedia:chapter_12_subplots",
+                      "@type": "ontomedia:Subplots",
+                      "ontomedia:has_subplot": [
+                        {
+                          "@id": "ontomedia:subplot_12_1",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Career crossroads",
+                          "ontomedia:type": "professional",
+                          "ontomedia:description": "Choosing between career advancement and community",
+                          "ontomedia:development": "Opportunity to decision"
+                        },
+                        {
+                          "@id": "ontomedia:subplot_12_2",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Relationship commitment",
+                          "ontomedia:type": "personal",
+                          "ontomedia:description": "Deciding on the future of personal relationships",
+                          "ontomedia:development": "Doubt to commitment"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_13",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 13,
+                    "ontomedia:name": "The Night",
+                    "ontomedia:description": "Final resolution and new beginnings",
+                    "ontomedia:has_scene": [
+                      {
+                        "@id": "ontomedia:scene_13_1",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Evening preparation",
+                        "ontomedia:sequence": 1,
+                        "ontomedia:description": "Preparing for the final celebration"
+                      },
+                      {
+                        "@id": "ontomedia:scene_13_2",
+                        "@type": "ontomedia:Scene",
+                        "ontomedia:name": "Family gathering",
+                        "ontomedia:sequence": 2,
+                        "ontomedia:description": "Gathering with family for the celebration"
+                      }
+                    ],
+                    "ontomedia:has_subplot": {
+                      "@id": "ontomedia:chapter_13_subplots",
+                      "@type": "ontomedia:Subplots",
+                      "ontomedia:has_subplot": [
+                        {
+                          "@id": "ontomedia:subplot_13_1",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Medical practice future",
+                          "ontomedia:type": "professional",
+                          "ontomedia:description": "Establishing the future of the medical practice",
+                          "ontomedia:development": "Planning to implementation"
+                        },
+                        {
+                          "@id": "ontomedia:subplot_13_2",
+                          "@type": "ontomedia:Subplot",
+                          "ontomedia:name": "Family integration",
+                          "ontomedia:type": "personal",
+                          "ontomedia:description": "Final integration into the family unit",
+                          "ontomedia:development": "Acceptance to belonging"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ontomedia:has_network_references": {
+        "@id": "ontomedia:network_references",
+        "@type": "ontomedia:NetworkReferences",
+        "ontomedia:has_scene": {
+          "@id": "ontomedia:scene_network_reference",
+          "@type": "ontomedia:NetworkReference",
+          "ontomedia:target": "scene:scene_network",
+          "ontomedia:relationship": "scene_structure",
+          "ontomedia:version": "1.0",
+          "ontomedia:has_validation": {
+            "@id": "ontomedia:scene_validation_reference",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "scene:scene_validation",
+            "ontomedia:relationship": "scene_validation",
+            "ontomedia:version": "1.0"
+          },
+          "ontomedia:has_development": {
+            "@id": "ontomedia:scene_development_reference",
+            "@type": "ontomedia:DevelopmentReference",
+            "ontomedia:target": "scene:scene_development",
+            "ontomedia:relationship": "scene_development",
+            "ontomedia:version": "1.0"
+          }
+        },
+        "ontomedia:has_development": {
+          "@id": "ontomedia:development_network_reference",
+          "@type": "ontomedia:NetworkReference",
+          "ontomedia:target": "development:development_network",
+          "ontomedia:relationship": "development_structure",
+          "ontomedia:version": "1.0"
+        },
+        "ontomedia:has_theme": {
+          "@id": "ontomedia:theme_network_reference",
+          "@type": "ontomedia:NetworkReference",
+          "ontomedia:target": "theme:theme_network",
+          "ontomedia:relationship": "theme_structure",
+          "ontomedia:version": "1.0"
+        },
+        "ontomedia:has_character": {
+          "@id": "ontomedia:character_network_reference",
+          "@type": "ontomedia:NetworkReference",
+          "ontomedia:target": "character:character_network",
+          "ontomedia:relationship": "character_structure",
+          "ontomedia:version": "1.0"
+        },
+        "ontomedia:has_location": {
+          "@id": "ontomedia:location_network_reference",
+          "@type": "ontomedia:NetworkReference",
+          "ontomedia:target": "location:location_network",
+          "ontomedia:relationship": "location_structure",
+          "ontomedia:version": "1.0"
+        }
+      }
+    },
+    {
+      "@id": "ontomedia:scene_narrative_connections",
+      "@type": "ontomedia:SceneNarrativeConnections",
+      "ontomedia:has_connections": {
+        "@id": "ontomedia:narrative_connections",
+        "@type": "ontomedia:NarrativeConnections",
+        "ontomedia:thematic_progression": {
+          "ontomedia:belonging_arc": {
+            "ontomedia:has_reference": {
+              "@id": "ontomedia:belonging_arc_reference",
+              "@type": "ontomedia:ProgressionReference",
+              "ontomedia:target": "location:belonging_progression",
+              "ontomedia:relationship": "location_development",
+              "ontomedia:version": "1.0"
+            }
+          },
+          "ontomedia:community_integration": {
+            "ontomedia:has_reference": {
+              "@id": "ontomedia:community_integration_reference",
+              "@type": "ontomedia:ProgressionReference",
+              "ontomedia:target": "location:community_progression",
+              "ontomedia:relationship": "location_development",
+              "ontomedia:version": "1.0"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

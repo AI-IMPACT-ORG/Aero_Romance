@@ -1,0 +1,347 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:quality_network",
+      "@type": "ontomedia:QualityNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:quality_registry",
+        "@type": "ontomedia:QualityRegistry",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:quality_type_reference",
+            "@type": "ontomedia:QualityTypeReference",
+            "ontomedia:target": "ontomedia:quality_types",
+            "ontomedia:relationship": "quality_type_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:writing_quality",
+                "@type": "ontomedia:QualityType",
+                "ontomedia:name": "Writing Quality",
+                "ontomedia:description": "Quality of writing and prose",
+                "ontomedia:requirements": [
+                  "Clear prose",
+                  "Engaging style",
+                  "Consistent voice",
+                  "Effective pacing"
+                ]
+              },
+              {
+                "@id": "ontomedia:character_quality",
+                "@type": "ontomedia:QualityType",
+                "ontomedia:name": "Character Quality",
+                "ontomedia:description": "Quality of character development",
+                "ontomedia:requirements": [
+                  "Depth of character",
+                  "Consistent behavior",
+                  "Growth arc",
+                  "Relatability"
+                ]
+              },
+              {
+                "@id": "ontomedia:plot_quality",
+                "@type": "ontomedia:QualityType",
+                "ontomedia:name": "Plot Quality",
+                "ontomedia:description": "Quality of plot development",
+                "ontomedia:requirements": [
+                  "Logical progression",
+                  "Conflict resolution",
+                  "Satisfying arcs",
+                  "Coherent structure"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:quality_development_reference",
+            "@type": "ontomedia:QualityDevelopmentReference",
+            "ontomedia:target": "ontomedia:quality_development",
+            "ontomedia:relationship": "quality_development_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:quality_improvement",
+                "@type": "ontomedia:DevelopmentType",
+                "ontomedia:name": "Quality Improvement",
+                "ontomedia:description": "Development of quality elements",
+                "ontomedia:requirements": [
+                  "Continuous refinement",
+                  "Feedback integration",
+                  "Quality enhancement",
+                  "Consistent improvement"
+                ]
+              },
+              {
+                "@id": "ontomedia:quality_consistency",
+                "@type": "ontomedia:DevelopmentType",
+                "ontomedia:name": "Quality Consistency",
+                "ontomedia:description": "Maintenance of quality standards",
+                "ontomedia:requirements": [
+                  "Standard adherence",
+                  "Quality maintenance",
+                  "Consistent delivery",
+                  "Quality control"
+                ]
+              },
+              {
+                "@id": "ontomedia:quality_integration",
+                "@type": "ontomedia:DevelopmentType",
+                "ontomedia:name": "Quality Integration",
+                "ontomedia:description": "Integration of quality elements",
+                "ontomedia:requirements": [
+                  "Element harmony",
+                  "Quality balance",
+                  "Integrated standards",
+                  "Cohesive quality"
+                ]
+              }
+            ]
+          }
+        ],
+        "ontomedia:has_validation": {
+          "@id": "ontomedia:quality_validation",
+          "@type": "ontomedia:QualityValidation",
+          "ontomedia:has_rule": [
+            {
+              "@id": "ontomedia:medical_accuracy_rule",
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:name": "Medical Accuracy",
+              "ontomedia:description": "Ensures medical practices and procedures are accurate",
+              "ontomedia:requirements": [
+                "Medical procedure accuracy",
+                "Healthcare protocol compliance",
+                "Medical terminology correctness",
+                "Treatment approach validity"
+              ]
+            },
+            {
+              "@id": "ontomedia:cultural_authenticity_rule",
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:name": "Cultural Authenticity",
+              "ontomedia:description": "Ensures cultural elements are authentic and respectful",
+              "ontomedia:requirements": [
+                "Cultural practice accuracy",
+                "Traditional knowledge respect",
+                "Cultural sensitivity",
+                "Community representation"
+              ]
+            },
+            {
+              "@id": "ontomedia:character_consistency_rule",
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:name": "Character Consistency",
+              "ontomedia:description": "Ensures character development is consistent and meaningful",
+              "ontomedia:requirements": [
+                "Character arc consistency",
+                "Motivation clarity",
+                "Growth progression",
+                "Relationship development"
+              ]
+            },
+            {
+              "@id": "ontomedia:plot_coherence_rule",
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:name": "Plot Coherence",
+              "ontomedia:description": "Ensures plot elements are coherent and well-structured",
+              "ontomedia:requirements": [
+                "Story structure integrity",
+                "Plot point connection",
+                "Conflict resolution",
+                "Narrative flow"
+              ]
+            },
+            {
+              "@id": "ontomedia:theme_integration_rule",
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:name": "Theme Integration",
+              "ontomedia:description": "Ensures themes are effectively integrated into the story",
+              "ontomedia:requirements": [
+                "Theme consistency",
+                "Thematic development",
+                "Message clarity",
+                "Emotional impact"
+              ]
+            },
+            {
+              "@id": "ontomedia:location_authenticity_rule",
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:name": "Location Authenticity",
+              "ontomedia:description": "Ensures locations are authentic and well-developed",
+              "ontomedia:requirements": [
+                "Setting accuracy",
+                "Atmosphere consistency",
+                "Location progression",
+                "Environmental impact"
+              ]
+            },
+            {
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:rule_id": "ontomedia:family_dynamics_authenticity",
+              "ontomedia:rule_name": "Family Dynamics Authenticity",
+              "ontomedia:rule_description": "Ensures family dynamics are authentic and meaningful",
+              "ontomedia:has_requirement": [
+                "Family relationship accuracy",
+                "Cultural family dynamics",
+                "Personal family connections",
+                "Community family context",
+                "Family development progression"
+              ]
+            },
+            {
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:rule_id": "ontomedia:artistic_representation",
+              "ontomedia:rule_name": "Artistic Representation",
+              "ontomedia:rule_description": "Ensures artistic elements are accurately represented",
+              "ontomedia:has_requirement": [
+                "Artistic practice accuracy",
+                "Cultural artistic elements",
+                "Personal artistic expression",
+                "Community artistic context",
+                "Artistic development progression"
+              ]
+            },
+            {
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:rule_id": "ontomedia:professional_boundaries",
+              "ontomedia:rule_name": "Professional Boundaries",
+              "ontomedia:rule_description": "Ensures professional boundaries are maintained",
+              "ontomedia:has_requirement": [
+                "Professional relationship accuracy",
+                "Cultural professional context",
+                "Personal professional balance",
+                "Community professional standards",
+                "Professional development progression"
+              ]
+            },
+            {
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:rule_id": "ontomedia:cultural_tradition_preservation",
+              "ontomedia:rule_name": "Cultural Tradition Preservation",
+              "ontomedia:rule_description": "Ensures cultural traditions are preserved and respected",
+              "ontomedia:has_requirement": [
+                "Cultural practice accuracy",
+                "Traditional method preservation",
+                "Cultural integration balance",
+                "Community cultural standards",
+                "Cultural development progression"
+              ]
+            },
+            {
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:rule_id": "ontomedia:relationship_development",
+              "ontomedia:rule_name": "Relationship Development",
+              "ontomedia:rule_description": "Ensures relationship development is natural and meaningful",
+              "ontomedia:has_requirement": [
+                "Relationship progression accuracy",
+                "Cultural relationship context",
+                "Personal relationship growth",
+                "Community relationship standards",
+                "Relationship development progression"
+              ]
+            },
+            {
+              "@type": "ontomedia:ValidationRule",
+              "ontomedia:rule_id": "ontomedia:community_integration",
+              "ontomedia:rule_name": "Community Integration",
+              "ontomedia:rule_description": "Ensures community integration is authentic and meaningful",
+              "ontomedia:has_requirement": [
+                "Community interaction accuracy",
+                "Cultural community context",
+                "Personal community growth",
+                "Community standards",
+                "Community development progression"
+              ]
+            }
+          ]
+        }
+      },
+      "ontomedia:has_network_connections": {
+        "@id": "ontomedia:quality_network_connections",
+        "@type": "ontomedia:NetworkConnections",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:quality_scene_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:scene_network",
+            "ontomedia:relationship": "scene_quality_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_character_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:character_network",
+            "ontomedia:relationship": "character_quality_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_theme_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:theme_network",
+            "ontomedia:relationship": "theme_quality_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_location_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:location_network",
+            "ontomedia:relationship": "location_quality_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_development_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:development_network",
+            "ontomedia:relationship": "development_quality_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_style_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:style_network",
+            "ontomedia:relationship": "style_quality_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:quality_network_validation",
+        "@type": "ontomedia:QualityNetworkValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:quality_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_type_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_progression_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

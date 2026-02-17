@@ -1,0 +1,899 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:narrative_network",
+      "@type": "ontomedia:NarrativeNetwork",
+      "ontomedia:version": "2.1",
+      "ontomedia:last_updated": "2024-03-20",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:narrative_registry",
+        "@type": "ontomedia:NarrativeRegistry",
+        "ontomedia:has_act_registry": {
+          "@id": "ontomedia:act_registry",
+          "@type": "ontomedia:ActRegistry",
+          "ontomedia:has_act": [
+            {
+              "@id": "ontomedia:act_1",
+              "@type": "ontomedia:Act",
+              "ontomedia:name": "The Escape",
+              "ontomedia:description": "Ellie's journey from Copenhagen to Ærø",
+              "ontomedia:has_chapter_registry": {
+                "@id": "ontomedia:act_1_chapter_registry",
+                "@type": "ontomedia:ChapterRegistry",
+                "ontomedia:has_chapter": [
+                  {
+                    "@id": "ontomedia:chapter_1",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 1,
+                    "ontomedia:name": "The Proposal",
+                    "ontomedia:description": "Ellie faces an unwanted proposal",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_1_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_1_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "Morning Proposal",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "Ellie receives an unexpected proposal",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_1_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_1_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:medical_scenes",
+                                "development": "ontomedia:career_decision"
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_1_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:reflection_scenes",
+                                "development": "ontomedia:personal_growth"
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_1_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:cultural_scenes",
+                                "development": "ontomedia:cultural_adaptation"
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_1_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_2",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 2,
+                    "ontomedia:name": "The Journey",
+                    "ontomedia:description": "Ellie's trip to Ærø",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_2_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_2_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "Ferry departure",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "Ellie boards the ferry to Ærø",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_2_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_2_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:transition_scenes",
+                                "development": "ontomedia:career_transition"
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_2_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:reflection_scenes",
+                                "development": "ontomedia:personal_growth"
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_2_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:cultural_scenes",
+                                "development": "ontomedia:cultural_adaptation"
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_2_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_3",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 3,
+                    "ontomedia:name": "The Arrival",
+                    "ontomedia:description": "First impressions of Ærø",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_3_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_3_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "Harbor arrival",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "Ellie arrives at Ærø harbor",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_3_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_3_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:arrival_scenes",
+                                "development": "ontomedia:practice_introduction"
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_3_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:reflection_scenes",
+                                "development": "ontomedia:personal_growth"
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_3_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:cultural_scenes",
+                                "development": "ontomedia:cultural_adaptation"
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_3_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_4",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 4,
+                    "ontomedia:name": "The House",
+                    "ontomedia:description": "Discovering the family home",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_4_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_4_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "House arrival",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "Ellie arrives at the family home",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_4_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_4_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:discovery_scenes",
+                                "development": "ontomedia:practice_history"
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_4_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:reflection_scenes",
+                                "development": "ontomedia:family_legacy"
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_4_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "type": "ontomedia:cultural_scenes",
+                                "development": "ontomedia:cultural_adaptation"
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_4_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:act_2",
+              "@type": "ontomedia:Act",
+              "ontomedia:name": "The Confrontation",
+              "ontomedia:description": "Facing challenges and building connections",
+              "ontomedia:has_timeline_registry": {
+                "@id": "ontomedia:act_2_timeline_registry",
+                "@type": "ontomedia:TimelineRegistry",
+                "ontomedia:has_timeline": {
+                  "@id": "ontomedia:act_2_timeline",
+                  "@type": "ontomedia:Timeline",
+                  "ontomedia:season": "Late Spring to Early Summer",
+                  "ontomedia:start_date": "April 16",
+                  "ontomedia:end_date": "June 30",
+                  "ontomedia:has_event_registry": {
+                    "@id": "ontomedia:act_2_event_registry",
+                    "@type": "ontomedia:EventRegistry",
+                    "ontomedia:has_event": [
+                      {
+                        "@id": "ontomedia:act_2_event_1",
+                        "@type": "ontomedia:KeyEvent",
+                        "ontomedia:date": "April 16",
+                        "ontomedia:event": "First medical practice challenges",
+                        "ontomedia:has_impact_layer": {
+                          "@id": "ontomedia:act_2_event_1_impact_layers",
+                          "@type": "ontomedia:ImpactLayers",
+                          "ontomedia:has_professional_impact": {
+                            "@id": "ontomedia:act_2_event_1_professional_impact",
+                            "@type": "ontomedia:ProfessionalImpact",
+                            "ontomedia:impact": "Practice integration",
+                            "ontomedia:has_development": {
+                              "@id": "ontomedia:act_2_event_1_professional_development",
+                              "@type": "ontomedia:DevelopmentReference",
+                              "ontomedia:target": "ontomedia:practice_integration",
+                              "ontomedia:relationship": "development_stage",
+                              "ontomedia:version": "1.0"
+                            }
+                          },
+                          "ontomedia:has_personal_impact": {
+                            "@id": "ontomedia:act_2_event_1_personal_impact",
+                            "@type": "ontomedia:PersonalImpact",
+                            "ontomedia:impact": "Community adaptation",
+                            "ontomedia:has_development": {
+                              "@id": "ontomedia:act_2_event_1_personal_development",
+                              "@type": "ontomedia:DevelopmentReference",
+                              "ontomedia:target": "ontomedia:community_adaptation",
+                              "ontomedia:relationship": "development_stage",
+                              "ontomedia:version": "1.0"
+                            }
+                          },
+                          "ontomedia:has_cultural_impact": {
+                            "@id": "ontomedia:act_2_event_1_cultural_impact",
+                            "@type": "ontomedia:CulturalImpact",
+                            "ontomedia:impact": "Traditional learning",
+                            "ontomedia:has_development": {
+                              "@id": "ontomedia:act_2_event_1_cultural_development",
+                              "@type": "ontomedia:DevelopmentReference",
+                              "ontomedia:target": "ontomedia:traditional_learning",
+                              "ontomedia:relationship": "development_stage",
+                              "ontomedia:version": "1.0"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "ontomedia:has_chapter_registry": {
+                "@id": "ontomedia:act_2_chapter_registry",
+                "@type": "ontomedia:ChapterRegistry",
+                "ontomedia:has_chapter": [
+                  {
+                    "@id": "ontomedia:chapter_5",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 5,
+                    "ontomedia:name": "The Practice",
+                    "ontomedia:description": "Ellie begins work at the medical practice",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_5_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_5_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "Early morning arrival",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "Ellie arrives at the medical practice",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_5_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_5_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_5_1_professional_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_5_1_professional_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:medical_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_5_1_professional_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                  "@id": "ontomedia:practice_integration",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_5_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_5_1_personal_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_5_1_personal_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:reflection_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_5_1_personal_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:personal_growth",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_5_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_5_1_cultural_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_5_1_cultural_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:cultural_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_5_1_cultural_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:cultural_adaptation",
+                                "ontomedia:version": "1.0"
+                              }
+                            }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_6",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 6,
+                    "ontomedia:name": "The Challenge",
+                    "ontomedia:description": "First medical emergency on the island",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_6_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_6_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "Emergency call",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "First emergency call at the practice",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_6_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_6_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_6_1_professional_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_6_1_professional_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:emergency_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_6_1_professional_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:emergency_handling",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_6_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_6_1_personal_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_6_1_personal_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:reflection_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_6_1_personal_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:personal_growth",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_6_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_6_1_cultural_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_6_1_cultural_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:cultural_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_6_1_cultural_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:cultural_adaptation",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_6_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_7",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 7,
+                    "ontomedia:name": "The Connection",
+                    "ontomedia:description": "Building relationships with the community",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_7_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_7_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "Community gathering",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "First community event participation",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_7_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_7_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_7_1_professional_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_7_1_professional_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:community_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_7_1_professional_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:community_integration",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_7_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_7_1_personal_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_7_1_personal_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:reflection_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_7_1_personal_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:personal_growth",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_7_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_7_1_cultural_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_7_1_cultural_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:cultural_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_7_1_cultural_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:cultural_adaptation",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_7_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_8",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 8,
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:name": "The Discovery",
+                    "ontomedia:description": "Uncovering family history",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_8_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_8_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:name": "Old documents",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:description": "Finding historical medical records",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_8_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_8_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_8_1_professional_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_8_1_professional_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:discovery_scenes",
+                                  "@type": "ontomedia:SceneTypeReference",
+                                  "ontomedia:target": "ontomedia:discovery_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_8_1_professional_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:practice_history",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_8_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_8_1_personal_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_8_1_personal_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:reflection_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_8_1_personal_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:family_legacy",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_8_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_8_1_cultural_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_8_1_cultural_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:cultural_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_8_1_cultural_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:cultural_adaptation",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_8_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:act_3",
+              "@type": "ontomedia:Act",
+              "ontomedia:name": "The Resolution",
+              "ontomedia:description": "Finding home and love",
+              "ontomedia:has_timeline_registry": {
+                "@id": "ontomedia:act_3_timeline_registry",
+                "@type": "ontomedia:TimelineRegistry",
+                "ontomedia:has_timeline": {
+                  "@id": "ontomedia:act_3_timeline",
+                  "@type": "ontomedia:Timeline",
+                  "ontomedia:season": "Summer",
+                  "ontomedia:start_date": "July 1",
+                  "ontomedia:end_date": "August 31",
+                  "ontomedia:has_event_registry": {
+                    "@id": "ontomedia:act_3_event_registry",
+                    "@type": "ontomedia:EventRegistry",
+                    "ontomedia:has_event": [
+                      {
+                        "@id": "ontomedia:act_3_event_1",
+                        "@type": "ontomedia:KeyEvent",
+                        "ontomedia:date": "July 1-7",
+                        "ontomedia:event": "Summer Festival",
+                        "ontomedia:has_impact_layer": {
+                          "@id": "ontomedia:act_3_event_1_impact_layers",
+                          "@type": "ontomedia:ImpactLayers",
+                          "ontomedia:has_professional_impact": {
+                            "@id": "ontomedia:act_3_event_1_professional_impact",
+                            "@type": "ontomedia:ProfessionalImpact",
+                            "ontomedia:impact": "Medical tent organization",
+                            "ontomedia:has_development": {
+                              "@id": "ontomedia:act_3_event_1_professional_development",
+                              "@type": "ontomedia:DevelopmentReference",
+                              "ontomedia:target": "ontomedia:medical_services",
+                              "ontomedia:relationship": "development_stage",
+                              "ontomedia:version": "1.0"
+                            }
+                          },
+                          "ontomedia:has_personal_impact": {
+                            "@id": "ontomedia:act_3_event_1_personal_impact",
+                            "@type": "ontomedia:PersonalImpact",
+                            "ontomedia:impact": "Romantic connection",
+                            "ontomedia:has_development": {
+                              "@id": "ontomedia:act_3_event_1_personal_development",
+                              "@type": "ontomedia:DevelopmentReference",
+                              "ontomedia:target": "ontomedia:romantic_development",
+                              "ontomedia:relationship": "development_stage",
+                              "ontomedia:version": "1.0"
+                            }
+                          },
+                          "ontomedia:has_cultural_impact": {
+                            "@id": "ontomedia:act_3_event_1_cultural_impact",
+                            "@type": "ontomedia:CulturalImpact",
+                            "ontomedia:impact": "Traditions integration",
+                            "ontomedia:has_development": {
+                              "@id": "ontomedia:act_3_event_1_cultural_development",
+                              "@type": "ontomedia:DevelopmentReference",
+                              "ontomedia:target": "ontomedia:cultural_integration",
+                              "ontomedia:relationship": "development_stage",
+                              "ontomedia:version": "1.0"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "ontomedia:has_chapter_registry": {
+                "@id": "ontomedia:act_3_chapter_registry",
+                "@type": "ontomedia:ChapterRegistry",
+                "ontomedia:has_chapter": [
+                  {
+                    "@id": "ontomedia:chapter_9",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 9,
+                    "ontomedia:name": "Summer Festival",
+                    "ontomedia:description": "Community celebration and romantic connection",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_9_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_9_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:name": "Festival preparation",
+                          "ontomedia:description": "Setting up the festival grounds and medical tent",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_9_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_9_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_9_1_professional_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_9_1_professional_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:medical_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_9_1_professional_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:medical_services",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_9_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_9_1_personal_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_9_1_personal_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:community_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_9_1_personal_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:community_integration",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_9_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_9_1_cultural_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_9_1_cultural_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:cultural_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_9_1_cultural_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:cultural_integration",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            }
+                          },
+                          "ontomedia:has_validation": {
+                            "@id": "ontomedia:scene_9_1_validation",
+                            "@type": "ontomedia:SceneValidation",
+                            "ontomedia:references": "ontomedia:standard_validation"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:chapter_10",
+                    "@type": "ontomedia:Chapter",
+                    "ontomedia:number": 10,
+                    "ontomedia:name": "The Storm",
+                    "ontomedia:description": "A crisis tests relationships and community bonds",
+                    "ontomedia:has_scene_registry": {
+                      "@id": "ontomedia:chapter_10_scene_registry",
+                      "@type": "ontomedia:SceneRegistry",
+                      "ontomedia:has_scene": [
+                        {
+                          "@id": "ontomedia:scene_10_1",
+                          "@type": "ontomedia:Scene",
+                          "ontomedia:sequence": 1,
+                          "ontomedia:name": "Weather warning",
+                          "ontomedia:description": "Initial weather alerts and emergency preparation",
+                          "ontomedia:has_layer": {
+                            "@id": "ontomedia:scene_10_1_layers",
+                            "@type": "ontomedia:SceneLayers",
+                            "ontomedia:has_professional_layer": {
+                              "@id": "ontomedia:scene_10_1_professional",
+                              "@type": "ontomedia:ProfessionalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_10_1_professional_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_10_1_professional_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:emergency_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_10_1_professional_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:crisis_management",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_personal_layer": {
+                              "@id": "ontomedia:scene_10_1_personal",
+                              "@type": "ontomedia:PersonalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_10_1_personal_references",
+                                "@type": "ontomedia:LayerReferences",
+                                "ontomedia:scene_type": {
+                                "@id": "ontomedia:scene_10_1_personal_type",
+                                "@type": "ontomedia:SceneTypeReference",
+                                "ontomedia:target": "ontomedia:reflection_scenes",
+                                "ontomedia:version": "1.0"
+                              },
+                                "ontomedia:development": {
+                                "@id": "ontomedia:scene_10_1_personal_development",
+                                "@type": "ontomedia:DevelopmentReference",
+                                "ontomedia:target": "ontomedia:personal_growth",
+                                "ontomedia:version": "1.0"
+                                }
+                              }
+                            },
+                            "ontomedia:has_cultural_layer": {
+                              "@id": "ontomedia:scene_10_1_cultural",
+                              "@type": "ontomedia:CulturalLayer",
+                              "ontomedia:references": {
+                                "@id": "ontomedia:scene_10_1_cultural_references",

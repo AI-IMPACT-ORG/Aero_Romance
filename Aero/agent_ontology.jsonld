@@ -1,0 +1,604 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "agent": "https://example.org/agent#",
+    "task": "https://example.org/task#",
+    "process": "https://example.org/process#",
+    "tool": "https://example.org/tool#",
+    "state": "https://example.org/state#",
+    "security": "https://example.org/security#",
+    "validation": "https://example.org/validation#"
+  },
+  "@type": "agent:CodeAgent",
+  "agent:capabilities": {
+    "@type": "agent:Capabilities",
+    "agent:codeGeneration": {
+      "@type": "agent:Capability",
+      "agent:supportedLanguages": ["JavaScript", "TypeScript", "Python", "Java", "C#", "Go", "Rust"],
+      "agent:generationTypes": ["FullFile", "Function", "Class", "Component", "Test", "Documentation"],
+      "agent:contextAwareness": true
+    },
+    "agent:codeModification": {
+      "@type": "agent:Capability",
+      "agent:modificationTypes": ["Insert", "Update", "Delete", "Refactor", "Merge"],
+      "agent:preservesContext": true,
+      "agent:handlesDependencies": true
+    },
+    "agent:codeAnalysis": {
+      "@type": "agent:Capability",
+      "agent:analysisTypes": ["Static", "Semantic", "Dependency", "Complexity", "Security"],
+      "agent:canDetectPatterns": true,
+      "agent:canIdentifyAntiPatterns": true
+    },
+    "agent:problemSolving": {
+      "@type": "agent:Capability",
+      "agent:strategies": ["DivideAndConquer", "PatternMatching", "HeuristicSearch", "Backtracking"],
+      "agent:canHandleComplexity": true,
+      "agent:optimizationCapable": true
+    },
+    "agent:contextAwareness": {
+      "@type": "agent:Capability",
+      "agent:contextTypes": ["Workspace", "File", "Language", "Framework", "Dependencies"],
+      "agent:maintainsHistory": true,
+      "agent:canInferContext": true
+    }
+  },
+  "agent:taskProcessing": {
+    "@type": "process:TaskProcessing",
+    "process:phases": [
+      {
+        "@type": "process:Phase",
+        "process:name": "TaskAnalysis",
+        "process:priority": 1,
+        "process:steps": [
+          {
+            "@type": "process:Step",
+            "process:name": "RequirementExtraction",
+            "process:description": "Extract explicit and implicit requirements from user input",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "ExplicitRequirementParsing",
+                "process:description": "Parse directly stated requirements and constraints"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ImplicitRequirementInference",
+                "process:description": "Infer requirements from context and common patterns"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "RequirementValidation",
+                "process:description": "Validate requirements for completeness and consistency"
+              }
+            ]
+          },
+          {
+            "@type": "process:Step",
+            "process:name": "ContextGathering",
+            "process:description": "Analyze current workspace state, open files, and relevant context",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "WorkspaceAnalysis",
+                "process:description": "Analyze project structure and configuration"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "FileContextAnalysis",
+                "process:description": "Analyze open files and their relationships"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "EnvironmentContextAnalysis",
+                "process:description": "Analyze development environment and tools"
+              }
+            ]
+          },
+          {
+            "@type": "process:Step",
+            "process:name": "DependencyAnalysis",
+            "process:description": "Identify required dependencies, imports, and external resources",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "PackageDependencyAnalysis",
+                "process:description": "Analyze package dependencies and versions"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ImportDependencyAnalysis",
+                "process:description": "Analyze code imports and module dependencies"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ExternalResourceAnalysis",
+                "process:description": "Identify required external resources and APIs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "process:Phase",
+        "process:name": "Planning",
+        "process:priority": 2,
+        "process:steps": [
+          {
+            "@type": "process:Step",
+            "process:name": "TaskDecomposition",
+            "process:description": "Break down complex tasks into atomic operations",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "TaskHierarchyCreation",
+                "process:description": "Create hierarchical task structure"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "AtomicOperationDefinition",
+                "process:description": "Define smallest possible operations"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "DependencyGraphCreation",
+                "process:description": "Create dependency graph between operations"
+              }
+            ]
+          },
+          
+            "@type": "process:Step",
+            "process:name": "ToolSelection",
+            "process:description": "Select appropriate tools for each subtask",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "ToolCapabilityAnalysis",
+                "process:description": "Analyze tool capabilities and limitations"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ToolCompatibilityCheck",
+                "process:description": "Check tool compatibility with task requirements"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ToolOptimization",
+                "process:description": "Optimize tool selection for efficiency"
+              }
+            ]
+          },
+          {
+            "@type": "process:Step",
+            "process:name": "ExecutionOrdering",
+            "process:description": "Determine optimal sequence of operations",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "DependencyResolution",
+                "process:description": "Resolve operation dependencies"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ParallelizationAnalysis",
+                "process:description": "Identify parallelizable operations"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "SequenceOptimization",
+                "process:description": "Optimize operation sequence"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "process:Phase",
+        "process:name": "Execution",
+        "process:priority": 3,
+        "process:steps": [
+          {
+            "@type": "process:Step",
+            "process:name": "ToolInvocation",
+            "process:description": "Execute selected tools with appropriate parameters",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "ParameterValidation",
+                "process:description": "Validate tool parameters before execution"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ExecutionMonitoring",
+                "process:description": "Monitor tool execution progress"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ResultCapture",
+                "process:description": "Capture and validate tool execution results"
+              }
+            ]
+          },
+          {
+            "@type": "process:Step",
+            "process:name": "StateManagement",
+            "process:description": "Track and maintain workspace state across operations",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "StateSnapshot",
+                "process:description": "Create state snapshots before operations"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "StateTracking",
+                "process:description": "Track state changes during operations"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "StateRecovery",
+                "process:description": "Maintain ability to recover previous states"
+              }
+            ]
+          },
+          {
+            "@type": "process:Step",
+            "process:name": "ErrorHandling",
+            "process:description": "Handle and recover from execution errors",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "ErrorDetection",
+                "process:description": "Detect and classify errors"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ErrorRecovery",
+                "process:description": "Execute recovery procedures"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "ErrorReporting",
+                "process:description": "Report errors with context"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@type": "process:Phase",
+        "process:name": "Verification",
+        "process:priority": 4,
+        "process:steps": [
+          {
+            "@type": "process:Step",
+            "process:name": "ResultValidation",
+            "process:description": "Verify output matches requirements",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "RequirementComplianceCheck",
+                "process:description": "Check output against original requirements"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "OutputValidation",
+                "process:description": "Validate output format and content"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "EdgeCaseVerification",
+                "process:description": "Verify handling of edge cases"
+              }
+            ]
+          },
+          {
+            "@type": "process:Step",
+            "process:name": "CodeQualityCheck",
+            "process:description": "Ensure code meets quality standards",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "StyleCompliance",
+                "process:description": "Check code style compliance"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "BestPracticeVerification",
+                "process:description": "Verify adherence to best practices"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "PerformanceAnalysis",
+                "process:description": "Analyze code performance characteristics"
+              }
+            ]
+          },
+          {
+            "@type": "process:Step",
+            "process:name": "DependencyVerification",
+            "process:description": "Confirm all dependencies are properly handled",
+            "process:substeps": [
+              {
+                "@type": "process:SubStep",
+                "process:name": "DependencyCompleteness",
+                "process:description": "Verify all dependencies are included"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "VersionCompatibility",
+                "process:description": "Check dependency version compatibility"
+              },
+              {
+                "@type": "process:SubStep",
+                "process:name": "SecurityAudit",
+                "process:description": "Audit dependencies for security issues"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "agent:tools": {
+    "@type": "tool:ToolSet",
+    "tool:availableTools": [
+      {
+        "@type": "tool:Tool",
+        "tool:name": "codebase_search",
+        "tool:purpose": "Semantic code search across codebase",
+        "tool:capabilities": ["SemanticSearch", "ContextAwareness"],
+        "tool:parameters": {
+          "query": "string",
+          "target_directories": "string[]",
+          "explanation": "string"
+        },
+        "tool:constraints": {
+          "maxResults": 50,
+          "timeout": "5s"
+        }
+      },
+      {
+        "@type": "tool:Tool",
+        "tool:name": "read_file",
+        "tool:purpose": "Read file contents with line range control",
+        "tool:capabilities": ["FileAccess", "ContentExtraction"],
+        "tool:parameters": {
+          "target_file": "string",
+          "start_line": "number",
+          "end_line": "number",
+          "should_read_entire_file": "boolean"
+        },
+        "tool:constraints": {
+          "maxLines": 250,
+          "timeout": "2s"
+        }
+      },
+      {
+        "@type": "tool:Tool",
+        "tool:name": "edit_file",
+        "tool:purpose": "Modify existing files with precise edits",
+        "tool:capabilities": ["FileModification", "ContextPreservation"],
+        "tool:parameters": {
+          "target_file": "string",
+          "instructions": "string",
+          "code_edit": "string"
+        },
+        "tool:constraints": {
+          "maxEditSize": "10KB",
+          "timeout": "3s"
+        }
+      },
+      {
+        "@type": "tool:Tool",
+        "tool:name": "run_terminal_cmd",
+        "tool:purpose": "Execute terminal commands with safety controls",
+        "tool:capabilities": ["CommandExecution", "SafetyValidation"],
+        "tool:parameters": {
+          "command": "string",
+          "is_background": "boolean",
+          "require_user_approval": "boolean"
+        },
+        "tool:constraints": {
+          "maxCommandLength": 1000,
+          "timeout": "30s"
+        }
+      },
+      {
+        "@type": "tool:Tool",
+        "tool:name": "list_dir",
+        "tool:purpose": "List directory contents",
+        "tool:capabilities": ["FileSystemNavigation"],
+        "tool:parameters": {
+          "relative_workspace_path": "string"
+        },
+        "tool:constraints": {
+          "maxDepth": 10,
+          "timeout": "1s"
+        }
+      },
+      {
+        "@type": "tool:Tool",
+        "tool:name": "grep_search",
+        "tool:purpose": "Pattern-based text search",
+        "tool:capabilities": ["TextSearch", "PatternMatching"],
+        "tool:parameters": {
+          "query": "string",
+          "case_sensitive": "boolean",
+          "include_pattern": "string",
+          "exclude_pattern": "string"
+        },
+        "tool:constraints": {
+          "maxResults": 50,
+          "timeout": "3s"
+        }
+      },
+      {
+        "@type": "tool:Tool",
+        "tool:name": "file_search",
+        "tool:purpose": "Fuzzy file path search",
+        "tool:capabilities": ["FuzzyMatching", "PathResolution"],
+        "tool:parameters": {
+          "query": "string"
+        },
+        "tool:constraints": {
+          "maxResults": 10,
+          "timeout": "1s"
+        }
+      },
+      {
+        "@type": "tool:Tool",
+        "tool:name": "delete_file",
+        "tool:purpose": "Safe file deletion with validation",
+        "tool:capabilities": ["FileRemoval", "SafetyChecks"],
+        "tool:parameters": {
+          "target_file": "string"
+        },
+        "tool:constraints": {
+          "requireConfirmation": true,
+          "timeout": "2s"
+        }
+      }
+    ]
+  },
+  "agent:stateManagement": {
+    "@type": "state:StateManagement",
+    "state:trackedAspects": [
+      {
+        "@type": "state:Aspect",
+        "state:name": "WorkspaceContext",
+        "state:description": "Current workspace state and environment",
+        "state:components": [
+          {
+            "@type": "state:Component",
+            "state:name": "FileSystemState",
+            "state:description": "Current state of files and directories"
+          },
+          {
+            "@type": "state:Component",
+            "state:name": "EnvironmentState",
+            "state:description": "Development environment configuration"
+          },
+          {
+            "@type": "state:Component",
+            "state:name": "DependencyState",
+            "state:description": "Current state of project dependencies"
+          }
+        ]
+      },
+      {
+        "@type": "state:Aspect",
+        "state:name": "ToolExecutionHistory",
+        "state:description": "History of tool invocations and their results",
+        "state:components": [
+          {
+            "@type": "state:Component",
+            "state:name": "ExecutionLog",
+            "state:description": "Chronological log of tool executions"
+          },
+          {
+            "@type": "state:Component",
+            "state:name": "ResultCache",
+            "state:description": "Cached results of previous executions"
+          },
+          {
+            "@type": "state:Component",
+            "state:name": "ErrorLog",
+            "state:description": "Log of execution errors and recoveries"
+          }
+        ]
+      },
+      {
+        "@type": "state:Aspect",
+        "state:name": "FileModificationState",
+        "state:description": "Track changes to files during task execution",
+        "state:components": [
+          {
+            "@type": "state:Component",
+            "state:name": "ModificationHistory",
+            "state:description": "History of file modifications"
+          },
+          {
+            "@type": "state:Component",
+            "state:name": "BackupState",
+            "state:description": "State of file backups"
+          },
+          {
+            "@type": "state:Component",
+            "state:name": "ConflictState",
+            "state:description": "State of file modification conflicts"
+          }
+        ]
+      }
+    ]
+  },
+  "agent:constraints": {
+    "@type": "agent:Constraints",
+    "agent:maxToolCallsPerTurn": 1,
+    "agent:maxFileReadLines": 250,
+    "agent:maxSearchResults": 50,
+    "agent:maxFileSearchResults": 10,
+    "agent:timeouts": {
+      "agent:toolExecution": "30s",
+      "agent:fileOperation": "5s",
+      "agent:searchOperation": "3s"
+    },
+    "agent:memoryLimits": {
+      "agent:maxFileSize": "1MB",
+      "agent:maxSearchResults": 50,
+      "agent:maxHistoryItems": 100
+    }
+  },
+  "agent:errorHandling": {
+    "@type": "agent:ErrorHandling",
+    "agent:maxRetryAttempts": 3,
+    "agent:errorRecoveryStrategies": [
+      {
+        "@type": "agent:Strategy",
+        "agent:name": "ToolRetry",
+        "agent:description": "Retry failed tool execution with adjusted parameters"
+      },
+      {
+        "@type": "agent:Strategy",
+        "agent:name": "AlternativeToolSelection",
+        "agent:description": "Select alternative tool for task execution"
+      },
+      {
+        "@type": "agent:Strategy",
+        "agent:name": "UserNotification",
+        "agent:description": "Notify user of error and request guidance"
+      }
+    ],
+    "agent:errorTypes": [
+      {
+        "@type": "agent:ErrorType",
+        "agent:name": "ToolExecutionError",
+        "agent:description": "Error during tool execution"
+      },
+      {
+        "@type": "agent:ErrorType",
+        "agent:name": "FileOperationError",
+        "agent:description": "Error during file operations"
+      },
+      {
+        "@type": "agent:ErrorType",
+        "agent:name": "ValidationError",
+        "agent:description": "Error during result validation"
+      }
+    ]
+  },
+  "agent:security": {
+    "@type": "security:SecurityPolicy",
+    "security:fileOperations": {
+      "security:allowedPaths": ["workspace"],
+      "security:restrictedPaths": ["system", "home"],
+      "security:maxFileSize": "1MB"
+    },
+    "security:commandExecution": {
+      "security:allowedCommands": ["git", "npm", "yarn", "python", "node"],
+      "security:restrictedCommands": ["rm", "sudo", "chmod"],
+      "security:requireApproval": true
+    }
+  }
+} 

@@ -1,0 +1,1210 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "id": "@id",
+    "type": "@type",
+    "value": "@value",
+    "graph": "@graph",
+    "ontomedia": "http://www.ontomedia.org/ontology#",
+    "types": {
+      "@id": "ontomedia:Types",
+      "@type": "ontomedia:TypeSystem",
+      "ontomedia:hasBaseTypes": {
+        "@id": "ontomedia:BaseTypes",
+        "@type": "ontomedia:TypeSet",
+        "ontomedia:types": [
+          {
+            "@id": "ontomedia:Registry",
+            "@type": "ontomedia:BaseType",
+            "ontomedia:name": "Registry",
+            "ontomedia:description": "Base type for all registries"
+          },
+          {
+            "@id": "ontomedia:Set",
+            "@type": "ontomedia:BaseType",
+            "ontomedia:name": "Set",
+            "ontomedia:description": "Base type for all sets"
+          },
+          {
+            "@id": "ontomedia:Element",
+            "@type": "ontomedia:BaseType",
+            "ontomedia:name": "Element",
+            "ontomedia:description": "Base type for all elements"
+          }
+        ]
+      },
+      "ontomedia:hasDerivedTypes": {
+        "@id": "ontomedia:DerivedTypes",
+        "@type": "ontomedia:TypeSet",
+        "ontomedia:types": [
+          {
+            "@id": "ontomedia:CharacterRegistry",
+            "@type": "ontomedia:DerivedType",
+            "ontomedia:baseType": "ontomedia:Registry",
+            "ontomedia:name": "Character Registry",
+            "ontomedia:description": "Registry for character-related content"
+          },
+          {
+            "@id": "ontomedia:EmotionalRegistry",
+            "@type": "ontomedia:DerivedType",
+            "ontomedia:baseType": "ontomedia:Registry",
+            "ontomedia:name": "Emotional Registry",
+            "ontomedia:description": "Registry for emotional states and progression"
+          }
+        ]
+      }
+    },
+    "documentation": {
+      "@id": "ontomedia:Documentation",
+      "@type": "@id",
+      "description": "Documentation for ontology components and their relationships",
+      "import": "aero_novel_documentation.jsonld"
+    },
+    "quality": {
+      "@id": "ontomedia:Quality",
+      "@type": "@id",
+      "description": "Quality systems and requirements",
+      "import": "aero_novel_quality.jsonld"
+    },
+    "sceneTypes": {
+      "@id": "ontomedia:SceneTypes",
+      "@type": "@id",
+      "description": "Scene type definitions and requirements",
+      "import": "aero_novel_documentation.jsonld#/graph/0/ontomedia:hasSceneTypes"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:CharacterRegistry",
+      "@type": "ontomedia:Registry",
+      "ontomedia:name": "Character Registry",
+      "ontomedia:description": "Central registry for all characters",
+      "ontomedia:hasMainCharacters": {
+        "@id": "ontomedia:MainCharacters",
+        "@type": "ontomedia:CharacterSet",
+        "ontomedia:characters": [
+          {
+            "@id": "ontomedia:Ellie",
+            "@type": "ontomedia:Character",
+            "ontomedia:name": "Dr. Eleanor 'Ellie' Hart",
+            "ontomedia:role": "Protagonist",
+            "ontomedia:insecurities": [
+              "Fear of emotional vulnerability",
+              "Imposter syndrome in new cultural setting",
+              "Worries about living up to mother's legacy",
+              "Self-doubt about balancing professional and personal life"
+            ],
+            "ontomedia:flaws": [
+              "Tendency to overwork as emotional avoidance",
+              "Stubborn independence that pushes people away",
+              "Perfectionism that causes unnecessary stress",
+              "Difficulty asking for help",
+              "Sometimes too direct in professional settings"
+            ],
+            "ontomedia:quirks": [
+              "Organizes medical supplies when nervous",
+              "Makes terrible coffee but insists on making it",
+              "Sings off-key in the shower",
+              "Forgets to eat when focused on work",
+              "Carries her mother's pearl necklace but never wears it"
+            ],
+            "ontomedia:development": [
+              "Professional facade cracks",
+              "Personal conflict emerges",
+              "Future uncertainty begins",
+              "Cultural adaptation",
+              "Professional growth",
+              "Personal healing",
+              "Family reconciliation",
+              "Community leadership"
+            ],
+            "ontomedia:relationships": [
+              "Tense with Sarah",
+              "Respected by colleagues",
+              "Connected to mother's memory",
+              "Growing bond with Lily",
+              "Professional respect from Dr. Jensen",
+              "Community acceptance",
+              "Mentorship of young doctor",
+              "Friendship with local artist",
+              "Reconnection with father"
+            ],
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.CharacterRequirements.AuthenticDevelopment",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.ProfessionalAccuracy"
+            ]
+          },
+          {
+            "@id": "ontomedia:Tom",
+            "@type": "ontomedia:Character",
+            "ontomedia:name": "Tom Nielsen",
+            "ontomedia:role": "Male Lead",
+            "ontomedia:backstory": {
+              "ontomedia:marriage": {
+                "ontomedia:date": "2010",
+                "ontomedia:end_date": "2015",
+                "ontomedia:circumstances": "Amicable separation due to Sarah's career ambitions",
+                "ontomedia:impact": "Strengthened bond with Lily, developed protective instincts"
+              },
+              "ontomedia:business_development": {
+                "ontomedia:start_date": "2012",
+                "ontomedia:growth": "Gradual expansion from small B&B to successful island business",
+                "ontomedia:challenges": "Balancing business growth with single parenthood"
+              },
+              "ontomedia:parenting_journey": {
+                "ontomedia:key_moments": [
+                  "Primary caregiver since Lily was 3",
+                  "Developed strong father-daughter bond",
+                  "Established stable routine for Lily"
+                ]
+              }
+            },
+            "ontomedia:development": [
+              "Initial wariness of new relationships",
+              "Growing trust in Ellie",
+              "Balancing fatherhood and romance",
+              "Professional growth",
+              "Emotional vulnerability",
+              "Family integration"
+            ]
+          },
+          {
+            "@id": "ontomedia:Lily",
+            "@type": "ontomedia:Character",
+            "ontomedia:name": "Lily Nielsen",
+            "ontomedia:role": "Supporting Character",
+            "ontomedia:age": "12",
+            "ontomedia:school_schedule": {
+              "ontomedia:spring": {
+                "ontomedia:start_date": "March 1",
+                "ontomedia:end_date": "June 15",
+                "ontomedia:activities": [
+                  "Regular school attendance",
+                  "Art classes after school",
+                  "Weekend family time"
+                ]
+              },
+              "ontomedia:summer": {
+                "ontomedia:start_date": "June 16",
+                "ontomedia:end_date": "August 15",
+                "ontomedia:activities": [
+                  "Summer art program",
+                  "Family business help",
+                  "Island activities"
+                ]
+              }
+            },
+            "ontomedia:development": [
+              "Initial artistic connection with Ellie",
+              "Growing trust in new family dynamic",
+              "Balancing school and family life",
+              "Artistic growth",
+              "Family integration",
+              "Community belonging"
+            ]
+          }
+        ]
+      },
+      "ontomedia:hasSupportingCharacters": {
+        "@id": "ontomedia:SupportingCharacters",
+        "@type": "ontomedia:CharacterSet",
+        "ontomedia:characters": [
+          {
+            "@id": "ontomedia:Sarah",
+            "@type": "ontomedia:Character",
+            "ontomedia:name": "Sarah",
+            "ontomedia:role": "Antagonist",
+            "ontomedia:insecurities": [
+              "Fear of being alone",
+              "Jealousy of others' success",
+              "Need for control stems from past abandonment"
+            ],
+            "ontomedia:flaws": [
+              "Manipulative tendencies",
+              "Difficulty accepting rejection",
+              "Overcompensates with control",
+              "Struggles with empathy"
+            ],
+            "ontomedia:quirks": [
+              "Always carries a planner",
+              "Over-apologizes",
+              "Compulsively checks phone"
+            ],
+            "ontomedia:development": "Shows controlling nature and personal growth",
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.CharacterRequirements.AuthenticDevelopment"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@id": "ontomedia:EmotionalRegistry",
+      "@type": "ontomedia:Registry",
+      "ontomedia:name": "Emotional Registry",
+      "ontomedia:description": "Central registry for all emotional states and progression",
+      "ontomedia:hasStates": {
+        "@id": "ontomedia:EmotionalStates",
+        "@type": "ontomedia:EmotionalStateSet",
+        "ontomedia:hasState": [
+          {
+            "@id": "ontomedia:EmotionalStates.ProfessionalFocus",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Professional Focus",
+            "ontomedia:description": "Initial professional determination and escape from past",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.6,
+              "ontomedia:valence": 0.4,
+              "ontomedia:arousal": 0.7
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.ProfessionalAccuracy"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.CulturalWonder",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Cultural Wonder",
+            "ontomedia:description": "Initial fascination with new cultural environment",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.5,
+              "ontomedia:valence": 0.8,
+              "ontomedia:arousal": 0.6
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.CulturalAuthenticity"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.ProfessionalUncertainty",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Professional Uncertainty",
+            "ontomedia:description": "Growing doubts about professional adaptation",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.7,
+              "ontomedia:valence": 0.3,
+              "ontomedia:arousal": 0.8
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.ProfessionalAccuracy"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.CulturalFrustration",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Cultural Frustration",
+            "ontomedia:description": "Frustration with cultural barriers and misunderstandings",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.8,
+              "ontomedia:valence": 0.2,
+              "ontomedia:arousal": 0.9
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.CulturalAuthenticity"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.ProfessionalBreakthrough",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Professional Breakthrough",
+            "ontomedia:description": "Success in integrating medical practices",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.9,
+              "ontomedia:valence": 0.9,
+              "ontomedia:arousal": 0.8
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.ProfessionalAccuracy"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.RomanticDevelopment",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Romantic Development",
+            "ontomedia:description": "Growing romantic connection and cultural celebration",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.8,
+              "ontomedia:valence": 0.9,
+              "ontomedia:arousal": 0.7
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.CulturalAuthenticity"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.DeepDespair",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Deep Despair",
+            "ontomedia:description": "Emotional crisis and relationship breakdown",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.9,
+              "ontomedia:valence": 0.1,
+              "ontomedia:arousal": 0.9
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.CompleteFulfillment",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Complete Fulfillment",
+            "ontomedia:description": "Resolution of conflicts and establishment of new life",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.8,
+              "ontomedia:valence": 0.9,
+              "ontomedia:arousal": 0.6
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.CulturalAuthenticity"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.LastingFulfillment",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Lasting Fulfillment",
+            "ontomedia:description": "Final transformation and establishment of new life",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.7,
+              "ontomedia:valence": 0.9,
+              "ontomedia:arousal": 0.5
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.CulturalAuthenticity"
+            ]
+          }
+        ]
+      },
+      "ontomedia:hasProgression": {
+        "@id": "ontomedia:EmotionalProgression",
+        "@type": "ontomedia:EmotionalProgression",
+        "ontomedia:stages": [
+          {
+            "@id": "ontomedia:EmotionalStages.Initial",
+            "@type": "ontomedia:EmotionalStage",
+            "ontomedia:name": "Initial Adaptation",
+            "ontomedia:description": "Professional focus and cultural wonder",
+            "ontomedia:emotionalStates": [
+              {
+                "@id": "ontomedia:EmotionalStateReference.ProfessionalFocus",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalFocus"
+              },
+              {
+                "@id": "ontomedia:EmotionalStateReference.CulturalWonder",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.CulturalWonder"
+              }
+            ],
+            "ontomedia:emotionalArc": "Rising with wonder"
+          },
+          {
+            "@id": "ontomedia:EmotionalStages.Development",
+            "@type": "ontomedia:EmotionalStage",
+            "ontomedia:name": "Growing Connections",
+            "ontomedia:description": "Professional uncertainty and cultural frustration",
+            "ontomedia:emotionalStates": [
+              {
+                "@id": "ontomedia:EmotionalStateReference.ProfessionalUncertainty",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalUncertainty"
+              },
+              {
+                "@id": "ontomedia:EmotionalStateReference.CulturalFrustration",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.CulturalFrustration"
+              }
+            ],
+            "ontomedia:emotionalArc": "Falling with challenges"
+          },
+          {
+            "@id": "ontomedia:EmotionalStages.Transformation",
+            "@type": "ontomedia:EmotionalStage",
+            "ontomedia:name": "Personal Transformation",
+            "ontomedia:description": "Professional breakthrough and romantic development",
+            "ontomedia:emotionalStates": [
+              {
+                "@id": "ontomedia:EmotionalStateReference.ProfessionalBreakthrough",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalBreakthrough"
+              },
+              {
+                "@id": "ontomedia:EmotionalStateReference.RomanticDevelopment",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.RomanticDevelopment"
+              }
+            ],
+            "ontomedia:emotionalArc": "Rising with success"
+          },
+          {
+            "@id": "ontomedia:EmotionalStages.CompleteFulfillment",
+            "@type": "ontomedia:EmotionalStage",
+            "ontomedia:name": "Complete Fulfillment",
+            "ontomedia:description": "Deep despair to lasting fulfillment",
+            "ontomedia:emotionalStates": [
+              {
+                "@id": "ontomedia:EmotionalStateReference.DeepDespair",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.DeepDespair"
+              },
+              {
+                "@id": "ontomedia:EmotionalStateReference.CompleteFulfillment",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.CompleteFulfillment"
+              },
+              {
+                "@id": "ontomedia:EmotionalStateReference.LastingFulfillment",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.LastingFulfillment"
+              }
+            ],
+            "ontomedia:emotionalArc": "Falling then rising to fulfillment"
+          }
+        ]
+      },
+      "ontomedia:hasRequirements": {
+        "@id": "ontomedia:EmotionalRequirements",
+        "@type": "ontomedia:RequirementSet",
+        "ontomedia:requirements": {
+          "EmotionalResonance": {
+            "@id": "ontomedia:EmotionalRequirements.EmotionalResonance",
+            "@type": "ontomedia:Requirement",
+            "ontomedia:name": "Emotional Resonance",
+            "ontomedia:description": "Create authentic emotional connections and development",
+            "ontomedia:guidelines": [
+              "Show genuine emotional responses",
+              "Develop meaningful relationships",
+              "Maintain emotional authenticity",
+              "Create impactful moments"
+            ]
+          },
+          "EmotionalProgression": {
+            "@id": "ontomedia:EmotionalRequirements.EmotionalProgression",
+            "@type": "ontomedia:Requirement",
+            "ontomedia:name": "Emotional Progression",
+            "ontomedia:description": "Ensure natural and meaningful emotional development",
+            "ontomedia:guidelines": [
+              "Maintain clear emotional progression",
+              "Create meaningful emotional stakes",
+              "Develop emotional complexity",
+              "Ensure emotional payoffs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@id": "ontomedia:CulturalRegistry",
+      "@type": "ontomedia:Registry",
+      "ontomedia:name": "Cultural Registry",
+      "ontomedia:description": "Central registry for all cultural elements",
+      "ontomedia:hasProfessionalCulture": {
+        "@id": "ontomedia:ProfessionalCulture",
+        "@type": "ontomedia:CulturalSet",
+        "ontomedia:name": "Professional Culture",
+        "ontomedia:description": "Medical and professional cultural elements",
+        "ontomedia:requirements": {
+          "@id": "ontomedia:ProfessionalCultureRequirements",
+          "@type": "ontomedia:RequirementSet",
+            "ontomedia:guidelines": [
+            "Accurate medical terminology and procedures",
+            "Realistic hospital dynamics and hierarchy",
+            "Authentic professional relationships",
+            "Credible medical challenges and solutions"
+          ]
+        },
+        "ontomedia:elements": [
+          {
+            "@id": "ontomedia:MedicalTerminology",
+            "@type": "ontomedia:CulturalElement",
+            "ontomedia:name": "Medical Terminology",
+            "ontomedia:description": "Professional medical language and terms"
+          },
+          {
+            "@id": "ontomedia:HospitalDynamics",
+            "@type": "ontomedia:CulturalElement",
+            "ontomedia:name": "Hospital Dynamics",
+            "ontomedia:description": "Professional relationships and hierarchy"
+          }
+        ]
+      },
+      "ontomedia:hasIslandCulture": {
+        "@id": "ontomedia:IslandCulture",
+        "@type": "ontomedia:CulturalSet",
+        "ontomedia:name": "Island Culture",
+        "ontomedia:description": "Local island cultural elements",
+        "ontomedia:requirements": {
+          "@id": "ontomedia:IslandCultureRequirements",
+          "@type": "ontomedia:RequirementSet",
+            "ontomedia:guidelines": [
+            "Authentic local traditions and customs",
+            "Accurate representation of island life",
+            "Respectful portrayal of local beliefs",
+            "Natural integration of cultural elements"
+            ]
+        },
+        "ontomedia:elements": [
+          {
+            "@id": "ontomedia:LocalTraditions",
+            "@type": "ontomedia:CulturalElement",
+            "ontomedia:name": "Local Traditions",
+            "ontomedia:description": "Island customs and practices",
+            "ontomedia:details": [
+              "Hygge - Danish concept of coziness and contentment",
+              "Ærøskøbing's historic cobblestone streets and colorful houses",
+              "Ærø Bryghus - local brewery known for Ærø Pilsner",
+              "Traditional Danish pastries (wienerbrød) from local bakeries",
+              "Ærøskøbing's maritime heritage and fishing traditions",
+              "Ærøskøbing's famous Christmas market tradition",
+              "Local 'Ærøskøbing Æblemost' (apple juice) production",
+              "Traditional Danish 'fællesspisning' (community dining)",
+              "Ærøskøbing's historic windmill and its cultural significance",
+              "Local 'æbleskiver' (Danish pancake balls) tradition",
+              "Ærøskøbing's annual maritime festival"
+            ]
+          },
+          {
+            "@id": "ontomedia:IslandLife",
+            "@type": "ontomedia:CulturalElement",
+            "ontomedia:name": "Island Life",
+            "ontomedia:description": "Daily life and community dynamics"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "ontomedia:Content",
+      "@type": "ontomedia:ContentSet",
+      "ontomedia:hasCharacter": {
+        "@id": "ontomedia:CharacterContent",
+        "@type": "ontomedia:CharacterSet",
+        "ontomedia:main": {
+          "@id": "ontomedia:EllieContent",
+          "@type": "ontomedia:CharacterReference",
+          "ontomedia:references": "ontomedia:Ellie"
+        },
+        "ontomedia:supporting": {
+          "@id": "ontomedia:SupportingCharacters",
+          "@type": "ontomedia:CharacterSet",
+          "ontomedia:characters": [
+            {
+              "@id": "ontomedia:SarahContent",
+              "@type": "ontomedia:CharacterReference",
+              "ontomedia:references": "ontomedia:Sarah"
+            }
+          ]
+        }
+        },
+      "ontomedia:hasCultural": {
+        "@id": "ontomedia:CulturalContent",
+        "@type": "ontomedia:CulturalSet",
+        "ontomedia:elements": [
+          {
+            "@id": "ontomedia:ProfessionalCulture",
+            "@type": "ontomedia:CulturalElementReference",
+            "ontomedia:references": "ontomedia:ProfessionalCulture"
+          },
+          {
+            "@id": "ontomedia:IslandCulture",
+            "@type": "ontomedia:CulturalElementReference",
+            "ontomedia:references": "ontomedia:IslandCulture"
+          },
+          {
+            "@id": "ontomedia:TransitionCulture",
+            "@type": "ontomedia:CulturalElementReference",
+            "ontomedia:references": "ontomedia:TransitionCulture"
+          }
+        ],
+        "ontomedia:language": [
+          "Reference:ontomedia:CoreRequirements.StyleRequirements.LanguageRequirements"
+        ]
+      }
+    },
+    {
+      "@id": "ontomedia:RequirementsRegistry",
+      "@type": "ontomedia:Registry",
+      "ontomedia:name": "Requirements Registry",
+      "ontomedia:description": "Central registry for all requirements",
+      "ontomedia:hasRequirements": {
+      "@id": "ontomedia:CoreRequirements",
+      "@type": "ontomedia:RequirementSet",
+        "ontomedia:requirements": {
+          "ontomedia:StyleRequirements": {
+        "@id": "ontomedia:StyleRequirements",
+        "@type": "ontomedia:RequirementSet",
+        "ontomedia:requirements": {
+              "ontomedia:ProfessionalAccuracy": {
+                "@id": "ontomedia:ProfessionalAccuracy",
+            "@type": "ontomedia:Requirement",
+            "ontomedia:name": "Professional Accuracy",
+                "ontomedia:description": "Ensure accurate representation of medical practices and terminology"
+          },
+              "ontomedia:EmotionalResonance": {
+                "@id": "ontomedia:EmotionalResonance",
+            "@type": "ontomedia:Requirement",
+            "ontomedia:name": "Emotional Resonance",
+                "ontomedia:description": "Create authentic emotional connections and development"
+          },
+              "ontomedia:CulturalAuthenticity": {
+                "@id": "ontomedia:CulturalAuthenticity",
+            "@type": "ontomedia:Requirement",
+            "ontomedia:name": "Cultural Authenticity",
+                "ontomedia:description": "Maintain accurate representation of Danish and island culture"
+          }
+        }
+      },
+          "ontomedia:CharacterRequirements": {
+        "@id": "ontomedia:CharacterRequirements",
+        "@type": "ontomedia:RequirementSet",
+        "ontomedia:requirements": {
+              "ontomedia:AuthenticDevelopment": {
+                "@id": "ontomedia:AuthenticDevelopment",
+            "@type": "ontomedia:Requirement",
+            "ontomedia:name": "Authentic Development",
+                "ontomedia:description": "Ensure characters develop naturally and authentically"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "@id": "ontomedia:CreativeWork",
+      "@type": "ontomedia:Novel",
+      "ontomedia:hasMetadata": {
+        "@id": "ontomedia:Metadata",
+        "@type": "ontomedia:WorkMetadata",
+        "ontomedia:title": "The Doctor's Retreat",
+        "ontomedia:genre": "Contemporary Romance",
+        "ontomedia:heatLevel": "Moderate",
+        "ontomedia:wordCount": 90000,
+        "ontomedia:targetAudience": "25-45",
+        "ontomedia:marketingAngle": "Running away can lead to finding home",
+        "ontomedia:seriesPotential": "Ærø Romance Series",
+        "ontomedia:premise": "A Copenhagen doctor flees an unwanted proposal to find unexpected love and community on the Danish island of Ærø",
+        "ontomedia:version": "1.0",
+        "ontomedia:lastUpdated": "2024-03-20"
+      },
+      "ontomedia:hasRegistry": {
+        "@id": "ontomedia:Registry",
+        "@type": "ontomedia:RegistrySet",
+        "ontomedia:hasEmotionalRegistry": {
+          "@id": "ontomedia:EmotionalRegistry",
+          "@type": "ontomedia:Registry",
+          "ontomedia:hasStates": {
+            "@id": "ontomedia:EmotionalStates",
+            "@type": "ontomedia:EmotionalStateSet",
+            "ontomedia:hasState": [
+              {
+                "@id": "ontomedia:EmotionalStates.ProfessionalFocus",
+                "@type": "ontomedia:EmotionalState",
+                "ontomedia:name": "Professional Focus",
+                "ontomedia:description": "Initial professional determination and escape from past",
+                "ontomedia:emotionalMetrics": {
+                  "ontomedia:intensity": 0.6,
+                  "ontomedia:valence": 0.4,
+                  "ontomedia:arousal": 0.7
+                },
+                "ontomedia:requirements": [
+                  "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+                  "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.ProfessionalAccuracy"
+                ]
+              },
+              {
+                "@id": "ontomedia:EmotionalStates.CulturalWonder",
+                "@type": "ontomedia:EmotionalState",
+                "ontomedia:name": "Cultural Wonder",
+                "ontomedia:description": "Initial fascination with new cultural environment",
+                "ontomedia:emotionalMetrics": {
+                  "ontomedia:intensity": 0.5,
+                  "ontomedia:valence": 0.8,
+                  "ontomedia:arousal": 0.6
+                },
+                "ontomedia:requirements": [
+                  "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+                  "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.CulturalAuthenticity"
+                ]
+              }
+            ]
+          }
+        },
+        "ontomedia:hasProgression": {
+          "@id": "ontomedia:EmotionalProgression",
+          "@type": "ontomedia:EmotionalProgression",
+          "ontomedia:stages": [
+            {
+              "@id": "ontomedia:EmotionalStages.Initial",
+              "@type": "ontomedia:EmotionalStage",
+              "ontomedia:name": "Initial Adaptation",
+              "ontomedia:description": "Professional focus and cultural wonder",
+              "ontomedia:emotionalStates": [
+                {
+                  "@id": "ontomedia:EmotionalStateReference.ProfessionalFocus",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalFocus"
+                },
+                {
+                  "@id": "ontomedia:EmotionalStateReference.CulturalWonder",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.CulturalWonder"
+                }
+              ],
+              "ontomedia:emotionalArc": "Rising with wonder"
+            },
+            {
+              "@id": "ontomedia:EmotionalStages.Development",
+              "@type": "ontomedia:EmotionalStage",
+              "ontomedia:name": "Growing Connections",
+              "ontomedia:description": "Professional uncertainty and cultural frustration",
+              "ontomedia:emotionalStates": [
+                {
+                  "@id": "ontomedia:EmotionalStateReference.ProfessionalUncertainty",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalUncertainty"
+                },
+                {
+                  "@id": "ontomedia:EmotionalStateReference.CulturalFrustration",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.CulturalFrustration"
+                }
+              ],
+              "ontomedia:emotionalArc": "Falling with challenges"
+            },
+            {
+              "@id": "ontomedia:EmotionalStages.Transformation",
+              "@type": "ontomedia:EmotionalStage",
+              "ontomedia:name": "Personal Transformation",
+              "ontomedia:description": "Professional breakthrough and romantic development",
+              "ontomedia:emotionalStates": [
+                {
+                  "@id": "ontomedia:EmotionalStateReference.ProfessionalBreakthrough",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalBreakthrough"
+                },
+                {
+                  "@id": "ontomedia:EmotionalStateReference.RomanticDevelopment",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.RomanticDevelopment"
+                }
+              ],
+              "ontomedia:emotionalArc": "Rising with success"
+            },
+            {
+              "@id": "ontomedia:EmotionalStages.CompleteFulfillment",
+              "@type": "ontomedia:EmotionalStage",
+              "ontomedia:name": "Complete Fulfillment",
+              "ontomedia:description": "Deep despair to lasting fulfillment",
+              "ontomedia:emotionalStates": [
+                {
+                  "@id": "ontomedia:EmotionalStateReference.DeepDespair",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.DeepDespair"
+                },
+                {
+                  "@id": "ontomedia:EmotionalStateReference.CompleteFulfillment",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.CompleteFulfillment"
+                },
+                {
+                  "@id": "ontomedia:EmotionalStateReference.LastingFulfillment",
+                  "@type": "ontomedia:EmotionalStateReference",
+                  "ontomedia:references": "ontomedia:EmotionalStates.LastingFulfillment"
+                }
+              ],
+              "ontomedia:emotionalArc": "Falling then rising to fulfillment"
+            }
+          ]
+        },
+        "ontomedia:hasCharacterRegistry": {
+          "@id": "ontomedia:CharacterRegistry",
+          "@type": "ontomedia:Registry",
+          "ontomedia:hasMainCharacters": {
+            "@id": "ontomedia:MainCharacters",
+            "@type": "ontomedia:CharacterSet",
+            "ontomedia:characters": [
+              {
+                "@id": "ontomedia:Ellie",
+                "@type": "ontomedia:Character",
+                "ontomedia:name": "Dr. Eleanor 'Ellie' Hart",
+                "@type": "ontomedia:Character",
+                "ontomedia:role": "Protagonist",
+                "ontomedia:insecurities": [
+                  "Fear of emotional vulnerability",
+                  "Imposter syndrome in new cultural setting",
+                  "Worries about living up to mother's legacy",
+                  "Self-doubt about balancing professional and personal life"
+                ],
+                "ontomedia:flaws": [
+                  "Tendency to overwork as emotional avoidance",
+                  "Stubborn independence that pushes people away",
+                  "Perfectionism that causes unnecessary stress",
+                  "Difficulty asking for help",
+                  "Sometimes too direct in professional settings"
+                ],
+                "ontomedia:quirks": [
+                  "Organizes medical supplies when nervous",
+                  "Makes terrible coffee but insists on making it",
+                  "Sings off-key in the shower",
+                  "Forgets to eat when focused on work",
+                  "Carries her mother's pearl necklace but never wears it"
+                ],
+                "ontomedia:development": [
+                  "Professional facade cracks",
+                  "Personal conflict emerges",
+                  "Future uncertainty begins",
+                  "Cultural adaptation",
+                  "Professional growth",
+                  "Personal healing",
+                  "Family reconciliation",
+                  "Community leadership"
+                ],
+                "ontomedia:relationships": [
+                  "Tense with Sarah",
+                  "Respected by colleagues",
+                  "Connected to mother's memory",
+                  "Growing bond with Lily",
+                  "Professional respect from Dr. Jensen",
+                  "Community acceptance",
+                  "Mentorship of young doctor",
+                  "Friendship with local artist",
+                  "Reconnection with father"
+            ]
+          },
+              {
+                "@id": "ontomedia:Tom",
+                "@type": "ontomedia:Character",
+                "ontomedia:name": "Tom Nielsen",
+                "ontomedia:role": "Male Lead",
+                "ontomedia:backstory": {
+                  "ontomedia:marriage": {
+                    "ontomedia:date": "2010",
+                    "ontomedia:end_date": "2015",
+                    "ontomedia:circumstances": "Amicable separation due to Sarah's career ambitions",
+                    "ontomedia:impact": "Strengthened bond with Lily, developed protective instincts"
+                  },
+                  "ontomedia:business_development": {
+                    "ontomedia:start_date": "2012",
+                    "ontomedia:growth": "Gradual expansion from small B&B to successful island business",
+                    "ontomedia:challenges": "Balancing business growth with single parenthood"
+                  },
+                  "ontomedia:parenting_journey": {
+                    "ontomedia:key_moments": [
+                      "Primary caregiver since Lily was 3",
+                      "Developed strong father-daughter bond",
+                      "Established stable routine for Lily"
+            ]
+                  }
+          },
+                "ontomedia:development": [
+                  "Initial wariness of new relationships",
+                  "Growing trust in Ellie",
+                  "Balancing fatherhood and romance",
+              "Professional growth",
+                  "Emotional vulnerability",
+                  "Family integration"
+            ]
+          },
+              {
+                "@id": "ontomedia:Lily",
+                "@type": "ontomedia:Character",
+                "ontomedia:name": "Lily Nielsen",
+                "ontomedia:role": "Supporting Character",
+                "ontomedia:age": "12",
+                "ontomedia:school_schedule": {
+                  "ontomedia:spring": {
+                    "ontomedia:start_date": "March 1",
+                    "ontomedia:end_date": "June 15",
+                    "ontomedia:activities": [
+                      "Regular school attendance",
+                      "Art classes after school",
+                      "Weekend family time"
+                ]
+            },
+                  "ontomedia:summer": {
+                    "ontomedia:start_date": "June 16",
+                    "ontomedia:end_date": "August 15",
+                    "ontomedia:activities": [
+                      "Summer art program",
+                      "Family business help",
+                      "Island activities"
+              ]
+          }
+        },
+                "ontomedia:development": [
+                  "Initial artistic connection with Ellie",
+                  "Growing trust in new family dynamic",
+                  "Balancing school and family life",
+                  "Artistic growth",
+                  "Family integration",
+                  "Community belonging"
+                  ]
+                }
+              ]
+      },
+          "ontomedia:hasSupportingCharacters": {
+            "@id": "ontomedia:SupportingCharacters",
+            "Initial professional tension",
+            "Growing personal conflict",
+            "Cultural misunderstanding",
+            "Professional rivalry",
+            "Personal growth through conflict"
+          ]
+        },
+        {
+          "@id": "ontomedia:EllieDrJensenRelationship",
+          "@type": "ontomedia:Relationship",
+          "ontomedia:participants": [
+            {
+              "@id": "ontomedia:Ellie",
+              "@type": "ontomedia:Character"
+            },
+            {
+              "@id": "ontomedia:DrJensen",
+              "@type": "ontomedia:Character"
+            }
+          ],
+          "ontomedia:type": "mentorship",
+          "ontomedia:description": "Professional mentorship and cultural guidance",
+          "ontomedia:development": [
+            "Initial professional respect",
+            "Growing cultural understanding",
+            "Mentorship development",
+            "Community integration",
+            "Professional partnership"
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "ontomedia:Development",
+      "@type": "ontomedia:DevelopmentRegistry",
+      "@id": "ontomedia:CharacterDevelopment",
+      "@type": "ontomedia:CharacterDevelopment",
+      "ontomedia:stages": [
+        {
+          "@id": "ontomedia:CharacterStages.Initial",
+          "@type": "ontomedia:CharacterStage",
+          "@id": "ontomedia:CharacterStages.Initial",
+          "@type": "ontomedia:CharacterStage",
+          "ontomedia:description": "Professional focus and cultural wonder",
+          "@id": "ontomedia:EmotionalStateReference.Initial",
+          "@type": "ontomedia:EmotionalStateReference",
+          "ontomedia:references": "ontomedia:EmotionalRegistry.ontomedia:hasStates.ontomedia:hasState[0]"
+        },
+        {
+          "@id": "ontomedia:CharacterStages.Development",
+          "@type": "ontomedia:CharacterStage",
+          "@id": "ontomedia:CharacterStages.Development",
+          "@type": "ontomedia:CharacterStage",
+          "ontomedia:description": "Professional uncertainty and cultural frustration",
+          "@id": "ontomedia:EmotionalStateReference.Development",
+          "@type": "ontomedia:EmotionalStateReference",
+          "ontomedia:references": "ontomedia:EmotionalRegistry.ontomedia:hasStates.ontomedia:hasState[2]"
+        },
+        {
+          "@id": "ontomedia:CharacterStages.Transformation",
+          "@type": "ontomedia:CharacterStage",
+          "@id": "ontomedia:CharacterStages.Transformation",
+          "@type": "ontomedia:CharacterStage",
+          "ontomedia:description": "Professional breakthrough and romantic development",
+          "@id": "ontomedia:EmotionalStateReference.Transformation",
+          "@type": "ontomedia:EmotionalStateReference",
+          "ontomedia:references": "ontomedia:EmotionalRegistry.ontomedia:hasStates.ontomedia:hasState[4]"
+        },
+        {
+          "@id": "ontomedia:CharacterStages.CompleteFulfillment",
+          "@type": "ontomedia:CharacterStage",
+          "@id": "ontomedia:CharacterStages.CompleteFulfillment",
+          "@type": "ontomedia:CharacterStage",
+          "ontomedia:description": "Deep despair to lasting fulfillment",
+          "@id": "ontomedia:EmotionalStateReference.CompleteFulfillment",
+          "@type": "ontomedia:EmotionalStateReference",
+          "ontomedia:references": "ontomedia:EmotionalRegistry.ontomedia:hasStates.ontomedia:hasState[6]"
+        }
+      ]
+    },
+    {
+      "@id": "ontomedia:EmotionalProgression",
+      "@type": "ontomedia:EmotionalProgression",
+      "ontomedia:stages": [
+        {
+          "@id": "ontomedia:EmotionalStages.Initial",
+          "@type": "ontomedia:EmotionalStage",
+          "ontomedia:name": "Initial Adaptation",
+          "ontomedia:description": "Professional focus and cultural wonder",
+          "ontomedia:emotionalStates": [
+            {
+              "@id": "ontomedia:EmotionalStateReference.ProfessionalFocus",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalFocus"
+            },
+            {
+              "@id": "ontomedia:EmotionalStateReference.CulturalWonder",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.CulturalWonder"
+            }
+          ],
+          "ontomedia:emotionalArc": "Rising with wonder"
+        },
+        {
+          "@id": "ontomedia:EmotionalStages.Development",
+          "@type": "ontomedia:EmotionalStage",
+          "ontomedia:name": "Growing Connections",
+          "ontomedia:description": "Professional uncertainty and cultural frustration",
+          "ontomedia:emotionalStates": [
+            {
+              "@id": "ontomedia:EmotionalStateReference.ProfessionalUncertainty",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalUncertainty"
+            },
+            {
+              "@id": "ontomedia:EmotionalStateReference.CulturalFrustration",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.CulturalFrustration"
+            }
+          ],
+          "ontomedia:emotionalArc": "Falling with challenges"
+        },
+        {
+          "@id": "ontomedia:EmotionalStages.Transformation",
+          "@type": "ontomedia:EmotionalStage",
+          "ontomedia:name": "Personal Transformation",
+          "ontomedia:description": "Professional breakthrough and romantic development",
+          "ontomedia:emotionalStates": [
+            {
+              "@id": "ontomedia:EmotionalStateReference.ProfessionalBreakthrough",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalBreakthrough"
+            },
+            {
+              "@id": "ontomedia:EmotionalStateReference.RomanticDevelopment",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.RomanticDevelopment"
+            }
+          ],
+          "ontomedia:emotionalArc": "Rising with success"
+        },
+        {
+          "@id": "ontomedia:EmotionalStages.CompleteFulfillment",
+          "@type": "ontomedia:EmotionalStage",
+          "ontomedia:name": "Complete Fulfillment",
+          "ontomedia:description": "Deep despair to lasting fulfillment",
+          "ontomedia:emotionalStates": [
+            {
+              "@id": "ontomedia:EmotionalStateReference.DeepDespair",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.DeepDespair"
+            },
+            {
+              "@id": "ontomedia:EmotionalStateReference.CompleteFulfillment",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.CompleteFulfillment"
+            },
+            {
+              "@id": "ontomedia:EmotionalStateReference.LastingFulfillment",
+              "@type": "ontomedia:EmotionalStateReference",
+              "ontomedia:references": "ontomedia:EmotionalStates.LastingFulfillment"
+            }
+          ],
+          "ontomedia:emotionalArc": "Falling then rising to fulfillment"
+        }
+      ]
+    },
+    {
+      "@id": "ontomedia:EmotionalStateRegistry",
+      "@type": "ontomedia:Registry",
+      "ontomedia:name": "Emotional State Registry",
+      "ontomedia:description": "Central registry for all emotional states",
+      "ontomedia:hasStates": {
+        "@id": "ontomedia:EmotionalStates",
+        "@type": "ontomedia:EmotionalStateSet",
+        "ontomedia:hasState": [
+          {
+            "@id": "ontomedia:EmotionalStates.ProfessionalFocus",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Professional Focus",
+            "ontomedia:description": "Initial professional determination and escape from past",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.6,
+              "ontomedia:valence": 0.4,
+              "ontomedia:arousal": 0.7
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.ProfessionalAccuracy"
+            ]
+          },
+          {
+            "@id": "ontomedia:EmotionalStates.CulturalWonder",
+            "@type": "ontomedia:EmotionalState",
+            "ontomedia:name": "Cultural Wonder",
+            "ontomedia:description": "Initial fascination with new cultural environment",
+            "ontomedia:emotionalMetrics": {
+              "ontomedia:intensity": 0.5,
+              "ontomedia:valence": 0.8,
+              "ontomedia:arousal": 0.6
+            },
+            "ontomedia:requirements": [
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.EmotionalResonance",
+              "Reference:ontomedia:RequirementsRegistry.CoreRequirements.StyleRequirements.CulturalAuthenticity"
+            ]
+          }
+        ]
+      },
+      "ontomedia:hasProgression": {
+        "@id": "ontomedia:EmotionalProgression",
+        "@type": "ontomedia:EmotionalProgression",
+        "ontomedia:stages": [
+          {
+            "@id": "ontomedia:EmotionalStages.Initial",
+            "@type": "ontomedia:EmotionalStage",
+            "ontomedia:name": "Initial Adaptation",
+            "ontomedia:description": "Professional focus and cultural wonder",
+            "ontomedia:emotionalStates": [
+              {
+                "@id": "ontomedia:EmotionalStateReference.ProfessionalFocus",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.ProfessionalFocus"
+          },
+          {
+                "@id": "ontomedia:EmotionalStateReference.CulturalWonder",
+                "@type": "ontomedia:EmotionalStateReference",
+                "ontomedia:references": "ontomedia:EmotionalStates.CulturalWonder"
+              }
+            ],
+            "ontomedia:emotionalArc": "Rising with wonder"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "ontomedia:ChapterRegistry",
+      "@type": "ontomedia:Registry",
+      "ontomedia:name": "Chapter Registry",
+      "ontomedia:description": "Central registry for all chapters and their structure",
+      "ontomedia:hasChapters": {
+        "@id": "ontomedia:Chapters"
+      }
+    },
+    {
+      "@id": "ontomedia:SceneRegistry",
+      "@type": "ontomedia:Registry",
+      "ontomedia:name": "Scene Registry",
+      "ontomedia:description": "Central registry for all scenes",
+      "ontomedia:hasSceneTypes": {
+        "@id": "ontomedia:SceneTypes",
+        "@type": "ontomedia:SceneTypeSet",
+        "ontomedia:references": "ontomedia:Documentation.ontomedia:hasSceneTypes.ontomedia:examples.ontomedia:sceneTypes"
+      }
+    }
+  ]
+} 

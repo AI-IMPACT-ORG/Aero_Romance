@@ -1,0 +1,62 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:style",
+      "@type": "ontomedia:Style",
+      "ontomedia:narrative_voice": {
+        "@id": "ontomedia:narrative_voice",
+        "@type": "ontomedia:NarrativeVoice",
+        "ontomedia:primary_focus": "ontomedia:katrine",
+        "ontomedia:perspective": "third_person_limited",
+        "ontomedia:emotional_distance": "close",
+        "ontomedia:voice_characteristics": [
+          "medical_precision",
+          "dry_humor",
+          "cultural_observation"
+        ]
+      },
+      "ontomedia:writing_techniques": [
+        {
+          "@id": "ontomedia:nordic_weather_wit",
+          "@type": "ontomedia:WritingTechnique",
+          "ontomedia:name": "Nordic Weather Wit",
+          "ontomedia:description": "Dry observations about weather patterns and their impact on island life",
+          "ontomedia:example": "The sea mist rolled in like a particularly persistent patient - you could ignore it, but it would keep coming back until you dealt with it properly."
+        },
+        {
+          "@id": "ontomedia:deadpan_observations",
+          "@type": "ontomedia:WritingTechnique",
+          "ontomedia:name": "Deadpan Observations",
+          "ontomedia:description": "Understated humor about cultural differences and medical situations",
+          "ontomedia:example": "The island's approach to time was like a patient's recovery - it happened when it happened, and no amount of medical precision would change that."
+        }
+      ],
+      "ontomedia:style_rules": [
+        {
+          "@id": "ontomedia:style_rule_1",
+          "@type": "ontomedia:StyleRule",
+          "ontomedia:name": "Sensory Playfulness",
+          "ontomedia:description": "Engage senses with light, humorous descriptions",
+          "ontomedia:example": "The clinic smelled of antiseptic and freshly baked pastries - a uniquely Ærø combination of medical efficiency and island hospitality."
+        },
+        {
+          "@id": "ontomedia:style_rule_2",
+          "@type": "ontomedia:StyleRule",
+          "ontomedia:name": "Medical Wit",
+          "ontomedia:description": "Balance medical precision with gentle humor",
+          "ontomedia:example": "The patient's chart was as organized as a Danish pastry - layers of information, each more complex than the last, but somehow making perfect sense in the end."
+        }
+      ]
+    }
+  ]
+} 

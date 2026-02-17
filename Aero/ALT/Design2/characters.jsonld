@@ -1,0 +1,825 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:character_cast",
+      "@type": "ontomedia:CharacterCast",
+      "ontomedia:has_protagonist": {
+        "@id": "ontomedia:katrine",
+        "@type": "ontomedia:Character",
+        "ontomedia:name": "Dr. Katrine Christiansen",
+        "ontomedia:role": "protagonist",
+        "ontomedia:age": 28,
+        "ontomedia:description": "A dedicated doctor seeking new purpose, though sometimes too stubborn to ask for help",
+        "ontomedia:background": "Urban doctor from Copenhagen, perfectionist tendencies from medical school. Spent summers on Ærø with her grandmother until age 12, when her grandmother moved to Copenhagen. The island holds childhood memories of carefree days and her grandmother's stories. Recently completed her medical residency and is at a crossroads in her career.",
+        "ontomedia:flaws": [
+          "Tends to overthink decisions",
+          "Sometimes too independent for her own good",
+          "Struggles to admit when she's wrong"
+        ],
+        "ontomedia:has_arc": {
+          "@id": "ontomedia:katrine_arc",
+          "@type": "ontomedia:CharacterArc",
+          "ontomedia:name": "Professional and Personal Transformation",
+          "ontomedia:stages": [
+            {
+              "@id": "ontomedia:katrine_initial",
+              "@type": "ontomedia:CharacterStage",
+              "ontomedia:name": "Initial State",
+              "ontomedia:description": "Urban doctor facing burnout",
+              "ontomedia:sequence": 1
+            },
+            {
+              "@id": "ontomedia:katrine_transition",
+              "@type": "ontomedia:CharacterStage",
+              "ontomedia:name": "Transition",
+              "ontomedia:description": "Adapting to island life",
+              "ontomedia:sequence": 2
+            },
+            {
+              "@id": "ontomedia:katrine_transformed",
+              "@type": "ontomedia:CharacterStage",
+              "ontomedia:name": "Transformed",
+              "ontomedia:description": "Integrated into island community",
+              "ontomedia:sequence": 3
+            }
+          ]
+        },
+        "ontomedia:has_special_object": [
+          {
+            "@id": "ontomedia:grandmother_necklace",
+            "@type": "ontomedia:SpecialObject",
+            "ontomedia:name": "Grandmother's Necklace",
+            "ontomedia:description": "A delicate silver necklace with a small Ærø charm",
+            "ontomedia:significance": "Connection to Katrine's grandmother and her island heritage",
+            "ontomedia:origin": "Gift from grandmother before her death",
+            "ontomedia:emotional_value": "High",
+            "ontomedia:triggers": ["ontomedia:katrine_initial", "ontomedia:katrine_transition"]
+          }
+        ],
+        "ontomedia:has_relationship": [
+          {
+            "@id": "ontomedia:katrine_mads_relationship",
+            "@type": "ontomedia:CharacterRelationship",
+            "ontomedia:character": "ontomedia:mads",
+            "ontomedia:relationship_type": "romantic_interest",
+            "ontomedia:development": "developing"
+          },
+          {
+            "@id": "ontomedia:katrine_lily_relationship",
+            "@type": "ontomedia:CharacterRelationship",
+            "ontomedia:character": "ontomedia:lily",
+            "ontomedia:relationship_type": "friendship",
+            "ontomedia:development": "developing"
+          },
+          {
+            "@id": "ontomedia:katrine_marie_relationship",
+            "@type": "ontomedia:CharacterRelationship",
+            "ontomedia:character": "ontomedia:marie",
+            "ontomedia:type": "mentorship",
+            "ontomedia:development": "developing"
+          },
+          {
+            "@id": "ontomedia:katrine_sarah_relationship",
+            "@type": "ontomedia:CharacterRelationship",
+            "ontomedia:character": "ontomedia:sarah",
+            "ontomedia:type": "rivalry",
+            "ontomedia:development": "developing"
+          },
+          {
+            "@id": "ontomedia:katrine_marcus_relationship",
+            "@type": "ontomedia:CharacterRelationship",
+            "ontomedia:character": "ontomedia:marcus",
+            "ontomedia:type": "former_partner",
+            "ontomedia:development": "conflict"
+          }
+        ]
+      },
+      "ontomedia:has_supporting_cast": [
+        {
+          "@id": "ontomedia:mads",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Mads O'Sullivan",
+          "ontomedia:role": "supporting",
+          "ontomedia:age": 29,
+          "ontomedia:description": "Local doctor with deep community roots, though sometimes too cautious about change",
+          "ontomedia:background": "Born and raised on Ærø, returned to the island after medical school to take over the local practice. Carries the weight of being the island's only doctor. Recently completed his specialization in general medicine and is considering expanding the clinic's services.",
+          "ontomedia:flaws": [
+            "Overly protective of his patients",
+            "Sometimes too traditional in his approach",
+            "Hesitant to trust new methods"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:mads_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Opening Up",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:mads_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Reserved local doctor",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:mads_changing",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Changing",
+                "ontomedia:description": "Opening up to new possibilities",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:mads_transformed",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Transformed",
+                "ontomedia:description": "Embracing change and connection",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:mads_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "romantic_interest",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:mads_lily_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:lily",
+              "ontomedia:type": "sibling",
+              "ontomedia:development": "established"
+            },
+            {
+              "@id": "ontomedia:mads_sarah_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:sarah",
+              "ontomedia:type": "romantic_interest",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:mads_marie_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:marie",
+              "ontomedia:type": "community_connection",
+              "ontomedia:development": "established"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:lily",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Lily O'Sullivan",
+          "ontomedia:role": "supporting",
+          "ontomedia:description": "Mads's sister, an artist connected to island culture, though sometimes too idealistic",
+          "ontomedia:background": "Local artist and community member, struggles with commercial success",
+          "ontomedia:flaws": [
+            "Can be overly dramatic",
+            "Sometimes impractical about money",
+            "Tends to avoid conflict"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:lily_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Artistic Journey",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:lily_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Established local artist",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:lily_growing",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Growing",
+                "ontomedia:description": "Expanding artistic vision",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:lily_established",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Established",
+                "ontomedia:description": "Recognized island artist",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:lily_mads_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:mads",
+              "ontomedia:type": "sibling",
+              "ontomedia:development": "established"
+            },
+            {
+              "@id": "ontomedia:lily_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "friendship",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:lily_sarah_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:sarah",
+              "ontomedia:type": "parent_child",
+              "ontomedia:development": "established"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:marie",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Marie Nielsen",
+          "ontomedia:role": "supporting",
+          "ontomedia:description": "Elderly island resident and community matriarch, though sometimes too set in her ways",
+          "ontomedia:background": "Lifelong Ærø resident, carries the weight of tradition",
+          "ontomedia:flaws": [
+            "Can be stubborn about traditions",
+            "Sometimes too direct with advice",
+            "Reluctant to accept modern changes"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:marie_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Community Wisdom",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:marie_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Community matriarch",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:marie_mentoring",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Mentoring",
+                "ontomedia:description": "Guiding Katrine's integration",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:marie_resolution",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Resolution",
+                "ontomedia:description": "Passing on island wisdom",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:marie_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "mentorship",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:marie_mads_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:mads",
+              "ontomedia:type": "community_connection",
+              "ontomedia:development": "established"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:sarah",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Sofie Nielsen",
+          "ontomedia:role": "supporting",
+          "ontomedia:age": 28,
+          "ontomedia:description": "Mads's high school sweetheart, now a widowed island resident with rekindled feelings for him, though sometimes too eager to please",
+          "ontomedia:background": "Grew up on Ærø, was Mads's girlfriend throughout high school. They broke up when she married a local fisherman at 22, who was lost at sea three years ago. Has been raising their daughter Lily while running their family home. Recently started considering moving forward with her life, though still deeply connected to her husband's memory. Her reconnection with Mads has stirred old feelings she thought were long buried.",
+          "ontomedia:flaws": [
+            "Can be overly competitive",
+            "Sometimes too focused on appearances",
+            "Struggles with letting go of the past",
+            "Tends to romanticize her high school relationship with Mads"
+          ],
+          "ontomedia:redeeming_qualities": [
+            "Excellent cook and hostess",
+            "Deeply caring mother",
+            "Active in community charity work",
+            "Genuine love for the island and its traditions"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:sarah_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Moving Forward",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:sarah_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Widowed mother seeking new connection, reconnecting with her past",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:sarah_conflict",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Conflict",
+                "ontomedia:description": "Competing for Mads's attention while dealing with past feelings",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:sarah_resolution",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Resolution",
+                "ontomedia:description": "Finding her own path forward, making peace with the past",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:sarah_mads_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:mads",
+              "ontomedia:type": "romantic_interest",
+              "ontomedia:development": "developing",
+              "ontomedia:history": "High school sweethearts, reconnecting after years apart"
+            },
+            {
+              "@id": "ontomedia:sarah_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "rivalry",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:sarah_lily_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:lily",
+              "ontomedia:type": "parent_child",
+              "ontomedia:development": "established"
+            },
+            {
+              "@id": "ontomedia:sarah_marie_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:marie",
+              "ontomedia:type": "community_connection",
+              "ontomedia:development": "established"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:lars",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Lars Jensen",
+          "ontomedia:role": "supporting",
+          "ontomedia:description": "Local ferry captain and weather expert, though sometimes too set in his routines",
+          "ontomedia:background": "Third-generation ferry captain, knows every weather pattern",
+          "ontomedia:flaws": [
+            "Can be overly superstitious",
+            "Sometimes too rigid with schedules",
+            "Reluctant to try new technology"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:lars_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Community Anchor",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:lars_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Reliable ferry captain",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:lars_mentor",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Mentor",
+                "ontomedia:description": "Teaching Katrine about island life",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:lars_resolution",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Resolution",
+                "ontomedia:description": "Passing on maritime knowledge",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:lars_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "mentorship",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:lars_mads_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:mads",
+              "ontomedia:type": "friendship",
+              "ontomedia:development": "established"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:anna",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Anna Pedersen",
+          "ontomedia:role": "supporting",
+          "ontomedia:description": "Local café owner and gossip hub, though sometimes too involved in others' lives",
+          "ontomedia:background": "Former Copenhagen resident who moved to Ærø fifteen years ago after a difficult divorce. Found peace and purpose in the island's slower pace of life. Opened her café eight years ago, which has become a community hub.",
+          "ontomedia:flaws": [
+            "Can be too nosy",
+            "Sometimes spreads gossip too quickly",
+            "Tends to meddle in relationships"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:anna_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Community Connector",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:anna_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Café owner and confidante",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:anna_support",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Support",
+                "ontomedia:description": "Helping Katrine navigate island life",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:anna_resolution",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Resolution",
+                "ontomedia:description": "Becoming a trusted friend",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:anna_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "friendship",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:anna_lily_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:lily",
+              "ontomedia:type": "friendship",
+              "ontomedia:development": "established"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:erik",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Erik Nielsen",
+          "ontomedia:role": "supporting",
+          "ontomedia:description": "Marie's grandson, medical student, though sometimes too eager to prove himself",
+          "ontomedia:background": "Studying medicine in Copenhagen, visits regularly",
+          "ontomedia:flaws": [
+            "Can be overly ambitious",
+            "Sometimes too eager to show off",
+            "Tends to overcommit"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:erik_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Medical Journey",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:erik_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Medical student seeking guidance",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:erik_learning",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Learning",
+                "ontomedia:description": "Learning from Katrine and Mads",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:erik_resolution",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Resolution",
+                "ontomedia:description": "Finding his path in medicine",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:erik_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "mentorship",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:erik_mads_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:mads",
+              "ontomedia:type": "mentorship",
+              "ontomedia:development": "developing"
+            },
+            {
+              "@id": "ontomedia:erik_marie_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:marie",
+              "ontomedia:type": "family",
+              "ontomedia:development": "established"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:grandmother",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Ingrid Christiansen",
+          "ontomedia:role": "supporting",
+          "ontomedia:status": "deceased",
+          "ontomedia:description": "Katrine's grandmother, former Ærø resident",
+          "ontomedia:background": "Born and raised on Ærø, moved to Copenhagen after marriage",
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:grandmother_arc",
+            "@type": "ontomedia:CharacterArc",
+            "@name": "Legacy",
+            "@stages": [
+              {
+                "@id": "ontomedia:grandmother_initial",
+                "@type": "ontomedia:CharacterStage",
+                "@name": "Island Life",
+                "@description": "Young woman on Ærø",
+                "@sequence": 1
+              },
+              {
+                "@id": "ontomedia:grandmother_copenhagen",
+                "@type": "ontomedia:CharacterStage",
+                "@name": "City Life",
+                "@description": "Married life in Copenhagen",
+                "@sequence": 2
+              },
+              {
+                "@id": "ontomedia:grandmother_legacy",
+                "@type": "ontomedia:CharacterStage",
+                "@name": "Legacy",
+                "@description": "Passing on island heritage to Katrine",
+                "@sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:grandmother_marie_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:marie",
+              "ontomedia:type": "childhood_friend",
+              "ontomedia:development": "historical"
+            },
+            {
+              "@id": "ontomedia:grandmother_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "family",
+              "ontomedia:development": "legacy"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:jakob",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Jakob Møller",
+          "ontomedia:role": "supporting",
+          "ontomedia:age": 65,
+          "ontomedia:description": "Island historian and jazz musician who knew Katrine's grandmother well, though sometimes too lost in the past",
+          "ontomedia:background": "Former Copenhagen jazz club owner who moved to Ærø thirty years ago. Started the island's jazz festival and maintains the local archives. Was close friends with Katrine's grandmother and helped her with her medical practice. Knows many island secrets and family histories.",
+          "ontomedia:flaws": [
+            "Can be overly nostalgic",
+            "Sometimes too focused on preserving the past",
+            "Tends to ramble when telling stories"
+          ],
+          "ontomedia:redeeming_qualities": [
+            "Deep knowledge of island history",
+            "Excellent jazz pianist",
+            "Genuine care for preserving island heritage",
+            "Helps connect people through music and stories"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:jakob_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Passing the Torch",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:jakob_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Island historian and festival organizer",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:jakob_mentoring",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Mentoring",
+                "ontomedia:description": "Helping Katrine discover her grandmother's legacy",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:jakob_resolution",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Resolution",
+                "ontomedia:description": "Ensuring island traditions continue",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:jakob_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "ontomedia:type": "mentorship",
+              "ontomedia:development": "developing",
+              "ontomedia:history": "Knew her grandmother well"
+            },
+            {
+              "@id": "ontomedia:jakob_marie_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:marie",
+              "ontomedia:type": "friendship",
+              "ontomedia:development": "established",
+              "ontomedia:history": "Long-time friends and collaborators"
+            },
+            {
+              "@id": "ontomedia:jakob_mads_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:mads",
+              "ontomedia:type": "mentorship",
+              "ontomedia:development": "established",
+              "ontomedia:history": "Helped Mads learn about island medicine"
+            },
+            {
+              "@id": "ontomedia:jakob_anna_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:anna",
+              "ontomedia:type": "friendship",
+              "ontomedia:development": "established",
+              "ontomedia:history": "Regular jazz sessions at the café"
+            },
+            {
+              "@id": "ontomedia:jakob_grandmother_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:grandmother",
+              "ontomedia:type": "friendship",
+              "ontomedia:development": "historical",
+              "ontomedia:history": "Close friends and collaborators in island medicine"
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:sofia_andersen",
+          "@type": "ontomedia:Character",
+          "ontomedia:name": "Dr. Sofia Andersen",
+          "ontomedia:role": "supporting",
+          "ontomedia:age": 29,
+          "ontomedia:description": "Traditional island doctor with deep roots in the community, though sometimes too rigid in her beliefs",
+          "ontomedia:background": "Born and raised on Ærø, childhood friend of Mads. Left for medical school in Copenhagen but maintained strong ties to the island. Recently returned to take over her father's practice after his retirement. Known for her traditional approach to medicine and deep understanding of island healing practices.",
+          "ontomedia:flaws": [
+            "Overly protective of island traditions",
+            "Sometimes too rigid in her medical approach",
+            "Struggles to accept new methods"
+          ],
+          "ontomedia:has_arc": {
+            "@id": "ontomedia:sofia_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:name": "Professional Growth",
+            "ontomedia:stages": [
+              {
+                "@id": "ontomedia:sofia_initial",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Initial State",
+                "ontomedia:description": "Traditional island doctor",
+                "ontomedia:sequence": 1
+              },
+              {
+                "@id": "ontomedia:sofia_changing",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Changing",
+                "ontomedia:description": "Learning to adapt",
+                "ontomedia:sequence": 2
+              },
+              {
+                "@id": "ontomedia:sofia_transformed",
+                "@type": "ontomedia:CharacterStage",
+                "ontomedia:name": "Transformed",
+                "ontomedia:description": "Embracing balanced approach",
+                "ontomedia:sequence": 3
+              }
+            ]
+          },
+          "ontomedia:has_relationship": [
+            {
+              "@id": "ontomedia:sofia_mads_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:mads",
+              "@type": "childhood_friend",
+              "ontomedia:development": "complicated"
+            },
+            {
+              "@id": "ontomedia:sofia_katrine_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:katrine",
+              "@type": "professional_rival",
+              "ontomedia:development": "conflict"
+            },
+            {
+              "@id": "ontomedia:sofia_marie_relationship",
+              "@type": "ontomedia:CharacterRelationship",
+              "ontomedia:character": "ontomedia:marie",
+              "@type": "mentorship",
+              "ontomedia:development": "established"
+            }
+          ]
+        }
+      ],
+      "ontomedia:has_antagonist": {
+        "@id": "ontomedia:marcus",
+        "@type": "ontomedia:Character",
+        "ontomedia:name": "Dr. Marcus Nielsen",
+        "ontomedia:role": "antagonist",
+        "ontomedia:description": "Katrine's ex-partner who proposes marriage, a successful but overly ambitious doctor",
+        "ontomedia:background": "Copenhagen medical professional, rising star in cardiology",
+        "ontomedia:flaws": [
+          "Overly ambitious",
+          "Controlling in relationships",
+          "Too focused on status"
+        ],
+        "ontomedia:redeeming_qualities": [
+          "Excellent doctor who genuinely cares for his patients",
+          "Hardworking and dedicated to his career",
+          "Good with children and elderly patients"
+        ],
+        "ontomedia:has_arc": {
+          "@id": "ontomedia:marcus_arc",
+          "@type": "ontomedia:CharacterArc",
+          "ontomedia:name": "Conflict and Resolution",
+          "ontomedia:stages": [
+            {
+              "@id": "ontomedia:marcus_initial",
+              "@type": "ontomedia:CharacterStage",
+              "ontomedia:name": "Initial State",
+              "ontomedia:description": "Successful doctor seeking stability",
+              "ontomedia:sequence": 1
+            },
+            {
+              "@id": "ontomedia:marcus_conflict",
+              "@type": "ontomedia:CharacterStage",
+              "ontomedia:name": "Conflict",
+              "ontomedia:description": "Struggling with loss of control",
+              "ontomedia:sequence": 2
+            },
+            {
+              "@id": "ontomedia:marcus_resolution",
+              "@type": "ontomedia:CharacterStage",
+              "ontomedia:name": "Resolution",
+              "ontomedia:description": "Learning to respect others' choices",
+              "ontomedia:sequence": 3
+            }
+          ]
+        },
+        "ontomedia:has_relationship": [
+          {
+            "@id": "ontomedia:marcus_katrine_relationship",
+            "@type": "ontomedia:CharacterRelationship",
+            "ontomedia:character": "ontomedia:katrine",
+            "@type": "former_partner",
+            "ontomedia:development": "conflict"
+          }
+        ]
+      }
+    }
+  ]
+} 

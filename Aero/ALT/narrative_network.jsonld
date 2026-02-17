@@ -1,0 +1,2229 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:narrative_network",
+      "@type": "ontomedia:NarrativeNetwork",
+      "ontomedia:has_act": {
+        "@id": "ontomedia:acts",
+        "@type": "ontomedia:Acts",
+        "ontomedia:has_act": [
+          {
+            "@id": "ontomedia:act_1",
+            "@type": "ontomedia:Act",
+            "ontomedia:name": "The Escape",
+            "ontomedia:description": "Ellie's journey from Copenhagen to Ærø",
+            "ontomedia:season": "Spring",
+            "ontomedia:timeline": {
+              "ontomedia:start_date": "March 15",
+              "ontomedia:end_date": "April 15",
+              "ontomedia:key_events": [
+                {
+                  "ontomedia:date": "March 15",
+                  "ontomedia:event": "Unwanted proposal in Copenhagen"
+                },
+                {
+                  "ontomedia:date": "March 20",
+                  "ontomedia:event": "Decision to leave for Ærø"
+                },
+                {
+                  "ontomedia:date": "April 1",
+                  "ontomedia:event": "Arrival on Ærø"
+                },
+                {
+                  "ontomedia:date": "April 15",
+                  "ontomedia:event": "Medical practice observation begins"
+                }
+              ]
+            },
+            "ontomedia:has_chapter": {
+              "@id": "ontomedia:act_1_chapters",
+              "@type": "ontomedia:Chapters",
+              "ontomedia:has_chapter": [
+                {
+                  "@id": "ontomedia:chapter_1",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 1,
+                  "ontomedia:name": "The Proposal",
+                  "ontomedia:description": "Ellie faces an unwanted proposal",
+                  "ontomedia:has_scene": [
+                    "Hospital morning rounds",
+                    "Professional crisis",
+                    "Family dinner pressure",
+                    "Personal conflict",
+                    "Cultural pressure",
+                    "Late night reflection",
+                    "Decision point",
+                    "Career crossroads"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Hospital politics and career pressure",
+                    "ontomedia:personal": "Family expectations and cultural traditions",
+                    "ontomedia:community": "City life vs. island values",
+                    "ontomedia:conflict": "Career vs. personal life",
+                    "ontomedia:emotional": "Professional burnout"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_2",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 2,
+                  "ontomedia:name": "The Decision",
+                  "ontomedia:description": "Ellie makes the decision to leave",
+                  "ontomedia:has_scene": [
+                    "Morning job search",
+                    "Mother's diary discovery",
+                    "Family confrontation",
+                    "Medical community meeting",
+                    "Island opportunity research",
+                    "Family farewell",
+                    "Cultural transition",
+                    "Packing memories",
+                    "New beginning"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Medical community reaction",
+                    "ontomedia:personal": "Mother's legacy and family history",
+                    "ontomedia:community": "Island medical practice opportunity",
+                    "ontomedia:conflict": "Family expectations",
+                    "ontomedia:emotional": "Leaving home"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_3",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 3,
+                  "ontomedia:name": "The Journey",
+                  "ontomedia:description": "Ellie travels to Ærø",
+                  "ontomedia:has_scene": [
+                    "Early morning departure",
+                    "City farewell",
+                    "Train journey reflection",
+                    "Ferry terminal arrival",
+                    "Island ferry experience",
+                    "Physical journey",
+                    "Emotional transition",
+                    "Cultural shift",
+                    "First island views",
+                    "Island arrival",
+                    "Evening reflection"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Medical equipment transport",
+                    "ontomedia:personal": "Mother's island connection revealed",
+                    "ontomedia:community": "Island ferry community",
+                    "ontomedia:conflict": "Logistical challenges",
+                    "ontomedia:emotional": "Journey of self-discovery"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_4",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 4,
+                  "ontomedia:name": "First Impressions",
+                  "ontomedia:description": "Ellie's first days on Ærø",
+                  "ontomedia:has_scene": [
+                    "Morning island exploration",
+                    "Local café encounter",
+                    "Community introduction",
+                    "Historical tour",
+                    "Cultural discovery",
+                    "Medical practice visit",
+                    "Traditional healer meeting",
+                    "Evening market experience",
+                    "Personal reflection",
+                    "Island sunset"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Medical practice inspection",
+                    "ontomedia:personal": "Mother's old friends",
+                    "ontomedia:community": "Island welcome traditions",
+                    "ontomedia:conflict": "Cultural adaptation",
+                    "ontomedia:emotional": "Sense of belonging"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@id": "ontomedia:act_2",
+            "@type": "ontomedia:Act",
+            "ontomedia:name": "The Confrontation",
+            "ontomedia:description": "Facing challenges and building connections",
+            "ontomedia:season": "Late Spring to Early Summer",
+            "ontomedia:timeline": {
+              "ontomedia:start_date": "April 16",
+              "ontomedia:end_date": "June 30",
+              "ontomedia:key_events": [
+                {
+                  "ontomedia:date": "April 16",
+                  "ontomedia:event": "First medical practice challenges"
+                },
+                {
+                  "ontomedia:date": "May 1",
+                  "ontomedia:event": "Full practice integration"
+                },
+                {
+                  "ontomedia:date": "May 15",
+                  "ontomedia:event": "First major medical emergency"
+                },
+                {
+                  "ontomedia:date": "June 15",
+                  "ontomedia:event": "Community resistance"
+                }
+              ]
+            },
+            "ontomedia:has_chapter": {
+              "@id": "ontomedia:act_2_chapters",
+              "@type": "ontomedia:Chapters",
+              "ontomedia:has_chapter": [
+                {
+                  "@id": "ontomedia:chapter_5",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 5,
+                  "ontomedia:name": "The Practice",
+                  "ontomedia:description": "Ellie begins work at the medical practice",
+                  "ontomedia:has_scene": [
+                    "Early morning arrival",
+                    "Team introduction",
+                    "Practice tour",
+                    "Traditional medicine observation",
+                    "Professional adaptation",
+                    "First patient consultation",
+                    "Cultural healthcare learning",
+                    "Community integration",
+                    "Evening team meeting",
+                    "Personal growth reflection",
+                    "Island sunset walk"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Medical team dynamics",
+                    "ontomedia:personal": "Mother's medical legacy",
+                    "ontomedia:community": "Healthcare traditions",
+                    "ontomedia:conflict": "Modern vs traditional methods",
+                    "ontomedia:emotional": "Professional identity"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_6",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 6,
+                  "ontomedia:name": "First Patient",
+                  "ontomedia:description": "Ellie's first island patient",
+                  "ontomedia:has_scene": [
+                    "Morning practice preparation",
+                    "Local patient arrival",
+                    "Medical practice introduction",
+                    "Cultural healthcare consultation",
+                    "Community trust building",
+                    "Traditional healing discussion",
+                    "Emergency situation",
+                    "Quick decision making",
+                    "Team collaboration",
+                    "Patient recovery",
+                    "Community celebration",
+                    "Evening reflection"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Traditional vs. modern medicine",
+                    "ontomedia:personal": "Tom's family health history",
+                    "ontomedia:community": "Island healthcare needs",
+                    "ontomedia:conflict": "Medical authority challenge",
+                    "ontomedia:emotional": "Professional validation"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_7",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 7,
+                  "ontomedia:name": "The Family",
+                  "ontomedia:description": "Ellie meets Tom and Lily",
+                  "ontomedia:has_scene": [
+                    "B&B morning visit",
+                    "Family introduction",
+                    "Lily's art studio",
+                    "Family dynamics observation",
+                    "Personal connection development",
+                    "Cultural integration moments",
+                    "Emotional development",
+                    "Unexpected medical emergency",
+                    "Team problem-solving",
+                    "Family bonding",
+                    "Evening conversation",
+                    "Future possibilities"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "B&B medical emergency",
+                    "ontomedia:personal": "Lily's artistic journey",
+                    "ontomedia:community": "Family traditions",
+                    "ontomedia:conflict": "Parenting differences",
+                    "ontomedia:emotional": "Family connection"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_8",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 8,
+                  "ontomedia:name": "Growing Tensions",
+                  "ontomedia:description": "Professional and personal challenges intensify",
+                  "ontomedia:has_scene": [
+                    "Practice expansion planning",
+                    "Community resistance meeting",
+                    "Traditional healer consultation",
+                    "Personal doubts reflection",
+                    "Cultural conflicts resolution",
+                    "Professional crisis management",
+                    "Emotional strain moments",
+                    "Family support",
+                    "Community breakthrough",
+                    "Personal growth",
+                    "Future vision",
+                    "Island storm approach",
+                    "Evening market visit",
+                    "Frantic phone call",
+                    "Traditional healer emergency",
+                    "Race against time",
+                    "Cultural medicine crisis",
+                    "Team collaboration",
+                    "Life-saving decisions",
+                    "Community unity",
+                    "Professional validation",
+                    "Personal breakthrough"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Practice modernization",
+                    "ontomedia:personal": "Tom's past relationships",
+                    "ontomedia:community": "Traditional values",
+                    "ontomedia:conflict": "Modern vs traditional medicine",
+                    "ontomedia:emotional": "Personal and professional balance",
+                    "ontomedia:emergency": {
+                      "ontomedia:description": "Critical medical emergency involving traditional healer",
+                      "ontomedia:setup": "Evening market visit turns into life-or-death situation",
+                      "ontomedia:characters": {
+                        "ontomedia:primary": "Ellie",
+                        "ontomedia:secondary": [
+                          "Traditional healer (elderly community member)",
+                          "Marie Nielsen (senior nurse)",
+                          "Lars Andersen (medical assistant)",
+                          "Tom (emotional support)"
+                        ]
+                      },
+                      "ontomedia:incident": {
+                        "ontomedia:type": "Sudden cardiac event",
+                        "ontomedia:location": "Traditional healer's home",
+                        "ontomedia:circumstances": "During evening market preparations",
+                        "ontomedia:complications": [
+                          "Remote location",
+                          "Limited equipment",
+                          "Cultural sensitivity",
+                          "Time pressure"
+                        ]
+                      },
+                      "ontomedia:emotional_beats": {
+                        "ontomedia:initial_response": {
+                          "ontomedia:ellie": "Professional focus masking personal fear",
+                          "ontomedia:marie": "Initial resistance turning to trust",
+                          "ontomedia:lars": "Eager to help but uncertain",
+                          "ontomedia:tom": "Calm support with underlying worry"
+                        },
+                        "ontomedia:crisis_moments": {
+                          "ontomedia:medical": {
+                            "ontomedia:critical_decision": "Choosing between traditional and modern treatment",
+                            "ontomedia:team_dynamic": "Marie's traditional knowledge complementing Ellie's modern skills",
+                            "ontomedia:breakthrough": "Lars's quick thinking with limited equipment"
+                          },
+                          "ontomedia:personal": {
+                            "ontomedia:ellie_tom": "Shared glance during critical moment",
+                            "ontomedia:community": "Neighbors gathering in support",
+                            "ontomedia:family": "Lily's artwork capturing the moment"
+                          }
+                        },
+                        "ontomedia:resolution_emotions": {
+                          "ontomedia:success": "Collective relief and joy",
+                          "ontomedia:connection": "Team bonding through shared experience",
+                          "ontomedia:growth": "Personal and professional breakthroughs"
+                        }
+                      },
+                      "ontomedia:resolution": {
+                        "ontomedia:medical": "Combined traditional and modern treatment",
+                        "ontomedia:professional": "Team collaboration success",
+                        "ontomedia:personal": "Community acceptance breakthrough",
+                        "ontomedia:emotional": "Cultural bridge moment"
+                      },
+                      "ontomedia:impact": {
+                        "ontomedia:professional": {
+                          "ontomedia:immediate": "Proves value of integrated medicine",
+                          "ontomedia:long_term": {
+                            "ontomedia:practice": "New protocols combining traditional and modern approaches",
+                            "ontomedia:team": "Stronger medical team dynamics",
+                            "ontomedia:community": "Increased trust in medical practice"
+                          }
+                        },
+                        "ontomedia:personal": {
+                          "ontomedia:immediate": "Strengthens community bonds",
+                          "ontomedia:long_term": {
+                            "ontomedia:ellie": "Deeper connection to island life",
+                            "ontomedia:marie": "New respect for modern medicine",
+                            "ontomedia:lars": "Increased confidence in medical career"
+                          }
+                        },
+                        "ontomedia:romantic": {
+                          "ontomedia:immediate": "Shared crisis brings Ellie and Tom closer",
+                          "ontomedia:long_term": {
+                            "ontomedia:connection": "Deeper emotional bond",
+                            "ontomedia:trust": "Shared values confirmed",
+                            "ontomedia:future": "Strengthened commitment to island life"
+                          }
+                        },
+                        "ontomedia:community": {
+                          "ontomedia:immediate": "Unites traditional and modern approaches",
+                          "ontomedia:long_term": {
+                            "ontomedia:integration": "New healthcare model accepted",
+                            "ontomedia:tradition": "Traditional healing preserved",
+                            "ontomedia:future": "Community health improvements"
+                          }
+                        },
+                        "ontomedia:family": {
+                          "ontomedia:immediate": "Lily's artistic response to crisis",
+                          "ontomedia:long_term": {
+                            "ontomedia:art": "New artistic direction inspired by medical themes",
+                            "ontomedia:family": "Stronger family unit through shared experience",
+                            "ontomedia:future": "Family business incorporating healthcare elements"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@id": "ontomedia:act_3",
+            "@type": "ontomedia:Act",
+            "ontomedia:name": "The Resolution",
+            "ontomedia:description": "Finding home and love",
+            "ontomedia:season": "Summer",
+            "ontomedia:timeline": {
+              "ontomedia:start_date": "July 1",
+              "ontomedia:end_date": "August 31",
+              "ontomedia:key_events": [
+                {
+                  "ontomedia:date": "July 1-7",
+                  "ontomedia:event": "Summer Festival"
+                },
+                {
+                  "ontomedia:date": "July 15",
+                  "ontomedia:event": "Practice expansion begins"
+                },
+                {
+                  "ontomedia:date": "August 15",
+                  "ontomedia:event": "Sarah's visit"
+                },
+                {
+                  "ontomedia:date": "August 31",
+                  "ontomedia:event": "Final resolution"
+                }
+              ]
+            },
+            "ontomedia:has_chapter": {
+              "@id": "ontomedia:act_3_chapters",
+              "@type": "ontomedia:Chapters",
+              "ontomedia:has_chapter": [
+                {
+                  "@id": "ontomedia:chapter_9",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 9,
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:name": "Summer Festival",
+                  "ontomedia:description": "Community celebration and romantic connection",
+                  "ontomedia:has_scene": [
+                    "Festival preparation",
+                    "Medical tent setup",
+                    "Cultural celebration",
+                    "Community integration",
+                    "Traditional dance",
+                    "Moonlit garden walk",
+                    "Shared dance moment",
+                    "Starlit conversation",
+                    "Unexpected medical emergency",
+                    "Professional crisis",
+                    "Cultural conflict resolution",
+                    "Emotional breakthrough",
+                    "Tender moment of connection",
+                    "Festival fireworks"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Medical tent organization",
+                    "ontomedia:personal": "Tom's past relationships",
+                    "ontomedia:community": "Festival traditions",
+                    "ontomedia:conflict": "Traditional vs modern medicine clash",
+                    "ontomedia:romantic": "Growing attraction and connection",
+                    "ontomedia:emotional": "Cultural belonging"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_10",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 10,
+                  "ontomedia:name": "Growing Connections",
+                  "ontomedia:description": "Deepening relationships and romantic tension",
+                  "ontomedia:has_scene": [
+                    "Morning practice routine",
+                    "Family breakfast moment",
+                    "Professional growth",
+                    "Cultural learning",
+                    "Emotional development",
+                    "Storm preparation",
+                    "Stormy night together",
+                    "Medical practice crisis",
+                    "Family emergency",
+                    "Cultural misunderstanding",
+                    "Relationship tension",
+                    "Heartfelt confession",
+                    "Emotional reconciliation",
+                    "Future planning"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Medical practice expansion",
+                    "ontomedia:personal": "Lily's school challenges",
+                    "ontomedia:community": "Island development plans",
+                    "ontomedia:conflict": "Professional vs personal boundaries",
+                    "ontomedia:romantic": "Intensifying feelings and connection",
+                    "ontomedia:emotional": "Family unity"
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_11",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 11,
+                  "ontomedia:name": "The Visit",
+                  "ontomedia:description": "Sarah's arrival brings new challenges",
+                  "ontomedia:has_scene": [
+                    "Ferry arrival",
+                    "Friend's welcome",
+                    "Island tour",
+                    "City vs island life",
+                    "Practice observation",
+                    "Relationship doubts",
+                    "Professional validation",
+                    "Family dinner",
+                    "Night conversation",
+                    "Personal reflection",
+                    "Emotional clarity",
+                    "Future decisions",
+                    "Island sunset"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Career opportunities",
+                    "ontomedia:personal": "Life choices",
+                    "ontomedia:community": "Island vs city values",
+                    "ontomedia:conflict": "Future uncertainty",
+                    "ontomedia:romantic": "Relationship commitment",
+                    "ontomedia:emotional": "Life purpose",
+                    "ontomedia:gossip_arc": {
+                      "ontomedia:setup": {
+                        "ontomedia:chapter": 10,
+                        "ontomedia:scene": "Café overheard conversation",
+                        "ontomedia:description": "Island residents discussing Tom and Sarah's past relationship",
+                        "ontomedia:impact": "Initial seed of doubt"
+                      },
+                      "ontomedia:development": {
+                        "ontomedia:chapter": 11,
+                        "ontomedia:scenes": [
+                          {
+                            "ontomedia:scene": "Market day whispers",
+                            "ontomedia:description": "More gossip about Tom and Sarah's history",
+                            "ontomedia:impact": "Growing uncertainty"
+                          },
+                          {
+                            "ontomedia:scene": "Sarah's arrival",
+                            "ontomedia:description": "Friendly interaction with Tom observed by Ellie",
+                            "ontomedia:impact": "Emotional confusion"
+                          },
+                          {
+                            "ontomedia:scene": "Practice hallway",
+                            "ontomedia:description": "Overheard conversation about Tom and Sarah's past",
+                            "ontomedia:impact": "Professional distraction"
+                          }
+                        ]
+                      },
+                      "ontomedia:resolution": {
+                        "ontomedia:chapter": 11,
+                        "ontomedia:scenes": [
+                          {
+                            "ontomedia:scene": "Night conversation",
+                            "ontomedia:description": "Tom explains past relationship with Sarah",
+                            "ontomedia:impact": "Emotional clarity"
+                          },
+                          {
+                            "ontomedia:scene": "Morning after",
+                            "ontomedia:description": "Ellie and Sarah bond over shared understanding",
+                            "ontomedia:impact": "Friendship formed"
+                          }
+                        ]
+                      },
+                      "ontomedia:emotional_impact": {
+                        "ontomedia:ellie": {
+                          "ontomedia:initial": "Professional focus",
+                          "ontomedia:development": "Growing insecurity",
+                          "ontomedia:resolution": "Deeper trust"
+                        },
+                        "ontomedia:tom": {
+                          "ontomedia:initial": "Unaware of gossip",
+                          "ontomedia:development": "Noticing Ellie's distance",
+                          "ontomedia:resolution": "Open communication"
+                        },
+                        "ontomedia:sarah": {
+                          "ontomedia:initial": "Friendly visit",
+                          "ontomedia:development": "Aware of tension",
+                          "ontomedia:resolution": "Clear boundaries"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "@id": "ontomedia:chapter_12",
+                  "@type": "ontomedia:Chapter",
+                  "ontomedia:number": 12,
+                  "ontomedia:name": "The Resolution",
+                  "ontomedia:description": "Finding home and family",
+                  "ontomedia:has_scene": [
+                    "Morning practice",
+                    "Family unity",
+                    "Professional fulfillment",
+                    "Cultural integration",
+                    "Community celebration",
+                    "Future planning",
+                    "Personal completion",
+                    "Family business plans",
+                    "Island future vision",
+                    "Romantic commitment",
+                    "Community acceptance",
+                    "New beginning"
+                  ],
+                  "ontomedia:has_subplot": {
+                    "ontomedia:professional": "Medical practice future",
+                    "ontomedia:personal": "Family business plans",
+                    "ontomedia:community": "Island future vision",
+                    "ontomedia:romantic": "Complete commitment",
+                    "ontomedia:emotional": "Home and belonging"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "ontomedia:has_transition": {
+        "@id": "ontomedia:transitions",
+        "@type": "ontomedia:Transitions",
+        "ontomedia:has_technique": {
+          "@id": "ontomedia:techniques",
+          "@type": "ontomedia:Techniques",
+          "ontomedia:has_sensory": {
+            "@id": "ontomedia:sensory",
+            "@type": "ontomedia:SensoryTransitions",
+            "ontomedia:has_bridge": [
+              {
+                "@id": "ontomedia:weather_bridge",
+                "@type": "ontomedia:Bridge",
+                "ontomedia:name": "Weather Bridge",
+                "ontomedia:description": "Using weather to transition scenes",
+                "ontomedia:has_element": [
+                  "Storm to calm",
+                  "Dark to light",
+                  "Cold to warm",
+                  "Wind to stillness"
+                ],
+                "ontomedia:has_seasonal": {
+                  "@id": "ontomedia:seasonal_transitions",
+                  "@type": "ontomedia:SeasonalTransitions",
+                  "ontomedia:spring_to_summer": {
+                    "ontomedia:description": "Transition from spring to summer",
+                    "ontomedia:elements": [
+                      "Blossoming flowers",
+                      "Warming temperatures",
+                      "Longer days",
+                      "New growth"
+                    ]
+                  }
+                }
+              },
+              {
+                "@id": "ontomedia:cultural_bridge",
+                "@type": "ontomedia:Bridge",
+                "ontomedia:name": "Cultural Bridge",
+                "ontomedia:description": "Using cultural elements to transition scenes",
+                "ontomedia:has_element": [
+                  "City to island",
+                  "Modern to traditional",
+                  "Fast to slow",
+                  "Lonely to connected"
+                ],
+                "ontomedia:has_seasonal_cultural": {
+                  "@id": "ontomedia:seasonal_cultural",
+                  "@type": "ontomedia:SeasonalCultural",
+                  "ontomedia:summer_traditions": {
+                    "ontomedia:description": "Danish summer traditions",
+                    "ontomedia:elements": [
+                      "Midsummer celebration",
+                      "Summer market",
+                      "Family gatherings",
+                      "Community events"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontomedia:has_beat_structure": {
+        "@id": "ontomedia:beat_structure",
+        "@type": "ontomedia:BeatStructure",
+        "ontomedia:has_romance_beats": {
+          "@id": "ontomedia:romance_beats",
+          "@type": "ontomedia:RomanceBeats",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:beat_1",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Initial Connection",
+              "ontomedia:chapter": 7,
+              "ontomedia:description": "First meaningful interaction between Ellie and Tom",
+              "ontomedia:emotional_state": "Tentative attraction",
+              "ontomedia:romantic_elements": {
+                "ontomedia:moment": "Shared medical emergency",
+                "ontomedia:connection": "Professional respect turning personal",
+                "ontomedia:emotion": "Growing curiosity"
+              }
+            },
+            {
+              "@id": "ontomedia:beat_2",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Growing Interest",
+              "ontomedia:chapter": 8,
+              "ontomedia:description": "Festival brings them closer",
+              "ontomedia:emotional_state": "Developing feelings",
+              "ontomedia:romantic_elements": {
+                "ontomedia:moment": "Moonlit garden walk",
+                "ontomedia:connection": "Shared dance and starlit conversation",
+                "ontomedia:emotion": "Deepening attraction",
+                "ontomedia:first_touch": {
+                  "ontomedia:setting": "Moonlit garden path",
+                  "ontomedia:moment": "Accidental hand touch during conversation",
+                  "ontomedia:emotion": "Electric connection",
+                  "ontomedia:significance": "First physical connection"
+                },
+                "ontomedia:first_kiss": {
+                  "ontomedia:setting": "Starlit garden bench",
+                  "ontomedia:moment": "Emotional conversation leads to tender kiss",
+                  "ontomedia:emotion": "Overwhelming connection",
+                  "ontomedia:reaction": "Shared wonder and joy",
+                  "ontomedia:significance": "First romantic connection"
+                },
+                "ontomedia:emotion": "Deepening attraction"
+              }
+            },
+            {
+              "@id": "ontomedia:beat_3",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "First Conflict",
+              "ontomedia:chapter": 9,
+              "ontomedia:description": "Professional boundaries create tension",
+              "ontomedia:emotional_state": "Relationship strain",
+              "ontomedia:romantic_elements": {
+                "ontomedia:moment": "Stormy night together",
+                "ontomedia:connection": "Emotional vulnerability and confession",
+                "ontomedia:emotion": "Intense feelings"
+              }
+            },
+            {
+              "@id": "ontomedia:beat_4",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Resolution",
+              "ontomedia:chapter": 10,
+              "ontomedia:description": "Clear communication leads to understanding",
+              "ontomedia:emotional_state": "Deeper connection",
+              "ontomedia:romantic_elements": {
+                "ontomedia:moment": "Family celebration",
+                "ontomedia:connection": "Complete trust and commitment",
+                "ontomedia:emotion": "Secure love"
+              }
+            }
+          ]
+        },
+        "ontomedia:has_professional_beats": {
+          "@id": "ontomedia:professional_beats",
+          "@type": "ontomedia:ProfessionalBeats",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:beat_5",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "First Challenge",
+              "ontomedia:chapter": 6,
+              "ontomedia:description": "Traditional vs. modern medicine conflict",
+              "ontomedia:emotional_state": "Professional uncertainty"
+            },
+            {
+              "@id": "ontomedia:beat_6",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Community Trust",
+              "ontomedia:chapter": 7,
+              "ontomedia:description": "Emergency establishes credibility",
+              "ontomedia:emotional_state": "Growing confidence"
+            },
+            {
+              "@id": "ontomedia:beat_7",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Practice Growth",
+              "ontomedia:chapter": 9,
+              "ontomedia:description": "Expanding services and community impact",
+              "ontomedia:emotional_state": "Professional fulfillment"
+            }
+          ]
+        },
+        "ontomedia:has_family_beats": {
+          "@id": "ontomedia:family_beats",
+          "@type": "ontomedia:FamilyBeats",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:beat_8",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Lily's Art",
+              "ontomedia:chapter": 7,
+              "ontomedia:description": "Artistic connection with Ellie",
+              "ontomedia:emotional_state": "Creative bonding"
+            },
+            {
+              "@id": "ontomedia:beat_9",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Family Integration",
+              "ontomedia:chapter": 8,
+              "ontomedia:description": "Festival brings family together",
+              "ontomedia:emotional_state": "Family unity"
+            },
+            {
+              "@id": "ontomedia:beat_10",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "Future Planning",
+              "ontomedia:chapter": 10,
+              "ontomedia:description": "Family business and life plans",
+              "ontomedia:emotional_state": "Family security"
+            }
+          ]
+        }
+      },
+      "ontomedia:has_character_arcs": {
+        "@id": "ontomedia:character_arcs",
+        "@type": "ontomedia:CharacterArcs",
+        "ontomedia:has_arc": [
+          {
+            "@id": "ontomedia:ellie_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:character": "Ellie",
+            "ontomedia:description": "From city doctor to island healer",
+            "ontomedia:development_stages": {
+              "ontomedia:act_1": {
+                "ontomedia:state": "Professional burnout",
+                "ontomedia:challenges": [
+                  "Career pressure",
+                  "Family expectations",
+                  "Cultural conflict"
+                ],
+                "ontomedia:growth": "Decision to change"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:state": "Cultural adaptation",
+                "ontomedia:challenges": [
+                  "Medical practice integration",
+                  "Community acceptance",
+                  "Personal connections"
+                ],
+                "ontomedia:growth": "Finding balance"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:state": "Complete integration",
+                "ontomedia:challenges": [
+                  "Future decisions",
+                  "Relationship commitment",
+                  "Community leadership"
+                ],
+                "ontomedia:growth": "Finding home"
+              }
+            },
+            "ontomedia:key_moments": [
+              {
+                "ontomedia:chapter": 1,
+                "ontomedia:event": "Unwanted proposal",
+                "ontomedia:impact": "Catalyst for change"
+              },
+              {
+                "ontomedia:chapter": 6,
+                "ontomedia:event": "First patient success",
+                "ontomedia:impact": "Professional validation"
+              },
+              {
+                "ontomedia:chapter": 8,
+                "ontomedia:event": "Medical emergency",
+                "ontomedia:impact": "Community acceptance"
+              },
+              {
+                "ontomedia:chapter": 12,
+                "ontomedia:event": "Final resolution",
+                "ontomedia:impact": "Complete transformation"
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:tom_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:character": "Tom",
+            "ontomedia:description": "From widowed father to new love",
+            "ontomedia:development_stages": {
+              "ontomedia:act_1": {
+                "ontomedia:state": "Focused on family",
+                "ontomedia:challenges": [
+                  "Single parenting",
+                  "Business management",
+                  "Emotional walls"
+                ],
+                "ontomedia:growth": "Opening up"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:state": "Growing connection",
+                "ontomedia:challenges": [
+                  "Professional boundaries",
+                  "Family integration",
+                  "Past healing"
+                ],
+                "ontomedia:growth": "Emotional availability"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:state": "New beginning",
+                "ontomedia:challenges": [
+                  "Future planning",
+                  "Family expansion",
+                  "Business growth"
+                ],
+                "ontomedia:growth": "Complete commitment"
+              }
+            },
+            "ontomedia:key_moments": [
+              {
+                "ontomedia:chapter": 7,
+                "ontomedia:event": "First meeting with Ellie",
+                "ontomedia:impact": "Initial attraction"
+              },
+              {
+                "ontomedia:chapter": 8,
+                "ontomedia:event": "Medical emergency support",
+                "ontomedia:impact": "Deepening connection"
+              },
+              {
+                "ontomedia:chapter": 10,
+                "ontomedia:event": "Stormy night confession",
+                "ontomedia:impact": "Emotional breakthrough"
+              },
+              {
+                "ontomedia:chapter": 12,
+                "ontomedia:event": "Family future",
+                "ontomedia:impact": "Complete healing"
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:lily_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:character": "Lily",
+            "ontomedia:description": "From grieving child to creative young woman",
+            "ontomedia:development_stages": {
+              "ontomedia:act_1": {
+                "ontomedia:state": "Artistic expression",
+                "ontomedia:challenges": [
+                  "School integration",
+                  "Artistic development",
+                  "Family dynamics"
+                ],
+                "ontomedia:growth": "Finding voice"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:state": "Growing confidence",
+                "ontomedia:challenges": [
+                  "New family connection",
+                  "Artistic recognition",
+                  "Personal identity"
+                ],
+                "ontomedia:growth": "Self-discovery"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:state": "Creative fulfillment",
+                "ontomedia:challenges": [
+                  "Artistic direction",
+                  "Family integration",
+                  "Future dreams"
+                ],
+                "ontomedia:growth": "Complete expression"
+              }
+            },
+            "ontomedia:key_moments": [
+              {
+                "ontomedia:chapter": 7,
+                "ontomedia:event": "Art studio connection",
+                "ontomedia:impact": "Initial bond"
+              },
+              {
+                "ontomedia:chapter": 8,
+                "ontomedia:event": "Emergency artwork",
+                "ontomedia:impact": "Artistic breakthrough"
+              },
+              {
+                "ontomedia:chapter": 10,
+                "ontomedia:event": "Family storm",
+                "ontomedia:impact": "Emotional growth"
+              },
+              {
+                "ontomedia:chapter": 12,
+                "ontomedia:event": "Art exhibition",
+                "ontomedia:impact": "Creative fulfillment"
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:marie_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:character": "Marie",
+            "ontomedia:description": "From traditional healer to integrated medicine advocate",
+            "ontomedia:development_stages": {
+              "ontomedia:act_1": {
+                "ontomedia:state": "Traditional approach",
+                "ontomedia:challenges": [
+                  "New doctor arrival",
+                  "Modern medicine",
+                  "Practice changes"
+                ],
+                "ontomedia:growth": "Initial resistance"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:state": "Growing acceptance",
+                "ontomedia:challenges": [
+                  "Medical emergencies",
+                  "Team dynamics",
+                  "Cultural integration"
+                ],
+                "ontomedia:growth": "Finding balance"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:state": "Integrated approach",
+                "ontomedia:challenges": [
+                  "Practice leadership",
+                  "Community education",
+                  "Future planning"
+                ],
+                "ontomedia:growth": "Complete integration"
+              }
+            },
+            "ontomedia:key_moments": [
+              {
+                "ontomedia:chapter": 5,
+                "ontomedia:event": "First practice meeting",
+                "ontomedia:impact": "Initial conflict"
+              },
+              {
+                "ontomedia:chapter": 8,
+                "ontomedia:event": "Emergency collaboration",
+                "ontomedia:impact": "Professional respect"
+              },
+              {
+                "ontomedia:chapter": 9,
+                "ontomedia:event": "Festival medical tent",
+                "ontomedia:impact": "Team leadership"
+              },
+              {
+                "ontomedia:chapter": 12,
+                "ontomedia:event": "Practice future",
+                "ontomedia:impact": "Complete transformation"
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:lars_arc",
+            "@type": "ontomedia:CharacterArc",
+            "ontomedia:character": "Lars",
+            "ontomedia:description": "From uncertain assistant to confident medical professional",
+            "ontomedia:development_stages": {
+              "ontomedia:act_1": {
+                "ontomedia:state": "Eager learner",
+                "ontomedia:challenges": [
+                  "Medical training",
+                  "Team integration",
+                  "Self-doubt"
+                ],
+                "ontomedia:growth": "Initial confidence"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:state": "Growing skills",
+                "ontomedia:challenges": [
+                  "Emergency response",
+                  "Team support",
+                  "Professional growth"
+                ],
+                "ontomedia:growth": "Skill development"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:state": "Professional confidence",
+                "ontomedia:challenges": [
+                  "Advanced training",
+                  "Team leadership",
+                  "Future career"
+                ],
+                "ontomedia:growth": "Complete confidence"
+              }
+            },
+            "ontomedia:key_moments": [
+              {
+                "ontomedia:chapter": 5,
+                "ontomedia:event": "First team meeting",
+                "ontomedia:impact": "Initial enthusiasm"
+              },
+              {
+                "ontomedia:chapter": 8,
+                "ontomedia:event": "Emergency response",
+                "ontomedia:impact": "Skill validation"
+              },
+              {
+                "ontomedia:chapter": 10,
+                "ontomedia:event": "Storm crisis",
+                "ontomedia:impact": "Team leadership"
+              },
+              {
+                "ontomedia:chapter": 12,
+                "ontomedia:event": "Future plans",
+                "ontomedia:impact": "Career direction"
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_storyline_consistency": {
+        "@id": "ontomedia:storyline_consistency",
+        "@type": "ontomedia:StorylineConsistency",
+        "ontomedia:has_analysis": {
+          "@id": "ontomedia:consistency_analysis",
+          "@type": "ontomedia:ConsistencyAnalysis",
+          "ontomedia:plot_coherence": {
+            "@id": "ontomedia:plot_coherence",
+            "@type": "ontomedia:PlotCoherence",
+            "ontomedia:main_plot": {
+              "ontomedia:description": "Ellie's journey from city doctor to island healer",
+              "ontomedia:consistency_check": {
+                "ontomedia:setup": {
+                  "ontomedia:chapter": 1,
+                  "ontomedia:element": "Unwanted proposal",
+                  "ontomedia:payoff": {
+                    "ontomedia:chapter": 12,
+                    "ontomedia:element": "Final resolution",
+                    "ontomedia:consistency": "Strong - clear cause and effect"
+                  }
+                },
+                "ontomedia:conflict": {
+                  "ontomedia:setup": {
+                    "ontomedia:chapter": 5,
+                    "ontomedia:element": "Medical practice challenges"
+                  },
+                  "ontomedia:development": {
+                    "ontomedia:chapter": 8,
+                    "ontomedia:element": "Medical emergency"
+                  },
+                  "ontomedia:resolution": {
+                    "ontomedia:chapter": 12,
+                    "ontomedia:element": "Practice success",
+                    "ontomedia:consistency": "Strong - progressive development"
+                  }
+                }
+              }
+            },
+            "ontomedia:subplots": {
+              "ontomedia:romance": {
+                "ontomedia:setup": {
+                  "ontomedia:chapter": 7,
+                  "ontomedia:element": "First meeting"
+                },
+                "ontomedia:development": {
+                  "ontomedia:chapter": 8,
+                  "ontomedia:element": "Emergency connection"
+                },
+                "ontomedia:resolution": {
+                  "ontomedia:chapter": 12,
+                  "ontomedia:element": "Complete commitment",
+                  "ontomedia:consistency": "Strong - natural progression"
+                }
+              },
+              "ontomedia:family": {
+                "ontomedia:setup": {
+                  "ontomedia:chapter": 7,
+                  "ontomedia:element": "Lily's introduction"
+                },
+                "ontomedia:development": {
+                  "ontomedia:chapter": 10,
+                  "ontomedia:element": "Family storm"
+                },
+                "ontomedia:resolution": {
+                  "ontomedia:chapter": 12,
+                  "ontomedia:element": "Family unity",
+                  "ontomedia:consistency": "Strong - emotional growth"
+                }
+              }
+            }
+          },
+          "ontomedia:timeline_alignment": {
+            "@id": "ontomedia:timeline_alignment",
+            "@type": "ontomedia:TimelineAlignment",
+            "ontomedia:seasonal_progression": {
+              "ontomedia:act_1": {
+                "ontomedia:season": "Spring",
+                "ontomedia:dates": "March 15 - April 15",
+                "ontomedia:consistency": "Strong - matches character development"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:season": "Late Spring to Early Summer",
+                "ontomedia:dates": "April 16 - June 30",
+                "ontomedia:consistency": "Strong - supports relationship growth"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:season": "Summer",
+                "ontomedia:dates": "July 1 - August 31",
+                "ontomedia:consistency": "Strong - matches emotional resolution"
+              }
+            },
+            "ontomedia:event_sequence": {
+              "ontomedia:professional": {
+                "ontomedia:sequence": [
+                  "Practice observation",
+                  "First patient",
+                  "Medical emergency",
+                  "Practice expansion"
+                ],
+                "ontomedia:consistency": "Strong - logical progression"
+              },
+              "ontomedia:personal": {
+                "ontomedia:sequence": [
+                  "Island arrival",
+                  "Family meeting",
+                  "Growing connection",
+                  "Final commitment"
+                ],
+                "ontomedia:consistency": "Strong - natural development"
+              }
+            }
+          },
+          "ontomedia:character_consistency": {
+            "@id": "ontomedia:character_consistency",
+            "@type": "ontomedia:CharacterConsistency",
+            "ontomedia:motivation_alignment": {
+              "ontomedia:ellie": {
+                "ontomedia:initial": "Career change",
+                "ontomedia:development": "Community integration",
+                "ontomedia:final": "Finding home",
+                "ontomedia:consistency": "Strong - clear progression"
+              },
+              "ontomedia:tom": {
+                "ontomedia:initial": "Family focus",
+                "ontomedia:development": "Emotional opening",
+                "ontomedia:final": "New beginning",
+                "ontomedia:consistency": "Strong - natural growth"
+              }
+            },
+            "ontomedia:relationship_development": {
+              "ontomedia:professional": {
+                "ontomedia:initial": "Team formation",
+                "ontomedia:development": "Emergency bonding",
+                "ontomedia:final": "Integrated practice",
+                "ontomedia:consistency": "Strong - logical progression"
+              },
+              "ontomedia:personal": {
+                "ontomedia:initial": "Individual lives",
+                "ontomedia:development": "Growing connection",
+                "ontomedia:final": "Family unit",
+                "ontomedia:consistency": "Strong - emotional coherence"
+              }
+            }
+          },
+          "ontomedia:theme_consistency": {
+            "@id": "ontomedia:theme_consistency",
+            "@type": "ontomedia:ThemeConsistency",
+            "ontomedia:main_themes": {
+              "ontomedia:tradition_vs_modern": {
+                "ontomedia:setup": "Medical practice conflict",
+                "ontomedia:development": "Emergency resolution",
+                "ontomedia:resolution": "Integrated approach",
+                "ontomedia:consistency": "Strong - clear progression"
+              },
+              "ontomedia:home_and_belonging": {
+                "ontomedia:setup": "City departure",
+                "ontomedia:development": "Island integration",
+                "ontomedia:resolution": "Family creation",
+                "ontomedia:consistency": "Strong - emotional arc"
+              }
+            }
+          }
+        }
+      },
+      "ontomedia:has_genre_tropes": {
+        "@id": "ontomedia:genre_tropes",
+        "@type": "ontomedia:GenreTropes",
+        "ontomedia:has_analysis": {
+          "@id": "ontomedia:trope_analysis",
+          "@type": "ontomedia:TropeAnalysis",
+          "ontomedia:romance_tropes": {
+            "@id": "ontomedia:romance_tropes",
+            "@type": "ontomedia:RomanceTropes",
+            "ontomedia:character_tropes": {
+              "ontomedia:heroine": {
+                "ontomedia:trope": "City girl finding home",
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Ellie's escape from Copenhagen",
+                  "ontomedia:development": "Island adaptation",
+                  "ontomedia:resolution": "Finding home and love",
+                  "ontomedia:effectiveness": "Strong - clear character arc"
+                }
+              },
+              "ontomedia:hero": {
+                "ontomedia:trope": "Widowed single father",
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Tom's family-focused life",
+                  "ontomedia:development": "Opening up to love",
+                  "ontomedia:resolution": "New family formation",
+                  "ontomedia:effectiveness": "Strong - emotional depth"
+                }
+              },
+              "ontomedia:child": {
+                "ontomedia:trope": "Precocious child bringing people together",
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Lily's artistic nature",
+                  "ontomedia:development": "Bonding with Ellie",
+                  "ontomedia:resolution": "Family integration",
+                  "ontomedia:effectiveness": "Strong - natural connection"
+                }
+              }
+            },
+            "ontomedia:plot_tropes": {
+              "ontomedia:meet_cute": {
+                "ontomedia:implementation": {
+                  "ontomedia:chapter": 7,
+                  "ontomedia:scene": "B&B medical emergency",
+                  "ontomedia:effectiveness": "Strong - professional context"
+                }
+              },
+              "ontomedia:forced_proximity": {
+                "ontomedia:implementation": {
+                  "ontomedia:chapter": 10,
+                  "ontomedia:scene": "Stormy night together",
+                  "ontomedia:effectiveness": "Strong - natural setup"
+                }
+              },
+              "ontomedia:emotional_conflict": {
+                "ontomedia:implementation": {
+                  "ontomedia:chapter": 9,
+                  "ontomedia:scene": "Professional boundaries",
+                  "ontomedia:effectiveness": "Strong - realistic tension"
+                }
+              }
+            },
+            "ontomedia:romantic_beats": {
+              "ontomedia:first_touch": {
+                "ontomedia:implementation": {
+                  "ontomedia:chapter": 8,
+                  "ontomedia:scene": "Moonlit garden path",
+                  "ontomedia:effectiveness": "Strong - natural progression"
+                }
+              },
+              "ontomedia:first_kiss": {
+                "ontomedia:implementation": {
+                  "ontomedia:chapter": 8,
+                  "ontomedia:scene": "Starlit garden bench",
+                  "ontomedia:effectiveness": "Strong - emotional buildup"
+                }
+              },
+              "ontomedia:love_scene": {
+                "ontomedia:implementation": {
+                  "ontomedia:chapter": 10,
+                  "ontomedia:scene": "Stormy night reconciliation",
+                  "ontomedia:effectiveness": "Strong - emotional context"
+                }
+              }
+            }
+          },
+          "ontomedia:medical_romance_tropes": {
+            "@id": "ontomedia:medical_romance_tropes",
+            "@type": "ontomedia:MedicalRomanceTropes",
+            "ontomedia:professional_tropes": {
+              "ontomedia:medical_conflict": {
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Traditional vs. modern medicine",
+                  "ontomedia:development": "Emergency collaboration",
+                  "ontomedia:resolution": "Integrated approach",
+                  "ontomedia:effectiveness": "Strong - realistic conflict"
+                }
+              },
+              "ontomedia:life_saving": {
+                "ontomedia:implementation": {
+                  "ontomedia:chapter": 8,
+                  "ontomedia:scene": "Traditional healer emergency",
+                  "ontomedia:effectiveness": "Strong - high stakes"
+                }
+              },
+              "ontomedia:team_bonding": {
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Initial team formation",
+                  "ontomedia:development": "Emergency response",
+                  "ontomedia:resolution": "Integrated practice",
+                  "ontomedia:effectiveness": "Strong - natural progression"
+                }
+              }
+            },
+            "ontomedia:setting_tropes": {
+              "ontomedia:small_town": {
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Island community",
+                  "ontomedia:development": "Cultural integration",
+                  "ontomedia:resolution": "Community acceptance",
+                  "ontomedia:effectiveness": "Strong - unique setting"
+                }
+              },
+              "ontomedia:medical_practice": {
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Traditional practice",
+                  "ontomedia:development": "Modern integration",
+                  "ontomedia:resolution": "Expanded services",
+                  "ontomedia:effectiveness": "Strong - realistic progression"
+                }
+              }
+            }
+          },
+          "ontomedia:subgenre_elements": {
+            "@id": "ontomedia:subgenre_elements",
+            "@type": "ontomedia:SubgenreElements",
+            "ontomedia:small_town_romance": {
+              "ontomedia:community": {
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "Island traditions",
+                  "ontomedia:development": "Cultural learning",
+                  "ontomedia:resolution": "Community integration",
+                  "ontomedia:effectiveness": "Strong - authentic feel"
+                }
+              },
+              "ontomedia:gossip": {
+                "ontomedia:implementation": {
+                  "ontomedia:setup": "New doctor arrival",
+                  "ontomedia:development": "Relationship speculation",
+                  "ontomedia:resolution": "Community acceptance",
+                  "ontomedia:effectiveness": "Strong - natural tension"
+                }
+              }
+            },
+            "ontomedia:family_romance": {
+              "ontomedia:implementation": {
+                "ontomedia:setup": "Tom and Lily's family",
+                "ontomedia:development": "Growing connection",
+                "ontomedia:resolution": "New family formation",
+                "ontomedia:effectiveness": "Strong - emotional depth"
+              }
+            }
+          }
+        }
+      },
+      "ontomedia:has_story_breadth": {
+        "@id": "ontomedia:story_breadth",
+        "@type": "ontomedia:StoryBreadth",
+        "ontomedia:has_analysis": {
+          "@id": "ontomedia:breadth_analysis",
+          "@type": "ontomedia:BreadthAnalysis",
+          "ontomedia:thematic_layers": {
+            "@id": "ontomedia:thematic_layers",
+            "@type": "ontomedia:ThematicLayers",
+            "ontomedia:primary_themes": {
+              "ontomedia:love_and_family": {
+                "ontomedia:description": "Finding love and creating family",
+                "ontomedia:development": {
+                  "ontomedia:setup": "Individual lives",
+                  "ontomedia:conflict": "Past relationships and fears",
+                  "ontomedia:resolution": "New family formation"
+                }
+              },
+              "ontomedia:tradition_vs_modern": {
+                "ontomedia:description": "Balancing traditional and modern approaches",
+                "ontomedia:development": {
+                  "ontomedia:setup": "Medical practice conflict",
+                  "ontomedia:conflict": "Cultural resistance",
+                  "ontomedia:resolution": "Integrated approach"
+                }
+              }
+            },
+            "ontomedia:secondary_themes": {
+              "ontomedia:healing": {
+                "ontomedia:description": "Physical, emotional, and community healing",
+                "ontomedia:development": {
+                  "ontomedia:setup": "Individual wounds",
+                  "ontomedia:conflict": "Healing challenges",
+                  "ontomedia:resolution": "Complete recovery"
+                }
+              },
+              "ontomedia:belonging": {
+                "ontomedia:description": "Finding place and purpose",
+                "ontomedia:development": {
+                  "ontomedia:setup": "City isolation",
+                  "ontomedia:conflict": "Cultural adaptation",
+                  "ontomedia:resolution": "Community integration"
+                }
+              }
+            }
+          },
+          "ontomedia:character_dimensions": {
+            "@id": "ontomedia:character_dimensions",
+            "@type": "ontomedia:CharacterDimensions",
+            "ontomedia:professional_lives": {
+              "ontomedia:ellie": {
+                "ontomedia:role": "Doctor",
+                "ontomedia:challenges": [
+                  "Medical practice integration",
+                  "Traditional medicine learning",
+                  "Community healthcare"
+                ]
+              },
+              "ontomedia:tom": {
+                "ontomedia:role": "B&B Owner",
+                "ontomedia:challenges": [
+                  "Business management",
+                  "Tourism industry",
+                  "Local economy"
+                ]
+              },
+              "ontomedia:marie": {
+                "ontomedia:role": "Senior Nurse",
+                "ontomedia:challenges": [
+                  "Practice leadership",
+                  "Traditional healing",
+                  "Team management"
+                ]
+              }
+            },
+            "ontomedia:personal_lives": {
+              "ontomedia:ellie": {
+                "ontomedia:relationships": [
+                  "Family history",
+                  "Romantic connection",
+                  "Community bonds"
+                ]
+              },
+              "ontomedia:tom": {
+                "ontomedia:relationships": [
+                  "Father-daughter bond",
+                  "Past relationships",
+                  "Community role"
+                ]
+              },
+              "ontomedia:lily": {
+                "ontomedia:relationships": [
+                  "Artistic expression",
+                  "Family dynamics",
+                  "School life"
+                ]
+              }
+            }
+          },
+          "ontomedia:community_dimensions": {
+            "@id": "ontomedia:community_dimensions",
+            "@type": "ontomedia:CommunityDimensions",
+            "ontomedia:social_structure": {
+              "ontomedia:traditional_elements": {
+                "ontomedia:description": "Island traditions and values",
+                "ontomedia:aspects": [
+                  "Traditional healing",
+                  "Community gatherings",
+                  "Local customs"
+                ]
+              },
+              "ontomedia:modern_elements": {
+                "ontomedia:description": "Contemporary island life",
+                "ontomedia:aspects": [
+                  "Tourism industry",
+                  "Modern healthcare",
+                  "Economic development"
+                ]
+              }
+            },
+            "ontomedia:cultural_dynamics": {
+              "ontomedia:local_culture": {
+                "ontomedia:description": "Island-specific traditions",
+                "ontomedia:aspects": [
+                  "Seasonal celebrations",
+                  "Family businesses",
+                  "Community support"
+                ]
+              },
+              "ontomedia:external_influences": {
+                "ontomedia:description": "Outside world impact",
+                "ontomedia:aspects": [
+                  "Tourist expectations",
+                  "Modern medicine",
+                  "Economic pressures"
+                ]
+              }
+            }
+          },
+          "ontomedia:emotional_layers": {
+            "@id": "ontomedia:emotional_layers",
+            "@type": "ontomedia:EmotionalLayers",
+            "ontomedia:individual_emotions": {
+              "ontomedia:ellie": {
+                "ontomedia:journey": "Professional burnout to fulfillment",
+                "ontomedia:growth": "Personal healing and love"
+              },
+              "ontomedia:tom": {
+                "ontomedia:journey": "Grief to new beginnings",
+                "ontomedia:growth": "Family expansion"
+              },
+              "ontomedia:lily": {
+                "ontomedia:journey": "Loss to creative expression",
+                "ontomedia:growth": "Family integration"
+              }
+            },
+            "ontomedia:relationship_dynamics": {
+              "ontomedia:romantic": {
+                "ontomedia:development": "Professional respect to love",
+                "ontomedia:challenges": "Past relationships and future"
+              },
+              "ontomedia:family": {
+                "ontomedia:development": "Individual to unit",
+                "ontomedia:challenges": "Blending lives and histories"
+              },
+              "ontomedia:community": {
+                "ontomedia:development": "Outsider to insider",
+                "ontomedia:challenges": "Cultural integration"
+              }
+            }
+          }
+        }
+      },
+      "ontomedia:has_layer_integration": {
+        "@id": "ontomedia:layer_integration",
+        "@type": "ontomedia:LayerIntegration",
+        "ontomedia:has_analysis": {
+          "@id": "ontomedia:integration_analysis",
+          "@type": "ontomedia:IntegrationAnalysis",
+          "ontomedia:thematic_connections": {
+            "@id": "ontomedia:thematic_connections",
+            "@type": "ontomedia:ThematicConnections",
+            "ontomedia:healing_theme": {
+              "ontomedia:medical": {
+                "ontomedia:description": "Physical healing through integrated medicine",
+                "ontomedia:connection": "Mirrors emotional healing journey"
+              },
+              "ontomedia:emotional": {
+                "ontomedia:description": "Personal healing through relationships",
+                "ontomedia:connection": "Reflects community healing process"
+              },
+              "ontomedia:community": {
+                "ontomedia:description": "Island healing through cultural integration",
+                "ontomedia:connection": "Parallels medical practice evolution"
+              }
+            },
+            "ontomedia:tradition_theme": {
+              "ontomedia:medical": {
+                "ontomedia:description": "Traditional healing methods",
+                "ontomedia:connection": "Links to island cultural heritage"
+              },
+              "ontomedia:personal": {
+                "ontomedia:description": "Family traditions and values",
+                "ontomedia:connection": "Connects to community identity"
+              },
+              "ontomedia:professional": {
+                "ontomedia:description": "Medical practice evolution",
+                "ontomedia:connection": "Reflects broader cultural changes"
+              }
+            }
+          },
+          "ontomedia:character_integration": {
+            "@id": "ontomedia:character_integration",
+            "@type": "ontomedia:CharacterIntegration",
+            "ontomedia:professional_personal": {
+              "ontomedia:ellie": {
+                "ontomedia:connection": "Medical skills inform emotional understanding",
+                "ontomedia:development": "Healing others helps heal herself"
+              },
+              "ontomedia:tom": {
+                "ontomedia:connection": "Business acumen aids family building",
+                "ontomedia:development": "Community role strengthens relationships"
+              },
+              "ontomedia:marie": {
+                "ontomedia:connection": "Medical leadership parallels personal growth",
+                "ontomedia:development": "Traditional knowledge bridges gaps"
+              }
+            },
+            "ontomedia:family_community": {
+              "ontomedia:ellie_tom": {
+                "ontomedia:connection": "Professional respect deepens personal bond",
+                "ontomedia:development": "Shared values strengthen relationship"
+              },
+              "ontomedia:lily_community": {
+                "ontomedia:connection": "Artistic expression reflects community spirit",
+                "ontomedia:development": "Creativity bridges cultural gaps"
+              }
+            }
+          },
+          "ontomedia:plot_integration": {
+            "@id": "ontomedia:plot_integration",
+            "@type": "ontomedia:PlotIntegration",
+            "ontomedia:key_scenes": {
+              "ontomedia:medical_emergency": {
+                "ontomedia:professional": "Life-saving medical intervention",
+                "ontomedia:personal": "Strengthens romantic connection",
+                "ontomedia:community": "Bridges traditional and modern medicine"
+              },
+              "ontomedia:summer_festival": {
+                "ontomedia:professional": "Medical tent service",
+                "ontomedia:personal": "Romantic moments",
+                "ontomedia:community": "Cultural celebration"
+              },
+              "ontomedia:storm_night": {
+                "ontomedia:professional": "Emergency response",
+                "ontomedia:personal": "Emotional breakthrough",
+                "ontomedia:community": "Island resilience"
+              }
+            }
+          },
+          "ontomedia:emotional_resonance": {
+            "@id": "ontomedia:emotional_resonance",
+            "@type": "ontomedia:EmotionalResonance",
+            "ontomedia:individual_community": {
+              "ontomedia:ellie": {
+                "ontomedia:personal": "Healing journey",
+                "ontomedia:professional": "Medical practice growth",
+                "ontomedia:community": "Island integration",
+                "ontomedia:resonance": "All aspects reflect healing theme"
+              },
+              "ontomedia:tom": {
+                "ontomedia:personal": "Family building",
+                "ontomedia:professional": "Business development",
+                "ontomedia:community": "Local leadership",
+                "ontomedia:resonance": "All aspects reflect growth theme"
+              }
+            }
+          },
+          "ontomedia:integration_opportunities": {
+            "@id": "ontomedia:integration_opportunities",
+            "@type": "ontomedia:IntegrationOpportunities",
+            "ontomedia:suggested_enhancements": {
+              "ontomedia:medical_practice": {
+                "ontomedia:description": "Use medical cases to reflect emotional themes",
+                "ontomedia:example": "Patient's recovery parallels character growth"
+              },
+              "ontomedia:community_events": {
+                "ontomedia:description": "Integrate personal moments with community activities",
+                "ontomedia:example": "Festival scenes combine romance and tradition"
+              },
+              "ontomedia:family_dynamics": {
+                "ontomedia:description": "Connect family moments to broader themes",
+                "ontomedia:example": "Lily's art reflects community and family healing"
+              }
+            }
+          }
+        }
+      },
+      "ontomedia:has_integrated_scenes": {
+        "@id": "ontomedia:integrated_scenes",
+        "@type": "ontomedia:IntegratedScenes",
+        "ontomedia:has_scenes": {
+          "@id": "ontomedia:scene_development",
+          "@type": "ontomedia:SceneDevelopment",
+          "ontomedia:medical_practice_scenes": {
+            "ontomedia:morning_rounds": {
+              "ontomedia:chapter": 6,
+              "ontomedia:description": "First patient consultation",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Traditional healing consultation",
+                  "ontomedia:development": "Ellie learns from Marie's approach"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Tom's family health history revealed",
+                  "ontomedia:development": "Deeper connection through shared concern"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Local patient shares island history",
+                  "ontomedia:development": "Cultural context for medical practice"
+                }
+              }
+            },
+            "ontomedia:emergency_response": {
+              "ontomedia:chapter": 8,
+              "ontomedia:description": "Traditional healer's cardiac event",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Life-saving medical intervention",
+                  "ontomedia:development": "Combined traditional and modern approaches"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Tom's emotional support during crisis",
+                  "ontomedia:development": "Shared vulnerability strengthens bond"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Neighbors gather in support",
+                  "ontomedia:development": "Community unity in crisis"
+                }
+              }
+            }
+          },
+          "ontomedia:community_event_scenes": {
+            "ontomedia:summer_festival": {
+              "ontomedia:chapter": 9,
+              "ontomedia:description": "Island summer celebration",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Medical tent organization",
+                  "ontomedia:development": "Team collaboration in community service"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Moonlit garden walk with Tom",
+                  "ontomedia:development": "Romantic connection in cultural context"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Traditional dance and celebration",
+                  "ontomedia:development": "Cultural integration through participation"
+                }
+              }
+            },
+            "ontomedia:market_day": {
+              "ontomedia:chapter": 10,
+              "ontomedia:description": "Weekly island market",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Health check station",
+                  "ontomedia:development": "Community healthcare outreach"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Family shopping together",
+                  "ontomedia:development": "Domestic moments in public space"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Local produce and crafts",
+                  "ontomedia:development": "Economic and social hub"
+                }
+              }
+            }
+          },
+          "ontomedia:family_moment_scenes": {
+            "ontomedia:storm_night": {
+              "ontomedia:chapter": 10,
+              "ontomedia:description": "Island storm brings family together",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Emergency medical calls",
+                  "ontomedia:development": "Professional responsibility in crisis"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Family sheltering together",
+                  "ontomedia:development": "Emotional breakthrough in safety"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Neighbor check-ins",
+                  "ontomedia:development": "Community support in crisis"
+                }
+              }
+            },
+            "ontomedia:art_exhibition": {
+              "ontomedia:chapter": 12,
+              "ontomedia:description": "Lily's art show",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Medical practice artwork",
+                  "ontomedia:development": "Artistic expression of healing"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Family pride and support",
+                  "ontomedia:development": "Creative family bonding"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Community art celebration",
+                  "ontomedia:development": "Cultural expression and acceptance"
+                }
+              }
+            }
+          },
+          "ontomedia:transitional_scenes": {
+            "ontomedia:ferry_arrival": {
+              "ontomedia:chapter": 3,
+              "ontomedia:description": "Ellie's first arrival",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Medical equipment transport",
+                  "ontomedia:development": "Practice preparation"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Emotional journey reflection",
+                  "ontomedia:development": "Personal transformation beginning"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Island welcome traditions",
+                  "ontomedia:development": "Cultural transition"
+                }
+              }
+            },
+            "ontomedia:sunset_walk": {
+              "ontomedia:chapter": 7,
+              "ontomedia:description": "Evening island exploration",
+              "ontomedia:layers": {
+                "ontomedia:professional": {
+                  "ontomedia:element": "Medical practice reflection",
+                  "ontomedia:development": "Professional growth"
+                },
+                "ontomedia:personal": {
+                  "ontomedia:element": "Shared moment with Tom",
+                  "ontomedia:development": "Romantic connection"
+                },
+                "ontomedia:community": {
+                  "ontomedia:element": "Island beauty appreciation",
+                  "ontomedia:development": "Sense of belonging"
+                }
+              }
+            }
+          }
+        }
+      },
+      "ontomedia:has_scene_narrative_connections": {
+        "@id": "ontomedia:scene_narrative_connections",
+        "@type": "ontomedia:SceneNarrativeConnections",
+        "ontomedia:has_connections": {
+          "@id": "ontomedia:narrative_connections",
+          "@type": "ontomedia:NarrativeConnections",
+          "ontomedia:thematic_progression": {
+            "ontomedia:healing_journey": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "ferry_arrival",
+                "ontomedia:connection": "Physical journey mirrors emotional healing",
+                "ontomedia:development": "Sets up healing theme through medical practice"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "emergency_response",
+                "ontomedia:connection": "Medical crisis becomes emotional breakthrough",
+                "ontomedia:development": "Healing extends to community and relationships"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "art_exhibition",
+                "ontomedia:connection": "Artistic expression of complete healing",
+                "ontomedia:development": "Healing theme comes full circle"
+              }
+            },
+            "ontomedia:belonging_arc": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "morning_rounds",
+                "ontomedia:connection": "Professional integration begins",
+                "ontomedia:development": "First steps toward community acceptance"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "summer_festival",
+                "ontomedia:connection": "Cultural participation deepens",
+                "ontomedia:development": "Community celebration of belonging"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "market_day",
+                "ontomedia:connection": "Full integration into daily life",
+                "ontomedia:development": "Natural part of community rhythm"
+              }
+            }
+          },
+          "ontomedia:character_development": {
+            "ontomedia:ellie_tom_relationship": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "sunset_walk",
+                "ontomedia:connection": "Initial romantic tension",
+                "ontomedia:development": "Professional respect turns personal"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "storm_night",
+                "ontomedia:connection": "Emotional vulnerability",
+                "ontomedia:development": "Crisis brings them closer"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "art_exhibition",
+                "ontomedia:connection": "Family unit celebration",
+                "ontomedia:development": "Complete relationship integration"
+              }
+            },
+            "ontomedia:lily_ellie_bond": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "morning_rounds",
+                "ontomedia:connection": "Initial family connection",
+                "ontomedia:development": "Medical care creates trust"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "summer_festival",
+                "ontomedia:connection": "Creative collaboration",
+                "ontomedia:development": "Artistic bond strengthens"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "art_exhibition",
+                "ontomedia:connection": "Mother-daughter relationship",
+                "ontomedia:development": "Complete family integration"
+              }
+            }
+          },
+          "ontomedia:community_integration": {
+            "ontomedia:medical_practice": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "ferry_arrival",
+                "ontomedia:connection": "Practice introduction",
+                "ontomedia:development": "Initial community reception"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "emergency_response",
+                "ontomedia:connection": "Practice validation",
+                "ontomedia:development": "Community trust established"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "market_day",
+                "ontomedia:connection": "Practice integration",
+                "ontomedia:development": "Natural part of community life"
+              }
+            },
+            "ontomedia:cultural_adaptation": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "morning_rounds",
+                "ontomedia:connection": "Cultural learning begins",
+                "ontomedia:development": "Traditional medicine understanding"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "summer_festival",
+                "ontomedia:connection": "Cultural participation",
+                "ontomedia:development": "Active community engagement"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "art_exhibition",
+                "ontomedia:connection": "Cultural contribution",
+                "ontomedia:development": "Full cultural integration"
+              }
+            }
+          },
+          "ontomedia:emotional_resonance": {
+            "ontomedia:professional_personal": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "sunset_walk",
+                "ontomedia:connection": "Professional reflection leads to personal growth",
+                "ontomedia:development": "Career change impacts personal life"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "storm_night",
+                "ontomedia:connection": "Professional crisis affects personal relationships",
+                "ontomedia:development": "Work-life balance achieved"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "market_day",
+                "ontomedia:connection": "Professional and personal life fully integrated",
+                "ontomedia:development": "Complete life harmony"
+              }
+            },
+            "ontomedia:individual_community": {
+              "ontomedia:act_1": {
+                "ontomedia:scene": "ferry_arrival",
+                "ontomedia:connection": "Individual journey begins",
+                "ontomedia:development": "Community welcome"
+              },
+              "ontomedia:act_2": {
+                "ontomedia:scene": "emergency_response",
+                "ontomedia:connection": "Individual action impacts community",
+                "ontomedia:development": "Community support"
+              },
+              "ontomedia:act_3": {
+                "ontomedia:scene": "art_exhibition",
+                "ontomedia:connection": "Individual expression celebrated by community",
+                "ontomedia:development": "Complete community integration"
+              }
+            }
+          }
+        }
+      },
+      "ontomedia:has_ontology_adherence": {
+        "@id": "ontomedia:ontology_adherence",
+        "@type": "ontomedia:OntologyAdherence",
+        "ontomedia:has_analysis": {
+          "@id": "ontomedia:adherence_analysis",
+          "@type": "ontomedia:AdherenceAnalysis",
+          "ontomedia:structural_elements": {
+            "@id": "ontomedia:structural_check",
+            "@type": "ontomedia:StructuralCheck",
+            "ontomedia:act_structure": {
+              "ontomedia:completeness": {
+                "ontomedia:act_1": {
+                  "ontomedia:has_chapters": true,
+                  "ontomedia:has_scenes": true,
+                  "ontomedia:has_subplots": true,
+                  "ontomedia:has_transitions": true
+                },
+                "ontomedia:act_2": {
+                  "ontomedia:has_chapters": true,
+                  "ontomedia:has_scenes": true,
+                  "ontomedia:has_subplots": true,
+                  "ontomedia:has_transitions": true
+                },
+                "ontomedia:act_3": {
+                  "ontomedia:has_chapters": true,
+                  "ontomedia:has_scenes": true,
+                  "ontomedia:has_subplots": true,
+                  "ontomedia:has_transitions": true
+                }
+              },
+              "ontomedia:consistency": {
+                "ontomedia:chapter_progression": "Linear and logical",
+                "ontomedia:scene_connection": "Well-defined transitions",
+                "ontomedia:subplot_integration": "Properly nested"
+              }
+            },
+            "ontomedia:beat_structure": {
+              "ontomedia:romance_beats": {
+                "ontomedia:completeness": {
+                  "ontomedia:has_initial_connection": true,
+                  "ontomedia:has_growing_interest": true,
+                  "ontomedia:has_conflict": true,
+                  "ontomedia:has_resolution": true
+                },
+                "ontomedia:progression": "Follows standard romance beat structure"
+              },
+              "ontomedia:professional_beats": {
+                "ontomedia:completeness": {
+                  "ontomedia:has_challenge": true,
+                  "ontomedia:has_trust": true,
+                  "ontomedia:has_growth": true
+                },
+                "ontomedia:progression": "Aligns with medical romance conventions"
+              },
+              "ontomedia:family_beats": {
+                "ontomedia:completeness": {
+                  "ontomedia:has_art": true,
+                  "ontomedia:has_integration": true,
+                  "ontomedia:has_planning": true
+                },
+                "ontomedia:progression": "Supports family romance subgenre"
+              }
+            }
+          },
+          "ontomedia:character_ontology": {
+            "@id": "ontomedia:character_check",
+            "@type": "ontomedia:CharacterCheck",
+            "ontomedia:main_characters": {
+              "ontomedia:ellie": {
+                "ontomedia:has_arc": true,
+                "ontomedia:has_development": true,
+                "ontomedia:has_motivation": true,
+                "ontomedia:has_relationships": true
+              },
+              "ontomedia:tom": {
+                "ontomedia:has_arc": true,
+                "ontomedia:has_development": true,
+                "ontomedia:has_motivation": true,
+                "ontomedia:has_relationships": true
+              },
+              "ontomedia:lily": {
+                "ontomedia:has_arc": true,
+                "ontomedia:has_development": true,
+                "ontomedia:has_motivation": true,
+                "ontomedia:has_relationships": true
+              }
+            },
+            "ontomedia:supporting_characters": {
+              "ontomedia:marie": {
+                "ontomedia:has_arc": true,
+                "ontomedia:has_development": true,
+                "ontomedia:has_relationships": true
+              },
+              "ontomedia:lars": {
+                "ontomedia:has_arc": true,
+                "ontomedia:has_development": true,
+                "ontomedia:has_relationships": true
+              }
+            }
+          },
+          "ontomedia:scene_ontology": {
+            "@id": "ontomedia:scene_check",
+            "@type": "ontomedia:SceneCheck",
+            "ontomedia:scene_elements": {
+              "ontomedia:has_setting": true,
+              "ontomedia:has_characters": true,
+              "ontomedia:has_action": true,
+              "ontomedia:has_emotion": true,
+              "ontomedia:has_transition": true
+            },
+            "ontomedia:scene_types": {
+              "ontomedia:medical_scenes": {
+                "ontomedia:has_professional_context": true,
+                "ontomedia:has_personal_impact": true,
+                "ontomedia:has_community_effect": true
+              },
+              "ontomedia:romantic_scenes": {
+                "ontomedia:has_emotional_development": true,
+                "ontomedia:has_physical_connection": true,
+                "ontomedia:has_relationship_growth": true
+              },
+              "ontomedia:community_scenes": {
+                "ontomedia:has_cultural_context": true,
+                "ontomedia:has_social_interaction": true,
+                "ontomedia:has_community_development": true
+              }
+            }
+          },
+          "ontomedia:theme_ontology": {
+            "@id": "ontomedia:theme_check",
+            "@type": "ontomedia:ThemeCheck",
+            "ontomedia:primary_themes": {
+              "ontomedia:healing": {
+                "ontomedia:has_physical_aspect": true,
+                "ontomedia:has_emotional_aspect": true,
+                "ontomedia:has_community_aspect": true
+              },
+              "ontomedia:belonging": {
+                "ontomedia:has_personal_aspect": true,
+                "ontomedia:has_family_aspect": true,
+                "ontomedia:has_community_aspect": true
+              }
+            },
+            "ontomedia:theme_development": {
+              "ontomedia:has_setup": true,
+              "ontomedia:has_conflict": true,
+              "ontomedia:has_resolution": true
+            }
+          },
+          "ontomedia:genre_ontology": {
+            "@id": "ontomedia:genre_check",
+            "@type": "ontomedia:GenreCheck",
+            "ontomedia:romance_elements": {
+              "ontomedia:has_meet_cute": true,
+              "ontomedia:has_conflict": true,
+              "ontomedia:has_resolution": true
+            },
+            "ontomedia:medical_elements": {
+              "ontomedia:has_professional_conflict": true,
+              "ontomedia:has_life_saving": true,
+              "ontomedia:has_team_bonding": true
+            },
+            "ontomedia:small_town_elements": {
+              "ontomedia:has_community": true,
+              "ontomedia:has_gossip": true,
+              "ontomedia:has_traditions": true
+            }
+          }
+        }
+      }
+    }
+  ]
+} 

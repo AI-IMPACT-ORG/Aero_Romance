@@ -1,0 +1,280 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "agent": "https://example.org/agent#",
+    "file": "https://example.org/file#",
+    "dep": "https://example.org/dependency#",
+    "rel": "https://example.org/relationship#"
+  },
+  "@graph": [
+    {
+      "@type": "agent:DependencyGraph",
+      "@id": "agent:root",
+      "agent:fileTypes": [
+        {
+          "@type": "file:Type",
+          "@id": "file:javascript",
+          "file:name": "JavaScript",
+          "file:extensions": [".js", ".mjs", ".cjs"],
+          "file:mimeType": "text/javascript",
+          "file:dependencies": [
+            {
+              "@type": "dep:Import",
+              "dep:type": "ESModule",
+              "dep:patterns": [
+                "import\\s+{[^}]+}\\s+from\\s+['\"]([^'\"]+)['\"]",
+                "import\\s+\\w+\\s+from\\s+['\"]([^'\"]+)['\"]",
+                "import\\s+\\*\\s+as\\s+\\w+\\s+from\\s+['\"]([^'\"]+)['\"]"
+              ]
+            },
+            {
+              "@type": "dep:Import",
+              "dep:type": "CommonJS",
+              "dep:patterns": [
+                "require\\(['\"]([^'\"]+)['\"]\\)",
+                "module\\.exports",
+                "exports\\.[\\w]+"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "file:Type",
+          "@id": "file:typescript",
+          "file:name": "TypeScript",
+          "file:extensions": [".ts", ".tsx"],
+          "file:mimeType": "text/typescript",
+          "file:dependencies": [
+            {
+              "@type": "dep:Import",
+              "dep:type": "ESModule",
+              "dep:patterns": [
+                "import\\s+{[^}]+}\\s+from\\s+['\"]([^'\"]+)['\"]",
+                "import\\s+\\w+\\s+from\\s+['\"]([^'\"]+)['\"]",
+                "import\\s+\\*\\s+as\\s+\\w+\\s+from\\s+['\"]([^'\"]+)['\"]"
+              ]
+            },
+            {
+              "@type": "dep:Import",
+              "dep:type": "TypeOnly",
+              "dep:patterns": [
+                "import\\s+type\\s+{[^}]+}\\s+from\\s+['\"]([^'\"]+)['\"]",
+                "import\\s+type\\s+\\w+\\s+from\\s+['\"]([^'\"]+)['\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "file:Type",
+          "@id": "file:python",
+          "file:name": "Python",
+          "file:extensions": [".py"],
+          "file:mimeType": "text/x-python",
+          "file:dependencies": [
+            {
+              "@type": "dep:Import",
+              "dep:type": "StandardImport",
+              "dep:patterns": [
+                "import\\s+\\w+",
+                "from\\s+\\w+\\s+import\\s+\\w+",
+                "from\\s+\\w+\\s+import\\s+\\*"
+              ]
+            },
+            {
+              "@type": "dep:Import",
+              "dep:type": "RelativeImport",
+              "dep:patterns": [
+                "from\\s+\\.\\s+import\\s+\\w+",
+                "from\\s+\\.\\.\\s+import\\s+\\w+"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "file:Type",
+          "@id": "file:java",
+          "file:name": "Java",
+          "file:extensions": [".java"],
+          "file:mimeType": "text/x-java-source",
+          "file:dependencies": [
+            {
+              "@type": "dep:Import",
+              "dep:type": "PackageImport",
+              "dep:patterns": [
+                "import\\s+[\\w\\.]+;",
+                "import\\s+[\\w\\.]+\\*;"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "file:Type",
+          "@id": "file:css",
+          "file:name": "CSS",
+          "file:extensions": [".css", ".scss", ".sass", ".less"],
+          "file:mimeType": "text/css",
+          "file:dependencies": [
+            {
+              "@type": "dep:Import",
+              "dep:type": "StyleImport",
+              "dep:patterns": [
+                "@import\\s+['\"]([^'\"]+)['\"]",
+                "@import\\s+url\\(['\"]([^'\"]+)['\"]\\)"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "file:Type",
+          "@id": "file:html",
+          "file:name": "HTML",
+          "file:extensions": [".html", ".htm"],
+          "file:mimeType": "text/html",
+          "file:dependencies": [
+            {
+              "@type": "dep:Import",
+              "dep:type": "ScriptImport",
+              "dep:patterns": [
+                "<script\\s+src=['\"]([^'\"]+)['\"]",
+                "<script\\s+type=['\"]module['\"]\\s+src=['\"]([^'\"]+)['\"]"
+              ]
+            },
+            {
+              "@type": "dep:Import",
+              "dep:type": "StyleImport",
+              "dep:patterns": [
+                "<link\\s+rel=['\"]stylesheet['\"]\\s+href=['\"]([^'\"]+)['\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "@type": "file:Type",
+          "@id": "file:turtle",
+          "file:name": "Turtle",
+          "file:extensions": [".ttl"],
+          "file:mimeType": "text/turtle",
+          "file:dependencies": [
+            {
+              "@type": "dep:Import",
+              "dep:type": "DirectImport",
+              "dep:patterns": [
+                "@import\\s+<([^>]+)>",
+                "LOAD\\s+<([^>]+)>"
+              ]
+            },
+            {
+              "@type": "dep:Import",
+              "dep:type": "PrefixImport",
+              "dep:patterns": [
+                "@prefix\\s+\\w+\\s*:\\s*<([^>]+)>"
+              ]
+            },
+            {
+              "@type": "dep:Import",
+              "dep:type": "BaseImport",
+              "dep:patterns": [
+                "@base\\s+<([^>]+)>"
+              ]
+            },
+            {
+              "@type": "dep:Import",
+              "dep:type": "OntologyImport",
+              "dep:patterns": [
+                "<([^>]+)>\\s+a\\s+owl:Ontology"
+              ]
+            }
+          ]
+        }
+      ],
+      "agent:relationships": [
+        {
+          "@type": "rel:Relationship",
+          "@id": "rel:imports",
+          "rel:name": "Imports",
+          "rel:description": "File imports another file",
+          "rel:bidirectional": false
+        },
+        {
+          "@type": "rel:Relationship",
+          "@id": "rel:references",
+          "rel:name": "References",
+          "rel:description": "File references another file without direct import",
+          "rel:bidirectional": false
+        },
+        {
+          "@type": "rel:Relationship",
+          "@id": "rel:depends",
+          "rel:name": "Depends",
+          "rel:description": "File depends on another file for functionality",
+          "rel:bidirectional": false
+        },
+        {
+          "@type": "rel:Relationship",
+          "@id": "rel:tests",
+          "rel:name": "Tests",
+          "rel:description": "Test file for another file",
+          "rel:bidirectional": false
+        },
+        {
+          "@type": "rel:Relationship",
+          "@id": "rel:configures",
+          "rel:name": "Configures",
+          "rel:description": "Configuration file for another file",
+          "rel:bidirectional": false
+        }
+      ],
+      "agent:resolutionStrategies": [
+        {
+          "@type": "agent:ResolutionStrategy",
+          "@id": "agent:strategy:package",
+          "agent:name": "PackageResolution",
+          "agent:description": "Resolve dependencies from package management files",
+          "agent:files": [
+            "package.json",
+            "requirements.txt",
+            "pom.xml",
+            "build.gradle",
+            "tsconfig.json"
+          ]
+        },
+        {
+          "@type": "agent:ResolutionStrategy",
+          "@id": "agent:strategy:path",
+          "agent:name": "PathResolution",
+          "agent:description": "Resolve relative and absolute paths",
+          "agent:capabilities": [
+            "RelativePathResolution",
+            "AbsolutePathResolution",
+            "AliasResolution"
+          ]
+        },
+        {
+          "@type": "agent:ResolutionStrategy",
+          "@id": "agent:strategy:module",
+          "agent:name": "ModuleResolution",
+          "agent:description": "Resolve module dependencies",
+          "agent:capabilities": [
+            "NodeModuleResolution",
+            "PythonModuleResolution",
+            "JavaPackageResolution"
+          ]
+        },
+        {
+          "@type": "agent:ResolutionStrategy",
+          "@id": "agent:strategy:ontology",
+          "agent:name": "OntologyResolution",
+          "agent:description": "Resolve ontology dependencies",
+          "agent:capabilities": [
+            "HTTPResolution",
+            "LocalResolution",
+            "OntologyImports",
+            "VersionResolution",
+            "DependencyChain"
+          ]
+        }
+      ]
+    }
+  ]
+} 

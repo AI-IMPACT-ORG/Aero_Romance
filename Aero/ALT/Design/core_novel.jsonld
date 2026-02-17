@@ -1,0 +1,107 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:core_novel",
+      "@type": "ontomedia:Novel",
+      "ontomedia:has_metadata": {
+        "@id": "ontomedia:metadata",
+        "@type": "ontomedia:WorkMetadata",
+        "ontomedia:title": "The Doctor's Retreat",
+        "ontomedia:genre": "Contemporary Romance",
+        "ontomedia:heat_level": "Moderate",
+        "ontomedia:word_count": 90000,
+        "ontomedia:target_audience": "25-45",
+        "ontomedia:marketing_angle": "Running away can lead to finding home",
+        "ontomedia:series_potential": "Ærø Romance Series",
+        "ontomedia:premise": "A Copenhagen doctor flees an unwanted proposal to find unexpected love and community on the Danish island of Ærø",
+        "ontomedia:version": "1.0",
+        "ontomedia:last_updated": "2024-03-20"
+      },
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:network_registry",
+        "@type": "ontomedia:NetworkRegistry",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:narrative_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:narrative_network",
+            "ontomedia:relationship": "core_structure",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:character_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:character_network",
+            "ontomedia:relationship": "character_structure",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:scene_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:scene_network",
+            "ontomedia:relationship": "scene_structure",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:theme_network",
+            "ontomedia:relationship": "theme_structure",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:location_network",
+            "ontomedia:relationship": "location_structure",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:development_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:development_network",
+            "ontomedia:relationship": "development_structure",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:quality_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:quality_network",
+            "ontomedia:relationship": "quality_structure",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:style_reference",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:style_network",
+            "ontomedia:relationship": "style_structure",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:core_novel_validation",
+        "@type": "ontomedia:NovelValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:core_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

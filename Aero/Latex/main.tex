@@ -1,0 +1,181 @@
+% SPDX-License-Identifier: GPL-3.0-only
+
+\documentclass[12pt]{book}
+
+% Font settings
+\usepackage{fontspec}
+\setmainfont{Palatino}
+
+% Language settings
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{danish}
+
+% Page layout for mobile reading
+\usepackage[paperwidth=4.5in,paperheight=7.5in,margin=0.5in,top=0.75in,bottom=0.75in]{geometry}
+
+% Graphics
+\usepackage{graphicx}
+
+% Hyperlinks
+\usepackage[hidelinks]{hyperref}
+
+% Tables
+\usepackage{booktabs}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Lists
+\usepackage{enumitem}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\nouppercase{\rightmark}}
+\fancyhead[RE]{\nouppercase{\leftmark}}
+\setlength{\headheight}{15pt}  % Increased header height
+
+% Chapter titles
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+
+% First line indent
+\usepackage{indentfirst}
+\setlength{\parindent}{1em}
+
+% Epigraph
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.8\textwidth}
+
+% Empty pages
+\usepackage{emptypage}
+
+% Line spacing
+\usepackage{setspace}
+\setstretch{1.2}
+
+% Microtypography
+\usepackage{microtype}
+
+% Title
+\title{The Island Doctor}
+\author{Rutger Boels}
+\date{\today}
+
+\begin{document}
+
+% Title page
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% Copyright page
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\small
+Copyright © 2025 AI.IMPACT GmbH\\[1em]
+All rights reserved.\\[1em]
+This is a work of fiction. Names, characters, places, and incidents either are the product of the author's imagination or are used fictitiously. Any resemblance to actual persons, living or dead, events, or locales is entirely coincidental.\\[1em]
+First Edition
+\end{center}
+\vspace*{\fill}
+\newpage
+
+% Synopsis page
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\large\textbf{Synopsis}\\[1em]
+\end{center}
+\small
+When Dr. Katrine Christiansen inherits her grandmother's medical practice on the Danish island of Ærø, she discovers a community grappling with a mysterious condition known as the Baltic Fever. As she works with local doctor Mads to unravel the secrets of this condition, she finds herself drawn to both the island's traditional healing practices and the man who has dedicated his life to understanding them.\\[0.5em]
+
+"The Island Doctor" is a heartwarming tale of love, healing, and the power of tradition in a modern world, exploring the delicate balance between scientific progress and ancient wisdom.
+\vspace*{\fill}
+\newpage
+
+% Epigraph
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\large\textit{"The best medicine is the one that heals not just the body,\\
+but the soul."}\\[1em]
+\small —Dr. Marie Christiansen
+\end{center}
+\vspace*{\fill}
+\newpage
+
+% Table of contents
+\tableofcontents
+\newpage
+
+% Chapters
+\chapter{Ankomst}  % Arrival
+\include{chapters/chapter_1}
+\chapter{Møde}  % Meeting
+\include{chapters/chapter_2}
+\chapter{Klinik}  % Clinic
+\include{chapters/chapter_3}
+\chapter{Forsker}  % Researcher
+\include{chapters/chapter_4}
+\chapter{Haven}  % Garden
+\include{chapters/chapter_5}
+\chapter{Storm}  % Storm
+\include{chapters/chapter_6}
+\chapter{Healing}  % Healing
+\include{chapters/chapter_7}
+\chapter{Opdagelse}  % Discovery
+\include{chapters/chapter_8}
+\chapter{Forbindelse}  % Connection
+\include{chapters/chapter_9}
+\chapter{Læring}  % Learning
+\include{chapters/chapter_10}
+\chapter{Gennembrud}  % Breakthrough
+\include{chapters/chapter_11}
+\chapter{Samarbejde}  % Collaboration
+\include{chapters/chapter_12}
+\chapter{Kraft}  % Power
+\include{chapters/chapter_13}
+\chapter{Hemmelighed}  % Secret
+\include{chapters/chapter_14}
+\chapter{Forandring}  % Change
+\include{chapters/chapter_15}
+\chapter{Præsentation}  % Presentation
+\include{chapters/chapter_16}
+\chapter{Udfordring}  % Challenge
+\include{chapters/chapter_17}
+\chapter{Test}  % Test
+\include{chapters/chapter_18}
+\chapter{Resultat}  % Result
+\include{chapters/chapter_19}
+\chapter{Valg}  % Choice
+\include{chapters/chapter_20}
+\chapter{Klinikken}  % The Clinic
+\include{chapters/chapter_21}
+\chapter{Bryllup}  % Wedding
+\include{chapters/chapter_22}
+\chapter{Bryllupsrejse}  % Honeymoon
+\include{chapters/chapter_23}
+\chapter{Hjemkomst}  % Homecoming
+\include{chapters/chapter_24}
+\chapter{Arbejde}  % Work
+\include{chapters/chapter_25}
+\chapter{Fremtid}  % Future
+\include{chapters/chapter_26}
+\chapter{Anerkendelse}  % Recognition
+\include{chapters/chapter_27}
+\chapter{Balance}  % Balance
+\include{chapters/chapter_28}
+\chapter{Arv}  % Legacy
+\include{chapters/chapter_29}
+\chapter{Kærlighed}  % Love
+\include{chapters/chapter_30}
+
+\end{document} 

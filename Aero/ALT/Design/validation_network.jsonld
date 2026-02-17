@@ -1,0 +1,138 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:validation_network",
+      "@type": "ontomedia:ValidationNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:validation_registry",
+        "@type": "ontomedia:ValidationRegistry",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:structure_validation_reference",
+            "@type": "ontomedia:ValidationTypeReference",
+            "ontomedia:target": "ontomedia:structure_validation",
+            "ontomedia:relationship": "validation_type",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:scene_structure",
+                "@type": "ontomedia:ValidationElement",
+                "ontomedia:name": "Scene Structure",
+                "ontomedia:description": "Validates scene structure and composition",
+                "ontomedia:requirements": [
+                  "Clear beginning, middle, and end",
+                  "Proper scene transitions",
+                  "Consistent point of view",
+                  "Appropriate pacing"
+                ]
+              },
+              {
+                "@id": "ontomedia:chapter_structure",
+                "@type": "ontomedia:ValidationElement",
+                "ontomedia:name": "Chapter Structure",
+                "ontomedia:description": "Validates chapter structure and flow",
+                "ontomedia:requirements": [
+                  "Logical chapter breaks",
+                  "Chapter arc completion",
+                  "Proper scene sequencing",
+                  "Chapter length consistency"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:type_validation_reference",
+            "@type": "ontomedia:ValidationTypeReference",
+            "ontomedia:target": "ontomedia:type_validation",
+            "ontomedia:relationship": "validation_type",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:scene_type",
+                "@type": "ontomedia:ValidationElement",
+                "ontomedia:name": "Scene Type",
+                "ontomedia:description": "Validates scene type consistency",
+                "ontomedia:requirements": [
+                  "Type-specific elements present",
+                  "Consistent type application",
+                  "Appropriate type transitions",
+                  "Type-specific requirements met"
+                ]
+              },
+              {
+                "@id": "ontomedia:layer_type",
+                "@type": "ontomedia:ValidationElement",
+                "ontomedia:name": "Layer Type",
+                "ontomedia:description": "Validates layer type consistency",
+                "ontomedia:requirements": [
+                  "Layer-specific elements present",
+                  "Consistent layer application",
+                  "Layer interaction validation",
+                  "Layer-specific requirements met"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:progression_validation_reference",
+            "@type": "ontomedia:ValidationTypeReference",
+            "ontomedia:target": "ontomedia:progression_validation",
+            "ontomedia:relationship": "validation_type",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:character_progression",
+                "@type": "ontomedia:ValidationElement",
+                "ontomedia:name": "Character Progression",
+                "ontomedia:description": "Validates character development and growth",
+                "ontomedia:requirements": [
+                  "Consistent character development",
+                  "Growth arc progression",
+                  "Relationship development",
+                  "Character motivation consistency"
+                ]
+              },
+              {
+                "@id": "ontomedia:plot_progression",
+                "@type": "ontomedia:ValidationElement",
+                "ontomedia:name": "Plot Progression",
+                "ontomedia:description": "Validates plot development and flow",
+                "ontomedia:requirements": [
+                  "Plot arc progression",
+                  "Conflict development",
+                  "Resolution consistency",
+                  "Subplot integration"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:validation_network_validation",
+        "@type": "ontomedia:ValidationNetworkValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:validation_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+} 

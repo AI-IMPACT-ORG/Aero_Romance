@@ -1,0 +1,2491 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "novel": "http://example.org/aero/novel/",
+    "character": "http://example.org/aero/character/",
+    "chapter": "http://example.org/aero/chapter/",
+    "act": "http://example.org/aero/act/",
+    "setting": "http://example.org/aero/setting/",
+    "plot": "http://example.org/aero/plot/",
+    "theme": "http://example.org/aero/theme/",
+    "guidelines": "http://example.org/aero/guidelines/",
+    "cultural": "http://example.org/aero/cultural/",
+    "scene": "http://example.org/aero/scene/",
+    "writing": "http://example.org/aero/writing/",
+    "sensory": "http://example.org/aero/sensory/",
+    "emotional": "http://example.org/aero/emotional/",
+    "danish": "http://example.org/aero/danish/",
+    "weather": "http://example.org/aero/weather/",
+    "season": "http://example.org/aero/season/",
+    "community": "http://example.org/aero/community/",
+    "family": "http://example.org/aero/family/",
+    "professional": "http://example.org/aero/professional/",
+    "artistic": "http://example.org/aero/artistic/",
+    "medical": "http://example.org/aero/medical/",
+    "business": "http://example.org/aero/business/",
+    "romantic": "http://example.org/aero/romantic/",
+    "symbolic": "http://example.org/aero/symbolic/",
+    "narrative": "http://example.org/aero/narrative/",
+    "transition": "http://example.org/aero/transition/",
+    "quality": "http://example.org/aero/quality/",
+    "location": "http://example.org/aero/location/",
+    "timeline": "http://example.org/aero/timeline/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph",
+    "beat": "http://example.org/aero/beat/",
+    "hayes": "http://example.org/aero/hayes/",
+    "hauge": "http://example.org/aero/hauge/",
+    "balance": "http://example.org/aero/balance/",
+    "shared": "http://example.org/aero/shared/",
+    "connection": "http://example.org/aero/connection/",
+    "ontomedia": "http://example.org/aero/ontomedia/"
+  },
+  "@graph": [
+    {
+      "@id": "novel:network",
+      "@type": "novel:NovelNetwork",
+      "novel:has_core": {
+        "@id": "novel:core",
+        "@type": "novel:CoreElements",
+        "novel:has_metadata": {
+          "@id": "novel:metadata",
+          "@type": "novel:Metadata",
+          "novel:title": "The Doctor's Retreat",
+          "novel:genre": "Contemporary Romance",
+          "novel:heat_level": "Moderate",
+          "novel:word_count": 90000,
+          "novel:target_audience": "25-45",
+          "novel:marketing_angle": "Running away can lead to finding home",
+          "novel:series_potential": "Ærø Romance Series",
+          "novel:premise": "A Copenhagen doctor flees an unwanted proposal to find unexpected love and community on the Danish island of Ærø",
+          "novel:version": "1.0",
+          "novel:last_updated": "2024-03-20"
+        },
+        "novel:has_timeline": {
+          "@id": "novel:timeline",
+          "@type": "novel:Timeline",
+          "novel:has_chapter": {
+            "@id": "chapter:references",
+            "@type": "chapter:ChapterReferences",
+            "chapter:has_reference": [
+              {
+                "@id": "chapter:reference_1",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_1",
+                "chapter:sequence": 1
+              },
+              {
+                "@id": "chapter:reference_2",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_2",
+                "chapter:sequence": 2
+              },
+              {
+                "@id": "chapter:reference_3",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_3",
+                "chapter:sequence": 3
+              },
+              {
+                "@id": "chapter:reference_4",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_4",
+                "chapter:sequence": 4
+              },
+              {
+                "@id": "chapter:reference_5",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_5",
+                "chapter:sequence": 5
+              },
+              {
+                "@id": "chapter:reference_6",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_6",
+                "chapter:sequence": 6
+              },
+              {
+                "@id": "chapter:reference_7",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_7",
+                "chapter:sequence": 7
+              },
+              {
+                "@id": "chapter:reference_8",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_8",
+                "chapter:sequence": 8
+              },
+              {
+                "@id": "chapter:reference_9",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_9",
+                "chapter:sequence": 9
+              },
+              {
+                "@id": "chapter:reference_10",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_10",
+                "chapter:sequence": 10
+              },
+              {
+                "@id": "chapter:reference_11",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_11",
+                "chapter:sequence": 11
+              },
+              {
+                "@id": "chapter:reference_12",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_12",
+                "chapter:sequence": 12
+              },
+              {
+                "@id": "chapter:reference_13",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_13",
+                "chapter:sequence": 13
+              },
+              {
+                "@id": "chapter:reference_14",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_14",
+                "chapter:sequence": 14
+              },
+              {
+                "@id": "chapter:reference_15",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_15",
+                "chapter:sequence": 15
+              },
+              {
+                "@id": "chapter:reference_16",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_16",
+                "chapter:sequence": 16
+              },
+              {
+                "@id": "chapter:reference_17",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_17",
+                "chapter:sequence": 17
+              },
+              {
+                "@id": "chapter:reference_18",
+                "@type": "chapter:ChapterReference",
+                "chapter:refers_to": "chapter:detailed_chapters/chapter:chapter_18",
+                "chapter:sequence": 18
+              }
+            ]
+          }
+        }
+      },
+      "novel:has_guidelines": {
+        "@id": "guidelines:network",
+        "@type": "guidelines:GuidelinesNetwork",
+        "guidelines:has_writing": {
+          "@id": "writing:network",
+          "@type": "writing:WritingNetwork",
+          "writing:has_patterns": "writing:patterns",
+          "writing:has_scene_guidelines": "scene:development_guidelines",
+          "writing:has_voice_guidelines": "character:voice_guidelines",
+          "writing:has_shared_elements": {
+            "@id": "shared:writing_elements",
+            "@type": "shared:WritingElements",
+            "shared:sensory": {
+              "shared:connects_to": [
+                "location:island_setting",
+                "weather:impact_guidelines",
+                "cultural:details"
+              ]
+            },
+            "shared:emotional": {
+              "shared:connects_to": [
+                "character:relationships",
+                "theme:integration",
+                "scene:transitions"
+              ]
+            },
+            "shared:cultural": {
+              "shared:connects_to": [
+                "cultural:elements",
+                "location:island_setting",
+                "character:community_relationships"
+              ]
+            }
+          }
+        },
+        "guidelines:has_quality": {
+          "@id": "quality:network",
+          "@type": "quality:QualityNetwork",
+          "quality:has_style": "style:network",
+          "quality:has_assessment": {
+            "@id": "quality:assessment",
+            "@type": "quality:QualityAssessment",
+            "quality:has_plot": {
+              "@id": "quality:plot",
+              "@type": "quality:PlotQuality",
+              "quality:rating": 8.5,
+              "quality:strengths": [
+                "Strong character arcs",
+                "Clear conflict progression",
+                "Satisfying resolution",
+                "Cultural integration"
+              ],
+              "quality:areas_for_improvement": [
+                "Pacing in middle chapters",
+                "Secondary plot development",
+                "Conflict resolution timing"
+              ]
+            },
+            "quality:has_character": {
+              "@id": "quality:character",
+              "@type": "quality:CharacterQuality",
+              "quality:rating": 9.0,
+              "quality:strengths": [
+                "Deep character development",
+                "Authentic relationships",
+                "Cultural authenticity",
+                "Emotional depth"
+              ],
+              "quality:areas_for_improvement": [
+                "Secondary character development",
+                "Relationship progression",
+                "Cultural adaptation"
+              ]
+            },
+            "quality:has_world_building": {
+              "@id": "quality:world_building",
+              "@type": "quality:WorldBuildingQuality",
+              "quality:rating": 9.5,
+              "quality:strengths": [
+                "Rich cultural details",
+                "Authentic setting",
+                "Community integration",
+                "Natural elements"
+              ],
+              "quality:areas_for_improvement": [
+                "Historical context",
+                "Cultural depth",
+                "Setting consistency"
+              ]
+            },
+            "quality:has_emotional_depth": {
+              "@id": "quality:emotional_depth",
+              "@type": "quality:EmotionalDepthQuality",
+              "quality:rating": 9.0,
+              "quality:strengths": [
+                "Authentic relationships",
+                "Cultural integration",
+                "Personal growth",
+                "Community connection"
+              ],
+              "quality:areas_for_improvement": [
+                "Emotional pacing",
+                "Relationship development",
+                "Cultural adaptation"
+              ]
+            },
+            "quality:has_themes": {
+              "@id": "quality:themes",
+              "@type": "quality:ThemeQuality",
+              "quality:rating": 9.0,
+              "quality:strengths": [
+                "Clear thematic elements",
+                "Cultural integration",
+                "Personal growth",
+                "Community connection"
+              ],
+              "quality:areas_for_improvement": [
+                "Theme development",
+                "Symbolic elements",
+                "Cultural depth"
+              ]
+            }
+          }
+        }
+      },
+      "novel:has_development": {
+        "@id": "development:network",
+        "@type": "development:DevelopmentNetwork",
+        "development:has_character": {
+          "@id": "character:network",
+          "@type": "character:CharacterNetwork",
+          "character:has_voice": "character:voice_guidelines",
+          "character:has_stages": "character:development_stages",
+          "character:has_relationships": {
+            "@id": "connection:relationship_network",
+            "@type": "connection:RelationshipNetwork",
+            "connection:professional": {
+              "connection:ellie_tom": {
+                "connection:type": "medical_business",
+                "connection:development": [
+                  "Initial professional respect",
+                  "Growing collaboration",
+                  "Shared community goals",
+                  "Professional partnership"
+                ],
+                "connection:connects_to": [
+                  "location:medical_practice",
+                  "location:b_and_b",
+                  "theme:integration",
+                  "cultural:professional_growth"
+                ]
+              }
+            },
+            "connection:personal": {
+              "connection:ellie_lily": {
+                "connection:type": "maternal",
+                "connection:development": [
+                  "Initial connection",
+                  "Artistic bonding",
+                  "Family integration",
+                  "Maternal fulfillment"
+                ],
+                "connection:connects_to": [
+                  "location:garden",
+                  "theme:refuge",
+                  "cultural:family_values"
+                ]
+              }
+            }
+          }
+        },
+        "development:has_balance": "balance:guidelines"
+      },
+      "novel:has_structure": {
+        "@id": "structure:network",
+        "@type": "structure:StructureNetwork",
+        "structure:has_beat": "beat:network",
+        "structure:has_scene": {
+          "@id": "scene:network",
+          "@type": "scene:SceneNetwork",
+          "scene:has_guidelines": "scene:development_guidelines",
+          "scene:has_transitions": {
+            "@id": "shared:scene_transitions",
+            "@type": "shared:SceneTransitions",
+            "shared:emotional": {
+              "shared:connects_to": [
+                "character:development_stages",
+                "theme:integration",
+                "weather:impact_guidelines"
+              ]
+            },
+            "shared:location": {
+              "shared:connects_to": [
+                "location:island_setting",
+                "weather:impact_guidelines",
+                "cultural:details"
+              ]
+            }
+          }
+        }
+      },
+      "novel:has_setting": {
+        "@id": "setting:network",
+        "@type": "setting:SettingNetwork",
+        "setting:has_location": {
+          "@id": "location:network",
+          "@type": "location:LocationNetwork",
+          "location:has_weather": "weather:impact_guidelines",
+          "location:has_cultural": {
+            "@id": "shared:location_culture",
+            "@type": "shared:LocationCulture",
+            "shared:connects_to": [
+              "cultural:elements",
+              "character:community_relationships",
+              "theme:integration"
+            ]
+          }
+        },
+        "setting:has_theme": {
+          "@id": "theme:network",
+          "@type": "theme:ThemeNetwork",
+          "theme:has_integration": {
+            "@id": "theme:integration",
+            "@type": "theme:ThemeIntegration",
+            "theme:has_refuge": {
+              "@id": "theme:refuge",
+              "@type": "theme:Refuge",
+              "theme:physical": [
+                "Island setting",
+                "B&B environment",
+                "Medical practice",
+                "Family home"
+              ],
+              "theme:emotional": [
+                "Community acceptance",
+                "Family connection",
+                "Professional fulfillment",
+                "Personal growth"
+              ],
+              "theme:cultural": [
+                "Danish traditions",
+                "Island community",
+                "Family values",
+                "Professional ethics"
+              ]
+            },
+            "theme:has_purpose": {
+              "@id": "theme:purpose",
+              "@type": "theme:Purpose",
+              "theme:professional": [
+                "Medical practice",
+                "Community service",
+                "Family legacy",
+                "Personal growth"
+              ],
+              "theme:personal": [
+                "Finding home",
+                "Building family",
+                "Cultural integration",
+                "Emotional healing"
+              ]
+            },
+            "theme:has_home": {
+              "@id": "theme:home",
+              "@type": "theme:Home",
+              "theme:physical": [
+                "Island setting",
+                "B&B environment",
+                "Medical practice",
+                "Family home"
+              ],
+              "theme:emotional": [
+                "Community belonging",
+                "Family connection",
+                "Professional fulfillment",
+                "Personal growth"
+              ],
+              "theme:cultural": [
+                "Danish traditions",
+                "Island community",
+                "Family values",
+                "Professional ethics"
+              ]
+            }
+          }
+        }
+      },
+      "ontomedia:has_beat_structure": {
+        "@id": "ontomedia:beat_structure",
+        "@type": "ontomedia:BeatStructure",
+        "ontomedia:has_romance_beats": {
+          "@id": "ontomedia:romance_beats",
+          "@type": "ontomedia:RomanceBeats",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:midpoint_crisis",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "The Storm",
+              "ontomedia:chapter": 8,
+              "ontomedia:description": "A severe storm hits the island, forcing Ellie to make critical medical decisions while Tom is away. This crisis tests her professional capabilities and personal resolve.",
+              "ontomedia:emotional_state": "Professional and personal crisis",
+              "ontomedia:external_conflict": "Medical emergency during storm",
+              "ontomedia:internal_conflict": "Self-doubt vs professional duty"
+            },
+            {
+              "@id": "ontomedia:false_victory",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "The Celebration",
+              "ontomedia:chapter": 9,
+              "ontomedia:description": "After successfully handling the storm crisis, Ellie receives praise from the community and a job offer from Copenhagen. This creates a false sense of resolution.",
+              "ontomedia:emotional_state": "Momentary triumph",
+              "ontomedia:external_conflict": "Career opportunity vs island life",
+              "ontomedia:internal_conflict": "Professional ambition vs personal happiness"
+            },
+            {
+              "@id": "ontomedia:dark_night",
+              "@type": "ontomedia:Beat",
+              "ontomedia:name": "The Abyss",
+              "ontomedia:chapter": 12,
+              "ontomedia:description": "Ellie's decision to leave creates a profound crisis. She faces the loss of her new family, community, and professional purpose. This is her darkest moment.",
+              "ontomedia:emotional_state": "Complete despair",
+              "ontomedia:external_conflict": "Leaving vs staying",
+              "ontomedia:internal_conflict": "Fear vs love"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@id": "character:network",
+      "@type": "character:CharacterNetwork",
+      "character:has_protagonist": {
+        "@id": "character:ellie",
+        "@type": "character:Protagonist",
+        "character:name": "Dr. Eleanor 'Ellie' Hart",
+        "character:profession": "General Practitioner with Emergency Medicine Experience",
+        "character:age": "Mid-thirties",
+        "character:arc": "Finding home and love",
+        "character:qualifications": [
+          "Completed GP training during residency",
+          "Specialized in Emergency Medicine for 5 years",
+          "Maintained GP license while working in emergency medicine"
+        ],
+        "character:physical_description": [
+          "Professional appearance",
+          "Natural beauty",
+          "Tired eyes showing stress",
+          "Mother's pearl necklace",
+          "Minimalist style"
+        ],
+        "character:key_traits": [
+          "Dedicated doctor",
+          "City background",
+          "Family legacy",
+          "Professional pride",
+          "Adaptable nature",
+          "Compassionate care"
+        ],
+        "character:insecurities": [
+          "Fear of not living up to her mother's medical legacy",
+          "Worries about being too direct in professional settings",
+          "Self-doubt about balancing career and personal life",
+          "Anxiety about adapting to island life"
+        ],
+        "character:flaws": [
+          "Tendency to overwork as emotional avoidance",
+          "Stubborn independence that pushes people away",
+          "Perfectionism that causes unnecessary stress",
+          "Difficulty asking for help",
+          "Sometimes too direct in professional settings"
+        ],
+        "character:backstory": [
+          "Copenhagen roots",
+          "Medical family",
+          "Career focus",
+          "Family loss",
+          "Professional success",
+          "Personal growth",
+          "Island connection"
+        ],
+        "character:has_motivation": "character:ellie_motivations"
+      },
+      "character:has_secondary_protagonist": {
+        "@id": "character:tom",
+        "@type": "character:Protagonist",
+        "character:name": "Tom Nielsen",
+        "character:profession": "B&B Owner and Eco-Tourism Consultant",
+        "character:age": "Early forties",
+        "character:arc": "Opening up to love",
+        "character:business_background": [
+          "Inherited family B&B 10 years ago",
+          "Transformed into eco-friendly establishment",
+          "Consultant for other island businesses"
+        ],
+        "character:physical_description": [
+          "Salt-and-pepper hair",
+          "Weather-worn hands",
+          "Gentle smile",
+          "Practical clothing",
+          "Outdoor tan",
+          "Strong build"
+        ],
+        "character:key_traits": [
+          "Island native",
+          "Single father",
+          "Community pillar",
+          "Nature lover",
+          "Practical wisdom",
+          "Quiet strength"
+        ],
+        "character:insecurities": [
+          "Fear of failing as a father",
+          "Worries about Lily's future without a mother figure",
+          "Self-doubt about his ability to love again",
+          "Anxiety about balancing business and family"
+        ],
+        "character:flaws": [
+          "Tendency to put others' needs before his own",
+          "Sometimes too protective of Lily",
+          "Difficulty expressing emotions",
+          "Can be overly cautious in relationships",
+          "Struggles to delegate at the B&B"
+        ],
+        "character:backstory": [
+          "Divorced father raising daughter",
+          "Family B&B legacy",
+          "Island preservation",
+          "Co-parenting with ex-wife",
+          "Preserved family garden"
+        ],
+        "character:has_motivation": "character:tom_motivations"
+      },
+      "character:has_supporting": {
+        "@id": "character:supporting_cast",
+        "@type": "character:SupportingCast",
+        "character:has_family": {
+          "@id": "character:lily",
+          "@type": "character:Supporting",
+          "character:name": "Lily Nielsen",
+          "character:role": "Tom's daughter",
+          "character:arc": "From artistic isolation to seeking connection",
+          "character:key_traits": [
+            "Creative spirit",
+            "Intuitive",
+            "Bridge between characters",
+            "Need for maternal figure"
+          ],
+          "character:voice": [
+            "Child perspective",
+            "Artistic references",
+            "Emotional honesty",
+            "Growing wisdom"
+          ]
+        },
+        "character:has_medical": {
+          "@id": "character:dr_jensen",
+          "@type": "character:Supporting",
+          "character:name": "Dr. Henrik Jensen",
+          "character:role": "Retiring Island Doctor",
+          "character:age": "Mid-sixties",
+          "character:key_traits": [
+            "Professional mentor",
+            "Island historian",
+            "Community elder",
+            "Legacy concern",
+            "Medical wisdom"
+          ],
+          "character:backstory": [
+            "Lifetime of service",
+            "Island dedication",
+            "Family tradition",
+            "Retirement concerns",
+            "Community trust"
+          ]
+        },
+        "character:has_community": {
+          "@id": "character:ingrid",
+          "@type": "character:Supporting",
+          "character:name": "Ingrid Jensen",
+          "character:role": "Doctor's Wife",
+          "character:age": "Early sixties",
+          "character:key_traits": [
+            "Community mother",
+            "Island wisdom",
+            "Natural mentor",
+            "Bridge builder",
+            "Family support"
+          ],
+          "character:backstory": [
+            "Island life partner",
+            "Community support",
+            "Family tradition",
+            "Future concern",
+            "Cultural preservation"
+          ]
+        }
+      }
+    },
+    {
+      "@id": "location:network",
+      "@type": "location:LocationNetwork",
+      "location:has_primary": {
+        "@id": "location:aero",
+        "@type": "location:Island",
+        "location:name": "Ærø",
+        "location:description": "Danish island in the Baltic Sea",
+        "location:has_setting": {
+          "@id": "location:settings",
+          "@type": "location:Settings",
+          "location:has_medical": {
+            "@id": "location:medical_practice",
+            "@type": "location:MedicalPractice",
+            "location:name": "Island Medical Practice",
+            "location:description": "Small but well-equipped medical practice",
+            "location:features": [
+              "Modern equipment",
+              "Cozy waiting room",
+              "Family photos",
+              "Island history",
+              "Community feel"
+            ],
+            "location:has_room": [
+              {
+                "@id": "location:consultation_room",
+                "@type": "location:Room",
+                "location:name": "Consultation Room",
+                "location:features": [
+                  "Medical equipment",
+                  "Family photos",
+                  "Island views",
+                  "Comfortable chairs"
+                ]
+              },
+              {
+                "@id": "location:waiting_room",
+                "@type": "location:Room",
+                "location:name": "Waiting Room",
+                "location:features": [
+                  "Community space",
+                  "Local art",
+                  "Family photos",
+                  "Island history"
+                ]
+              }
+            ]
+          },
+          "location:has_business": {
+            "@id": "location:bnb",
+            "@type": "location:Business",
+            "location:name": "Nielsen Family B&B",
+            "location:description": "Eco-friendly bed and breakfast",
+            "location:features": [
+              "Family garden",
+              "Eco-friendly design",
+              "Island views",
+              "Local art",
+              "Family history"
+            ],
+            "location:has_room": [
+              {
+                "@id": "location:garden_room",
+                "@type": "location:Room",
+                "location:name": "Garden Room",
+                "location:features": [
+                  "Family garden view",
+                  "Local art",
+                  "Eco-friendly design",
+                  "Family history"
+                ]
+              },
+              {
+                "@id": "location:common_room",
+                "@type": "location:Room",
+                "location:name": "Common Room",
+                "location:features": [
+                  "Community space",
+                  "Local art",
+                  "Family photos",
+                  "Island history"
+                ]
+              }
+            ]
+          },
+          "location:has_community": {
+            "@id": "location:community_spaces",
+            "@type": "location:CommunitySpaces",
+            "location:has_space": [
+              {
+                "@id": "location:town_square",
+                "@type": "location:Space",
+                "location:name": "Town Square",
+                "location:features": [
+                  "Community gathering",
+                  "Local events",
+                  "Island history",
+                  "Family connections"
+                ]
+              },
+              {
+                "@id": "location:beach",
+                "@type": "location:Space",
+                "location:name": "Beach",
+                "location:features": [
+                  "Natural beauty",
+                  "Family activities",
+                  "Island views",
+                  "Community space"
+                ]
+              }
+            ]
+          }
+        },
+        "location:has_weather": {
+          "@id": "location:weather",
+          "@type": "location:Weather",
+          "location:has_season": {
+            "location:spring": {
+              "location:description": "Mild and fresh",
+              "location:features": [
+                "New beginnings",
+                "Natural beauty",
+                "Family growth",
+                "Community renewal"
+              ]
+            },
+            "location:summer": {
+              "location:description": "Warm and bright",
+              "location:features": [
+                "Family activities",
+                "Community events",
+                "Natural beauty",
+                "Island life"
+              ]
+            },
+            "location:autumn": {
+              "location:description": "Crisp and colorful",
+              "location:features": [
+                "Family traditions",
+                "Community harvest",
+                "Natural beauty",
+                "Island change"
+              ]
+            },
+            "location:winter": {
+              "location:description": "Cold and cozy",
+              "location:features": [
+                "Family warmth",
+                "Community support",
+                "Natural beauty",
+                "Island peace"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "@id": "theme:network",
+      "@type": "theme:ThematicNetwork",
+      "theme:has_main": {
+        "@id": "theme:refuge",
+        "@type": "theme:MainTheme",
+        "theme:name": "Finding Refuge",
+        "theme:description": "The journey of finding home and belonging",
+        "theme:has_subtheme": {
+          "@id": "theme:subthemes",
+          "@type": "theme:SubThemes",
+          "theme:has_theme": [
+            {
+              "@id": "theme:home",
+              "@type": "theme:SubTheme",
+              "theme:name": "Home",
+              "theme:description": "Physical and emotional home",
+              "theme:has_element": [
+                "Family connection",
+                "Community belonging",
+                "Personal space",
+                "Cultural integration"
+              ],
+              "theme:has_impact": {
+                "theme:on_character": "character:ellie",
+                "theme:on_location": "location:aero",
+                "theme:on_relationship": "character:relationships"
+              }
+            },
+            {
+              "@id": "theme:healing",
+              "@type": "theme:SubTheme",
+              "theme:name": "Healing",
+              "theme:description": "Physical and emotional healing",
+              "theme:has_element": [
+                "Professional growth",
+                "Personal recovery",
+                "Community support",
+                "Family healing"
+              ],
+              "theme:has_impact": {
+                "theme:on_character": "character:ellie",
+                "theme:on_location": "location:medical_practice",
+                "theme:on_relationship": "character:medical_community"
+              }
+            },
+            {
+              "@id": "theme:love",
+              "@type": "theme:SubTheme",
+              "theme:name": "Love",
+              "theme:description": "Romantic and familial love",
+              "theme:has_element": [
+                "Romantic connection",
+                "Family building",
+                "Community love",
+                "Self-love"
+              ],
+              "theme:has_impact": {
+                "theme:on_character": ["character:ellie", "character:tom"],
+                "theme:on_location": "location:bnb",
+                "theme:on_relationship": "character:romantic"
+              }
+            },
+            {
+              "@id": "theme:community",
+              "@type": "theme:SubTheme",
+              "theme:name": "Community",
+              "theme:description": "Island community integration",
+              "theme:has_element": [
+                "Cultural adaptation",
+                "Professional integration",
+                "Family connection",
+                "Community support"
+              ],
+              "theme:has_impact": {
+                "theme:on_character": "character:ellie",
+                "theme:on_location": "location:community_spaces",
+                "theme:on_relationship": "character:professional"
+              }
+            }
+          ]
+        },
+        "theme:has_development": {
+          "@id": "theme:development",
+          "@type": "theme:ThemeDevelopment",
+          "theme:has_stage": {
+            "theme:beginning": {
+              "theme:state": "Searching",
+              "theme:element": [
+                "Professional uncertainty",
+                "Personal isolation",
+                "Cultural disconnection",
+                "Family loss"
+              ]
+            },
+            "theme:middle": {
+              "theme:state": "Discovering",
+              "theme:element": [
+                "Professional growth",
+                "Personal connection",
+                "Cultural learning",
+                "Family building"
+              ]
+            },
+            "theme:end": {
+              "theme:state": "Finding",
+              "theme:element": [
+                "Professional fulfillment",
+                "Personal belonging",
+                "Cultural integration",
+                "Family completion"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "@id": "scene:network",
+      "@type": "scene:NarrativeNetwork",
+      "scene:has_structure": {
+        "@id": "scene:structure",
+        "@type": "scene:SceneStructure",
+        "scene:has_chapter": {
+          "@id": "chapter:structure",
+          "@type": "chapter:ChapterStructure",
+          "chapter:has_chapters": {
+            "@id": "chapter:detailed_chapters",
+            "@type": "chapter:DetailedChapters",
+            "chapter:has_patterns": {
+              "@id": "chapter:patterns",
+              "@type": "chapter:Patterns",
+              "chapter:scene_types": {
+                "chapter:medical": {
+                  "chapter:opening": [
+                    "Professional setting",
+                    "Medical context",
+                    "Character emotional state",
+                    "Cultural healthcare elements"
+                  ],
+                  "chapter:middle": [
+                    "Technical medical details",
+                    "Character interaction",
+                    "Emotional undercurrent",
+                    "Cultural healthcare practices"
+                  ],
+                  "chapter:closing": [
+                    "Professional resolution",
+                    "Emotional impact",
+                    "Cultural healthcare integration",
+                    "Character development"
+                  ]
+                },
+                "chapter:family": {
+                  "chapter:opening": [
+                    "Family atmosphere",
+                    "Character dynamics",
+                    "Emotional context",
+                    "Cultural family elements"
+                  ],
+                  "chapter:middle": [
+                    "Family interaction",
+                    "Emotional development",
+                    "Cultural traditions",
+                    "Character growth"
+                  ],
+                  "chapter:closing": [
+                    "Family resolution",
+                    "Emotional resonance",
+                    "Cultural family values",
+                    "Character connection"
+                  ]
+                },
+                "chapter:romantic": {
+                  "chapter:opening": [
+                    "Romantic atmosphere",
+                    "Character tension",
+                    "Emotional context",
+                    "Cultural romantic elements"
+                  ],
+                  "chapter:middle": [
+                    "Character interaction",
+                    "Emotional development",
+                    "Cultural romantic traditions",
+                    "Physical awareness"
+                  ],
+                  "chapter:closing": [
+                    "Romantic resolution",
+                    "Emotional impact",
+                    "Cultural romantic values",
+                    "Character connection"
+                  ]
+                }
+              }
+            },
+            "chapter_1": {
+              "chapter:title": "The Proposal",
+              "chapter:location": "Copenhagen Hospital",
+              "chapter:emotional_state": "Professional facade cracking",
+              "chapter:key_elements": [
+                "Emergency room chaos",
+                "Unexpected proposal",
+                "Professional facade cracking",
+                "Mother's medical bag reminder",
+                "Smartphone notifications",
+                "Digital calendar alerts",
+                "Professional competence",
+                "Recent proposal shock"
+              ],
+              "chapter:purpose": "Establish Ellie's current life and immediate conflict",
+              "chapter:scene_types": [
+                "medical",
+                "high_tension"
+              ],
+              "chapter:required_elements": [
+                "Professional authenticity",
+                "Emotional intensity",
+                "Immediate consequences",
+                "Medical accuracy",
+                "City atmosphere",
+                "Professional environment"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Modern medical environment vs emotional needs",
+                "Digital calendar reminders vs personal desires",
+                "City efficiency vs emotional authenticity",
+                "Professional expectations vs personal growth"
+              ]
+            },
+            "chapter_2": {
+              "chapter:title": "The Journey",
+              "chapter:location": "Train to Svendborg",
+              "chapter:emotional_state": "Beginning to question",
+              "chapter:key_elements": [
+                "Theme statement",
+                "Mother's pearl necklace",
+                "Self-awareness",
+                "Past memories",
+                "Future uncertainty",
+                "Cultural transition",
+                "Personal reflection",
+                "Emotional processing"
+              ],
+              "chapter:purpose": "Show emotional processing and character reflection",
+              "chapter:scene_types": [
+                "reflection",
+                "transition"
+              ],
+              "chapter:required_elements": [
+                "Internal monologue",
+                "Memory integration",
+                "Theme development",
+                "Character motivation",
+                "Cultural contrast",
+                "Emotional depth"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "City-island contrast",
+                "Past-present reflection",
+                "Personal-cultural identity",
+                "Professional-personal balance"
+              ]
+            },
+            "chapter_3": {
+              "chapter:title": "The Ferry",
+              "chapter:location": "Ærø Ferry",
+              "chapter:emotional_state": "Chaos and uncertainty",
+              "chapter:key_elements": [
+                "Storm at sea",
+                "First meeting with Tom",
+                "Medical emergency",
+                "Island arrival",
+                "Weather impact",
+                "Cultural transition",
+                "Professional instinct",
+                "Community introduction"
+              ],
+              "chapter:purpose": "Establish the island setting and initial connection",
+              "chapter:scene_types": [
+                "action",
+                "meeting"
+              ],
+              "chapter:required_elements": [
+                "Weather authenticity",
+                "Medical accuracy",
+                "Character introduction",
+                "Cultural contrast",
+                "Emotional tension",
+                "Professional competence"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "City-island contrast",
+                "Professional-personal balance",
+                "Cultural adaptation",
+                "Community integration"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom"],
+                "chapter:locations": ["location:ferry", "location:aero"],
+                "chapter:themes": ["theme:arrival", "theme:community"],
+                "chapter:scenes": ["scene:storm", "scene:first_meeting"]
+              }
+            },
+            "chapter_4": {
+              "chapter:title": "The Practice",
+              "chapter:location": "Island Medical Practice",
+              "chapter:emotional_state": "Professional uncertainty",
+              "chapter:key_elements": [
+                "Meeting Dr. Jensen",
+                "Practice tour",
+                "Community introduction",
+                "Professional assessment",
+                "Cultural learning",
+                "Medical equipment",
+                "Family photos",
+                "Island history"
+              ],
+              "chapter:purpose": "Show Ellie's professional integration",
+              "chapter:scene_types": [
+                "professional",
+                "cultural"
+              ],
+              "chapter:required_elements": [
+                "Medical authenticity",
+                "Cultural details",
+                "Character interaction",
+                "Professional assessment",
+                "Community context",
+                "Historical elements"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Professional adaptation",
+                "Cultural learning",
+                "Community acceptance",
+                "Personal growth"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:dr_jensen"],
+                "chapter:locations": ["location:medical_practice"],
+                "chapter:themes": ["theme:professional_growth", "theme:community"],
+                "chapter:scenes": ["scene:practice_tour", "scene:community_intro"]
+              }
+            },
+            "chapter_5": {
+              "chapter:title": "The Garden",
+              "chapter:location": "Nielsen Family B&B",
+              "chapter:emotional_state": "Growing connection",
+              "chapter:key_elements": [
+                "Family garden",
+                "Meeting Lily",
+                "Artistic connection",
+                "Cultural learning",
+                "Family history",
+                "Natural beauty",
+                "Community tradition",
+                "Personal reflection"
+              ],
+              "chapter:purpose": "Develop family connections and cultural integration",
+              "chapter:scene_types": [
+                "family",
+                "cultural"
+              ],
+              "chapter:required_elements": [
+                "Garden description",
+                "Character interaction",
+                "Cultural elements",
+                "Family dynamics",
+                "Natural setting",
+                "Emotional depth"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Family bonding",
+                "Cultural learning",
+                "Natural connection",
+                "Personal growth"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:lily"],
+                "chapter:locations": ["location:garden", "location:bnb"],
+                "chapter:themes": ["theme:family", "theme:refuge"],
+                "chapter:scenes": ["scene:garden_meeting", "scene:art_lesson"]
+              }
+            },
+            "chapter_6": {
+              "chapter:title": "The Practice",
+              "chapter:location": "Medical Practice",
+              "chapter:emotional_state": "Joy and belonging",
+              "chapter:key_elements": [
+                "Daily routines",
+                "Community integration",
+                "Professional satisfaction",
+                "Cultural learning",
+                "Local medical traditions",
+                "Community trust",
+                "Professional growth"
+              ],
+              "chapter:purpose": "Show Ellie's growing roots",
+              "chapter:scene_types": [
+                "medical",
+                "cultural"
+              ],
+              "chapter:required_elements": [
+                "Professional authenticity",
+                "Danish authenticity",
+                "Community integration",
+                "Medical accuracy"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Medical practice as community center",
+                "Professional traditions as cultural bridge",
+                "Community trust as emotional foundation",
+                "Local customs as belonging"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:dr_jensen", "character:anna_johansen"],
+                "chapter:locations": ["location:medical_practice"],
+                "chapter:themes": ["theme:professional_growth", "theme:community"],
+                "chapter:scenes": ["scene:daily_practice", "scene:community_integration"]
+              }
+            },
+            "chapter_7": {
+              "chapter:title": "The Lesson",
+              "chapter:location": "B&B Garden",
+              "chapter:emotional_state": "Growing attachment",
+              "chapter:key_elements": [
+                "First art lesson",
+                "Lily's talent",
+                "Maternal instincts",
+                "Natural connection",
+                "Wife's garden",
+                "Seasonal changes",
+                "Family bonding"
+              ],
+              "chapter:purpose": "Develop Ellie-Lily bond",
+              "chapter:scene_types": [
+                "family",
+                "quiet_moments"
+              ],
+              "chapter:required_elements": [
+                "Natural warmth",
+                "Emotional depth",
+                "Growth moments",
+                "Cultural authenticity"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Wife's garden as emotional sanctuary",
+                "Art as emotional expression",
+                "Family traditions as bonding",
+                "Seasonal changes as growth metaphor"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:lily", "character:sofie_jensen"],
+                "chapter:locations": ["location:garden", "location:bnb"],
+                "chapter:themes": ["theme:family", "theme:refuge"],
+                "chapter:scenes": ["scene:art_lesson", "scene:garden_bonding"]
+              }
+            },
+            "chapter_8": {
+              "chapter:title": "The Challenge",
+              "chapter:location": "Medical Practice",
+              "chapter:emotional_state": "Professional test",
+              "chapter:key_elements": [
+                "Medical emergency",
+                "Professional test",
+                "Community support",
+                "Family strength",
+                "Island resources",
+                "Medical traditions",
+                "Personal growth"
+              ],
+              "chapter:purpose": "Test Ellie's professional and personal growth",
+              "chapter:scene_types": [
+                "medical",
+                "high_tension",
+                "family"
+              ],
+              "chapter:required_elements": [
+                "Professional authenticity",
+                "Emotional intensity",
+                "Community context",
+                "Medical accuracy"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Medical crisis as cultural test",
+                "Community trust as emotional foundation",
+                "Professional legacy as motivation",
+                "Island traditions as support"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:lily", "character:mads_petersen"],
+                "chapter:locations": ["location:medical_practice"],
+                "chapter:themes": ["theme:professional_growth", "theme:community"],
+                "chapter:scenes": ["scene:medical_emergency", "scene:community_support"]
+              }
+            },
+            "chapter_9": {
+              "chapter:title": "The Festival",
+              "chapter:location": "Jazz Festival",
+              "chapter:emotional_state": "Joy and belonging",
+              "chapter:key_elements": [
+                "Community celebration",
+                "Cultural immersion",
+                "Growing connections",
+                "Future hints",
+                "Local beer",
+                "Smørrebrød",
+                "Music traditions"
+              ],
+              "chapter:purpose": "Show community acceptance",
+              "chapter:scene_types": [
+                "cultural",
+                "high_tension"
+              ],
+              "chapter:required_elements": [
+                "Danish authenticity",
+                "Community celebration",
+                "Cultural immersion",
+                "Emotional depth"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Festival as community celebration",
+                "Music as emotional expression",
+                "Local traditions as bonding",
+                "Future promise as cultural hope"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:lily", "character:erik_andersen"],
+                "chapter:locations": ["location:festival_grounds"],
+                "chapter:themes": ["theme:community", "theme:romance"],
+                "chapter:scenes": ["scene:festival_celebration", "scene:romantic_moment"]
+              }
+            },
+            "chapter_10": {
+              "chapter:title": "The Offer",
+              "chapter:location": "Medical Practice",
+              "chapter:emotional_state": "Torn between past and future",
+              "chapter:emotional_progression": [
+                "Growing tension",
+                "Professional crisis",
+                "Community pressure",
+                "Personal conflict",
+                "False resolution",
+                "Deepening despair",
+                "Ultimate choice"
+              ],
+              "chapter:external_conflicts": [
+                "Severe storm emergency",
+                "Copenhagen job offer",
+                "Community expectations",
+                "Professional responsibilities",
+                "Family dynamics",
+                "Island vs city life"
+              ],
+              "chapter:internal_conflicts": [
+                "Professional doubt",
+                "Personal desires",
+                "Family vs career",
+                "Love vs fear",
+                "Past vs future",
+                "Belonging vs ambition"
+              ],
+              "chapter:character_development": {
+                "ellie": {
+                  "growth": [
+                    "Professional recognition",
+                    "Personal conflict",
+                    "Future vision",
+                    "Community connection"
+                  ],
+                  "cultural_adaptation": [
+                    "Island medical practice",
+                    "Community expectations",
+                    "Professional traditions"
+                  ]
+                },
+                "tom": {
+                  "growth": [
+                    "Growing support",
+                    "Future hope",
+                    "Family consideration"
+                  ],
+                  "cultural_adaptation": [
+                    "Professional partnership",
+                    "Family dynamics",
+                    "Community role"
+                  ]
+                }
+              },
+              "chapter:key_elements": [
+                "Permanent position",
+                "Internal conflict",
+                "Growing attachments",
+                "Future vision",
+                "Professional legacy",
+                "Community need",
+                "Personal growth"
+              ],
+              "chapter:purpose": "Create central conflict",
+              "chapter:scene_types": [
+                "medical",
+                "quiet_moments"
+              ],
+              "chapter:required_elements": [
+                "Professional authenticity",
+                "Emotional depth",
+                "Character reflection",
+                "Medical accuracy"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Medical legacy as cultural responsibility",
+                "Professional traditions as emotional conflict",
+                "Community need as personal pull",
+                "Future vision as cultural hope"
+              ],
+              "chapter:character_focus": {
+                "ellie": {
+                  "traits": [
+                    "Professional competence",
+                    "Personal conflict",
+                    "Future vision"
+                  ],
+                  "voice": [
+                    "Medical terminology",
+                    "Professional confidence",
+                    "Personal uncertainty"
+                  ]
+                }
+              },
+              "chapter:professional_context": {
+                "career_considerations": [
+                  "Permanent position benefits",
+                  "Professional growth",
+                  "Community impact"
+                ],
+                "personal_impact": [
+                  "Family considerations",
+                  "Future stability",
+                  "Personal fulfillment"
+                ]
+              },
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:dr_jensen", "character:johan_berg"],
+                "chapter:locations": ["location:medical_practice"],
+                "chapter:themes": ["theme:professional_growth", "theme:future"],
+                "chapter:scenes": ["scene:permanent_offer", "scene:professional_conflict"]
+              }
+            },
+            "chapter_11": {
+              "chapter:title": "The Visit",
+              "chapter:location": "B&B",
+              "chapter:emotional_state": "Growing tension",
+              "chapter:emotional_progression": [
+                "Initial anxiety",
+                "Growing tension",
+                "Family conflict",
+                "Future uncertainty"
+              ],
+              "chapter:character_development": {
+                "ellie": {
+                  "growth": [
+                    "Family dynamics",
+                    "Co-parenting challenges",
+                    "Personal boundaries",
+                    "Future vision"
+                  ],
+                  "cultural_adaptation": [
+                    "Family traditions",
+                    "Co-parenting culture",
+                    "Community expectations"
+                  ]
+                },
+                "tom": {
+                  "growth": [
+                    "Family protection",
+                    "Relationship boundaries",
+                    "Future commitment"
+                  ],
+                  "cultural_adaptation": [
+                    "Family dynamics",
+                    "Co-parenting role",
+                    "Community support"
+                  ]
+                },
+                "sarah": {
+                  "growth": [
+                    "Past acceptance",
+                    "Future understanding",
+                    "Family harmony"
+                  ],
+                  "cultural_adaptation": [
+                    "Island life",
+                    "Family traditions",
+                    "Community integration"
+                  ]
+                }
+              },
+              "chapter:key_elements": [
+                "Sarah's arrival",
+                "Family dynamics",
+                "Past confrontations",
+                "Future uncertainty",
+                "Co-parenting journey",
+                "Family history",
+                "Emotional complexity"
+              ],
+              "chapter:purpose": "Introduce external conflict and character growth",
+              "chapter:scene_types": [
+                "family",
+                "high_tension"
+              ],
+              "chapter:required_elements": [
+                "Emotional intensity",
+                "Family dynamics",
+                "Clear stakes",
+                "Cultural authenticity"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Family traditions as emotional foundation",
+                "Co-parenting as cultural challenge",
+                "Artistic community as emotional bridge",
+                "Future uncertainty as cultural tension"
+              ],
+              "chapter:character_focus": {
+                "ellie": {
+                  "traits": [
+                    "Family protector",
+                    "Future vision",
+                    "Emotional strength"
+                  ],
+                  "voice": [
+                    "Family terms",
+                    "Cultural phrases",
+                    "Emotional honesty"
+                  ]
+                },
+                "tom": {
+                  "traits": [
+                    "Family guardian",
+                    "Future hope",
+                    "Emotional depth"
+                  ],
+                  "voice": [
+                    "Family terms",
+                    "Cultural phrases",
+                    "Emotional strength"
+                  ]
+                }
+              },
+              "chapter:family_context": {
+                "co_parenting": [
+                  "Past arrangements",
+                  "Future plans",
+                  "Family harmony"
+                ],
+                "cultural_integration": [
+                  "Family traditions",
+                  "Community support",
+                  "Future vision"
+                ]
+              },
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:sarah", "character:lily"],
+                "chapter:locations": ["location:bnb"],
+                "chapter:themes": ["theme:family", "theme:conflict"],
+                "chapter:scenes": ["scene:sarah_arrival", "scene:family_tension"]
+              }
+            },
+            "chapter_12": {
+              "chapter:title": "The Decision",
+              "chapter:location": "Beach",
+              "chapter:emotional_state": "Deep despair",
+              "chapter:emotional_progression": [
+                "Growing despair",
+                "Heartbreak realization",
+                "Future uncertainty",
+                "Loss acceptance"
+              ],
+              "chapter:character_development": {
+                "ellie": {
+                  "growth": [
+                    "Emotional depth",
+                    "Future clarity",
+                    "Personal strength",
+                    "Loss acceptance"
+                  ],
+                  "cultural_adaptation": [
+                    "Island connection",
+                    "Natural elements",
+                    "Community bonds"
+                  ]
+                },
+                "tom": {
+                  "growth": [
+                    "Emotional understanding",
+                    "Future hope",
+                    "Personal strength"
+                  ],
+                  "cultural_adaptation": [
+                    "Island wisdom",
+                    "Natural connection",
+                    "Community support"
+                  ]
+                }
+              },
+              "chapter:key_elements": [
+                "Decision to leave",
+                "Heartbreak",
+                "Community loss",
+                "Future uncertainty",
+                "Baltic Sea",
+                "Storm weather",
+                "Natural beauty"
+              ],
+              "chapter:purpose": "Create emotional low point",
+              "chapter:scene_types": [
+                "high_tension",
+                "quiet_moments"
+              ],
+              "chapter:required_elements": [
+                "Emotional intensity",
+                "Character vulnerability",
+                "Deep reflection",
+                "Natural elements"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Baltic Sea as emotional metaphor",
+                "Storm weather as emotional state",
+                "Natural beauty as emotional contrast",
+                "Island atmosphere as emotional loss"
+              ],
+              "chapter:character_focus": {
+                "ellie": {
+                  "traits": [
+                    "Emotional depth",
+                    "Personal strength",
+                    "Future vision"
+                  ],
+                  "voice": [
+                    "Natural metaphors",
+                    "Emotional honesty",
+                    "Cultural phrases"
+                  ]
+                },
+                "tom": {
+                  "traits": [
+                    "Emotional understanding",
+                    "Natural wisdom",
+                    "Future hope"
+                  ],
+                  "voice": [
+                    "Natural metaphors",
+                    "Emotional strength",
+                    "Cultural phrases"
+                  ]
+                }
+              },
+              "chapter:natural_context": {
+                "weather_impact": [
+                  "Storm as metaphor",
+                  "Natural beauty",
+                  "Seasonal changes"
+                ],
+                "emotional_connection": [
+                  "Baltic Sea",
+                  "Island atmosphere",
+                  "Natural elements"
+                ]
+              },
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom"],
+                "chapter:locations": ["location:beach"],
+                "chapter:themes": ["theme:loss", "theme:reflection"],
+                "chapter:scenes": ["scene:beach_decision", "scene:emotional_low"]
+              }
+            },
+            "chapter_13": {
+              "chapter:title": "The Night",
+              "chapter:location": "B&B",
+              "chapter:emotional_state": "Profound realization",
+              "chapter:key_elements": [
+                "Deep reflection",
+                "Emotional truth",
+                "Life evaluation",
+                "Future clarity",
+                "Family traditions",
+                "Community bonds",
+                "Personal growth"
+              ],
+              "chapter:purpose": "Set up resolution",
+              "chapter:scene_types": [
+                "quiet_moments",
+                "family"
+              ],
+              "chapter:required_elements": [
+                "Emotional depth",
+                "Character reflection",
+                "Future hints",
+                "Cultural authenticity"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Family traditions as emotional foundation",
+                "Community bonds as emotional support",
+                "Island wisdom as emotional guide",
+                "Future hope as cultural promise"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:lily"],
+                "chapter:locations": ["location:bnb"],
+                "chapter:themes": ["theme:reflection", "theme:future"],
+                "chapter:scenes": ["scene:night_reflection", "scene:future_vision"]
+              }
+            },
+            "chapter_14": {
+              "chapter:title": "The Return",
+              "chapter:location": "Copenhagen",
+              "chapter:emotional_state": "Certainty found",
+              "chapter:key_elements": [
+                "City emptiness",
+                "Professional closure",
+                "Heart's truth",
+                "Clear decision",
+                "Sarah's final attempt",
+                "Professional legacy"
+              ],
+              "chapter:purpose": "Show character growth and final decision",
+              "chapter:scene_types": [
+                "transition_scenes",
+                "quiet_moments"
+              ],
+              "chapter:required_elements": [
+                "Emotional processing",
+                "Character growth",
+                "Setting changes",
+                "Professional closure"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "City life as emotional contrast",
+                "Professional environment as past",
+                "Modern culture as emotional distance",
+                "Island contrast as emotional truth"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:sarah"],
+                "chapter:locations": ["location:copenhagen"],
+                "chapter:themes": ["theme:clarity", "theme:return"],
+                "chapter:scenes": ["scene:city_contrast", "scene:final_decision"]
+              }
+            },
+            "chapter_15": {
+              "chapter:title": "The Crossing",
+              "chapter:location": "Ferry to Ærø",
+              "chapter:emotional_state": "Growing hope",
+              "chapter:key_elements": [
+                "Emotional processing",
+                "Future anticipation",
+                "Community approach",
+                "Personal reflection",
+                "Natural beauty",
+                "Seasonal changes"
+              ],
+              "chapter:purpose": "Show emotional transition and future hope",
+              "chapter:scene_types": [
+                "transition_scenes",
+                "quiet_moments"
+              ],
+              "chapter:required_elements": [
+                "Emotional depth",
+                "Natural elements",
+                "Future vision",
+                "Personal growth"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Ferry journey as emotional transition",
+                "Natural beauty as emotional balm",
+                "Seasonal changes as growth metaphor",
+                "Island approach as emotional homecoming"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie"],
+                "chapter:locations": ["location:ferry"],
+                "chapter:themes": ["theme:return", "theme:future"],
+                "chapter:scenes": ["scene:ferry_journey", "scene:emotional_transition"]
+              }
+            },
+            "chapter_16": {
+              "chapter:title": "The Homecoming",
+              "chapter:location": "Ærø",
+              "chapter:emotional_state": "Joyful resolution",
+              "chapter:key_elements": [
+                "Island welcome",
+                "Family reunion",
+                "Community celebration",
+                "Love declaration",
+                "Sarah's acceptance",
+                "Family harmony"
+              ],
+              "chapter:purpose": "Resolve main conflict and show community acceptance",
+              "chapter:scene_types": [
+                "cultural",
+                "family"
+              ],
+              "chapter:required_elements": [
+                "Community celebration",
+                "Family bonding",
+                "Cultural authenticity",
+                "Emotional resolution"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Community celebration as emotional welcome",
+                "Family traditions as emotional foundation",
+                "Local customs as belonging",
+                "Future hope as cultural promise"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:lily", "character:sarah"],
+                "chapter:locations": ["location:aero"],
+                "chapter:themes": ["theme:home", "theme:family"],
+                "chapter:scenes": ["scene:community_welcome", "scene:love_declaration"]
+              }
+            },
+            "chapter_17": {
+              "chapter:title": "The Garden",
+              "chapter:location": "Medical Practice Garden",
+              "chapter:emotional_state": "Complete fulfillment",
+              "chapter:key_elements": [
+                "Family together",
+                "Professional fulfillment",
+                "Community belonging",
+                "Future promise",
+                "Garden legacy",
+                "Family traditions"
+              ],
+              "chapter:purpose": "Show new beginning and family completion",
+              "chapter:scene_types": [
+                "family",
+                "quiet_moments"
+              ],
+              "chapter:required_elements": [
+                "Natural warmth",
+                "Emotional depth",
+                "Future promise",
+                "Cultural traditions"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Garden traditions as emotional foundation",
+                "Medical legacy as professional fulfillment",
+                "Family bonding as cultural completion",
+                "Community belonging as emotional security"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:lily"],
+                "chapter:locations": ["location:medical_practice_garden"],
+                "chapter:themes": ["theme:family", "theme:future"],
+                "chapter:scenes": ["scene:garden_celebration", "scene:family_completion"]
+              }
+            },
+            "chapter_18": {
+              "chapter:title": "The Legacy",
+              "chapter:location": "Island Medical Practice",
+              "chapter:emotional_state": "Lasting fulfillment",
+              "chapter:key_elements": [
+                "Thriving practice",
+                "Happy family",
+                "Community growth",
+                "Future plans",
+                "Seasonal celebration",
+                "Cultural integration"
+              ],
+              "chapter:purpose": "Show lasting impact and future promise",
+              "chapter:scene_types": [
+                "family",
+                "cultural"
+              ],
+              "chapter:required_elements": [
+                "Community celebration",
+                "Family traditions",
+                "Professional legacy",
+                "Cultural integration"
+              ],
+              "chapter:emotional_cultural_connection": [
+                "Medical practice as community center",
+                "Family traditions as emotional foundation",
+                "Seasonal celebrations as cultural continuity",
+                "Future promise as lasting legacy"
+              ],
+              "chapter:connects_to": {
+                "chapter:characters": ["character:ellie", "character:tom", "character:lily", "character:dr_jensen"],
+                "chapter:locations": ["location:medical_practice"],
+                "chapter:themes": ["theme:legacy", "theme:future"],
+                "chapter:scenes": ["scene:practice_celebration", "scene:future_vision"]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "@id": "quality:network",
+      "@type": "quality:QualityNetwork",
+      "quality:has_assessment": {
+        "@id": "quality:assessment",
+        "@type": "quality:Assessment",
+        "quality:has_metric": {
+          "@id": "quality:metrics",
+          "@type": "quality:Metrics",
+          "quality:has_plot": {
+            "@id": "quality:plot_metrics",
+            "@type": "quality:PlotMetrics",
+            "quality:has_coherence": {
+              "@id": "quality:coherence",
+              "@type": "quality:Coherence",
+              "quality:has_criterion": [
+                {
+                  "@id": "quality:plot_consistency",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Plot Consistency",
+                  "quality:description": "Logical flow of events",
+                  "quality:has_element": [
+                    "Event sequence",
+                    "Cause and effect",
+                    "Character motivation",
+                    "Conflict resolution"
+                  ]
+                },
+                {
+                  "@id": "quality:theme_integration",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Theme Integration",
+                  "quality:description": "Themes woven into plot",
+                  "quality:has_element": [
+                    "Theme development",
+                    "Symbolic elements",
+                    "Character growth",
+                    "Emotional impact"
+                  ]
+                }
+              ]
+            },
+            "quality:has_pacing": {
+              "@id": "quality:pacing",
+              "@type": "quality:Pacing",
+              "quality:has_criterion": [
+                {
+                  "@id": "quality:scene_rhythm",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Scene Rhythm",
+                  "quality:description": "Balance of scene types",
+                  "quality:has_element": [
+                    "Action scenes",
+                    "Reflection scenes",
+                    "Dialogue scenes",
+                    "Transition scenes"
+                  ]
+                },
+                {
+                  "@id": "quality:emotional_flow",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Emotional Flow",
+                  "quality:description": "Emotional progression",
+                  "quality:has_element": [
+                    "Tension building",
+                    "Release moments",
+                    "Character growth",
+                    "Relationship development"
+                  ]
+                }
+              ]
+            }
+          },
+          "quality:has_character": {
+            "@id": "quality:character_metrics",
+            "@type": "quality:CharacterMetrics",
+            "quality:has_depth": {
+              "@id": "quality:depth",
+              "@type": "quality:Depth",
+              "quality:has_criterion": [
+                {
+                  "@id": "quality:character_consistency",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Character Consistency",
+                  "quality:description": "Character behavior consistency",
+                  "quality:has_element": [
+                    "Personality traits",
+                    "Background influence",
+                    "Growth patterns",
+                    "Relationship dynamics"
+                  ]
+                },
+                {
+                  "@id": "quality:emotional_authenticity",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Emotional Authenticity",
+                  "quality:description": "Authentic emotional responses",
+                  "quality:has_element": [
+                    "Emotional range",
+                    "Response patterns",
+                    "Growth indicators",
+                    "Relationship impact"
+                  ]
+                }
+              ]
+            },
+            "quality:has_arc": {
+              "@id": "quality:arc",
+              "@type": "quality:Arc",
+              "quality:has_criterion": [
+                {
+                  "@id": "quality:growth_progression",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Growth Progression",
+                  "quality:description": "Character development stages",
+                  "quality:has_element": [
+                    "Beginning state",
+                    "Growth moments",
+                    "Setback handling",
+                    "Final transformation"
+                  ]
+                },
+                {
+                  "@id": "quality:relationship_development",
+                  "@type": "quality:Criterion",
+                  "quality:name": "Relationship Development",
+                  "quality:description": "Relationship progression",
+                  "quality:has_element": [
+                    "Initial connection",
+                    "Conflict moments",
+                    "Growth opportunities",
+                    "Resolution patterns"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "@id": "writing:network",
+      "@type": "writing:StyleNetwork",
+      "writing:has_guidelines": {
+        "@id": "writing:guidelines",
+        "@type": "writing:WritingGuidelines",
+        "writing:has_pattern": {
+          "@id": "writing:patterns",
+          "@type": "writing:WritingPatterns",
+          "writing:has_sensory": ["writing:sensory_descriptions"],
+          "writing:has_emotional": ["writing:emotional_expression"],
+          "writing:has_cultural": ["writing:danish_cultural_elements"]
+        }
+      }
+    },
+    {
+      "@id": "narrative:network",
+      "@type": "narrative:NarrativeNetwork",
+      "narrative:has_structure": {
+        "@id": "narrative:structure",
+        "@type": "narrative:Structure",
+        "narrative:has_act": {
+          "@id": "narrative:acts",
+          "@type": "narrative:Acts",
+          "narrative:has_act": [
+            {
+              "@id": "narrative:act_1",
+              "@type": "narrative:Act",
+              "narrative:name": "Arrival",
+              "@id": "narrative:act_1",
+              "narrative:description": "Ellie's arrival and initial adaptation",
+              "narrative:has_chapter": [
+                {
+                  "@id": "narrative:chapter_1",
+                  "@type": "narrative:Chapter",
+                  "@id": "narrative:chapter_1",
+                  "narrative:name": "The Storm",
+                  "narrative:location": "location:aero",
+                  "narrative:emotional_state": "Chaos and uncertainty",
+                  "narrative:has_scene": {
+                    "@id": "narrative:scenes_1",
+                    "@type": "narrative:Scenes",
+                    "narrative:has_scene": [
+                      {
+                        "@id": "narrative:scene_1_1",
+                        "@type": "narrative:Scene",
+                        "narrative:type": "Opening",
+                        "narrative:location": "location:medical_practice",
+                        "narrative:characters": ["character:ellie", "character:dr_jensen"],
+                        "narrative:emotional_state": "Professional uncertainty",
+                        "narrative:has_element": [
+                          "Weather impact",
+                          "Cultural contrast",
+                          "Professional challenge",
+                          "Community introduction"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "@id": "narrative:act_2",
+              "@type": "narrative:Act",
+              "narrative:name": "Integration",
+              "narrative:description": "Ellie's integration into island life",
+              "narrative:has_chapter": [
+                {
+                  "@id": "narrative:chapter_13",
+                  "@type": "narrative:Chapter",
+                  "narrative:name": "The Return",
+                  "narrative:location": "location:aero",
+                  "narrative:emotional_state": "Clarity and determination",
+                  "narrative:has_scene": {
+                    "@id": "narrative:scenes_13",
+                    "@type": "narrative:Scenes",
+                    "narrative:has_scene": [
+                      {
+                        "@id": "narrative:scene_13_1",
+                        "@type": "narrative:Scene",
+                        "narrative:type": "Decision",
+                        "narrative:location": "location:medical_practice",
+                        "narrative:characters": ["character:ellie"],
+                        "narrative:emotional_state": "Professional clarity",
+                        "narrative:has_element": [
+                          "Professional decision",
+                          "Personal growth",
+                          "Cultural contrast",
+                          "Community connection"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "narrative:has_transition": {
+        "@id": "narrative:transitions",
+        "@type": "narrative:Transitions",
+        "narrative:has_technique": {
+          "@id": "narrative:techniques",
+          "@type": "narrative:Techniques",
+          "narrative:has_sensory": {
+            "@id": "narrative:sensory",
+            "@type": "narrative:SensoryTransitions",
+            "narrative:has_bridge": [
+              {
+                "@id": "narrative:weather_bridge",
+                "@type": "narrative:Bridge",
+                "narrative:name": "Weather Bridge",
+                "narrative:description": "Using weather to transition scenes",
+                "narrative:has_element": [
+                  "Storm to calm",
+                  "Dark to light",
+                  "Cold to warm",
+                  "Wind to stillness"
+                ]
+              },
+              {
+                "@id": "narrative:cultural_bridge",
+                "@type": "narrative:Bridge",
+                "narrative:name": "Cultural Bridge",
+                "narrative:description": "Using cultural elements to transition scenes",
+                "narrative:has_element": [
+                  "City to island",
+                  "Modern to traditional",
+                  "Fast to slow",
+                  "Lonely to connected"
+                ]
+              }
+            ]
+          },
+          "narrative:has_thematic": {
+            "@id": "narrative:thematic",
+            "@type": "narrative:ThematicTransitions",
+            "narrative:has_connection": [
+              {
+                "@id": "narrative:emotional_connection",
+                "@type": "narrative:Connection",
+                "narrative:name": "Emotional Connection",
+                "narrative:description": "Using emotions to connect scenes",
+                "narrative:has_element": [
+                  "Uncertainty to clarity",
+                  "Isolation to connection",
+                  "Loss to healing",
+                  "Fear to hope"
+                ]
+              },
+              {
+                "@id": "narrative:character_connection",
+                "@type": "narrative:Connection",
+                "narrative:name": "Character Connection",
+                "narrative:description": "Using character development to connect scenes",
+                "narrative:has_element": [
+                  "Professional growth",
+                  "Personal development",
+                  "Relationship building",
+                  "Community integration"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "@id": "style:network",
+      "@type": "style:StyleNetwork",
+      "style:has_pattern": {
+        "@id": "style:patterns",
+        "@type": "style:Patterns",
+        "style:has_sensory": {
+          "@id": "style:sensory",
+          "@type": "style:SensoryPatterns",
+          "style:has_description": {
+            "@id": "style:descriptions",
+            "@type": "style:Descriptions",
+            "style:has_visual": {
+              "@id": "style:visual",
+              "@type": "style:VisualPatterns",
+              "style:has_element": [
+                {
+                  "@id": "style:weather_visual",
+                  "@type": "style:Element",
+                  "style:name": "Weather Visual",
+                  "style:description": "Weather impact on scenes",
+                  "style:has_pattern": [
+                    "Storm descriptions",
+                    "Light changes",
+                    "Seasonal elements",
+                    "Natural beauty"
+                  ]
+                },
+                {
+                  "@id": "style:location_visual",
+                  "@type": "style:Element",
+                  "style:name": "Location Visual",
+                  "style:description": "Location descriptions",
+                  "style:has_pattern": [
+                    "Island views",
+                    "Building details",
+                    "Natural elements",
+                    "Cultural markers"
+                  ]
+                }
+              ]
+            },
+            "style:has_emotional": {
+              "@id": "style:emotional",
+              "@type": "style:EmotionalPatterns",
+              "style:has_element": [
+                {
+                  "@id": "style:character_emotion",
+                  "@type": "style:Element",
+                  "style:name": "Character Emotion",
+                  "style:description": "Character emotional expression",
+                  "style:has_pattern": [
+                    "Internal thoughts",
+                    "Physical reactions",
+                    "Behavioral changes",
+                    "Relationship dynamics"
+                  ]
+                },
+                {
+                  "@id": "style:scene_emotion",
+                  "@type": "style:Element",
+                  "style:name": "Scene Emotion",
+                  "style:description": "Scene emotional atmosphere",
+                  "style:has_pattern": [
+                    "Mood setting",
+                    "Tension building",
+                    "Emotional release",
+                    "Relationship impact"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "style:has_cultural": {
+          "@id": "style:cultural",
+          "@type": "style:CulturalPatterns",
+          "style:has_element": [
+            {
+              "@id": "style:danish_elements",
+              "@type": "style:Element",
+              "style:name": "Danish Elements",
+              "style:description": "Danish cultural elements",
+              "style:has_pattern": [
+                "Language phrases",
+                "Cultural traditions",
+                "Social customs",
+                "Island life"
+              ]
+            },
+            {
+              "@id": "style:island_life",
+              "@type": "style:Element",
+              "style:name": "Island Life",
+              "style:description": "Island community elements",
+              "style:has_pattern": [
+                "Community events",
+                "Local traditions",
+                "Seasonal activities",
+                "Family connections"
+              ]
+            }
+          ]
+        },
+        "style:has_voice": {
+          "@id": "style:voice",
+          "@type": "style:VoicePatterns",
+          "style:has_element": [
+            {
+              "@id": "style:character_voice",
+              "@type": "style:Element",
+              "style:name": "Character Voice",
+              "style:description": "Character voice patterns",
+              "style:has_pattern": [
+                "Professional tone",
+                "Personal expression",
+                "Cultural influence",
+                "Emotional range"
+              ]
+            },
+            {
+              "@id": "style:narrative_voice",
+              "@type": "style:Element",
+              "style:name": "Narrative Voice",
+              "style:description": "Narrative voice patterns",
+              "style:has_pattern": [
+                "Scene transitions",
+                "Emotional depth",
+                "Cultural context",
+                "Thematic resonance"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "@id": "guidelines:network",
+      "@type": "guidelines:GuidelinesNetwork",
+      "guidelines:has_heat_level": {
+        "@id": "guidelines:heat_level",
+        "@type": "guidelines:HeatLevelGuidelines",
+        "guidelines:intensity": [
+          "Emotional intimacy first",
+          "Physical progression natural",
+          "Family-appropriate moments",
+          "Community-aware settings",
+          "Weather-enhanced privacy",
+          "Island-inspired romance",
+          "Cultural celebration moments",
+          "Professional boundaries respected",
+          "Subtle but clear attraction",
+          "Natural physical awareness"
+        ],
+        "guidelines:allowed_elements": [
+          "Passionate but tasteful kisses",
+          "Emotional vulnerability",
+          "Physical awareness",
+          "Protective gestures",
+          "Shared warmth",
+          "Weather-enhanced intimacy",
+          "Cultural celebration moments",
+          "Family-appropriate settings",
+          "Community-respectful privacy",
+          "Natural progression"
+        ],
+        "guidelines:forbidden_elements": [
+          "Explicit content",
+          "Gratuitous scenes",
+          "Inappropriate settings",
+          "Disrespectful moments",
+          "Family-inappropriate content",
+          "Community-offensive behavior",
+          "Professional boundary crossing",
+          "Cultural insensitivity",
+          "Forced intimacy",
+          "Unnatural progression"
+        ]
+      },
+      "guidelines:has_writing_patterns": {
+        "@id": "guidelines:writing_patterns",
+        "@type": "guidelines:WritingPatterns",
+        "guidelines:sensory_variations": {
+          "guidelines:tactile": [
+            "Supple leather yielding to touch",
+            "Weather-worn surfaces",
+            "Natural textures",
+            "Physical sensations",
+            "Temperature changes",
+            "Wind effects",
+            "Water contact",
+            "Ground beneath feet"
+          ],
+          "guidelines:auditory": [
+            "Rhythmic clatter of wheels",
+            "Baltic wind sounds",
+            "Community voices",
+            "Natural ambience",
+            "Ferry engine hum",
+            "Seagull calls",
+            "Music from festival",
+            "Children's laughter"
+          ],
+          "guidelines:olfactory": [
+            "Briny seaweed scent",
+            "Harbor smells",
+            "Traditional baking",
+            "Seasonal aromas",
+            "Fresh coffee",
+            "Garden flowers",
+            "Sea air",
+            "Local cuisine"
+          ],
+          "guidelines:taste": [
+            "Buttery sweetness of rundstykker",
+            "Traditional pastries",
+            "Local cuisine",
+            "Seasonal flavors",
+            "Fresh coffee",
+            "Local beer",
+            "Home-cooked meals",
+            "Festival treats"
+          ]
+        }
+      }
+    },
+    {
+      "@id": "cross_reference:network",
+      "@type": "cross_reference:CrossReferenceNetwork",
+      "cross_reference:has_standards": {
+        "@id": "cross_reference:standards",
+        "@type": "cross_reference:Standards",
+        "cross_reference:chapter_references": {
+          "cross_reference:format": "chapter:detailed_chapters/chapter:chapter_{number}",
+          "cross_reference:examples": [
+            "chapter:detailed_chapters/chapter:chapter_1",
+            "chapter:detailed_chapters/chapter:chapter_2",
+            "chapter:detailed_chapters/chapter:chapter_3"
+          ]
+        }
+      }
+    }
+  ]
+} 

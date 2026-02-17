@@ -1,0 +1,359 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:locations",
+      "@type": "ontomedia:LocationRegistry",
+      "ontomedia:has_primary_location": {
+        "@id": "ontomedia:aero_island",
+        "@type": "ontomedia:Location",
+        "ontomedia:name": "Ærø Island",
+        "ontomedia:description": "A small Danish island in the Baltic Sea",
+        "ontomedia:weather_patterns": [
+          {
+            "@id": "ontomedia:aero_weather_spring",
+            "@type": "ontomedia:WeatherPattern",
+            "ontomedia:season": "spring",
+            "ontomedia:description": "Mild temperatures with frequent sea mists"
+          },
+          {
+            "@id": "ontomedia:aero_weather_summer",
+            "@type": "ontomedia:WeatherPattern",
+            "ontomedia:season": "summer",
+            "ontomedia:description": "Long sunny days with cool sea breezes"
+          }
+        ],
+        "ontomedia:has_sublocation": [
+          {
+            "@id": "ontomedia:aeroskobing",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Ærøskøbing",
+            "ontomedia:description": "Historic town center of Ærø, known for its colorful houses and cobblestone streets",
+            "ontomedia:has_sublocation": [
+              {
+                "@id": "ontomedia:island_medical_practice",
+                "@type": "ontomedia:Location",
+                "ontomedia:name": "Island Medical Practice",
+                "ontomedia:description": "Small medical clinic serving the island community",
+                "ontomedia:has_special_object": [
+                  {
+                    "@id": "ontomedia:medical_ledger",
+                    "@type": "ontomedia:SpecialObject",
+                    "ontomedia:name": "Old Medical Ledger",
+                    "ontomedia:description": "Historic record of island medical care",
+                    "ontomedia:significance": "Connects past and present medical practices"
+                  }
+                ],
+                "ontomedia:has_connection": [
+                  {
+                    "@id": "ontomedia:practice_mads_connection",
+                    "@type": "ontomedia:LocationConnection",
+                    "ontomedia:character": "ontomedia:mads",
+                    "ontomedia:connection_type": "workplace"
+                  },
+                  {
+                    "@id": "ontomedia:practice_katrine_connection",
+                    "@type": "ontomedia:LocationConnection",
+                    "ontomedia:character": "ontomedia:katrine",
+                    "ontomedia:connection_type": "workplace"
+                  }
+                ]
+              },
+              {
+                "@id": "ontomedia:anna_cafe",
+                "@type": "ontomedia:Location",
+                "ontomedia:name": "Anna's Café",
+                "ontomedia:description": "Cozy café in the heart of the island",
+                "ontomedia:has_special_object": [
+                  {
+                    "@id": "ontomedia:window_seat",
+                    "@type": "ontomedia:SpecialObject",
+                    "ontomedia:name": "Window Seat",
+                    "ontomedia:description": "Favorite spot for watching harbor activity",
+                    "ontomedia:significance": "Community gathering point"
+                  }
+                ],
+                "ontomedia:has_connection": [
+                  {
+                    "@id": "ontomedia:cafe_anna_connection",
+                    "@type": "ontomedia:LocationConnection",
+                    "ontomedia:character": "ontomedia:anna",
+                    "ontomedia:connection_type": "business"
+                  }
+                ]
+              },
+              {
+                "@id": "ontomedia:rural_coast",
+                "@type": "ontomedia:Location",
+                "ontomedia:name": "Rural Coast",
+                "ontomedia:description": "Peaceful coastal area with traditional farms and sea views",
+                "ontomedia:has_sublocation": [
+                  {
+                    "@id": "ontomedia:grandmother_house",
+                    "@type": "ontomedia:Location",
+                    "ontomedia:name": "Grandmother's House",
+                    "ontomedia:description": "Traditional farmhouse on a gentle slope overlooking the Baltic Sea",
+                    "ontomedia:status": "restoration_in_progress",
+                    "ontomedia:location_features": [
+                      {
+                        "@id": "ontomedia:baltic_view",
+                        "@type": "ontomedia:LocationFeature",
+                        "ontomedia:name": "Baltic Sea View",
+                        "ontomedia:description": "Panoramic view of the Baltic Sea from the house's elevated position"
+                      },
+                      {
+                        "@id": "ontomedia:coastal_garden",
+                        "@type": "ontomedia:LocationFeature",
+                        "ontomedia:name": "Coastal Garden",
+                        "ontomedia:description": "Traditional garden with sea-resistant plants and herbs"
+                      },
+                      {
+                        "@id": "ontomedia:cliff_path",
+                        "@type": "ontomedia:LocationFeature",
+                        "ontomedia:name": "Cliff Path",
+                        "ontomedia:description": "Steep path leading down to a small private beach"
+                      }
+                    ],
+                    "ontomedia:restoration_stages": [
+                      {
+                        "@id": "ontomedia:house_restoration_initial",
+                        "@type": "ontomedia:RestorationStage",
+                        "ontomedia:name": "Initial Assessment",
+                        "ontomedia:description": "Evaluating the house's condition and planning restoration",
+                        "ontomedia:sequence": 1
+                      },
+                      {
+                        "@id": "ontomedia:house_restoration_structural",
+                        "@type": "ontomedia:RestorationStage",
+                        "ontomedia:name": "Structural Work",
+                        "ontomedia:description": "Repairing foundation and structural elements, reinforcing against coastal weather",
+                        "ontomedia:sequence": 2
+                      },
+                      {
+                        "@id": "ontomedia:house_restoration_interior",
+                        "@type": "ontomedia:RestorationStage",
+                        "ontomedia:name": "Interior Restoration",
+                        "ontomedia:description": "Restoring original features and modernizing utilities while preserving coastal character",
+                        "ontomedia:sequence": 3
+                      }
+                    ],
+                    "ontomedia:has_special_object": [
+                      {
+                        "@id": "ontomedia:old_photo_album",
+                        "@type": "ontomedia:SpecialObject",
+                        "ontomedia:name": "Family Photo Album",
+                        "ontomedia:description": "Collection of old photographs showing island life and coastal scenes",
+                        "ontomedia:significance": "Connection to Ellie's family history"
+                      },
+                      {
+                        "@id": "ontomedia:grandmother_journal",
+                        "@type": "ontomedia:SpecialObject",
+                        "ontomedia:name": "Grandmother's Journal",
+                        "ontomedia:description": "Personal diary with island memories and observations of the sea",
+                        "ontomedia:significance": "Insight into grandmother's life on Ærø"
+                      },
+                      {
+                        "@id": "ontomedia:sea_window",
+                        "@type": "ontomedia:SpecialObject",
+                        "ontomedia:name": "Sea Window",
+                        "ontomedia:description": "Large window facing the Baltic Sea, grandmother's favorite spot",
+                        "ontomedia:significance": "Connection to the sea and family memories"
+                      }
+                    ],
+                    "ontomedia:has_connection": [
+                      {
+                        "@id": "ontomedia:house_grandmother_connection",
+                        "@type": "ontomedia:LocationConnection",
+                        "ontomedia:character": "ontomedia:grandmother",
+                        "ontomedia:connection_type": "former_home"
+                      },
+                      {
+                        "@id": "ontomedia:house_katrine_connection",
+                        "@type": "ontomedia:LocationConnection",
+                        "ontomedia:character": "ontomedia:katrine",
+                        "ontomedia:connection_type": "family_heritage"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "@id": "ontomedia:ferry_dock",
+                "@type": "ontomedia:Location",
+                "ontomedia:name": "Ferry Dock",
+                "ontomedia:description": "Main connection point to the mainland",
+                "ontomedia:has_connection": [
+                  {
+                    "@id": "ontomedia:ferry_lars_connection",
+                    "@type": "ontomedia:LocationConnection",
+                    "ontomedia:character": "ontomedia:lars",
+                    "ontomedia:connection_type": "workplace"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:ferry_route",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Ærø Ferry Route",
+            "ontomedia:description": "Regular ferry service between Ærø and mainland",
+            "ontomedia:has_sublocation": [
+              {
+                "@id": "ontomedia:svendborg",
+                "@type": "ontomedia:Location",
+                "ontomedia:name": "Svendborg",
+                "ontomedia:description": "Mainland port city, gateway to Ærø",
+                "ontomedia:has_connection": [
+                  {
+                    "@id": "ontomedia:svendborg_lars_connection",
+                    "@type": "ontomedia:LocationConnection",
+                    "ontomedia:character": "ontomedia:lars",
+                    "ontomedia:connection_type": "workplace"
+                  }
+                ]
+              },
+              {
+                "@id": "ontomedia:ferry",
+                "@type": "ontomedia:Location",
+                "ontomedia:name": "Ærø Ferry",
+                "ontomedia:description": "Modern ferry connecting Ærø to the mainland",
+                "ontomedia:has_special_object": [
+                  {
+                    "@id": "ontomedia:ferry_deck",
+                    "@type": "ontomedia:SpecialObject",
+                    "ontomedia:name": "Observation Deck",
+                    "ontomedia:description": "Outdoor deck with views of the sea",
+                    "ontomedia:significance": "Place of reflection and transition"
+                  }
+                ],
+                "ontomedia:has_connection": [
+                  {
+                    "@id": "ontomedia:ferry_lars_connection",
+                    "@type": "ontomedia:LocationConnection",
+                    "ontomedia:character": "ontomedia:lars",
+                    "ontomedia:connection_type": "workplace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_secondary_location": {
+        "@id": "ontomedia:copenhagen",
+        "@type": "ontomedia:Location",
+        "ontomedia:name": "Copenhagen",
+        "ontomedia:description": "Urban capital of Denmark",
+        "ontomedia:has_sublocation": [
+          {
+            "@id": "ontomedia:copenhagen_apartment",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Katrine's Copenhagen Apartment",
+            "ontomedia:description": "Modern apartment in the city center",
+            "ontomedia:has_connection": [
+              {
+                "@id": "ontomedia:apartment_katrine_connection",
+                "@type": "ontomedia:LocationConnection",
+                "ontomedia:character": "ontomedia:katrine",
+                "ontomedia:connection_type": "former_home"
+              }
+            ],
+            "ontomedia:has_special_object": [
+              {
+                "@id": "ontomedia:grandmother_necklace_box",
+                "@type": "ontomedia:SpecialObject",
+                "ontomedia:name": "Necklace Box",
+                "ontomedia:description": "Original box containing the Ærø necklace",
+                "ontomedia:significance": "Connection to grandmother's gift",
+                "ontomedia:contains": "ontomedia:grandmother_necklace"
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:city_hospital",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "City Hospital",
+            "ontomedia:description": "Large urban medical center",
+            "ontomedia:has_connection": [
+              {
+                "@id": "ontomedia:hospital_erik_connection",
+                "@type": "ontomedia:LocationConnection",
+                "ontomedia:character": "ontomedia:erik",
+                "ontomedia:connection_type": "training"
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:medical_district",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Medical District",
+            "ontomedia:description": "Area of Copenhagen known for its medical facilities",
+            "ontomedia:has_connection": [
+              {
+                "@id": "ontomedia:district_katrine_connection",
+                "@type": "ontomedia:LocationConnection",
+                "ontomedia:character": "ontomedia:katrine",
+                "ontomedia:connection_type": "former_workplace"
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_transit_location": {
+        "@id": "ontomedia:ferry_route",
+        "@type": "ontomedia:Location",
+        "ontomedia:name": "Ærø Ferry Route",
+        "ontomedia:description": "Regular ferry service between Ærø and mainland",
+        "ontomedia:has_sublocation": [
+          {
+            "@id": "ontomedia:svendborg",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Svendborg",
+            "ontomedia:description": "Mainland port city, gateway to Ærø",
+            "ontomedia:has_connection": [
+              {
+                "@id": "ontomedia:svendborg_lars_connection",
+                "@type": "ontomedia:LocationConnection",
+                "ontomedia:character": "ontomedia:lars",
+                "ontomedia:connection_type": "workplace"
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:ferry",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Ærø Ferry",
+            "ontomedia:description": "Modern ferry connecting Ærø to the mainland",
+            "ontomedia:has_special_object": [
+              {
+                "@id": "ontomedia:ferry_deck",
+                "@type": "ontomedia:SpecialObject",
+                "ontomedia:name": "Observation Deck",
+                "ontomedia:description": "Outdoor deck with views of the sea",
+                "ontomedia:significance": "Place of reflection and transition"
+              }
+            ],
+            "ontomedia:has_connection": [
+              {
+                "@id": "ontomedia:ferry_lars_connection",
+                "@type": "ontomedia:LocationConnection",
+                "ontomedia:character": "ontomedia:lars",
+                "ontomedia:connection_type": "workplace"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+} 

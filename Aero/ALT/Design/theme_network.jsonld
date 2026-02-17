@@ -1,0 +1,444 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:theme_network",
+      "@type": "ontomedia:ThemeNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:theme_registry",
+        "@type": "ontomedia:ThemeRegistry",
+        "ontomedia:has_theme": [
+          {
+            "@id": "ontomedia:professional_adaptation_theme",
+            "@type": "ontomedia:Theme",
+            "ontomedia:name": "Professional Adaptation",
+            "ontomedia:description": "The journey of adapting professional skills to new cultural context",
+            "ontomedia:has_progression": [
+              {
+                "@id": "ontomedia:professional_initial_conflict",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Initial Conflict",
+                "ontomedia:description": "Clash between traditional and modern medical practices",
+                "ontomedia:key_elements": [
+                  "Cultural barriers",
+                  "Professional identity",
+                  "Learning challenges"
+                ]
+              },
+              {
+                "@id": "ontomedia:professional_growth",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Professional Growth",
+                "ontomedia:description": "Integration of traditional and modern approaches",
+                "ontomedia:key_elements": [
+                  "Skill development",
+                  "Cultural understanding",
+                  "Professional evolution"
+                ]
+              },
+              {
+                "@id": "ontomedia:professional_mastery",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Professional Mastery",
+                "ontomedia:description": "Achieving balance between different medical approaches",
+                "ontomedia:key_elements": [
+                  "Integrated practice",
+                  "Cultural competence",
+                  "Professional fulfillment"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:cultural_integration_theme",
+            "@type": "ontomedia:Theme",
+            "ontomedia:name": "Cultural Integration",
+            "ontomedia:description": "The process of understanding and becoming part of a new culture",
+            "ontomedia:has_progression": [
+              {
+                "@id": "ontomedia:cultural_discovery",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Cultural Discovery",
+                "ontomedia:description": "Initial exposure to new cultural practices",
+                "ontomedia:key_elements": [
+                  "Cultural observation",
+                  "Initial understanding",
+                  "Cultural curiosity"
+                ]
+              },
+              {
+                "@id": "ontomedia:cultural_learning",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Cultural Learning",
+                "ontomedia:description": "Active engagement with cultural practices",
+                "ontomedia:key_elements": [
+                  "Cultural participation",
+                  "Relationship building",
+                  "Cultural practice"
+                ]
+              },
+              {
+                "@id": "ontomedia:cultural_belonging",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Cultural Belonging",
+                "ontomedia:description": "Finding place and acceptance in new culture",
+                "ontomedia:key_elements": [
+                  "Cultural identity",
+                  "Community acceptance",
+                  "Personal growth"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:community_service_theme",
+            "@type": "ontomedia:Theme",
+            "ontomedia:name": "Community Service",
+            "ontomedia:description": "The impact and growth through community service",
+            "ontomedia:has_progression": [
+              {
+                "@id": "ontomedia:service_introduction",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Service Introduction",
+                "ontomedia:description": "Initial community service experiences",
+                "ontomedia:key_elements": [
+                  "Service opportunity",
+                  "Community needs",
+                  "Initial impact"
+                ]
+              },
+              {
+                "@id": "ontomedia:service_growth",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Service Growth",
+                "ontomedia:description": "Expanding community service impact",
+                "ontomedia:key_elements": [
+                  "Service development",
+                  "Community relationships",
+                  "Personal impact"
+                ]
+              },
+              {
+                "@id": "ontomedia:service_leadership",
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:name": "Service Leadership",
+                "ontomedia:description": "Taking leadership in community service",
+                "ontomedia:key_elements": [
+                  "Community trust",
+                  "Service innovation",
+                  "Leadership impact"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:Theme",
+            "ontomedia:theme_id": "ontomedia:professional_validation",
+            "ontomedia:theme_name": "Professional Validation",
+            "ontomedia:theme_description": "The journey of finding professional validation and purpose",
+            "ontomedia:has_progression": [
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Initial Doubt",
+                "ontomedia:progression_description": "Initial questioning of professional worth",
+                "ontomedia:has_key_element": [
+                  "Professional uncertainty",
+                  "Personal doubt",
+                  "Cultural barriers",
+                  "Community skepticism",
+                  "Future concerns"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Validation Journey",
+                "ontomedia:progression_description": "Journey to find professional validation",
+                "ontomedia:has_key_element": [
+                  "Professional growth",
+                  "Personal development",
+                  "Cultural integration",
+                  "Community acceptance",
+                  "Future vision"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Validation Achievement",
+                "ontomedia:progression_description": "Achieving professional validation",
+                "ontomedia:has_key_element": [
+                  "Professional fulfillment",
+                  "Personal acceptance",
+                  "Cultural belonging",
+                  "Community contribution",
+                  "Future commitment"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:Theme",
+            "ontomedia:theme_id": "ontomedia:family_connection",
+            "ontomedia:theme_name": "Family Connection",
+            "ontomedia:theme_description": "The development of family connections and legacy",
+            "ontomedia:has_progression": [
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Family Discovery",
+                "ontomedia:progression_description": "Initial discovery of family connections",
+                "ontomedia:has_key_element": [
+                  "Family history",
+                  "Personal connection",
+                  "Cultural heritage",
+                  "Community ties",
+                  "Emotional response"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Family Understanding",
+                "ontomedia:progression_description": "Understanding family connections",
+                "ontomedia:has_key_element": [
+                  "Family research",
+                  "Personal reflection",
+                  "Cultural understanding",
+                  "Community context",
+                  "Emotional processing"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Family Integration",
+                "ontomedia:progression_description": "Integrating family connections",
+                "ontomedia:has_key_element": [
+                  "Family acceptance",
+                  "Personal growth",
+                  "Cultural integration",
+                  "Community belonging",
+                  "Emotional fulfillment"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:Theme",
+            "ontomedia:theme_id": "ontomedia:personal_professional_balance",
+            "ontomedia:theme_name": "Personal and Professional Balance",
+            "ontomedia:theme_description": "The journey of balancing personal and professional life",
+            "ontomedia:has_progression": [
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Initial Imbalance",
+                "ontomedia:progression_description": "Initial struggle with balance",
+                "ontomedia:has_key_element": [
+                  "Professional focus",
+                  "Personal neglect",
+                  "Cultural conflict",
+                  "Community impact",
+                  "Future uncertainty"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Balance Journey",
+                "ontomedia:progression_description": "Journey to find balance",
+                "ontomedia:has_key_element": [
+                  "Professional adjustment",
+                  "Personal growth",
+                  "Cultural integration",
+                  "Community support",
+                  "Future vision"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Balance Achievement",
+                "ontomedia:progression_description": "Achieving personal and professional balance",
+                "ontomedia:has_key_element": [
+                  "Professional fulfillment",
+                  "Personal satisfaction",
+                  "Cultural harmony",
+                  "Community contribution",
+                  "Future commitment"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:Theme",
+            "ontomedia:theme_id": "ontomedia:career_community_choice",
+            "ontomedia:theme_name": "Career Advancement vs Community",
+            "ontomedia:theme_description": "The conflict between career advancement and community commitment",
+            "ontomedia:has_progression": [
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Initial Conflict",
+                "ontomedia:progression_description": "Initial conflict between career and community",
+                "ontomedia:has_key_element": [
+                  "Career opportunity",
+                  "Community commitment",
+                  "Cultural impact",
+                  "Personal conflict",
+                  "Future choice"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Choice Journey",
+                "ontomedia:progression_description": "Journey to make the choice",
+                "ontomedia:has_key_element": [
+                  "Career evaluation",
+                  "Community assessment",
+                  "Cultural consideration",
+                  "Personal reflection",
+                  "Future vision"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Choice Resolution",
+                "ontomedia:progression_description": "Resolving the career vs community choice",
+                "ontomedia:has_key_element": [
+                  "Career decision",
+                  "Community commitment",
+                  "Cultural integration",
+                  "Personal fulfillment",
+                  "Future path"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:Theme",
+            "ontomedia:theme_id": "ontomedia:relationship_commitment",
+            "ontomedia:theme_name": "Relationship Commitment",
+            "ontomedia:theme_description": "The development of relationship commitment and trust",
+            "ontomedia:has_progression": [
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Initial Connection",
+                "ontomedia:progression_description": "Initial connection and attraction",
+                "ontomedia:has_key_element": [
+                  "Personal attraction",
+                  "Professional respect",
+                  "Cultural interest",
+                  "Community context",
+                  "Future possibility"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Relationship Development",
+                "ontomedia:progression_description": "Development of relationship",
+                "ontomedia:has_key_element": [
+                  "Personal growth",
+                  "Professional balance",
+                  "Cultural integration",
+                  "Community acceptance",
+                  "Future vision"
+                ]
+              },
+              {
+                "@type": "ontomedia:ThemeProgression",
+                "ontomedia:progression_name": "Commitment Achievement",
+                "ontomedia:progression_description": "Achieving relationship commitment",
+                "ontomedia:has_key_element": [
+                  "Personal commitment",
+                  "Professional harmony",
+                  "Cultural belonging",
+                  "Community celebration",
+                  "Future together"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_network_connections": {
+        "@id": "ontomedia:theme_network_connections",
+        "@type": "ontomedia:NetworkConnections",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:theme_scene_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:scene_network",
+            "ontomedia:relationship": "scene_theme_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_character_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:character_network",
+            "ontomedia:relationship": "character_theme_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_location_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:location_network",
+            "ontomedia:relationship": "location_theme_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_development_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:development_network",
+            "ontomedia:relationship": "development_theme_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_quality_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:quality_network",
+            "ontomedia:relationship": "quality_theme_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_style_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:style_network",
+            "ontomedia:relationship": "style_theme_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:theme_network_validation",
+        "@type": "ontomedia:ThemeNetworkValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:theme_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_type_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:theme_progression_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1822 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:novel",
+      "@type": "ontomedia:Novel",
+      "ontomedia:title": "Ærø's Healing Heart",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:cover_synopsis": "When Dr. Katrine Christiansen leaves her prestigious position in Copenhagen for the remote island of Ærø, she discovers that healing comes in many forms. As she bridges the gap between modern medicine and traditional island remedies, she finds herself drawn to both the island's ancient wisdom and its handsome local doctor, Mads O'Sullivan. But when the medical board threatens to close her clinic, Katrine must fight to preserve not just her grandmother's legacy, but the very heart of Ærø's healing traditions. A captivating tale of love, medicine, and the power of tradition in a modern world.",
+      "ontomedia:core_elements": {
+        "@id": "ontomedia:core_elements",
+        "@type": "ontomedia:CoreElements",
+        "ontomedia:protagonist": "ontomedia:katrine",
+        "ontomedia:primary_location": "ontomedia:aero_island",
+        "ontomedia:primary_theme": "ontomedia:transformation",
+        "ontomedia:writing_style": "ontomedia:style"
+      },
+      "ontomedia:chapter_planning": {
+        "@id": "ontomedia:chapter_planning",
+        "@type": "ontomedia:ChapterPlanning",
+        "ontomedia:act_1": {
+          "@id": "ontomedia:act_1",
+          "@type": "ontomedia:Act",
+          "ontomedia:name": "The Escape",
+          "ontomedia:description": "Katrine's journey from Copenhagen to Ærø, establishing the foundation for her transformation",
+          "ontomedia:chapters": [
+            {
+              "@id": "ontomedia:chapter_1",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 1,
+              "ontomedia:name": "The Proposal",
+              "ontomedia:description": "Katrine faces an unwanted proposal that forces her to confront her dissatisfaction with urban life",
+              "ontomedia:plot_progression": {
+                "ontomedia:main_plot": "ontomedia:urban_burnout",
+                "ontomedia:sub_plots": [
+                  "ontomedia:professional_independence",
+                  "ontomedia:romantic_freedom"
+                ]
+              },
+              "ontomedia:emotional_arc": "exhaustion_to_hope",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_initial",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_initial",
+                  "ontomedia:lily_initial"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:aeroskobing",
+                "ontomedia:contrast": "ontomedia:island_medical_practice"
+              },
+              "ontomedia:weather": "ontomedia:aero_weather_spring"
+            },
+            {
+              "@id": "ontomedia:chapter_2",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 2,
+              "ontomedia:name": "The Arrival",
+              "ontomedia:description": "Katrine's first day at the clinic reveals both the challenges and possibilities of island life",
+              "ontomedia:emotional_arc": "wonder_to_uncertainty",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:island_medical_practice",
+                "ontomedia:contrast": "ontomedia:aeroskobing"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_2_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_2_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Meeting",
+                    "ontomedia:description": "Katrine arrives at the ferry dock, her medical bag slipping from her shoulder. Mads catches it, their hands meeting over her grandmother's stethoscope. 'Dette tilhørte Dr. Marie Nielsen,' he says, recognizing the family heirloom. 'Hun var min første mentor.' The moment becomes a bridge between past and present, as Katrine feels the weight of her grandmother's legacy and the promise of new beginnings. Sofia watches from a distance, her expression a mix of professional respect and personal concern. Lily, sketching the scene, captures the moment's significance in her art, while Anna's warm welcome helps ease Katrine's initial uncertainty.",
+                    "ontomedia:key_plot_point": "First connection to island and potential romance",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "initial_state",
+                        "growth": "First step toward legacy",
+                        "emotional_state": "Hopeful uncertainty"
+                      },
+                      "mads": {
+                        "stage": "initial_state",
+                        "growth": "Connection to Marie's legacy",
+                        "emotional_state": "Respectful recognition"
+                      },
+                      "sofia": {
+                        "stage": "initial_state",
+                        "growth": "Professional observation",
+                        "emotional_state": "Cautious assessment"
+                      },
+                      "lily": {
+                        "stage": "initial_state",
+                        "growth": "Artistic documentation",
+                        "emotional_state": "Creative interest"
+                      },
+                      "anna": {
+                        "stage": "initial_state",
+                        "growth": "Community welcome",
+                        "emotional_state": "Warm support"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Ferry dock, bustling with island life",
+                      "weather": "Morning sea mists clearing",
+                      "time_of_day": "Early morning arrival",
+                      "symbolic_elements": ["Grandmother's stethoscope", "Medical bag", "Ferry deck", "Morning mist", "Art supplies", "Café sign"],
+                      "sensory_details": ["Sea air", "Dock sounds", "Bag strap slipping", "Salt spray on lips", "Fresh morning coffee", "Pencil scratching", "Distant conversations"],
+                      "emotional_tone": "Hopeful, uncertain, first connection, underlying tension",
+                      "cultural_elements": {
+                        "language": ["Dette tilhørte", "Hun var min første mentor", "Traditional greetings"],
+                        "traditions": ["Morning ferry arrival", "Island greeting customs", "Artistic documentation"],
+                        "environment": ["Baltic Sea mist", "Traditional harbor", "Community gathering"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Connection to Marie's medical legacy",
+                        "romantic": "First physical contact with Mads",
+                        "personal": "Initial step toward island life",
+                        "artistic": "Lily's documentation",
+                        "community": "Anna's welcome"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_2_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Medical Infrastructure",
+                    "ontomedia:description": "Katrine learns about the island's medical system: the main clinic in Ærøskøbing's historic town center where she'll work with Mads, and the network of traditional healers. As she tours the clinic, she feels both excitement and trepidation - this is where she'll need to prove herself, both as a doctor and as a person.",
+                    "ontomedia:key_plot_point": "Understanding the medical system",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Island clinic, treatment room",
+                      "weather": "Bright midday sun",
+                      "time_of_day": "Late morning",
+                      "symbolic_elements": ["Old medical ledger", "Treatment room", "Island herbs"],
+                      "sensory_details": ["Antiseptic smell", "Child's breathing", "Herb garden scents", "Medicinal taste of herbs"],
+                      "emotional_tone": "Professional focus, growing concern, determination"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_2_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Morning",
+                    "ontomedia:description": "Katrine's first morning in Ærøskøbing, exploring the town and feeling the weight of her decision. Lily, the young apprentice healer, joins her on her walk, sharing stories about her grandmother's morning routines. Sofia, the island's traditional healer, observes their interaction from her herb shop window, her expression a mix of professional assessment and guarded interest. Anna, busy setting up her café, waves them over, offering fresh pastries and introducing Katrine to the morning market regulars. The scene becomes a delicate dance of first impressions and professional boundaries, as each character begins to find their place in the island's medical community.",
+                    "ontomedia:key_plot_point": "First real connection to the island and medical community",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "initial_adaptation",
+                        "growth": "First steps toward community integration",
+                        "emotional_state": "Cautious hope"
+                      },
+                      "lily": {
+                        "stage": "initial_state",
+                        "growth": "Sharing island knowledge",
+                        "emotional_state": "Eager to help"
+                      },
+                      "sofia": {
+                        "stage": "initial_state",
+                        "growth": "Professional assessment",
+                        "emotional_state": "Guarded interest"
+                      },
+                      "anna": {
+                        "stage": "initial_state",
+                        "growth": "Community bridge building",
+                        "emotional_state": "Warm welcome"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town streets, morning market",
+                      "weather": "Clear morning with sea breeze",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["Morning market", "Town square", "Harbor view", "Herb shop window", "Café sign", "Medical bag"],
+                      "sensory_details": ["Fresh bread smells", "Market chatter", "Sea breeze", "Warm pastry taste", "Herb scents", "Coffee brewing"],
+                      "emotional_tone": "Discovery, connection, belonging, professional tension",
+                      "cultural_elements": {
+                        "language": ["Traditional greetings", "Medical terms"],
+                        "traditions": ["Morning market", "Island routines"],
+                        "environment": ["Baltic morning", "Traditional harbor"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical community introduction",
+                        "personal": "First community connections",
+                        "cultural": "Island morning traditions"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_3",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 3,
+              "ontomedia:name": "The First Steps",
+              "ontomedia:description": "Katrine's first small victories and challenges in island medicine",
+              "ontomedia:emotional_arc": "uncertainty_to_determination",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:island_medical_practice",
+                "ontomedia:contrast": "ontomedia:coastal_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_3_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_3_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First House Call",
+                    "ontomedia:description": "Katrine's first house call to a fisherman's cottage becomes a small victory as she successfully treats a minor injury using both modern and traditional methods. Sofia, having observed her morning walk, arrives unexpectedly with her herb basket, offering to assist. Their professional interaction becomes a delicate dance of modern and traditional medicine, as Sofia demonstrates the preparation of a traditional poultice while Katrine applies modern antiseptic. The fisherman's wife, watching from the kitchen, shares stories of how Katrine's grandmother would combine both approaches. Lily, having followed them, sketches the scene, capturing the moment where two healing traditions begin to merge. Anna arrives with coffee and pastries, turning the medical visit into an impromptu community gathering that bridges the gap between old and new.",
+                    "ontomedia:key_plot_point": "First medical success and beginning of professional integration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "initial_adaptation",
+                        "growth": "Learning to integrate approaches",
+                        "emotional_state": "Professional curiosity"
+                      },
+                      "sofia": {
+                        "stage": "initial_assessment",
+                        "growth": "Testing professional compatibility",
+                        "emotional_state": "Cautious collaboration"
+                      },
+                      "lily": {
+                        "stage": "learning",
+                        "growth": "Documenting healing traditions",
+                        "emotional_state": "Artistic observation"
+                      },
+                      "anna": {
+                        "stage": "community_building",
+                        "growth": "Creating healing space",
+                        "emotional_state": "Supportive presence"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Fisherman's cottage",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Medical bag", "Traditional remedies", "Sea view", "Herb basket", "Sketchbook", "Coffee tray"],
+                      "sensory_details": ["Salt air", "Wood smoke", "Herb tea", "Fresh bandages", "Coffee aroma", "Pencil scratching", "Gentle conversation"],
+                      "emotional_tone": "Professional collaboration, cultural learning, community warmth",
+                      "cultural_elements": {
+                        "language": ["Medical terms", "Traditional healing terms", "Island dialect"],
+                        "traditions": ["House call customs", "Healing practices", "Community gathering"],
+                        "environment": ["Traditional cottage", "Baltic morning"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical integration",
+                        "personal": "Community connection",
+                        "cultural": "Healing traditions",
+                        "artistic": "Documentation of change"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_3_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Community Welcome",
+                    "ontomedia:description": "A small gathering at Anna's café introduces Katrine to the community. She feels both the warmth of acceptance and the weight of expectation - they're welcoming her not just as a doctor, but as the granddaughter of their beloved healer. Sofia's presence adds a layer of complexity, as her traditional knowledge and deep connection to the island create both professional respect and personal tension. Anna, ever the community connector, helps bridge the gap between the two doctors, while Lily's artistic perspective offers a unique view of the island's healing traditions.",
+                    "ontomedia:key_plot_point": "First community acceptance and professional tension",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "initial_adaptation",
+                        "growth": "First step toward community integration",
+                        "emotional_state": "Hopeful uncertainty"
+                      },
+                      "sofia": {
+                        "stage": "initial_state",
+                        "growth": "Professional pride and personal conflict",
+                        "emotional_state": "Respectful wariness"
+                      },
+                      "anna": {
+                        "stage": "initial_state",
+                        "growth": "Community bridge building",
+                        "emotional_state": "Warm support"
+                      },
+                      "lily": {
+                        "stage": "initial_state",
+                        "growth": "Artistic observation",
+                        "emotional_state": "Curious interest"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Spring afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Café window", "Community gathering", "Grandmother's photo", "Traditional herbs", "Art supplies"],
+                      "sensory_details": ["Coffee aroma", "Bakery smells", "Warm conversation", "Sweet pastry", "Herb scents", "Artistic materials"],
+                      "emotional_tone": "Belonging, expectation, legacy, underlying tension",
+                      "cultural_elements": {
+                        "language": ["Traditional greetings", "Medical terms"],
+                        "traditions": ["Community gathering", "Healing practices"],
+                        "environment": ["Café as community center"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical practice introduction",
+                        "personal": "Community integration",
+                        "romantic": "Initial tension with Sofia",
+                        "artistic": "Lily's perspective"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_3_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Emergency",
+                    "ontomedia:description": "A minor medical emergency tests Katrine's adaptation to island medicine. As she works alongside Mads, she feels the first real connection to her new role - not just as a doctor, but as part of this community.",
+                    "ontomedia:key_plot_point": "First test of medical adaptation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic treatment room",
+                      "weather": "Storm approaching",
+                      "time_of_day": "Late afternoon",
+                      "symbolic_elements": ["Emergency equipment", "Herb garden", "Storm clouds"],
+                      "sensory_details": ["Antiseptic", "Herb scents", "Distant thunder", "Rain on windows"],
+                      "emotional_tone": "Professional focus, community connection"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_4",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 4,
+              "ontomedia:name": "The Discovery",
+              "ontomedia:description": "Katrine uncovers her grandmother's research, setting the stage for her medical journey",
+              "ontomedia:emotional_arc": "determination_to_purpose",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:town_square",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_4_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_4_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Test",
+                    "ontomedia:description": "Katrine faces her first major test when a group of children falls ill with the mysterious disease. Her determination to solve the mystery grows as she realizes this is her chance to prove the value of combining traditional and modern medicine.",
+                    "ontomedia:key_plot_point": "First major medical challenge",
+                    "ontomedia:narrative_devices": {
+                      "setting": "School building",
+                      "weather": "Fog rolling in",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["School building", "Fog", "Medical bag", "Marie's journal"],
+                      "sensory_details": ["Children's voices", "Fog dampness", "Medical equipment", "Acrid taste of antiseptic"],
+                      "emotional_tone": "Determination, purpose, challenge"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_4_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Breakthrough",
+                    "ontomedia:description": "Katrine makes a breakthrough in understanding the illness, connecting it to the island's unique ecosystem. The discovery gives her a clear sense of purpose - she's not just treating patients, but preserving a vital part of the island's medical heritage.",
+                    "ontomedia:key_plot_point": "First medical breakthrough",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic laboratory",
+                      "weather": "Fog clearing",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Microscope", "Herb samples", "Research notes", "Clearing sky"],
+                      "sensory_details": ["Laboratory sounds", "Herb scents", "Pen scratching", "Earthy taste of fresh herbs"],
+                      "emotional_tone": "Discovery, purpose, clarity"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_4_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Recognition",
+                    "ontomedia:description": "The island's elders recognize Katrine's contribution, marking her full acceptance into the community.",
+                    "ontomedia:key_plot_point": "First community recognition",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Elders' meeting house",
+                      "weather": "Clear evening",
+                      "time_of_day": "Sunset",
+                      "symbolic_elements": ["Meeting house", "Elders' circle", "Setting sun"],
+                      "sensory_details": ["Elders' voices", "Sea breeze", "Candlelight", "Rich taste of traditional island mead"],
+                      "emotional_tone": "Respect, acceptance, belonging"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "ontomedia:act_2": {
+          "@id": "ontomedia:act_2",
+          "@type": "ontomedia:Act",
+          "ontomedia:name": "The Challenge",
+          "ontomedia:description": "Katrine faces increasing professional and personal challenges that test her commitment to the island",
+          "ontomedia:chapters": [
+            {
+              "@id": "ontomedia:chapter_5",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 5,
+              "ontomedia:name": "The First Crisis",
+              "ontomedia:description": "A medical emergency forces Katrine to combine modern and traditional medicine",
+              "ontomedia:emotional_arc": "purpose_to_anxiety",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "primary": "Clinic",
+                "contrast": "Herb garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_5_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_5_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Investigation",
+                    "ontomedia:description": "The medical board arrives to investigate Katrine's unconventional methods, creating tension in the community.",
+                    "ontomedia:key_plot_point": "Professional conflict and community tension",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic waiting room",
+                      "weather": "Grey, overcast",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Medical board files", "Clinic door", "Community gathering outside"],
+                      "sensory_details": ["Tense silence", "Footsteps", "Distant sea sounds", "Dry mouth from anxiety"]
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_5_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Defense",
+                    "ontomedia:description": "Katrine defends her methods, supported by the community and her grandmother's research. Sofia's testimony about traditional healing methods becomes crucial, while Jakob provides historical context about the island's medical heritage. Lily's artistic documentation of successful treatments adds a unique perspective, and Anna's café becomes a gathering place for community support. The storm outside mirrors the emotional intensity of the moment, as each character finds their voice in defending the island's unique approach to healing.",
+                    "ontomedia:key_plot_point": "Standing up for beliefs and community unity",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_challenge",
+                        "growth": "Defending integrated approach",
+                        "emotional_state": "Determined conviction"
+                      },
+                      "sofia": {
+                        "stage": "changing",
+                        "growth": "Supporting modern integration",
+                        "emotional_state": "Professional pride"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Sharing historical wisdom",
+                        "emotional_state": "Supportive guidance"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Contributing artistic evidence",
+                        "emotional_state": "Creative purpose"
+                      },
+                      "anna": {
+                        "stage": "support",
+                        "growth": "Community organization",
+                        "emotional_state": "Steadfast support"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic meeting room",
+                      "weather": "Storm building",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Grandmother's journal", "Herb samples", "Medical certificates", "Historical documents", "Artistic renderings", "Community gathering"],
+                      "sensory_details": ["Rain on windows", "Heated discussion", "Paper rustling", "Bitter taste of conflict", "Herb scents", "Artistic materials", "Community voices"],
+                      "emotional_tone": "Determination, unity, conviction",
+                      "cultural_elements": {
+                        "language": ["Medical terms", "Traditional healing terms", "Community voices"],
+                        "traditions": ["Healing practices", "Community support", "Historical documentation"],
+                        "environment": ["Storm as metaphor", "Community gathering"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical defense",
+                        "cultural": "Traditional vs modern medicine",
+                        "personal": "Community support",
+                        "artistic": "Documentation of success",
+                        "historical": "Island medical heritage"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_5_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Resolution",
+                    "ontomedia:description": "The medical board reaches a decision, recognizing the value of Katrine's integrated approach.",
+                    "ontomedia:key_plot_point": "Professional validation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town hall",
+                      "weather": "Storm clearing",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Town hall", "Clearing sky", "Community gathering"],
+                      "sensory_details": ["Rain stopping", "Community voices", "Celebration sounds", "Sweet taste of victory"]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_6",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 6,
+              "ontomedia:name": "The Community Response",
+              "ontomedia:description": "The island's reaction to Katrine's methods creates both support and conflict",
+              "ontomedia:emotional_arc": "anxiety_to_conflict",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:town_square",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_6_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_6_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Fun and Games",
+                    "ontomedia:description": "Katrine experiences the joy of island life - her first successful traditional healing, a community celebration, and growing connection with Mads. For the first time, she feels truly at home, not just as a doctor, but as a person. The island's rhythms begin to match her own heartbeat, and she starts to see a future here that she hadn't imagined possible. However, Sofia's presence at the celebration, her Mediterranean beauty and deep connection to the island's traditions, creates an undercurrent of tension that Katrine can't ignore. Each time Sofia shares a story about her childhood with Mads, or demonstrates a traditional healing method, Katrine feels like an outsider looking in.",
+                    "ontomedia:key_plot_point": "The idealized version of island life with underlying tension",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "growing_confidence",
+                        "growth": "First real sense of belonging",
+                        "emotional_state": "Joy mixed with insecurity"
+                      },
+                      "sofia": {
+                        "stage": "rival_introduction",
+                        "growth": "Establishing connection to island",
+                        "emotional_state": "Confident, traditional"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town square",
+                      "weather": "Perfect summer day",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Community gathering", "Traditional music", "Herb garden", "Sofia's traditional dress", "Mads's childhood photos"],
+                      "sensory_details": ["Music", "Laughter", "Herb scents", "Summer breeze", "Traditional dance steps", "Shared mead"],
+                      "emotional_tone": "Joy, belonging, connection, underlying tension",
+                      "cultural_elements": {
+                        "language": ["Traditional songs", "Island dialect"],
+                        "traditions": ["Community dance", "Healing demonstration", "Shared stories"],
+                        "environment": ["Summer celebration", "Island traditions"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Traditional healing success",
+                        "romantic": "Growing connection with Mads",
+                        "personal": "First real sense of belonging",
+                        "conflict": "Sofia's presence and history"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_6_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Gathering Storm",
+                    "ontomedia:description": "As the medical board's investigation intensifies, Katrine and Sofia prepare in the herb garden. 'Vi må være forberedt,' Sofia whispers, gathering traditional remedies. The approaching storm mirrors the growing tension, while the garden's resilience in the face of changing weather becomes a metaphor for their determination. The first raindrops fall just as they receive news of the board's preliminary findings, each drop like a challenge to their traditional methods.",
+                    "ontomedia:key_plot_point": "Investigation intensifies",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_challenge",
+                        "growth": "Standing firm in beliefs",
+                        "emotional_state": "Determined resilience"
+                      },
+                      "sofia": {
+                        "stage": "mentor_support",
+                        "growth": "Sharing traditional wisdom",
+                        "emotional_state": "Protective guidance"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Herb garden",
+                      "weather": "Storm approaching",
+                      "time_of_day": "Late afternoon",
+                      "symbolic_elements": ["Darkening sky", "First raindrops", "Bent herbs", "Medical board letter", "Garden resilience", "Traditional remedy jars"],
+                      "sensory_details": ["Distant thunder", "Wind in herbs", "First drops", "Paper rustling", "Tense silence", "Herb-infused oil scents"],
+                      "emotional_tone": "Tension, determination, foreboding",
+                      "cultural_elements": {
+                        "language": ["Vi må være forberedt"],
+                        "traditions": ["Traditional remedy preparation", "Storm weather wisdom"],
+                        "environment": ["Herb garden as cultural symbol", "Baltic storm patterns"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board investigation",
+                        "cultural": "Traditional vs modern medicine",
+                        "personal": "Katrine and Sofia's growing bond",
+                        "environmental": "Storm as metaphor for conflict"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_6_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Dinner",
+                    "ontomedia:description": "Dinner at Mads's family home in the rural coast, surrounded by traditional gardens. As she sits with his family, Katrine feels the first real sense of belonging to a family again. The warmth of their acceptance helps heal old wounds she didn't know she carried.",
+                    "ontomedia:key_plot_point": "Integration into island family life",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Mads's family home",
+                      "weather": "Summer evening",
+                      "time_of_day": "Sunset",
+                      "symbolic_elements": ["Family table", "Traditional garden", "Setting sun"],
+                      "sensory_details": ["Home cooking", "Garden scents", "Family voices", "Warm bread"],
+                      "emotional_tone": "Belonging, healing, family"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_7",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 7,
+              "ontomedia:name": "The Investigation",
+              "ontomedia:description": "The medical board's scrutiny puts pressure on Katrine's relationships and methods",
+              "ontomedia:emotional_arc": "conflict_to_doubt",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:clinic",
+                "ontomedia:contrast": "ontomedia:town_hall"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_7_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_7_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Board Arrives",
+                    "ontomedia:description": "The medical board's arrival at the clinic becomes a pivotal moment as Katrine and Sofia present their integrated approach. The sterile examination room transforms into a space of cultural significance, with Lily's detailed sketches of successful treatments adorning the walls. Sofia's presence, initially seen as a challenge, becomes crucial as she demonstrates the effectiveness of traditional remedies, while Katrine explains their scientific basis. Anna's café has become a gathering place for community support, with residents sharing stories of successful treatments. The board members, initially skeptical, begin to see the value in their unique approach as they witness the seamless integration of traditional and modern medicine. Jakob's historical knowledge provides crucial context, while Lily's artistic documentation adds a unique perspective to their presentation.",
+                    "ontomedia:key_plot_point": "Medical board evaluation and professional validation",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_challenge",
+                        "growth": "Defending integrated approach",
+                        "emotional_state": "Determined conviction"
+                      },
+                      "sofia": {
+                        "stage": "changing",
+                        "growth": "Supporting modern integration",
+                        "emotional_state": "Professional pride"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Contributing artistic evidence",
+                        "emotional_state": "Creative purpose"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Organizing community backing",
+                        "emotional_state": "Steadfast support"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Sharing historical wisdom",
+                        "emotional_state": "Supportive guidance"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic examination room",
+                      "weather": "Clear day",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Medical certificates", "Traditional remedies", "Healing sketches", "Community photos", "Historical documents", "Herb garden view"],
+                      "sensory_details": ["Sterile air", "Herb scents", "Professional discussion", "Community voices", "Paper rustling", "Sketchbook pages"],
+                      "emotional_tone": "Professional tension, cultural pride, community support",
+                      "cultural_elements": {
+                        "language": ["Medical terminology", "Traditional healing terms", "Community testimonials"],
+                        "traditions": ["Medical practice", "Healing methods", "Community support"],
+                        "environment": ["Clinic setting", "Herb garden", "Community gathering"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board evaluation",
+                        "cultural": "Traditional vs modern medicine",
+                        "personal": "Community support",
+                        "artistic": "Documentation of healing",
+                        "historical": "Medical legacy"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_7_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evidence",
+                    "ontomedia:description": "In the research laboratory, Katrine presents her scientific evidence, combining Marie's traditional methods with modern medical research. Sofia's presence becomes crucial as she demonstrates the effectiveness of traditional remedies, creating a powerful synthesis of old and new. The sterile environment transforms into a space of collaboration, as both doctors realize their complementary strengths. Jakob's historical knowledge provides crucial context, while Lily's artistic documentation of the healing process adds a unique perspective to their presentation.",
+                    "ontomedia:key_plot_point": "Scientific defense and professional collaboration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_challenge",
+                        "growth": "Learning to value tradition",
+                        "emotional_state": "Determined collaboration"
+                      },
+                      "sofia": {
+                        "stage": "changing",
+                        "growth": "Embracing modern methods",
+                        "emotional_state": "Professional pride"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Sharing historical wisdom",
+                        "emotional_state": "Supportive guidance"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Contributing artistic perspective",
+                        "emotional_state": "Creative fulfillment"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research laboratory",
+                      "weather": "Storm building",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Microscope", "Research papers", "Herb samples", "Medical equipment", "Historical documents", "Artistic renderings"],
+                      "sensory_details": ["Laboratory sounds", "Thunder in distance", "Paper rustling", "Medical equipment", "Herb scents", "Artistic materials"],
+                      "emotional_tone": "Professional focus, collaboration, innovation",
+                      "cultural_elements": {
+                        "language": ["Scientific terms", "Traditional healing terms"],
+                        "traditions": ["Research methods", "Healing practices"],
+                        "environment": ["Laboratory as cultural bridge"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical collaboration",
+                        "cultural": "Integration of methods",
+                        "personal": "Professional respect",
+                        "artistic": "Documentation of healing"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_7_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Community Stand",
+                    "ontomedia:description": "The clinic transforms into a space of community support as patients share their experiences with Katrine's methods. Sofia's traditional remedies and Katrine's modern treatments are showcased through real patient stories, while Lily's sketches document the healing journey of each case. Jakob provides historical context for the island's medical traditions, and Anna's café has become a gathering place for residents sharing their support. The board members, observing from the sidelines, witness the seamless integration of traditional and modern medicine in action. The warmth of their testimonies creates a powerful counterpoint to the clinical investigation, as each story becomes a testament to the effectiveness of their integrated approach.",
+                    "ontomedia:key_plot_point": "Community validation and professional demonstration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_challenge",
+                        "growth": "Witnessing community impact",
+                        "emotional_state": "Grateful determination"
+                      },
+                      "sofia": {
+                        "stage": "changing",
+                        "growth": "Sharing traditional success",
+                        "emotional_state": "Proud collaboration"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Documenting healing journey",
+                        "emotional_state": "Artistic fulfillment"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Connecting past and present",
+                        "emotional_state": "Supportive wisdom"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Organizing community voice",
+                        "emotional_state": "Steadfast support"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic waiting room",
+                      "weather": "Storm breaking",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Community gathering", "Patient records", "Healing sketches", "Traditional remedies", "Modern equipment", "Marie's legacy"],
+                      "sensory_details": ["Community voices", "Rain on windows", "Herb scents", "Warm lighting", "Sketchbook pages", "Medical equipment"],
+                      "emotional_tone": "Unity, support, determination, professional pride",
+                      "cultural_elements": {
+                        "language": ["Patient testimonials", "Medical terms", "Traditional healing terms"],
+                        "traditions": ["Community gathering", "Healing practices", "Island support"],
+                        "environment": ["Clinic as community center", "Herb garden view"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board observation",
+                        "cultural": "Traditional vs modern medicine",
+                        "personal": "Community support",
+                        "artistic": "Documentation of healing",
+                        "historical": "Medical legacy"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_8",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 8,
+              "ontomedia:name": "The Breaking Point",
+              "ontomedia:description": "Katrine faces her greatest challenge when the medical board's decision threatens everything",
+              "ontomedia:emotional_arc": "doubt_to_determination",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:katrine_cottage",
+                "ontomedia:contrast": "ontomedia:coastal_path"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_8_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_8_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Letter",
+                    "ontomedia:description": "In her cottage, Katrine receives the medical board's decision. The morning light through her window illuminates both her professional achievements and the challenge ahead. Sofia arrives unexpectedly, having heard the news, and shares her own experience with the board's traditional medicine requirements. Lily's sketches of their successful treatments are spread across the table, each one a testament to their integrated approach. Anna brings coffee and pastries, turning the moment into an impromptu strategy session. Jakob's historical knowledge of similar challenges faced by the island's healers provides crucial context. The personal space becomes a crucible for her internal conflict as she reads the letter requiring her return to Copenhagen, while the community's support creates a powerful counterpoint to the board's clinical decision.",
+                    "ontomedia:key_plot_point": "Personal crisis point and community support",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_challenge",
+                        "growth": "Facing difficult choice",
+                        "emotional_state": "Conflicted determination"
+                      },
+                      "sofia": {
+                        "stage": "changing",
+                        "growth": "Sharing experience",
+                        "emotional_state": "Supportive understanding"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Documenting success",
+                        "emotional_state": "Artistic conviction"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Providing comfort",
+                        "emotional_state": "Steadfast presence"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Sharing historical wisdom",
+                        "emotional_state": "Guiding support"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Katrine's cottage",
+                      "weather": "Heavy rain",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Official letter", "Morning light", "Family photos", "Medical certificates", "Healing sketches", "Traditional remedies", "Coffee tray"],
+                      "sensory_details": ["Rain on windows", "Paper rustling", "Distant thunder", "Coffee brewing", "Herb scents", "Sketchbook pages", "Warm pastries"],
+                      "emotional_tone": "Shock, conflict, community support, determination",
+                      "cultural_elements": {
+                        "language": ["Official medical terms", "Traditional healing terms", "Community support"],
+                        "traditions": ["Morning gathering", "Healing practices", "Island support"],
+                        "environment": ["Cottage as personal space", "Baltic storm"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board decision",
+                        "cultural": "Traditional vs modern medicine",
+                        "personal": "Community support",
+                        "artistic": "Documentation of success",
+                        "historical": "Medical legacy"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_8_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Confrontation",
+                    "ontomedia:description": "At the clinic, Katrine faces the community's reaction to the board's decision. The professional setting becomes a battleground for her commitment to the island's medical heritage. Sofia stands by her side, her traditional knowledge and experience with the board adding weight to their defense. Lily's sketches of successful treatments line the walls, each one telling a story of healing that combines old and new methods. Anna's café has become a gathering place for concerned residents, while Jakob shares historical examples of similar challenges faced by the island's healers. The storm outside mirrors the emotional intensity of the moment, as each character finds their voice in defending the island's unique approach to healing. The medical board's letter lies on the table, its clinical language contrasting with the warmth of the community's support.",
+                    "ontomedia:key_plot_point": "Professional challenge and community unity",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_challenge",
+                        "growth": "Defending integrated approach",
+                        "emotional_state": "Determined conviction"
+                      },
+                      "sofia": {
+                        "stage": "changing",
+                        "growth": "Standing united",
+                        "emotional_state": "Professional solidarity"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Presenting evidence",
+                        "emotional_state": "Artistic determination"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Mobilizing support",
+                        "emotional_state": "Steadfast leadership"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Providing context",
+                        "emotional_state": "Historical wisdom"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic meeting room",
+                      "weather": "Storm intensifying",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Medical board letter", "Community gathering", "Healing sketches", "Traditional remedies", "Marie's journal", "Herb samples", "Modern equipment"],
+                      "sensory_details": ["Heated discussion", "Thunder", "Rain on windows", "Tense silence", "Herb scents", "Sketchbook pages", "Coffee brewing"],
+                      "emotional_tone": "Conflict, determination, community unity, professional pride",
+                      "cultural_elements": {
+                        "language": ["Medical terms", "Traditional healing terms", "Community voices"],
+                        "traditions": ["Community gathering", "Healing practices", "Island support"],
+                        "environment": ["Clinic as cultural center", "Baltic storm"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board challenge",
+                        "cultural": "Traditional vs modern medicine",
+                        "personal": "Community support",
+                        "artistic": "Documentation of success",
+                        "historical": "Medical legacy"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_8_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Dark Night",
+                    "ontomedia:description": "After a failed medical case that results in a patient's death and a devastating misunderstanding with Mads, Katrine reaches her lowest point. The Baltic storm outside mirrors her inner turmoil as she packs her bags to return to Copenhagen. In a moment of despair, she discovers her grandmother's final journal entry, written during a similar storm. The words speak directly to her heart, revealing that her grandmother faced the same choice between duty and love, between the known and the unknown, and found her answer in the healing power of the island. Sofia arrives unexpectedly, having heard about the failed case, and shares her own experience with medical failures and the importance of learning from them. Lily, who has been staying at the house to help with the restoration, finds Katrine in tears and shares her own story of doubt and renewal, helping Katrine see that her grandmother's legacy is not just about medicine, but about finding the courage to follow one's heart. Anna brings coffee and pastries, turning the moment into an impromptu gathering of support. Jakob's historical knowledge of similar challenges faced by the island's healers provides crucial context. The storm's fury outside is like a patient in crisis - unpredictable, dangerous, but somehow beautiful in its raw power. The house creaks and groans like an old body fighting to stay alive, while the sea window frames a view of chaos that somehow makes perfect sense. The medical bag sits half-packed, its contents a jumble of past and present, like a treatment plan that needs to be rewritten. The scent of medicinal herbs from the garden mixes with the salt air, creating a healing atmosphere that seems to whisper of second chances and new beginnings.",
+                    "ontomedia:key_plot_point": "Soul-crushing moment of doubt and revelation",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "rock_bottom",
+                        "growth": "Facing deepest fears",
+                        "emotional_state": "Despair to revelation"
+                      },
+                      "sofia": {
+                        "stage": "changing",
+                        "growth": "Sharing vulnerability",
+                        "emotional_state": "Empathetic support"
+                      },
+                      "lily": {
+                        "stage": "mentor_support",
+                        "growth": "Sharing wisdom",
+                        "emotional_state": "Compassionate guidance"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Providing comfort",
+                        "emotional_state": "Steadfast presence"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Sharing historical wisdom",
+                        "emotional_state": "Guiding support"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Grandmother's house",
+                      "weather": "Violent storm, house creaking",
+                      "time_of_day": "Midnight",
+                      "symbolic_elements": ["Storm", "Sea window", "Half-packed medical bag", "Grandmother's journal", "Herb garden", "Creaking house", "Medicinal herbs", "Coffee tray", "Healing sketches"],
+                      "sensory_details": ["Storm winds", "House creaking", "Rain on windows", "Herb scents", "Salt air", "Tears", "Paper rustling", "Distant thunder", "Coffee brewing", "Warm pastries"],
+                      "emotional_tone": "Despair, revelation, hope, community support",
+                      "cultural_elements": {
+                        "language": ["Storm wisdom", "Healing traditions", "Community support"],
+                        "traditions": ["Night healing", "Storm medicine", "Island support"],
+                        "environment": ["Baltic storm", "Island house", "Herb garden"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical failure and revelation",
+                        "personal": "Connection to grandmother's legacy",
+                        "romantic": "Misunderstanding with Mads",
+                        "artistic": "Documentation of healing",
+                        "historical": "Medical legacy",
+                        "environmental": "Storm as metaphor for crisis"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "ontomedia:act_3": {
+          "@id": "ontomedia:act_3",
+          "@type": "ontomedia:Act",
+          "ontomedia:name": "The Transformation",
+          "ontomedia:description": "Katrine's journey reaches its climax as she must choose between her past and future",
+          "ontomedia:chapters": [
+            {
+              "@id": "ontomedia:chapter_9",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 9,
+              "ontomedia:name": "The Choice",
+              "ontomedia:description": "Katrine must make a difficult decision about her future on the island",
+              "ontomedia:emotional_arc": "determination_to_clarity",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:university_office",
+                "ontomedia:contrast": "ontomedia:lighthouse"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_9_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_9_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Response",
+                    "ontomedia:description": "In the university office, Katrine meets with academic advisors to discuss her distance learning proposal. The formal setting becomes a stage for her innovative solution, as she bridges the gap between traditional island medicine and modern medical education. Sofia's presence adds crucial weight to the presentation, her traditional knowledge complementing Katrine's modern approach. Lily's sketches of successful treatments line the walls, each one telling a story of healing that combines old and new methods. Anna has prepared a special lunch using traditional island recipes with medicinal herbs, creating a tangible connection between food and healing. Jakob's historical research on the island's medical heritage provides crucial context for their proposal. The morning light through the windows illuminates both the challenges ahead and the promise of a new approach to medical education. The medical board's letter lies on the table, its clinical language now transformed into an opportunity for innovation rather than a threat to tradition.",
+                    "ontomedia:key_plot_point": "Professional compromise and cultural integration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_innovation",
+                        "growth": "Creating new solutions",
+                        "emotional_state": "Determined hope"
+                      },
+                      "sofia": {
+                        "stage": "equal_partner",
+                        "growth": "Sharing traditional wisdom",
+                        "emotional_state": "Professional pride"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Presenting artistic evidence",
+                        "emotional_state": "Creative fulfillment"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Bridging traditions",
+                        "emotional_state": "Cultural pride"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Connecting past and future",
+                        "emotional_state": "Historical wisdom"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "University office",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Academic certificates", "Research papers", "Island view", "Medical textbooks", "Healing sketches", "Traditional herbs", "Lunch spread", "Historical documents"],
+                      "sensory_details": ["Academic discussion", "Coffee brewing", "Paper rustling", "Distant sea sounds", "Herb scents", "Warm pastries", "Morning light", "Professional voices"],
+                      "emotional_tone": "Professional focus, innovation, determination, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Academic terms", "Traditional healing terms", "Island dialect"],
+                        "traditions": ["Healing practices", "Island cuisine", "Medical education"],
+                        "environment": ["University setting", "Island view", "Traditional elements"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical education innovation",
+                        "cultural": "Integration of traditions",
+                        "personal": "Community support",
+                        "artistic": "Documentation of healing",
+                        "historical": "Medical legacy"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_9_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Meeting",
+                    "ontomedia:description": "At the town hall, the community gathers to discuss Katrine's proposed solution. The public forum becomes a celebration of island unity, as residents share their support for her innovative approach to combining tradition with progress. Sofia presents her traditional healing methods, demonstrating how they complement Katrine's modern approach. Lily's sketches of successful treatments are displayed around the hall, each one telling a story of healing that bridges old and new. Anna has prepared a special spread of traditional island dishes, creating a tangible connection between food, community, and healing. Jakob shares historical examples of how the island's medical traditions have evolved while maintaining their core values. The afternoon sun streams through the windows, illuminating both the challenges overcome and the promise of a new approach to island medicine. The medical board's representatives, initially skeptical, begin to see the value in their unique approach as they witness the seamless integration of traditional and modern medicine in action. The warmth of the community's support creates a powerful counterpoint to the clinical investigation, as each story becomes a testament to the effectiveness of their integrated approach.",
+                    "ontomedia:key_plot_point": "Community decision and cultural celebration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_fulfillment",
+                        "growth": "Witnessing community impact",
+                        "emotional_state": "Grateful determination"
+                      },
+                      "sofia": {
+                        "stage": "equal_partner",
+                        "growth": "Demonstrating traditional methods",
+                        "emotional_state": "Professional pride"
+                      },
+                      "lily": {
+                        "stage": "growing_confidence",
+                        "growth": "Presenting artistic evidence",
+                        "emotional_state": "Creative fulfillment"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Creating healing space",
+                        "emotional_state": "Cultural pride"
+                      },
+                      "jakob": {
+                        "stage": "mentoring",
+                        "growth": "Connecting past and present",
+                        "emotional_state": "Historical wisdom"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town hall",
+                      "weather": "Bright afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Community gathering", "Official documents", "Marie's portrait", "Island map", "Healing sketches", "Traditional herbs", "Food spread", "Historical documents", "Medical equipment"],
+                      "sensory_details": ["Community voices", "Sunlight through windows", "Shared food", "Warm discussion", "Herb scents", "Traditional music", "Children's laughter", "Professional dialogue"],
+                      "emotional_tone": "Unity, support, celebration, professional pride",
+                      "cultural_elements": {
+                        "language": ["Traditional greetings", "Medical terms", "Island dialect"],
+                        "traditions": ["Community gathering", "Healing practices", "Island cuisine"],
+                        "environment": ["Town hall as cultural center", "Island setting"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board observation",
+                        "cultural": "Integration of traditions",
+                        "personal": "Community support",
+                        "artistic": "Documentation of healing",
+                        "historical": "Medical legacy"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_9_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Promise",
+                    "ontomedia:description": "At the lighthouse, Katrine and Mads share a moment of clarity about their future. The isolated setting becomes a sanctuary for their commitment, as the rotating light symbolizes their guiding path forward. Sofia's earlier demonstration of traditional healing methods and the community's overwhelming support have given Katrine the confidence to fully embrace her place on the island. Lily's sketches of their journey together line the walls of the lighthouse keeper's room, each one capturing a moment of growth and connection. Anna has left a basket of traditional island treats, a subtle reminder of the community's blessing. Jakob's historical knowledge of the lighthouse's role in guiding islanders home adds a deeper meaning to their moment. The setting sun casts a golden light over the research center in the distance, its modern architecture harmonizing with the traditional island landscape. The medical board's approval letter lies on the table, its clinical language transformed into a promise of new beginnings. The scent of the sea mixes with the lingering aroma of medicinal herbs from the garden, creating a perfect blend of past and future, tradition and innovation.",
+                    "ontomedia:key_plot_point": "Romantic resolution and future commitment",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "personal_fulfillment",
+                        "growth": "Embracing island life",
+                        "emotional_state": "Peaceful certainty"
+                      },
+                      "mads": {
+                        "stage": "equal_partner",
+                        "growth": "Sharing vision",
+                        "emotional_state": "Deep connection"
+                      },
+                      "sofia": {
+                        "stage": "supportive_friend",
+                        "growth": "Enabling confidence",
+                        "emotional_state": "Quiet satisfaction"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting journey",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "community_blessing",
+                        "growth": "Supporting love",
+                        "emotional_state": "Warm approval"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Providing context",
+                        "emotional_state": "Wise contentment"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Lighthouse",
+                      "weather": "Clear evening",
+                      "time_of_day": "Sunset",
+                      "symbolic_elements": ["Rotating light", "Ocean view", "Lighthouse steps", "Distant island", "Research center", "Healing sketches", "Traditional treats", "Medical board letter", "Herb garden view"],
+                      "sensory_details": ["Lighthouse mechanism", "Sea breeze", "Waves below", "Warm evening light", "Herb scents", "Salt air", "Gentle conversation", "Distant music"],
+                      "emotional_tone": "Clarity, commitment, hope, peaceful certainty",
+                      "cultural_elements": {
+                        "language": ["Traditional terms", "Medical terminology", "Island dialect"],
+                        "traditions": ["Lighthouse symbolism", "Island courtship", "Community blessing"],
+                        "environment": ["Baltic sunset", "Island landscape", "Traditional architecture"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board approval",
+                        "romantic": "Future commitment",
+                        "personal": "Island belonging",
+                        "artistic": "Documentation of journey",
+                        "cultural": "Integration of traditions"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_10",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 10,
+              "ontomedia:name": "The Proposal",
+              "ontomedia:description": "The medical board's response leads to an unexpected opportunity",
+              "ontomedia:emotional_arc": "clarity_to_hope",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:research_center",
+                "ontomedia:contrast": "ontomedia:town_square"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_10_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_10_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Announcement",
+                    "ontomedia:description": "In the research center, the medical board announces their approval of Katrine's proposal and the establishment of a new research facility. The modern setting becomes a bridge between tradition and innovation, as the board recognizes the value of her integrated approach. Sofia's traditional knowledge and Katrine's modern methods are celebrated as complementary forces, creating a perfect synthesis of old and new. Lily's sketches of their journey and successful treatments adorn the walls, each one telling a story of healing that bridges past and future. Anna has prepared a special spread of traditional island dishes with medicinal herbs, creating a tangible connection between food, community, and healing. Jakob's historical research on the island's medical heritage provides crucial context for the new facility. The morning light streams through the windows, illuminating both the challenges overcome and the promise of a new approach to island medicine. The community's support has transformed the board's skepticism into genuine appreciation for the island's unique approach to healing. The scent of fresh paint mixes with the aroma of medicinal herbs from the garden, creating a perfect blend of new beginnings and traditional wisdom.",
+                    "ontomedia:key_plot_point": "Professional victory and cultural integration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_fulfillment",
+                        "growth": "Achieving balance",
+                        "emotional_state": "Joyful validation"
+                      },
+                      "sofia": {
+                        "stage": "equal_partner",
+                        "growth": "Recognition of value",
+                        "emotional_state": "Proud achievement"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting success",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "community_support",
+                        "growth": "Celebrating traditions",
+                        "emotional_state": "Cultural pride"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting past and future",
+                        "emotional_state": "Wise satisfaction"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center",
+                      "weather": "Bright morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Research equipment", "Official documents", "Marie's legacy", "Modern facilities", "Traditional herb garden", "Community gathering", "Healing sketches", "Historical documents", "Medical certificates"],
+                      "sensory_details": ["Excited voices", "Fresh coffee", "Medical equipment", "Herb scents", "Sunlight through windows", "Shared celebration", "Fresh paint", "Traditional music", "Children's laughter"],
+                      "emotional_tone": "Joy, validation, possibility, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Medical terminology", "Traditional healing terms", "Island dialect"],
+                        "traditions": ["Community celebration", "Healing practices", "Island cuisine"],
+                        "environment": ["Research center as cultural bridge", "Traditional garden", "Modern architecture"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board approval",
+                        "cultural": "Integration of traditions",
+                        "personal": "Community celebration",
+                        "artistic": "Documentation of success",
+                        "historical": "Medical legacy"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_10_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Celebration",
+                    "ontomedia:description": "The town square transforms into a celebration of the island's medical heritage and future. The community gathers to honor both Marie's legacy and Katrine's innovation, creating a perfect balance of tradition and progress. Sofia leads a demonstration of traditional healing methods, her movements graceful and precise as she shows how ancient wisdom complements modern medicine. Lily's sketches of their journey are displayed around the square, each one capturing a moment of growth and healing. Anna has prepared a feast of traditional island dishes, each recipe incorporating medicinal herbs and passed down through generations. Jakob shares stories of the island's medical history, connecting past healers to the present celebration. The research center's lights twinkle in the distance, its modern architecture harmonizing with the traditional buildings of the square. The medical board's representatives join in the celebration, their formal attire gradually giving way to island hospitality. The scent of medicinal herbs mixes with the aroma of traditional cooking, creating a perfect blend of healing and celebration. Children dance to traditional music, their laughter a testament to the island's vibrant future. The setting sun casts a golden light over the gathering, illuminating both the challenges overcome and the promise of new beginnings.",
+                    "ontomedia:key_plot_point": "Community celebration and cultural integration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "cultural_integration",
+                        "growth": "Embracing island traditions",
+                        "emotional_state": "Joyful belonging"
+                      },
+                      "sofia": {
+                        "stage": "cultural_ambassador",
+                        "growth": "Sharing traditional wisdom",
+                        "emotional_state": "Proud celebration"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting celebration",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "cultural_preservation",
+                        "growth": "Sharing culinary heritage",
+                        "emotional_state": "Warm pride"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting generations",
+                        "emotional_state": "Wise celebration"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town square",
+                      "weather": "Perfect summer day",
+                      "time_of_day": "Sunset",
+                      "symbolic_elements": ["Community gathering", "Traditional music", "Research center model", "Marie's portrait", "Healing sketches", "Traditional herbs", "Feast spread", "Historical documents", "Children dancing", "Setting sun"],
+                      "sensory_details": ["Music", "Laughter", "Shared food", "Summer breeze", "Herb scents", "Traditional cooking", "Children's voices", "Dancing feet", "Warm sunlight", "Gentle waves"],
+                      "emotional_tone": "Joy, unity, celebration, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Traditional songs", "Island dialect", "Medical terms"],
+                        "traditions": ["Community dance", "Healing practices", "Island cuisine", "Celebration customs"],
+                        "environment": ["Town square", "Baltic sunset", "Traditional architecture"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board integration",
+                        "cultural": "Celebration of traditions",
+                        "personal": "Community belonging",
+                        "artistic": "Documentation of celebration",
+                        "historical": "Medical legacy",
+                        "romantic": "Shared joy"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_10_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Harbor Sunset",
+                    "ontomedia:description": "At the harbor, Katrine and Mads share a quiet moment of reflection and promise. The setting sun casts a golden light over their future together, as the research center's lights begin to twinkle in the distance. Sofia's earlier demonstration of traditional healing methods and the community's overwhelming support have given Katrine the confidence to fully embrace her place on the island. Lily's sketches of their journey together line the harbor walls, each one capturing a moment of growth and connection. Anna has left a basket of traditional island treats, a subtle reminder of the community's blessing. Jakob's historical knowledge of the harbor's role in welcoming new beginnings adds a deeper meaning to their moment. The scent of the sea mixes with the lingering aroma of medicinal herbs from the garden, creating a perfect blend of past and future, tradition and innovation. The medical board's approval letter lies in Katrine's pocket, its clinical language transformed into a promise of new beginnings. The gentle lapping of waves against the harbor walls provides a soothing rhythm to their conversation, as they discuss their hopes for the future of island medicine.",
+                    "ontomedia:key_plot_point": "Romantic moment and future vision",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "personal_fulfillment",
+                        "growth": "Embracing future",
+                        "emotional_state": "Peaceful joy"
+                      },
+                      "mads": {
+                        "stage": "equal_partner",
+                        "growth": "Sharing vision",
+                        "emotional_state": "Deep connection"
+                      },
+                      "sofia": {
+                        "stage": "supportive_friend",
+                        "growth": "Enabling confidence",
+                        "emotional_state": "Quiet satisfaction"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting journey",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "community_blessing",
+                        "growth": "Supporting love",
+                        "emotional_state": "Warm approval"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Providing context",
+                        "emotional_state": "Wise contentment"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Harbor",
+                      "weather": "Golden sunset",
+                      "time_of_day": "Sunset",
+                      "symbolic_elements": ["Setting sun", "Research center lights", "Boats at dock", "Distant lighthouse", "Healing sketches", "Traditional treats", "Medical board letter", "Herb garden view", "Harbor walls"],
+                      "sensory_details": ["Gentle waves", "Seagull calls", "Salt air", "Warm evening light", "Herb scents", "Distant music", "Harbor sounds", "Gentle breeze"],
+                      "emotional_tone": "Love, promise, new beginnings, peaceful joy",
+                      "cultural_elements": {
+                        "language": ["Traditional terms", "Medical terminology", "Island dialect"],
+                        "traditions": ["Harbor symbolism", "Island courtship", "Community blessing"],
+                        "environment": ["Baltic sunset", "Island harbor", "Traditional architecture"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical board approval",
+                        "romantic": "Future commitment",
+                        "personal": "Island belonging",
+                        "artistic": "Documentation of journey",
+                        "cultural": "Integration of traditions"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_11",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 11,
+              "@name": "The Beginning",
+              "ontomedia:description": "Katrine and Sofia establish the research center, honoring Marie's legacy",
+              "ontomedia:emotional_arc": "hope_to_fulfillment",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:research_center",
+                "ontomedia:contrast": "ontomedia:school"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_11_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_11_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Opening",
+                    "ontomedia:description": "The research center opens its doors, with Marie's original treatment room preserved as a historical exhibit. The modern facility becomes a living bridge between past and future, as Katrine and Sofia showcase their integrated approach to medicine. Lily's sketches of their journey and successful treatments adorn the walls, each one telling a story of healing that bridges old and new. Anna has prepared a special spread of traditional island dishes with medicinal herbs, creating a tangible connection between food, community, and healing. Jakob's historical research on the island's medical heritage provides crucial context for the new facility. The morning light streams through the windows, illuminating both the challenges overcome and the promise of a new approach to island medicine. The scent of fresh paint mixes with the aroma of medicinal herbs from the garden, creating a perfect blend of new beginnings and traditional wisdom. Children from the island school tour the facility, their curiosity and excitement a testament to the future of island medicine.",
+                    "ontomedia:key_plot_point": "Professional achievement and cultural preservation",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_fulfillment",
+                        "growth": "Leading innovation",
+                        "emotional_state": "Proud achievement"
+                      },
+                      "sofia": {
+                        "stage": "equal_partner",
+                        "growth": "Sharing traditional wisdom",
+                        "emotional_state": "Professional pride"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting legacy",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "cultural_preservation",
+                        "growth": "Sharing culinary heritage",
+                        "emotional_state": "Warm pride"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting generations",
+                        "emotional_state": "Wise satisfaction"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Marie's treatment room", "Modern equipment", "Historical exhibit", "Community gathering", "Healing sketches", "Traditional herbs", "Food spread", "Historical documents", "Children's drawings"],
+                      "sensory_details": ["Fresh paint", "Herb scents", "Excited voices", "Medical equipment", "Children's laughter", "Traditional music", "Coffee brewing", "Warm sunlight"],
+                      "emotional_tone": "Pride, continuity, achievement, cultural preservation",
+                      "cultural_elements": {
+                        "language": ["Medical terms", "Traditional healing terms", "Island dialect"],
+                        "traditions": ["Healing practices", "Island cuisine", "Community gathering"],
+                        "environment": ["Research center", "Traditional garden", "Modern architecture"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Facility opening",
+                        "cultural": "Preservation of traditions",
+                        "personal": "Community celebration",
+                        "artistic": "Documentation of legacy",
+                        "historical": "Medical heritage"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_11_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Workshop",
+                    "ontomedia:description": "At the school, Sofia leads a workshop on traditional remedies, teaching the next generation about the island's medical heritage. The educational setting becomes a space for passing on knowledge, as children learn to appreciate both tradition and innovation. Katrine joins in, demonstrating how modern medicine complements traditional methods, creating a perfect balance of old and new. Lily's sketches of healing plants and treatments adorn the classroom walls, each one telling a story of the island's medical wisdom. Anna has prepared special treats using medicinal herbs, creating a tangible connection between food and healing. Jakob shares stories of the island's medical history, connecting past healers to the present lesson. The afternoon sun streams through the windows, illuminating both the children's eager faces and the promise of a new generation of healers. The scent of fresh herbs mixes with the aroma of traditional baking, creating a perfect blend of learning and tradition. The children's drawings of healing plants and treatments become part of the classroom display, their creativity a testament to the future of island medicine.",
+                    "ontomedia:key_plot_point": "Community integration and knowledge transfer",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_fulfillment",
+                        "growth": "Teaching integration",
+                        "emotional_state": "Joyful sharing"
+                      },
+                      "sofia": {
+                        "stage": "cultural_ambassador",
+                        "growth": "Passing on wisdom",
+                        "emotional_state": "Proud teaching"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting learning",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "cultural_preservation",
+                        "growth": "Sharing culinary heritage",
+                        "emotional_state": "Warm pride"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting generations",
+                        "emotional_state": "Wise teaching"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "School classroom",
+                      "weather": "Bright afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Herb samples", "Children's drawings", "Marie's journal", "Modern textbooks", "Healing sketches", "Traditional treats", "Historical documents", "Classroom display"],
+                      "sensory_details": ["Children's voices", "Herb scents", "Pencil scratching", "Summer breeze", "Traditional baking", "Warm sunlight", "Excited chatter", "Page turning"],
+                      "emotional_tone": "Learning, continuity, hope, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Traditional terms", "Medical terminology", "Children's questions"],
+                        "traditions": ["Healing practices", "Island cuisine", "Teaching methods"],
+                        "environment": ["School setting", "Traditional garden", "Modern classroom"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Knowledge transfer",
+                        "cultural": "Preservation of traditions",
+                        "personal": "Community connection",
+                        "artistic": "Documentation of learning",
+                        "historical": "Medical heritage"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_11_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden",
+                    "ontomedia:description": "In the healing garden, Katrine and Sofia tend to the medicinal plants, their hands working in harmony with the earth. The garden becomes a living testament to their integrated approach, as traditional herbs grow alongside modern medical equipment. Lily's sketches of the garden's seasonal changes adorn the garden walls, each one capturing the cycle of growth and healing. Anna has prepared a special tea using the garden's herbs, creating a moment of shared reflection and celebration. Jakob shares stories of the garden's history, connecting past healers to the present moment. The evening light casts long shadows across the garden, illuminating both the challenges overcome and the promise of continued growth. The scent of fresh herbs mixes with the aroma of Anna's tea, creating a perfect blend of tradition and innovation. The garden's paths, worn smooth by generations of healers, lead to new areas of growth and discovery.",
+                    "ontomedia:key_plot_point": "Cultural preservation and professional growth",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "professional_fulfillment",
+                        "growth": "Embracing tradition",
+                        "emotional_state": "Peaceful contentment"
+                      },
+                      "sofia": {
+                        "stage": "equal_partner",
+                        "growth": "Sharing wisdom",
+                        "emotional_state": "Deep satisfaction"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting growth",
+                        "emotional_state": "Creative peace"
+                      },
+                      "anna": {
+                        "stage": "cultural_preservation",
+                        "growth": "Sharing traditions",
+                        "emotional_state": "Warm reflection"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting past and present",
+                        "emotional_state": "Wise contentment"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Healing garden",
+                      "weather": "Golden evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Medicinal plants", "Garden paths", "Healing sketches", "Traditional tea", "Historical markers", "Modern equipment", "Seasonal growth", "Garden walls"],
+                      "sensory_details": ["Herb scents", "Evening breeze", "Tea brewing", "Soil underfoot", "Bird calls", "Rustling leaves", "Distant waves", "Warm sunlight"],
+                      "emotional_tone": "Peace, growth, continuity, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Traditional terms", "Medical terminology", "Island dialect"],
+                        "traditions": ["Healing practices", "Island cuisine", "Garden wisdom"],
+                        "environment": ["Baltic garden", "Traditional paths", "Modern integration"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Integrated approach",
+                        "cultural": "Preservation of traditions",
+                        "personal": "Community connection",
+                        "artistic": "Documentation of growth",
+                        "historical": "Medical heritage"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_12",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 12,
+              "ontomedia:name": "The Future",
+              "ontomedia:description": "Katrine's journey comes full circle as she embraces her new life",
+              "ontomedia:emotional_arc": "fulfillment_to_wholeness",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_transformed",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_transformed",
+                  "ontomedia:lily_established"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:katrine_cottage",
+                "ontomedia:contrast": "ontomedia:herb_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_12_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_12_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Dinner",
+                    "ontomedia:description": "At Mads's family home, they celebrate the research center's success and their personal journey. The warm family setting becomes a space for personal connection, as they share their hopes for the future and strengthen their bonds. Lily's sketches of their journey together adorn the walls, each one telling a story of growth and connection. Anna has prepared a special dinner using traditional island recipes and medicinal herbs from the garden, creating a perfect blend of celebration and healing. Jakob shares stories of the island's history, connecting past generations to their present moment. The evening light streams through the windows, illuminating both the challenges overcome and the promise of their future together. The scent of traditional cooking mixes with the aroma of medicinal herbs from the garden, creating a perfect blend of family and healing. The family photos on the walls, showing generations of island life, provide a backdrop to their celebration of new beginnings.",
+                    "ontomedia:key_plot_point": "Personal connection and family celebration",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "personal_fulfillment",
+                        "growth": "Embracing family",
+                        "emotional_state": "Warm belonging"
+                      },
+                      "mads": {
+                        "stage": "equal_partner",
+                        "growth": "Sharing future",
+                        "emotional_state": "Deep connection"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting journey",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "cultural_preservation",
+                        "growth": "Sharing traditions",
+                        "emotional_state": "Warm pride"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting generations",
+                        "emotional_state": "Wise contentment"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Mads's family home",
+                      "weather": "Clear evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Family table", "Traditional garden", "Research center view", "Family photos", "Healing sketches", "Traditional dishes", "Historical artifacts", "Garden herbs"],
+                      "sensory_details": ["Home cooking", "Family voices", "Garden scents", "Warm light", "Traditional music", "Laughter", "Herb aromas", "Evening breeze"],
+                      "emotional_tone": "Belonging, joy, family, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Family stories", "Traditional terms", "Island dialect"],
+                        "traditions": ["Family gathering", "Island cuisine", "Healing practices"],
+                        "environment": ["Family home", "Traditional garden", "Island setting"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Research center success",
+                        "cultural": "Family traditions",
+                        "personal": "Community connection",
+                        "artistic": "Documentation of journey",
+                        "historical": "Family heritage"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_12_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Light",
+                    "ontomedia:description": "In her cottage, Katrine wakes to a new day, reflecting on her journey. The morning light illuminates both her professional achievements and personal growth, showing how she's found wholeness in her dual role as doctor and island resident. Lily's sketches of her journey adorn the walls, each one telling a story of growth and connection. Anna has left a basket of traditional island treats and medicinal herbs from the garden, creating a perfect blend of nourishment and healing. Jakob's historical research on the cottage's past healers provides a deeper connection to her place in the island's medical heritage. The dawn light streams through the windows, illuminating both the challenges overcome and the promise of continued growth. The scent of fresh coffee mixes with the aroma of medicinal herbs from the garden, creating a perfect blend of tradition and innovation. The medical certificates and family photos on the walls, showing both her professional achievements and personal connections, provide a backdrop to her reflection on wholeness.",
+                    "ontomedia:key_plot_point": "Final reflection and personal wholeness",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "personal_fulfillment",
+                        "growth": "Embracing wholeness",
+                        "emotional_state": "Peaceful contentment"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting journey",
+                        "emotional_state": "Creative peace"
+                      },
+                      "anna": {
+                        "stage": "cultural_preservation",
+                        "growth": "Supporting healing",
+                        "emotional_state": "Warm care"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting heritage",
+                        "emotional_state": "Wise satisfaction"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Katrine's cottage",
+                      "weather": "Clear morning",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Morning light", "Family photos", "Medical certificates", "Research center view", "Healing sketches", "Traditional treats", "Historical documents", "Garden herbs"],
+                      "sensory_details": ["Birdsong", "Fresh coffee", "Warm sunlight", "Distant sea sounds", "Herb scents", "Morning breeze", "Page turning", "Tea brewing"],
+                      "emotional_tone": "Fulfillment, wholeness, peace, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Traditional terms", "Medical terminology", "Island dialect"],
+                        "traditions": ["Healing practices", "Island cuisine", "Morning rituals"],
+                        "environment": ["Baltic cottage", "Traditional garden", "Modern integration"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Medical achievements",
+                        "cultural": "Island traditions",
+                        "personal": "Community belonging",
+                        "artistic": "Documentation of journey",
+                        "historical": "Medical heritage"
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_12_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Gathering",
+                    "ontomedia:description": "The community gathers in the herb garden to celebrate the research center's success and their shared journey. The garden, now a symbol of unity between tradition and innovation, reflects the wholeness Katrine has found in her life on the island. Lily's sketches of their journey together adorn the garden walls, each one telling a story of growth and connection. Anna has prepared a special spread of traditional island dishes with medicinal herbs from the garden, creating a perfect blend of celebration and healing. Jakob shares stories of the garden's history, connecting past healers to their present moment. The afternoon sun streams through the garden, illuminating both the challenges overcome and the promise of continued growth. The scent of fresh herbs mixes with the aroma of traditional cooking, creating a perfect blend of celebration and healing. The garden's paths, worn smooth by generations of healers, lead to new areas of growth and discovery, symbolizing the community's journey together.",
+                    "ontomedia:key_plot_point": "Community celebration and cultural unity",
+                    "ontomedia:character_development": {
+                      "katrine": {
+                        "stage": "community_leader",
+                        "growth": "Embracing unity",
+                        "emotional_state": "Joyful belonging"
+                      },
+                      "sofia": {
+                        "stage": "cultural_ambassador",
+                        "growth": "Sharing traditions",
+                        "emotional_state": "Proud celebration"
+                      },
+                      "lily": {
+                        "stage": "artistic_fulfillment",
+                        "growth": "Documenting unity",
+                        "emotional_state": "Creative joy"
+                      },
+                      "anna": {
+                        "stage": "cultural_preservation",
+                        "growth": "Sharing heritage",
+                        "emotional_state": "Warm pride"
+                      },
+                      "jakob": {
+                        "stage": "historical_guide",
+                        "growth": "Connecting generations",
+                        "emotional_state": "Wise contentment"
+                      }
+                    },
+                    "ontomedia:narrative_devices": {
+                      "setting": "Herb garden",
+                      "weather": "Perfect summer day",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Flourishing herbs", "Community gathering", "Marie's legacy", "Research center", "Healing sketches", "Traditional dishes", "Historical markers", "Garden paths"],
+                      "sensory_details": ["Herb scents", "Laughter", "Music", "Shared food", "Summer breeze", "Children's voices", "Traditional songs", "Garden sounds"],
+                      "emotional_tone": "Joy, unity, wholeness, cultural pride",
+                      "cultural_elements": {
+                        "language": ["Traditional terms", "Medical terminology", "Island dialect"],
+                        "traditions": ["Healing practices", "Island cuisine", "Community gathering"],
+                        "environment": ["Baltic garden", "Traditional paths", "Modern integration"]
+                      },
+                      "subplot_elements": {
+                        "professional": "Research center success",
+                        "cultural": "Preservation of traditions",
+                        "personal": "Community connection",
+                        "artistic": "Documentation of unity",
+                        "historical": "Medical heritage"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ontomedia:has_character": [
+        {
+          "@id": "ontomedia:katrine",
+          "@type": "ontomedia:Character",
+          "@name": "Dr. Katrine Christiansen",
+          "@description": "A dedicated doctor seeking new purpose",
+          "@has_arc": {
+            "@id": "ontomedia:katrine_arc",
+            "@type": "ontomedia:CharacterArc",
+            "@name": "Professional and Personal Transformation",
+            "@description": "Journey from urban medicine to rural healthcare and personal fulfillment",
+            "@has_stage": [
+              {
+                "@id": "ontomedia:katrine_initial",
+                "@type": "ontomedia:CharacterStage",
+                "@name": "Initial State",
+                "@description": "Urban doctor facing burnout and unwanted proposal",
+                "@sequence": 1,
+                "@key_developments": [
+                  "Professional dissatisfaction",
+                  "Personal uncertainty",
+                  "Cultural disconnection"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "ontomedia:has_location": [
+        {
+          "@id": "ontomedia:katrine_apartment",
+          "@type": "ontomedia:Location",
+          "@name": "Katrine's Copenhagen Apartment",
+          "@description": "Modern apartment in Copenhagen's medical district",
+          "@has_connection": [
+            {
+              "@id": "ontomedia:location_character_connection_1",
+              "@type": "ontomedia:LocationConnection",
+              "@character": "ontomedia:katrine",
+              "@relationship": "home"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

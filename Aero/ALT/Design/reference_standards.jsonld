@@ -1,0 +1,193 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:reference_standards",
+      "@type": "ontomedia:ReferenceStandards",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:standards_registry",
+        "@type": "ontomedia:StandardsRegistry",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:medical_standards_reference",
+            "@type": "ontomedia:StandardReference",
+            "ontomedia:target": "ontomedia:medical_standards",
+            "ontomedia:relationship": "standard_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:name": "Medical Standards",
+            "ontomedia:description": "Standards for medical practice and procedures",
+            "ontomedia:has_guideline": [
+              {
+                "@id": "ontomedia:medical_practice_guideline",
+                "@type": "ontomedia:Guideline",
+                "ontomedia:name": "Medical Practice Guidelines",
+                "ontomedia:description": "Standards for medical practice operations",
+                "ontomedia:requirements": [
+                  "Patient confidentiality",
+                  "Medical ethics",
+                  "Professional conduct",
+                  "Emergency protocols"
+                ]
+              },
+              {
+                "@id": "ontomedia:medical_procedures_guideline",
+                "@type": "ontomedia:Guideline",
+                "ontomedia:name": "Medical Procedure Guidelines",
+                "ontomedia:description": "Standards for medical procedures and treatments",
+                "ontomedia:requirements": [
+                  "Standard protocols",
+                  "Safety measures",
+                  "Documentation",
+                  "Follow-up care"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:cultural_standards_reference",
+            "@type": "ontomedia:StandardReference",
+            "ontomedia:target": "ontomedia:cultural_standards",
+            "ontomedia:relationship": "standard_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:name": "Cultural Standards",
+            "ontomedia:description": "Standards for cultural representation and accuracy",
+            "ontomedia:has_guideline": [
+              {
+                "@id": "ontomedia:danish_culture_guideline",
+                "@type": "ontomedia:Guideline",
+                "ontomedia:name": "Danish Cultural Guidelines",
+                "ontomedia:description": "Standards for Danish cultural representation",
+                "ontomedia:requirements": [
+                  "Cultural authenticity",
+                  "Social customs",
+                  "Language usage",
+                  "Traditions"
+                ]
+              },
+              {
+                "@id": "ontomedia:island_life_guideline",
+                "@type": "ontomedia:Guideline",
+                "ontomedia:name": "Island Life Guidelines",
+                "ontomedia:description": "Standards for island community representation",
+                "ontomedia:requirements": [
+                  "Community dynamics",
+                  "Island traditions",
+                  "Local customs",
+                  "Environmental aspects"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:romance_standards_reference",
+            "@type": "ontomedia:StandardReference",
+            "ontomedia:target": "ontomedia:romance_standards",
+            "ontomedia:relationship": "standard_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:name": "Romance Standards",
+            "ontomedia:description": "Standards for romance genre elements",
+            "ontomedia:has_guideline": [
+              {
+                "@id": "ontomedia:romance_development_guideline",
+                "@type": "ontomedia:Guideline",
+                "ontomedia:name": "Romance Development Guidelines",
+                "ontomedia:description": "Standards for romance plot development",
+                "ontomedia:requirements": [
+                  "Relationship progression",
+                  "Conflict development",
+                  "Emotional depth",
+                  "Resolution satisfaction"
+                ]
+              },
+              {
+                "@id": "ontomedia:romance_content_guideline",
+                "@type": "ontomedia:Guideline",
+                "ontomedia:name": "Romance Content Guidelines",
+                "ontomedia:description": "Standards for romance content and heat level",
+                "ontomedia:requirements": [
+                  "Appropriate content",
+                  "Heat level consistency",
+                  "Emotional connection",
+                  "Character development"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_material_registry": {
+        "@id": "ontomedia:materials_registry",
+        "@type": "ontomedia:MaterialsRegistry",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:medical_resources_reference",
+            "@type": "ontomedia:MaterialReference",
+            "ontomedia:target": "ontomedia:medical_resources",
+            "ontomedia:relationship": "material_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:name": "Medical Resources",
+            "ontomedia:description": "Reference materials for medical content",
+            "ontomedia:content": [
+              "Medical procedures",
+              "Patient care",
+              "Medical ethics",
+              "Emergency protocols"
+            ]
+          },
+          {
+            "@id": "ontomedia:cultural_resources_reference",
+            "@type": "ontomedia:MaterialReference",
+            "ontomedia:target": "ontomedia:cultural_resources",
+            "ontomedia:relationship": "material_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:name": "Cultural Resources",
+            "ontomedia:description": "Reference materials for cultural content",
+            "ontomedia:content": [
+              "Danish culture",
+              "Island traditions",
+              "Local customs",
+              "Social dynamics"
+            ]
+          },
+          {
+            "@id": "ontomedia:romance_resources_reference",
+            "@type": "ontomedia:MaterialReference",
+            "ontomedia:target": "ontomedia:romance_resources",
+            "ontomedia:relationship": "material_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:name": "Romance Resources",
+            "ontomedia:description": "Reference materials for romance content",
+            "ontomedia:content": [
+              "Romance tropes",
+              "Relationship development",
+              "Conflict resolution",
+              "Emotional progression"
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:reference_standards_validation",
+        "@type": "ontomedia:StandardsValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:standards_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

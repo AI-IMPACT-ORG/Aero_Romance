@@ -1,0 +1,2130 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:novel",
+      "@type": "ontomedia:Novel",
+      "ontomedia:title": "Ærø's Healing Heart",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:cover_synopsis": "When Dr. Katrine Christiansen leaves her prestigious position in Copenhagen for the remote island of Ærø, she discovers that healing comes in many forms. As she bridges the gap between modern medicine and traditional island remedies, she finds herself drawn to both the island's ancient wisdom and its handsome local doctor, Mads O'Sullivan. But when the medical board threatens to close her clinic, Katrine must fight to preserve not just her grandmother's legacy, but the very heart of Ærø's healing traditions. A captivating tale of love, medicine, and the power of tradition in a modern world.",
+      "ontomedia:core_elements": {
+        "@id": "ontomedia:core_elements",
+        "@type": "ontomedia:CoreElements",
+        "ontomedia:protagonist": "ontomedia:katrine",
+        "ontomedia:primary_location": "ontomedia:aero_island",
+        "ontomedia:primary_theme": "ontomedia:transformation",
+        "ontomedia:writing_style": "ontomedia:style"
+      },
+      "ontomedia:chapter_planning": {
+        "@id": "ontomedia:chapter_planning",
+        "@type": "ontomedia:ChapterPlanning",
+        "ontomedia:act_1": {
+          "@id": "ontomedia:act_1",
+          "@type": "ontomedia:Act",
+          "ontomedia:name": "The Escape",
+          "ontomedia:description": "Katrine's journey from Copenhagen to Ærø, establishing the foundation for her transformation",
+          "ontomedia:chapters": [
+            {
+              "@id": "ontomedia:chapter_1",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 1,
+              "ontomedia:name": "Ægteskab",
+              "ontomedia:description": "Katrine faces an unwanted proposal that forces her to confront her dissatisfaction with urban life",
+              "ontomedia:plot_progression": {
+                "ontomedia:main_plot": "ontomedia:urban_burnout",
+                "ontomedia:sub_plots": [
+                  "ontomedia:professional_independence",
+                  "ontomedia:romantic_freedom"
+                ]
+              },
+              "ontomedia:emotional_arc": "exhaustion_to_hope",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_initial",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_initial",
+                  "ontomedia:lily_initial"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:aeroskobing",
+                "ontomedia:contrast": "ontomedia:island_medical_practice"
+              },
+              "ontomedia:weather": "ontomedia:aero_weather_spring",
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_1_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_1_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Hospital Corridor",
+                    "ontomedia:description": "Katrine walks through the sterile hospital corridor, her white coat a stark contrast to the grey walls. The weight of her medical bag feels heavier than usual, mirroring the burden of her career choices. The sound of her heels echoes like a metronome counting down to a decision she doesn't want to make.",
+                    "ontomedia:key_plot_point": "Introduction to Katrine's professional dissatisfaction",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Copenhagen Hospital corridor",
+                      "weather": "Grey, overcast",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["White coat", "Grey walls", "Medical bag", "Echoing footsteps"],
+                      "sensory_details": ["Sterile air", "Footsteps echoing", "Distant medical equipment", "Coffee from break room"],
+                      "emotional_tone": "Exhaustion, dissatisfaction, resignation"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_1_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Unwanted Proposal",
+                    "ontomedia:description": "In the hospital's administrative office, Dr. Marcus Nielsen presents Katrine with a prestigious position and a personal proposal. The polished mahogany desk between them feels like a barrier, while the city view outside the window offers a glimpse of the life she's expected to embrace.",
+                    "ontomedia:key_plot_point": "Catalyst for change",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Hospital administrative office",
+                      "weather": "Bright but cold",
+                      "time_of_day": "Mid-morning",
+                      "symbolic_elements": ["Mahogany desk", "City view", "Official documents", "Engagement ring box"],
+                      "sensory_details": ["Polished wood scent", "City sounds", "Paper rustling", "Tense silence"],
+                      "emotional_tone": "Pressure, discomfort, trapped"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_1_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Letter",
+                    "ontomedia:description": "Alone in her apartment, Katrine reads her grandmother's old letter about the island clinic. The yellowed paper and familiar handwriting bring memories of summer visits to Ærø, while the city lights outside her window seem to dim in comparison to the island's remembered glow.",
+                    "ontomedia:key_plot_point": "First step toward change",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Katrine's apartment",
+                      "weather": "Evening rain",
+                      "time_of_day": "Night",
+                      "symbolic_elements": ["Yellowed letter", "City lights", "Family photos", "Medical certificates"],
+                      "sensory_details": ["Rain on windows", "Paper scent", "Distant traffic", "Tea cooling"],
+                      "emotional_tone": "Nostalgia, hope, determination"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_2",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 2,
+              "ontomedia:name": "Opdagelse",
+              "ontomedia:description": "Katrine finds her grandmother's journal in the coastal farmhouse, revealing a medical mystery",
+              "ontomedia:emotional_arc": "wonder_to_uncertainty",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:grandmother_house",
+                "ontomedia:contrast": "ontomedia:coastal_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_2_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_2_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Arrival",
+                    "ontomedia:description": "Katrine arrives at her grandmother's coastal farmhouse, the salty breeze carrying memories of childhood summers. The old wooden door creaks open to reveal a house frozen in time, with her grandmother's medical bag still sitting by the entrance as if waiting for her return.",
+                    "ontomedia:key_plot_point": "Connection to grandmother's legacy",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal farmhouse entrance",
+                      "weather": "Baltic breeze",
+                      "time_of_day": "Late afternoon",
+                      "symbolic_elements": ["Creaking door", "Medical bag", "Family photos", "Coastal view"],
+                      "sensory_details": ["Salt air", "Wooden floor creaks", "Seagull calls", "Distant waves"],
+                      "emotional_tone": "Nostalgia, connection, anticipation"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_2_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Journal",
+                    "ontomedia:description": "In the old study, Katrine discovers her grandmother's medical journal. The pages are filled with detailed observations about island illnesses and traditional remedies, along with sketches of local herbs. A particular entry about a mysterious seasonal condition catches her attention.",
+                    "ontomedia:key_plot_point": "Discovery of medical mystery",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Study room",
+                      "weather": "Sunset",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Old journal", "Herb sketches", "Medical notes", "Setting sun"],
+                      "sensory_details": ["Old paper scent", "Dust motes", "Pen scratching", "Distant sea"],
+                      "emotional_tone": "Wonder, curiosity, connection"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_2_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden",
+                    "ontomedia:description": "Following her grandmother's notes, Katrine explores the coastal garden. The medicinal herbs are still thriving, their scents mingling with the sea air. As she identifies plants mentioned in the journal, she begins to understand the depth of her grandmother's knowledge and the mystery she's uncovered.",
+                    "ontomedia:key_plot_point": "First step into island medicine",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal garden",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Dusk",
+                      "symbolic_elements": ["Medicinal herbs", "Garden paths", "Coastal view", "Old tools"],
+                      "sensory_details": ["Herb scents", "Sea breeze", "Crunching gravel", "Bird calls"],
+                      "emotional_tone": "Discovery, uncertainty, purpose"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_3",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 3,
+              "ontomedia:name": "Ankomst",
+              "ontomedia:description": "Katrine's first day at the clinic reveals both the challenges and possibilities of island life",
+              "ontomedia:emotional_arc": "uncertainty_to_determination",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:island_medical_practice",
+                "ontomedia:contrast": "ontomedia:aeroskobing"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_3_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_3_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Meeting",
+                    "ontomedia:description": "Katrine arrives at the ferry dock, her medical bag slipping from her shoulder. Mads catches it, their hands meeting over her grandmother's stethoscope. 'Dette tilhørte Dr. Marie Nielsen,' he says, recognizing the family heirloom. 'Hun var min første mentor.' The moment becomes a bridge between past and present.",
+                    "ontomedia:key_plot_point": "First connection to island and potential romance",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Ferry dock",
+                      "weather": "Morning sea mists clearing",
+                      "time_of_day": "Early morning arrival",
+                      "symbolic_elements": ["Grandmother's stethoscope", "Medical bag", "Ferry deck", "Morning mist"],
+                      "sensory_details": ["Sea air", "Dock sounds", "Bag strap slipping", "Salt spray on lips"],
+                      "emotional_tone": "Hopeful uncertainty, first connection",
+                      "cultural_elements": {
+                        "language": ["Dette tilhørte", "Hun var min første mentor"],
+                        "traditions": ["Morning ferry arrival", "Island greeting customs"]
+                      }
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_3_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Clinic Tour",
+                    "ontomedia:description": "Mads shows Katrine around the clinic, a blend of modern equipment and traditional healing spaces. The contrast between the sterile treatment rooms and the warm, herb-scented consultation area reflects the island's approach to medicine.",
+                    "ontomedia:key_plot_point": "Introduction to island medical practice",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Island clinic",
+                      "weather": "Bright morning",
+                      "time_of_day": "Mid-morning",
+                      "symbolic_elements": ["Modern equipment", "Herb garden view", "Treatment rooms", "Traditional remedies"],
+                      "sensory_details": ["Antiseptic", "Herb scents", "Footsteps on wooden floors", "Distant sea"],
+                      "emotional_tone": "Professional curiosity, cultural learning"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_3_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Patient",
+                    "ontomedia:description": "A local fisherman arrives with a minor injury, watching Katrine with cautious interest. As she treats him, combining modern medicine with traditional remedies, she feels the weight of both her grandmother's legacy and the community's expectations.",
+                    "ontomedia:key_plot_point": "First test of medical adaptation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic treatment room",
+                      "weather": "Clear morning",
+                      "time_of_day": "Late morning",
+                      "symbolic_elements": ["Medical bag", "Traditional remedies", "Patient's weathered hands", "Herb garden"],
+                      "sensory_details": ["Salt and fish scent", "Herb tea brewing", "Bandage rustling", "Soft Danish voices"],
+                      "emotional_tone": "Professional focus, cultural bridge"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_4",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 4,
+              "ontomedia:name": "Morgen",
+              "ontomedia:description": "Katrine's first morning in Ærøskøbing, exploring the town and feeling the weight of her decision",
+              "ontomedia:emotional_arc": "determination_to_purpose",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:town_square",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_4_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_4_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Market",
+                    "ontomedia:description": "Katrine explores the town square's morning market, where vendors recognize her as Marie's granddaughter. The fresh produce, local crafts, and warm greetings create a stark contrast to Copenhagen's impersonal pace.",
+                    "ontomedia:key_plot_point": "First real connection to island life",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town square market",
+                      "weather": "Clear spring morning",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["Market stalls", "Fresh produce", "Local crafts", "Town square"],
+                      "sensory_details": ["Fresh bread", "Market chatter", "Sea breeze", "Warm pastry"],
+                      "emotional_tone": "Discovery, belonging, contrast"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_4_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Café Meeting",
+                    "ontomedia:description": "At Anna's café, Katrine meets Lily, a young apprentice healer. Over coffee and traditional pastries, they discuss her grandmother's methods and the island's medical traditions.",
+                    "ontomedia:key_plot_point": "Connection to next generation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Bright morning",
+                      "time_of_day": "Mid-morning",
+                      "symbolic_elements": ["Coffee cups", "Traditional pastries", "Herb garden view", "Old photos"],
+                      "sensory_details": ["Coffee aroma", "Pastry sweetness", "Warm conversation", "Sea breeze"],
+                      "emotional_tone": "Mentorship, tradition, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_4_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Harbor Walk",
+                    "ontomedia:description": "Walking along the harbor, Katrine reflects on her decision to stay. The fishing boats, historic buildings, and gentle sea breeze help her understand the island's rhythm and her place within it.",
+                    "ontomedia:key_plot_point": "Acceptance of new life",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Harbor walk",
+                      "weather": "Baltic breeze",
+                      "time_of_day": "Late morning",
+                      "symbolic_elements": ["Fishing boats", "Historic buildings", "Harbor view", "Seagulls"],
+                      "sensory_details": ["Salt air", "Wooden docks", "Seagull calls", "Gentle waves"],
+                      "emotional_tone": "Reflection, peace, purpose"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_5",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 5,
+              "ontomedia:name": "System",
+              "ontomedia:description": "Katrine learns about the island's medical system and the network of traditional healers",
+              "ontomedia:emotional_arc": "purpose_to_anxiety",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:clinic",
+                "ontomedia:contrast": "ontomedia:herb_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_5_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_5_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Network Meeting",
+                    "ontomedia:description": "In the clinic's herb-scented consultation room, Katrine meets with the island's network of traditional healers. Each brings their own expertise, from midwifery to herbal medicine, creating a tapestry of knowledge that spans generations.",
+                    "ontomedia:key_plot_point": "Understanding island medical network",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic consultation room",
+                      "weather": "Spring showers",
+                      "time_of_day": "Morning meeting",
+                      "symbolic_elements": ["Herb bundles", "Old medical texts", "Family remedies", "Community map"],
+                      "sensory_details": ["Herb tea brewing", "Rain on windows", "Soft Danish voices", "Paper rustling"],
+                      "emotional_tone": "Professional respect, cultural learning"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_5_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Tour",
+                    "ontomedia:description": "Lily leads Katrine through the clinic's herb garden, explaining the medicinal properties of each plant. The garden becomes a living classroom, connecting modern medicine with traditional knowledge.",
+                    "ontomedia:key_plot_point": "Learning traditional medicine",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic herb garden",
+                      "weather": "Clearing showers",
+                      "time_of_day": "Late morning",
+                      "symbolic_elements": ["Medicinal herbs", "Garden paths", "Old tools", "Rainbow after rain"],
+                      "sensory_details": ["Wet earth", "Herb scents", "Bird songs", "Dripping leaves"],
+                      "emotional_tone": "Discovery, mentorship, connection"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_5_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Protocol Discussion",
+                    "ontomedia:description": "Back in the clinic, Katrine and Mads discuss how to integrate traditional methods with modern medical protocols. The tension between old and new becomes a creative challenge rather than a conflict.",
+                    "ontomedia:key_plot_point": "Bridging medical approaches",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic office",
+                      "weather": "Bright afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Medical charts", "Herb samples", "Protocol books", "Family photos"],
+                      "sensory_details": ["Coffee brewing", "Paper shuffling", "Soft conversation", "Distant sea"],
+                      "emotional_tone": "Professional collaboration, mutual respect"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_6",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 6,
+              "ontomedia:name": "Skridt",
+              "ontomedia:description": "Katrine's first small victories in island medicine",
+              "ontomedia:emotional_arc": "anxiety_to_conflict",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:fisherman_cottage",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_6_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_6_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Home Visit",
+                    "ontomedia:description": "Katrine makes her first home visit to a fisherman's cottage, where she treats a child's fever using both modern medicine and traditional remedies. The family's trust in her grandmother's methods helps bridge the gap between old and new.",
+                    "ontomedia:key_plot_point": "First medical success",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Fisherman's cottage",
+                      "weather": "Coastal mist",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["Family photos", "Herb bundles", "Medical bag", "Coastal view"],
+                      "sensory_details": ["Wood smoke", "Herb tea", "Child's soft breathing", "Distant waves"],
+                      "emotional_tone": "Professional care, cultural acceptance"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_6_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Market Feedback",
+                    "ontomedia:description": "At the town market, Katrine receives positive feedback about her treatment methods. The community's acceptance of her approach validates her decision to stay.",
+                    "ontomedia:key_plot_point": "Community acceptance",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town market",
+                      "weather": "Bright morning",
+                      "time_of_day": "Market hours",
+                      "symbolic_elements": ["Market stalls", "Fresh produce", "Local crafts", "Town square"],
+                      "sensory_details": ["Market chatter", "Fresh bread", "Sea breeze", "Warm greetings"],
+                      "emotional_tone": "Belonging, validation, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_6_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Challenge",
+                    "ontomedia:description": "A skeptical patient questions Katrine's methods, creating tension between traditional and modern approaches. The conflict forces her to defend her integrated approach.",
+                    "ontomedia:key_plot_point": "First professional conflict",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic consultation room",
+                      "weather": "Gathering clouds",
+                      "time_of_day": "Late afternoon",
+                      "symbolic_elements": ["Medical certificates", "Herb garden", "Family photos", "Storm clouds"],
+                      "sensory_details": ["Tense silence", "Distant thunder", "Paper rustling", "Herb scents"],
+                      "emotional_tone": "Professional tension, cultural conflict"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_7",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 7,
+              "ontomedia:name": "Velkomst",
+              "ontomedia:description": "A small gathering introduces Katrine to the community",
+              "ontomedia:emotional_arc": "conflict_to_doubt",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:anna_cafe",
+                "ontomedia:contrast": "ontomedia:town_square"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_7_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_7_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Emergency Call",
+                    "ontomedia:description": "A late-night emergency call brings Katrine to a remote farmhouse where a child has fallen ill. The stormy weather and remote location test her medical skills and determination.",
+                    "ontomedia:key_plot_point": "First emergency response",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Remote farmhouse",
+                      "weather": "Stormy night",
+                      "time_of_day": "Late night",
+                      "symbolic_elements": ["Storm clouds", "Medical bag", "Oil lamps", "Family heirlooms"],
+                      "sensory_details": ["Thunder", "Rain on windows", "Child's labored breathing", "Wood smoke"],
+                      "emotional_tone": "Urgency, determination, isolation"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_7_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Treatment",
+                    "ontomedia:description": "In the farmhouse's warm kitchen, Katrine combines modern medicine with traditional remedies, guided by her grandmother's journal. The family's trust in her methods grows as the child's condition improves.",
+                    "ontomedia:key_plot_point": "Medical breakthrough",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Farmhouse kitchen",
+                      "weather": "Storm clearing",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["Herb bundles", "Medical journal", "Family remedies", "Dawn light"],
+                      "sensory_details": ["Herb tea", "Wood stove", "Soft voices", "Distant thunder"],
+                      "emotional_tone": "Hope, trust, connection"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_7_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Return",
+                    "ontomedia:description": "As dawn breaks, Katrine returns to town, exhausted but fulfilled. The experience has deepened her connection to the island and its people.",
+                    "ontomedia:key_plot_point": "Personal growth",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal road",
+                      "weather": "Dawn clearing",
+                      "time_of_day": "Sunrise",
+                      "symbolic_elements": ["Rising sun", "Coastal path", "Distant town", "Sea view"],
+                      "sensory_details": ["Morning birds", "Sea breeze", "Dew on grass", "Distant church bells"],
+                      "emotional_tone": "Fulfillment, belonging, peace"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_8",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 8,
+              "ontomedia:name": "Fællesskab",
+              "ontomedia:description": "Katrine's growing role in island life",
+              "ontomedia:emotional_arc": "conflict_to_connection",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:town_square",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_8_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_8_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Market Day",
+                    "ontomedia:description": "At the weekly market, Katrine sets up a health information stall, combining modern medical advice with traditional wellness practices. The community's enthusiastic response shows their acceptance of her integrated approach.",
+                    "ontomedia:key_plot_point": "Community integration",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town market",
+                      "weather": "Bright spring day",
+                      "time_of_day": "Market morning",
+                      "symbolic_elements": ["Health stall", "Herb displays", "Medical charts", "Community gathering"],
+                      "sensory_details": ["Market sounds", "Herb scents", "Warm greetings", "Sea breeze"],
+                      "emotional_tone": "Belonging, acceptance, purpose"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_8_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Lunch Meeting",
+                    "ontomedia:description": "At Anna's café, Katrine meets with local healers to discuss community health initiatives. The meeting becomes a celebration of both traditional and modern approaches to wellness.",
+                    "ontomedia:key_plot_point": "Professional collaboration",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Lunch hour",
+                      "symbolic_elements": ["Coffee cups", "Health plans", "Herb garden", "Community photos"],
+                      "sensory_details": ["Coffee aroma", "Warm conversation", "Herb scents", "Sea breeze"],
+                      "emotional_tone": "Collaboration, respect, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_8_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Walk",
+                    "ontomedia:description": "Walking home through the town square, Katrine reflects on her growing connection to the community. The warm greetings and shared stories confirm her place in island life.",
+                    "ontomedia:key_plot_point": "Personal acceptance",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Town square",
+                      "weather": "Golden hour",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Historic buildings", "Town square", "Distant sea", "Setting sun"],
+                      "sensory_details": ["Evening birds", "Soft conversations", "Sea breeze", "Church bells"],
+                      "emotional_tone": "Contentment, belonging, peace"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_9",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 9,
+              "ontomedia:name": "Konflikt",
+              "ontomedia:description": "Katrine faces her first major challenge with hospital protocols",
+              "ontomedia:emotional_arc": "determination_to_clarity",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:clinic",
+                "ontomedia:contrast": "ontomedia:town_square"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_9_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_9_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Routine",
+                    "ontomedia:description": "Katrine begins her day at the clinic, reviewing patient files and preparing herbal remedies. The routine has become a comforting rhythm, blending modern medicine with traditional practices.",
+                    "ontomedia:key_plot_point": "Establishing new normal",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic preparation room",
+                      "weather": "Clear morning",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["Herb bundles", "Medical files", "Morning light", "Family photos"],
+                      "sensory_details": ["Herb scents", "Paper rustling", "Morning birds", "Sea breeze"],
+                      "emotional_tone": "Contentment, purpose, routine"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_9_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Patient Visit",
+                    "ontomedia:description": "A regular patient's visit becomes a moment of connection, as Katrine's integrated approach shows clear results. The patient's improvement validates her methods.",
+                    "ontomedia:key_plot_point": "Medical validation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic consultation room",
+                      "weather": "Bright morning",
+                      "time_of_day": "Mid-morning",
+                      "symbolic_elements": ["Medical charts", "Herb garden view", "Family photos", "Progress notes"],
+                      "sensory_details": ["Herb tea", "Soft conversation", "Bird songs", "Distant sea"],
+                      "emotional_tone": "Professional satisfaction, connection"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_9_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Lunch Break",
+                    "ontomedia:description": "During a lunch break at Anna's café, Katrine reflects on her journey so far. The warm atmosphere and friendly faces confirm her decision to stay.",
+                    "ontomedia:key_plot_point": "Personal reflection",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Lunch hour",
+                      "symbolic_elements": ["Coffee cups", "Herb garden", "Town view", "Family photos"],
+                      "sensory_details": ["Coffee aroma", "Warm conversation", "Sea breeze", "Market sounds"],
+                      "emotional_tone": "Contentment, belonging, peace"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_10",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 10,
+              "ontomedia:name": "Måned",
+              "ontomedia:description": "Katrine reflects on her first month on the island",
+              "ontomedia:emotional_arc": "connection_to_commitment",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:coastal_path",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_10_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_10_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Walk",
+                    "ontomedia:description": "Katrine takes her usual morning walk along the coastal path, collecting herbs and reflecting on her first month. The familiar routine has become a source of peace and purpose.",
+                    "ontomedia:key_plot_point": "Personal growth reflection",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal path",
+                      "weather": "Clear morning",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Rising sun", "Herb bundles", "Coastal view", "Distant town"],
+                      "sensory_details": ["Morning birds", "Sea breeze", "Herb scents", "Dew on grass"],
+                      "emotional_tone": "Peace, reflection, purpose"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_10_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Clinic Review",
+                    "ontomedia:description": "At the clinic, Katrine reviews her first month's cases with Mads. Their professional collaboration has grown into a strong partnership, blending their different approaches to medicine.",
+                    "ontomedia:key_plot_point": "Professional growth",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic office",
+                      "weather": "Bright morning",
+                      "time_of_day": "Mid-morning",
+                      "symbolic_elements": ["Medical charts", "Herb garden", "Progress notes", "Family photos"],
+                      "sensory_details": ["Coffee brewing", "Paper rustling", "Soft conversation", "Distant sea"],
+                      "emotional_tone": "Professional satisfaction, mutual respect"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_10_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Celebration",
+                    "ontomedia:description": "The community gathers at Anna's café to celebrate the clinic's success. In a quiet corner, Mads finally expresses his feelings, using the language of herbs to convey his love.",
+                    "ontomedia:key_plot_point": "Community support",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Harbor view", "Family photos", "Herb garden", "Medical bag", "Love declaration"],
+                      "sensory_details": ["Laughter", "Music", "Sea breeze", "Herb scents", "Soft whispers"],
+                      "emotional_tone": "Joy, unity, belonging, romantic fulfillment"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_11",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 11,
+              "ontomedia:name": "Middag",
+              "ontomedia:description": "Dinner at Mads's family home leads to a deeper connection",
+              "ontomedia:emotional_arc": "hope_to_fulfillment",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:mads_house",
+                "ontomedia:contrast": "ontomedia:coastal_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_11_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_11_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Arrival",
+                    "ontomedia:description": "Katrine arrives at Mads's family home, a traditional island house with a view of the sea. The warm welcome from his family creates an immediate sense of belonging, and she notices how Mads's eyes light up when he sees her.",
+                    "ontomedia:key_plot_point": "Integration into Mads's family",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Mads's family home",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Dinner time",
+                      "symbolic_elements": ["Family photos", "Sea view", "Traditional decor", "Herb garden", "Shared glances"],
+                      "sensory_details": ["Home cooking", "Sea breeze", "Family voices", "Wood fire", "Subtle touches"],
+                      "emotional_tone": "Warmth, belonging, anticipation, romantic tension"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_11_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Dinner Conversation",
+                    "ontomedia:description": "Over a traditional island dinner, Katrine learns about Mads's family history and their connection to the island's medical traditions. Their shared passion for healing creates an unspoken bond, while his mother's knowing smiles hint at deeper feelings.",
+                    "ontomedia:key_plot_point": "Understanding family legacy",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Family dining room",
+                      "weather": "Baltic night",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Family heirlooms", "Traditional dishes", "Candlelight", "Sea view", "Shared glances"],
+                      "sensory_details": ["Home cooking", "Wine glasses", "Family stories", "Distant waves", "Soft laughter"],
+                      "emotional_tone": "Connection, heritage, warmth, romantic tension"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_11_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Walk",
+                    "ontomedia:description": "After dinner, Mads shows Katrine the family's herb garden, where generations have grown medicinal plants. In the moonlight, they share their dreams for the future, their hands brushing as they walk, creating a moment of perfect understanding.",
+                    "ontomedia:key_plot_point": "Deepening personal connection",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Family herb garden",
+                      "weather": "Moonlit night",
+                      "time_of_day": "Late evening",
+                      "symbolic_elements": ["Moonlight", "Herb rows", "Family garden", "Distant sea", "Shared space"],
+                      "sensory_details": ["Night flowers", "Sea breeze", "Soft voices", "Crickets", "Gentle touches"],
+                      "emotional_tone": "Intimacy, connection, hope, romantic tension"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_12",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 12,
+              "ontomedia:name": "Storm",
+              "ontomedia:description": "Tensions build between modern and traditional medicine",
+              "ontomedia:emotional_arc": "fulfillment_to_wholeness",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:clinic",
+                "ontomedia:contrast": "ontomedia:herb_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_12_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_12_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Meeting",
+                    "ontomedia:description": "A tense meeting with the medical board reveals growing concerns about Katrine's integrated approach. The conflict between modern protocols and traditional methods comes to a head.",
+                    "ontomedia:key_plot_point": "Professional conflict",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic meeting room",
+                      "weather": "Gathering clouds",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["Medical charts", "Protocol books", "Storm clouds", "Herb garden"],
+                      "sensory_details": ["Tense silence", "Paper rustling", "Distant thunder", "Coffee brewing"],
+                      "emotional_tone": "Tension, determination, conflict"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_12_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Reflection",
+                    "ontomedia:description": "Seeking solace in the herb garden, Katrine reflects on her grandmother's legacy and her own commitment to integrated medicine. The storm clouds mirror her internal conflict.",
+                    "ontomedia:key_plot_point": "Personal conviction",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic herb garden",
+                      "weather": "Storm approaching",
+                      "time_of_day": "Mid-morning",
+                      "symbolic_elements": ["Herb rows", "Storm clouds", "Grandmother's journal", "Distant sea"],
+                      "sensory_details": ["Herb scents", "Wind rising", "Thunder rumbling", "Bird calls"],
+                      "emotional_tone": "Reflection, determination, conflict"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_12_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Community Support",
+                    "ontomedia:description": "At Anna's café, the community gathers to show support for Katrine's methods. Their stories of healing and tradition strengthen her resolve to continue her integrated approach.",
+                    "ontomedia:key_plot_point": "Community backing",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Storm breaking",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Café lights", "Community gathering", "Rain on windows", "Herb garden"],
+                      "sensory_details": ["Coffee aroma", "Rain sounds", "Community voices", "Thunder"],
+                      "emotional_tone": "Support, strength, determination"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_13",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 13,
+              "ontomedia:name": "Nødsituation",
+              "ontomedia:description": "A desperate call comes in during the height of the Baltic storm. A fisherman's family needs urgent medical attention, and Katrine must brave the elements to reach them.",
+              "ontomedia:emotional_arc": "turmoil_to_peace",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:clinic",
+                "ontomedia:contrast": "ontomedia:coastal_path"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_13_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_13_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Emergency Call",
+                    "ontomedia:description": "A desperate call comes in during the height of the Baltic storm. As Katrine prepares to leave, Mads insists on accompanying her, his concern for her safety revealing deeper feelings.",
+                    "ontomedia:key_plot_point": "Critical medical emergency",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic phone room",
+                      "weather": "Violent storm",
+                      "time_of_day": "Night",
+                      "symbolic_elements": ["Phone receiver", "Storm outside", "Medical bag", "Emergency lights", "Protective gesture"],
+                      "sensory_details": ["Thunder", "Rain on windows", "Phone static", "Wind howling", "Shared breath"],
+                      "emotional_tone": "Urgency, fear, determination, protective love"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_13_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Journey",
+                    "ontomedia:description": "Katrine and Mads make their way through the storm to the fisherman's cottage. In the darkness, they share a moment of vulnerability, their hands finding each other's for support.",
+                    "ontomedia:key_plot_point": "Physical and emotional journey",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal path in storm",
+                      "weather": "Baltic storm",
+                      "time_of_day": "Dark night",
+                      "symbolic_elements": ["Flashlight", "Raging sea", "Coastal path", "Distant lights", "Intertwined hands"],
+                      "sensory_details": ["Wind howling", "Rain lashing", "Waves crashing", "Footsteps on path", "Shared warmth"],
+                      "emotional_tone": "Fear, determination, connection, romantic tension"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_13_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Treatment",
+                    "ontomedia:description": "In the fisherman's cottage, Katrine and Mads work together to save a life, their professional partnership revealing an unspoken understanding that goes beyond medicine.",
+                    "ontomedia:key_plot_point": "Life-or-death situation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Fisherman's cottage",
+                      "weather": "Storm raging",
+                      "time_of_day": "Late night",
+                      "symbolic_elements": ["Oil lamps", "Medical supplies", "Family photos", "Storm outside", "Shared purpose"],
+                      "sensory_details": ["Wind rattling windows", "Medical equipment", "Family prayers", "Thunder", "Soft whispers"],
+                      "emotional_tone": "Tension, hope, connection, deepening bond"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_14",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 14,
+              "ontomedia:name": "Ro",
+              "ontomedia:description": "A quiet moment of reflection after the storm",
+              "ontomedia:emotional_arc": "turmoil_to_peace",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:coastal_path",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_14_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_14_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Dawn Watch",
+                    "ontomedia:description": "As the storm clears, Katrine keeps vigil at the patient's bedside. The first light of dawn brings hope and a moment of quiet reflection.",
+                    "ontomedia:key_plot_point": "Recovery begins",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Fisherman's cottage",
+                      "weather": "Storm clearing",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Dawn light", "Patient's face", "Medical equipment", "Calming sea"],
+                      "sensory_details": ["Gentle breathing", "Distant waves", "Bird songs", "Dawn light"],
+                      "emotional_tone": "Hope, peace, reflection"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_14_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Walk",
+                    "ontomedia:description": "Walking back to town along the coastal path, Katrine and Mads process the night's events. The calm after the storm mirrors their emotional journey.",
+                    "ontomedia:key_plot_point": "Personal connection deepens",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal path",
+                      "weather": "Clear morning",
+                      "time_of_day": "Early morning",
+                      "symbolic_elements": ["Calm sea", "Coastal path", "Rising sun", "Distant town"],
+                      "sensory_details": ["Sea breeze", "Bird songs", "Gentle waves", "Morning light"],
+                      "emotional_tone": "Peace, connection, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_14_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Community Gathering",
+                    "ontomedia:description": "At Anna's café, the community gathers to celebrate the successful treatment. The shared experience strengthens the bonds between modern and traditional medicine.",
+                    "ontomedia:key_plot_point": "Community healing",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Bright morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Café lights", "Community gathering", "Herb garden", "Sea view"],
+                      "sensory_details": ["Coffee aroma", "Warm conversation", "Sea breeze", "Bird songs"],
+                      "emotional_tone": "Celebration, unity, peace"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_15",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 15,
+              "ontomedia:name": "Færge",
+              "ontomedia:description": "Katrine's return to Ærø and her first encounter with Dr. Marcus Nielsen",
+              "ontomedia:emotional_arc": "tension_to_decision",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:ferry_dock",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_15_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_15_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Arrival",
+                    "ontomedia:description": "Dr. Marcus Nielsen steps off the ferry, bringing with him the weight of Katrine's past life. His polished appearance contrasts sharply with the island's natural beauty.",
+                    "ontomedia:key_plot_point": "Past returns",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Ferry dock",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning arrival",
+                      "symbolic_elements": ["Ferry", "City clothes", "Medical bag", "Island view"],
+                      "sensory_details": ["Diesel fumes", "Sea breeze", "Dock sounds", "Bird calls"],
+                      "emotional_tone": "Tension, contrast, uncertainty"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_15_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Proposal",
+                    "ontomedia:description": "In the clinic's quiet office, Marcus presents Katrine with a prestigious position and a personal proposal. The contrast between his offer and her new life creates a moment of profound choice.",
+                    "ontomedia:key_plot_point": "Critical decision point",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic office",
+                      "weather": "Bright day",
+                      "time_of_day": "Mid-morning",
+                      "symbolic_elements": ["Official documents", "Herb garden view", "Family photos", "Medical certificates"],
+                      "sensory_details": ["Paper rustling", "Distant sea", "Soft voices", "Herb scents"],
+                      "emotional_tone": "Conflict, choice, tension"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_16",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 16,
+              "ontomedia:name": "Mørke",
+              "ontomedia:description": "A failed medical case and misunderstanding with Mads leads to despair",
+              "ontomedia:emotional_arc": "conflict_to_despair",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:grandmother_house",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_16_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_16_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Failed Case",
+                    "ontomedia:description": "A critical medical case goes wrong, despite Katrine's best efforts. The failure shakes her confidence and creates tension with Mads.",
+                    "ontomedia:key_plot_point": "Professional crisis",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic treatment room",
+                      "weather": "Stormy night",
+                      "time_of_day": "Late night",
+                      "symbolic_elements": ["Medical equipment", "Storm outside", "Family photos", "Herb garden"],
+                      "sensory_details": ["Medical alarms", "Thunder", "Rain on windows", "Tense silence"],
+                      "emotional_tone": "Despair, failure, conflict"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_16_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Solitude",
+                    "ontomedia:description": "Alone in her grandmother's house, Katrine faces her darkest moment. The storm outside mirrors her internal turmoil as she questions all her choices.",
+                    "ontomedia:key_plot_point": "Rock bottom",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Grandmother's house",
+                      "weather": "Storm raging",
+                      "time_of_day": "Late night",
+                      "symbolic_elements": ["Family photos", "Storm outside", "Herb garden", "Medical bag"],
+                      "sensory_details": ["Thunder", "Rain on windows", "Wind howling", "Distant sea"],
+                      "emotional_tone": "Despair, isolation, doubt"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_17",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 17,
+              "ontomedia:name": "Hjerte",
+              "ontomedia:description": "Katrine's journey reaches its climax as she must choose between her past and future",
+              "ontomedia:emotional_arc": "wholeness_to_uncertainty",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:grandmother_house",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_17_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_17_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning After",
+                    "ontomedia:description": "Katrine wakes to a storm-cleared morning, finding a note from Lily about a patient in need. As she reads it, she discovers a small herb pressed between the pages - a traditional island love token from Mads.",
+                    "ontomedia:key_plot_point": "First step toward healing",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Grandmother's house",
+                      "weather": "Clear morning",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Sunrise", "Herb garden", "Medical bag", "Family photos", "Love token"],
+                      "sensory_details": ["Bird songs", "Fresh air", "Distant sea", "Herb scents", "Paper rustling"],
+                      "emotional_tone": "Hope, purpose, renewal, romantic longing"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_17_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Patient Visit",
+                    "ontomedia:description": "A visit to an elderly patient reminds Katrine of why she chose this path. The patient shares stories of her own island romance, drawing parallels to Katrine's situation with Mads.",
+                    "ontomedia:key_plot_point": "Professional renewal",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Patient's home",
+                      "weather": "Bright day",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Family photos", "Herb garden", "Medical bag", "Island view", "Love stories"],
+                      "sensory_details": ["Tea brewing", "Soft voices", "Bird songs", "Herb scents", "Shared memories"],
+                      "emotional_tone": "Trust, wisdom, healing, romantic insight"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_17_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Visit",
+                    "ontomedia:description": "In the clinic's herb garden, Katrine finds Mads tending to the plants. Their shared love for healing and the island creates a moment of understanding, and he finally expresses his feelings through the language of herbs.",
+                    "ontomedia:key_plot_point": "Personal healing",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic herb garden",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Herb garden", "Medical bag", "Family photos", "Island view", "Love herbs"],
+                      "sensory_details": ["Herb scents", "Bird songs", "Soft voices", "Distant sea", "Gentle touches"],
+                      "emotional_tone": "Understanding, connection, hope, romantic fulfillment"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_18",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 18,
+              "ontomedia:name": "Helbredelse",
+              "ontomedia:description": "Katrine and Mads work together to save a life, reaffirming their partnership",
+              "ontomedia:emotional_arc": "healing_to_hope",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:clinic",
+                "ontomedia:contrast": "ontomedia:grandmother_house"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_18_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_18_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Emergency",
+                    "ontomedia:description": "A critical case arrives at the clinic, requiring both modern medicine and traditional healing. Katrine and Mads must work together seamlessly.",
+                    "ontomedia:key_plot_point": "Professional unity",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic treatment room",
+                      "weather": "Stormy night",
+                      "time_of_day": "Night",
+                      "symbolic_elements": ["Medical equipment", "Herb garden", "Family photos", "Storm outside"],
+                      "sensory_details": ["Medical alarms", "Thunder", "Rain on windows", "Tense voices"],
+                      "emotional_tone": "Urgency, unity, purpose"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_18_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Treatment",
+                    "ontomedia:description": "Working together, Katrine and Mads combine their approaches to save the patient. Their partnership becomes a powerful force for healing.",
+                    "ontomedia:key_plot_point": "Healing breakthrough",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic treatment room",
+                      "weather": "Storm clearing",
+                      "time_of_day": "Late night",
+                      "symbolic_elements": ["Medical equipment", "Herb garden", "Family photos", "Dawn light"],
+                      "sensory_details": ["Soft voices", "Medical sounds", "Distant thunder", "Bird songs"],
+                      "emotional_tone": "Hope, unity, healing"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_18_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Dawn",
+                    "ontomedia:description": "As dawn breaks, Katrine and Mads watch their patient recover. The new day brings hope and reaffirms their shared purpose.",
+                    "ontomedia:key_plot_point": "New beginning",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic treatment room",
+                      "weather": "Clear dawn",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Sunrise", "Herb garden", "Family photos", "Medical equipment"],
+                      "sensory_details": ["Bird songs", "Soft voices", "Distant sea", "Herb scents"],
+                      "emotional_tone": "Hope, peace, renewal"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_19",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 19,
+              "ontomedia:name": "Bestyrelse",
+              "ontomedia:description": "Katrine and Mads present their integrated approach to the medical board, facing skepticism but standing firm in their convictions.",
+              "ontomedia:emotional_arc": "determination_to_unity",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:medical_board",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_19_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_19_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Meeting",
+                    "ontomedia:description": "Before the board meeting, Katrine and Mads share a quiet moment in the clinic garden. He gives her a small herb bundle - a traditional island token of support and affection.",
+                    "ontomedia:key_plot_point": "Professional validation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Medical board room",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Official documents", "Medical certificates", "Herb garden view", "Family photos", "Love token"],
+                      "sensory_details": ["Formal voices", "Paper rustling", "Distant sea", "Herb scents", "Soft whispers"],
+                      "emotional_tone": "Determination, conviction, unity, romantic support"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_19_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Discussion",
+                    "ontomedia:description": "In the herb garden, Katrine and Mads discuss their vision for the future of island medicine. Their shared dreams for the clinic become intertwined with their hopes for a life together.",
+                    "ontomedia:key_plot_point": "Shared vision",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic herb garden",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Herb garden", "Medical bag", "Family photos", "Island view", "Shared future"],
+                      "sensory_details": ["Herb scents", "Bird songs", "Soft voices", "Distant sea", "Gentle touches"],
+                      "emotional_tone": "Hope, unity, purpose, romantic promise"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_19_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Celebration",
+                    "ontomedia:description": "The community gathers at Anna's café to celebrate the clinic's success. In a quiet corner, Mads finally expresses his feelings, using the language of herbs to convey his love.",
+                    "ontomedia:key_plot_point": "Community support",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Harbor view", "Family photos", "Herb garden", "Medical bag", "Love declaration"],
+                      "sensory_details": ["Laughter", "Music", "Sea breeze", "Herb scents", "Soft whispers"],
+                      "emotional_tone": "Joy, unity, belonging, romantic fulfillment"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_20",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 20,
+              "ontomedia:name": "Valg",
+              "ontomedia:description": "Katrine makes her final choice, embracing her future on the island",
+              "ontomedia:emotional_arc": "certainty_to_joy",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:grandmother_house",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_20_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_20_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Walk",
+                    "ontomedia:description": "Katrine takes a final walk along the coastal path, reflecting on her journey and making her decision about the future.",
+                    "ontomedia:key_plot_point": "Final decision",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal path",
+                      "weather": "Clear morning",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Sunrise", "Sea view", "Herb garden", "Medical bag"],
+                      "sensory_details": ["Bird songs", "Sea breeze", "Footsteps", "Herb scents"],
+                      "emotional_tone": "Clarity, peace, certainty"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_20_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Letter",
+                    "ontomedia:description": "Katrine writes a letter to Dr. Marcus Nielsen, formally declining his offer and embracing her new life on the island.",
+                    "ontomedia:key_plot_point": "Closure with past",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Grandmother's house",
+                      "weather": "Bright day",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Family photos", "Herb garden", "Medical bag", "Island view"],
+                      "sensory_details": ["Pen scratching", "Bird songs", "Distant sea", "Herb scents"],
+                      "emotional_tone": "Peace, closure, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_20_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Celebration",
+                    "ontomedia:description": "The community gathers at the clinic to celebrate Katrine's decision to stay, marking the beginning of a new chapter in island medicine.",
+                    "ontomedia:key_plot_point": "New beginning",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic and herb garden",
+                      "weather": "Baltic afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Herb garden", "Medical bag", "Family photos", "Island view"],
+                      "sensory_details": ["Laughter", "Music", "Sea breeze", "Herb scents"],
+                      "emotional_tone": "Joy, belonging, hope"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_21",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 21,
+              "ontomedia:name": "Horisont",
+              "ontomedia:description": "Katrine must make a difficult decision about her future",
+              "ontomedia:emotional_arc": "wholeness_to_uncertainty",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:university_office",
+                "ontomedia:contrast": "ontomedia:lighthouse"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_21_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_21_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The University Visit",
+                    "ontomedia:description": "Katrine visits the university to discuss a research position, torn between academic prestige and her island life. The sterile office environment contrasts sharply with her memories of the island.",
+                    "ontomedia:key_plot_point": "Career crossroads",
+                    "ontomedia:narrative_devices": {
+                      "setting": "University office",
+                      "weather": "Grey city day",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Academic certificates", "City view", "Medical journals", "Family photos"],
+                      "sensory_details": ["Coffee brewing", "Paper rustling", "City sounds", "Formal voices"],
+                      "emotional_tone": "Conflict, uncertainty, contrast"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_21_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Lighthouse Visit",
+                    "ontomedia:description": "Seeking clarity, Katrine visits the island's lighthouse, where she and Mads shared their first meaningful conversation. The panoramic view helps her see her choices clearly.",
+                    "ontomedia:key_plot_point": "Personal reflection",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Island lighthouse",
+                      "weather": "Clear afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Lighthouse", "Sea view", "Island panorama", "Herb garden"],
+                      "sensory_details": ["Sea breeze", "Bird calls", "Distant waves", "Lighthouse beam"],
+                      "emotional_tone": "Clarity, peace, perspective"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_21_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Walk",
+                    "ontomedia:description": "Walking along the harbor, Katrine processes her decision. The familiar sights and sounds of island life help clarify her true desires.",
+                    "ontomedia:key_plot_point": "Decision point",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Harbor walk",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Fishing boats", "Harbor lights", "Town square", "Distant sea"],
+                      "sensory_details": ["Sea breeze", "Harbor sounds", "Bird calls", "Distant voices"],
+                      "emotional_tone": "Resolution, peace, certainty"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_22",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 22,
+              "ontomedia:name": "Mulighed",
+              "ontomedia:description": "The medical board's response leads to an unexpected opportunity",
+              "ontomedia:emotional_arc": "uncertainty_to_hope",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:research_center",
+                "ontomedia:contrast": "ontomedia:town_square"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_22_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_22_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Board Meeting",
+                    "ontomedia:description": "The medical board presents an unexpected proposal: funding for a research center that would combine modern medicine with traditional healing practices.",
+                    "ontomedia:key_plot_point": "New opportunity",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Medical board room",
+                      "weather": "Bright morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Official documents", "Research plans", "Herb garden view", "Family photos"],
+                      "sensory_details": ["Formal voices", "Paper rustling", "Coffee brewing", "Distant sea"],
+                      "emotional_tone": "Surprise, hope, possibility"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_22_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Town Square",
+                    "ontomedia:description": "Katrine shares the news with the community in the town square. Their enthusiastic response shows the deep connection between modern and traditional medicine.",
+                    "ontomedia:contrast": "ontomedia:grandmother_house"
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_23",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 23,
+              "ontomedia:name": "Begyndelse",
+              "ontomedia:description": "Katrine and Mads start their life together",
+              "ontomedia:emotional_arc": "fulfillment_to_peace",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_transformed",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_transformed",
+                  "ontomedia:lily_established"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:katrine_cottage",
+                "ontomedia:contrast": "ontomedia:herb_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_23_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_23_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The First Day",
+                    "ontomedia:description": "Katrine and Sofia begin setting up the research center, combining modern equipment with traditional healing spaces. The blend of old and new creates a unique atmosphere.",
+                    "ontomedia:key_plot_point": "New beginning",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Modern equipment", "Herb garden", "Research plans", "Family photos"],
+                      "sensory_details": ["Herb scents", "Equipment humming", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Excitement, purpose, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_23_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Workshop",
+                    "ontomedia:description": "In the expanded herb garden, Katrine and Sofia conduct their first workshop with local healers, documenting traditional remedies for modern research.",
+                    "ontomedia:key_plot_point": "Knowledge sharing",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center garden",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Herb garden", "Research notes", "Traditional tools", "Modern equipment"],
+                      "sensory_details": ["Herb scents", "Bird songs", "Soft voices", "Paper rustling"],
+                      "emotional_tone": "Collaboration, respect, purpose"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_23_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Meeting",
+                    "ontomedia:description": "The research team gathers to discuss their first day's findings, sharing insights between modern and traditional approaches.",
+                    "ontomedia:key_plot_point": "Team building",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center meeting room",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Research notes", "Herb samples", "Family photos", "Island view"],
+                      "sensory_details": ["Coffee brewing", "Paper rustling", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Unity, purpose, hope"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_24",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 24,
+              "ontomedia:name": "Perspektiv",
+              "ontomedia:description": "Katrine's journey comes full circle as she embraces her new life",
+              "ontomedia:emotional_arc": "fulfillment_to_wholeness",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_transformed",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_transformed",
+                  "ontomedia:lily_established"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:katrine_cottage",
+                "ontomedia:contrast": "ontomedia:herb_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_24_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_24_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Reflection",
+                    "ontomedia:description": "In her new cottage, Katrine reflects on her journey while preparing for the day. The blend of modern comforts and traditional elements reflects her personal growth.",
+                    "ontomedia:key_plot_point": "Personal fulfillment",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Katrine's cottage",
+                      "weather": "Clear morning",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Family photos", "Herb garden", "Medical bag", "Island view"],
+                      "sensory_details": ["Bird songs", "Sea breeze", "Herb scents", "Morning light"],
+                      "emotional_tone": "Peace, contentment, wholeness"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_24_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Visit",
+                    "ontomedia:description": "Katrine visits the research center's herb garden, now thriving with both traditional and experimental plants. The garden symbolizes the success of her integrated approach.",
+                    "ontomedia:key_plot_point": "Professional fulfillment",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center garden",
+                      "weather": "Warm morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Herb garden", "Research plots", "Family photos", "Island view"],
+                      "sensory_details": ["Herb scents", "Bird songs", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Pride, peace, fulfillment"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_24_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Gathering",
+                    "ontomedia:description": "The research team gathers at Katrine's cottage to celebrate their progress. The warm atmosphere reflects the community's acceptance of their work.",
+                    "ontomedia:key_plot_point": "Community integration",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Katrine's cottage",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Family photos", "Herb garden", "Research notes", "Island view"],
+                      "sensory_details": ["Laughter", "Music", "Sea breeze", "Herb scents"],
+                      "emotional_tone": "Joy, belonging, wholeness"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_25",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 25,
+              "ontomedia:name": "Gennembrud",
+              "ontomedia:description": "Katrine and Sofia make a significant discovery that bridges modern and traditional medicine",
+              "ontomedia:emotional_arc": "excitement_to_validation",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_transformed",
+                "ontomedia:supporting": [
+                  "ontomedia:sofia_established",
+                  "ontomedia:mads_transformed"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:research_center",
+                "ontomedia:contrast": "ontomedia:herb_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_25_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_25_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Discovery",
+                    "ontomedia:description": "In the research center's laboratory, Katrine and Sofia make an unexpected breakthrough in their study of traditional remedies.",
+                    "ontomedia:key_plot_point": "Scientific validation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center laboratory",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Microscope", "Herb samples", "Research notes", "Family photos"],
+                      "sensory_details": ["Equipment humming", "Paper rustling", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Excitement, wonder, validation"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_25_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Team Meeting",
+                    "ontomedia:description": "The research team gathers to discuss their breakthrough, planning how to share their findings with the medical community.",
+                    "ontomedia:key_plot_point": "Future planning",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center meeting room",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Research notes", "Herb samples", "Presentation slides", "Island view"],
+                      "sensory_details": ["Coffee brewing", "Paper rustling", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Unity, purpose, hope"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_26",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 26,
+              "ontomedia:name": "Præsentation",
+              "ontomedia:description": "Katrine presents their findings to the medical community, facing both skepticism and support",
+              "ontomedia:emotional_arc": "nervousness_to_triumph",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_transformed",
+                "ontomedia:supporting": [
+                  "ontomedia:sofia_established",
+                  "ontomedia:mads_transformed"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:conference_center",
+                "ontomedia:contrast": "ontomedia:research_center"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_26_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_26_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Preparation",
+                    "ontomedia:description": "In the conference center's preparation room, Katrine and Sofia make final adjustments to their presentation, their nerves mixed with excitement.",
+                    "ontomedia:key_plot_point": "Professional challenge",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Conference center",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Presentation slides", "Research notes", "Herb samples", "Family photos"],
+                      "sensory_details": ["Paper rustling", "Soft voices", "Distant crowd", "Equipment humming"],
+                      "emotional_tone": "Nervousness, determination, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_26_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Presentation",
+                    "ontomedia:description": "Katrine presents their findings to the medical community, facing both skepticism and growing interest as she shares their breakthrough.",
+                    "ontomedia:key_plot_point": "Professional validation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Conference hall",
+                      "weather": "Clear afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Presentation screen", "Research notes", "Herb samples", "Audience"],
+                      "sensory_details": ["Soft voices", "Slide clicks", "Audience murmurs", "Distant sea"],
+                      "emotional_tone": "Confidence, purpose, triumph"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_26_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Celebration",
+                    "ontomedia:description": "The team celebrates their successful presentation at a reception, receiving both congratulations and new research opportunities.",
+                    "ontomedia:key_plot_point": "Professional recognition",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Conference reception",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Research notes", "Herb samples", "Family photos", "Island view"],
+                      "sensory_details": ["Laughter", "Music", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Joy, pride, fulfillment"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_27",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 27,
+              "ontomedia:name": "Hjemkomst",
+              "ontomedia:description": "Katrine returns to the island with new opportunities and challenges",
+              "ontomedia:emotional_arc": "anticipation_to_resolution",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_transformed",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_transformed",
+                  "ontomedia:lily_established"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:ferry_dock",
+                "ontomedia:contrast": "ontomedia:research_center"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_27_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_27_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Ferry Journey",
+                    "ontomedia:description": "On the ferry back to Ærø, Katrine reflects on the conference and the new opportunities ahead, feeling both excitement and uncertainty.",
+                    "ontomedia:key_plot_point": "Personal reflection",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Baltic ferry",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Island view", "Research notes", "Family photos", "Sea horizon"],
+                      "sensory_details": ["Sea breeze", "Engine humming", "Seagulls", "Soft voices"],
+                      "emotional_tone": "Contemplation, anticipation, hope"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_27_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Welcome Home",
+                    "ontomedia:description": "At the ferry dock, Katrine is greeted by Mads and the community, their warm welcome confirming her place on the island.",
+                    "ontomedia:key_plot_point": "Community acceptance",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Ferry dock",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Harbor", "Community members", "Research notes", "Island view"],
+                      "sensory_details": ["Sea breeze", "Laughter", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Joy, belonging, peace"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_27_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Discussion",
+                    "ontomedia:description": "In the research center, Katrine and Mads discuss the new opportunities and how to integrate them with their current work.",
+                    "ontomedia:key_plot_point": "Future planning",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Research notes", "Herb garden", "Family photos", "Island view"],
+                      "sensory_details": ["Coffee brewing", "Paper rustling", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Unity, purpose, hope"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_28",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 28,
+              "ontomedia:name": "Kapitel",
+              "ontomedia:description": "Katrine and the team begin implementing their expanded vision for the research center",
+              "ontomedia:emotional_arc": "determination_to_fulfillment",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_transformed",
+                "ontomedia:supporting": [
+                  "ontomedia:sofia_established",
+                  "ontomedia:mads_transformed"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:research_center",
+                "ontomedia:contrast": "ontomedia:herb_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_28_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_28_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Meeting",
+                    "ontomedia:description": "The research team gathers to discuss their expanded vision and new projects, their excitement palpable as they plan the future.",
+                    "ontomedia:key_plot_point": "Team vision",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center meeting room",
+                      "weather": "Clear morning",
+                      "time_of_day": "Morning",
+                      "symbolic_elements": ["Research notes", "Project plans", "Family photos", "Island view"],
+                      "sensory_details": ["Coffee brewing", "Paper rustling", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Excitement, purpose, unity"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_28_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Expansion",
+                    "ontomedia:description": "The team works in the herb garden, expanding it to accommodate new research projects while preserving traditional practices.",
+                    "ontomedia:key_plot_point": "Growth and preservation",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center garden",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Herb garden", "New plots", "Traditional tools", "Island view"],
+                      "sensory_details": ["Herb scents", "Bird songs", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Purpose, joy, peace"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_28_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Celebration",
+                    "ontomedia:description": "The community gathers at the research center to celebrate its expansion and the team's achievements.",
+                    "ontomedia:key_plot_point": "Community celebration",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Research center",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Herb garden", "Research notes", "Family photos", "Island view"],
+                      "sensory_details": ["Laughter", "Music", "Soft voices", "Distant sea"],
+                      "emotional_tone": "Joy, belonging, fulfillment"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_29",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 29,
+              "ontomedia:name": "Arv",
+              "ontomedia:description": "Katrine reflects on her grandmother's legacy and her own journey, finding peace in the island's healing traditions.",
+              "ontomedia:emotional_arc": "reflection_to_peace",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:grandmother_house",
+                "ontomedia:contrast": "ontomedia:clinic"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_29_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_29_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Garden",
+                    "ontomedia:description": "In her grandmother's garden, Katrine finds Mads tending to the herbs. He presents her with a special herb bundle - a traditional island proposal, combining their shared love for healing and each other.",
+                    "ontomedia:key_plot_point": "Personal reflection",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Grandmother's garden",
+                      "weather": "Baltic morning",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Herb garden", "Family photos", "Medical bag", "Island view", "Proposal herbs"],
+                      "sensory_details": ["Bird songs", "Herb scents", "Soft voices", "Distant sea", "Shared breath"],
+                      "emotional_tone": "Peace, reflection, love, romantic commitment"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_29_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Family Visit",
+                    "ontomedia:description": "Katrine's family visits the island, meeting Mads and his family. The merging of their families and traditions creates a beautiful moment of unity and shared heritage.",
+                    "ontomedia:key_plot_point": "Family integration",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Mads's family home",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Family photos", "Herb garden", "Medical bag", "Island view", "Shared traditions"],
+                      "sensory_details": ["Family voices", "Herb scents", "Laughter", "Distant sea", "Shared stories"],
+                      "emotional_tone": "Unity, belonging, love, family bonds"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_29_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Walk",
+                    "ontomedia:description": "Katrine and Mads take a moonlit walk along the coastal path, sharing their dreams for the future. Their love for the island and each other becomes one, as they plan their life together.",
+                    "ontomedia:key_plot_point": "Future planning",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Coastal path",
+                      "weather": "Moonlit night",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Moonlight", "Herb garden", "Medical bag", "Island view", "Shared future"],
+                      "sensory_details": ["Night flowers", "Sea breeze", "Soft voices", "Distant waves", "Gentle touches"],
+                      "emotional_tone": "Peace, love, hope, romantic fulfillment"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@id": "ontomedia:chapter_30",
+              "@type": "ontomedia:Chapter",
+              "ontomedia:number": 30,
+              "ontomedia:name": "Helbredelse",
+              "ontomedia:description": "Katrine and Mads celebrate their love and their commitment to the island's healing traditions, finding their place in the community.",
+              "ontomedia:emotional_arc": "peace_to_wholeness",
+              "ontomedia:character_development": {
+                "ontomedia:protagonist": "ontomedia:katrine_changing",
+                "ontomedia:supporting": [
+                  "ontomedia:mads_changing",
+                  "ontomedia:lily_growing"
+                ]
+              },
+              "ontomedia:location_progression": {
+                "ontomedia:primary": "ontomedia:clinic",
+                "ontomedia:contrast": "ontomedia:coastal_garden"
+              },
+              "ontomedia:scene_scaffold": {
+                "@id": "ontomedia:chapter_30_scenes",
+                "@type": "ontomedia:SceneScaffold",
+                "ontomedia:scenes": [
+                  {
+                    "@id": "ontomedia:scene_30_1",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Morning Clinic",
+                    "ontomedia:description": "Katrine and Mads open the clinic together, their professional partnership now intertwined with their love. The community welcomes them as a couple, celebrating their shared commitment to healing.",
+                    "ontomedia:key_plot_point": "Professional unity",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic",
+                      "weather": "Baltic morning",
+                      "time_of_day": "Dawn",
+                      "symbolic_elements": ["Herb garden", "Medical bag", "Family photos", "Island view", "Shared purpose"],
+                      "sensory_details": ["Bird songs", "Herb scents", "Soft voices", "Distant sea", "Shared moments"],
+                      "emotional_tone": "Peace, love, purpose, romantic unity"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_30_2",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Garden Ceremony",
+                    "ontomedia:description": "In the clinic's herb garden, Katrine and Mads exchange traditional island vows, using the language of herbs to express their love and commitment to each other and their shared mission.",
+                    "ontomedia:key_plot_point": "Personal commitment",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Clinic herb garden",
+                      "weather": "Warm afternoon",
+                      "time_of_day": "Afternoon",
+                      "symbolic_elements": ["Herb garden", "Medical bag", "Family photos", "Island view", "Love vows"],
+                      "sensory_details": ["Herb scents", "Bird songs", "Soft voices", "Distant sea", "Shared promises"],
+                      "emotional_tone": "Love, commitment, peace, romantic fulfillment"
+                    }
+                  },
+                  {
+                    "@id": "ontomedia:scene_30_3",
+                    "@type": "ontomedia:SceneSketch",
+                    "ontomedia:name": "The Evening Celebration",
+                    "ontomedia:description": "The community gathers at Anna's café to celebrate Katrine and Mads's love and their commitment to the island. In a quiet moment, they share their dreams for the future, their love for each other and the island becoming one.",
+                    "ontomedia:key_plot_point": "Community celebration",
+                    "ontomedia:narrative_devices": {
+                      "setting": "Anna's café",
+                      "weather": "Baltic evening",
+                      "time_of_day": "Evening",
+                      "symbolic_elements": ["Harbor view", "Herb garden", "Medical bag", "Island view", "Shared future"],
+                      "sensory_details": ["Laughter", "Music", "Sea breeze", "Herb scents", "Soft whispers"],
+                      "emotional_tone": "Joy, love, peace, romantic wholeness"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "ontomedia:has_character": [
+        {
+          "@id": "ontomedia:katrine",
+          "@type": "ontomedia:Character",
+          "@name": "Dr. Katrine Christiansen",
+          "@description": "A dedicated doctor seeking new purpose",
+          "@has_arc": {
+            "@id": "ontomedia:katrine_arc",
+            "@type": "ontomedia:CharacterArc",
+            "@name": "Professional and Personal Transformation",
+            "@description": "Journey from urban medicine to rural healthcare and personal fulfillment",
+            "@has_stage": [
+              {
+                "@id": "ontomedia:katrine_initial",
+                "@type": "ontomedia:CharacterStage",
+                "@name": "Initial State",
+                "@description": "Urban doctor facing burnout and unwanted proposal",
+                "@sequence": 1,
+                "@key_developments": [
+                  "Professional dissatisfaction",
+                  "Personal uncertainty",
+                  "Cultural disconnection"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "ontomedia:has_location": [
+        {
+          "@id": "ontomedia:katrine_apartment",
+          "@type": "ontomedia:Location",
+          "@name": "Katrine's Copenhagen Apartment",
+          "@description": "Modern apartment in Copenhagen's medical district",
+          "@has_connection": [
+            {
+              "@id": "ontomedia:location_character_connection_1",
+              "@type": "ontomedia:LocationConnection",
+              "@character": "ontomedia:katrine",
+              "@relationship": "home"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

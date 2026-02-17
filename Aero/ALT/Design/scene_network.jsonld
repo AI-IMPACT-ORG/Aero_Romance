@@ -1,0 +1,1409 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:scene_network",
+      "@type": "ontomedia:SceneNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:scene_registry",
+        "@type": "ontomedia:SceneRegistry",
+        "ontomedia:has_scene_definitions": {
+          "@id": "ontomedia:scene_definitions",
+          "@type": "ontomedia:SceneDefinitions",
+          "ontomedia:has_definition": [
+            {
+              "@id": "ontomedia:medical_scenes_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Medical Scenes",
+              "ontomedia:description": "Hierarchy of medical-related scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:emergency_medical_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Emergency Medical",
+                  "ontomedia:description": "Scenes involving emergency medical situations",
+                  "ontomedia:has_scene": [
+                    "ontomedia:weather_warning_definition",
+                    "ontomedia:emergency_preparation_definition",
+                    "ontomedia:emergency_response_definition",
+                    "ontomedia:emergency_medical_definition",
+                    "ontomedia:crisis_response_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:routine_medical_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Routine Medical",
+                  "ontomedia:description": "Scenes involving routine medical practice",
+                  "ontomedia:has_scene": [
+                    "ontomedia:practice_introduction_definition",
+                    "ontomedia:patient_consultation_definition",
+                    "ontomedia:traditional_medicine_observation_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:medical_planning_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Medical Planning",
+                  "ontomedia:description": "Scenes involving medical practice planning",
+                  "ontomedia:has_scene": [
+                    "ontomedia:medical_planning_definition",
+                    "ontomedia:medical_tent_setup_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:relationship_scenes_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Relationship Scenes",
+              "ontomedia:description": "Hierarchy of relationship-related scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:family_relationships_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Family Relationships",
+                  "ontomedia:description": "Scenes involving family dynamics",
+                  "ontomedia:has_scene": [
+                    "ontomedia:family_introduction_definition",
+                    "ontomedia:family_dynamics_observation_definition",
+                    "ontomedia:family_bonding_definition",
+                    "ontomedia:family_support_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:personal_connections_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Personal Connections",
+                  "ontomedia:description": "Scenes involving personal relationships",
+                  "ontomedia:has_scene": [
+                    "ontomedia:personal_connection_development_definition",
+                    "ontomedia:personal_doubts_reflection_definition",
+                    "ontomedia:personal_growth_definition",
+                    "ontomedia:personal_reflection_definition",
+                    "ontomedia:relationship_breakthrough_definition",
+                    "ontomedia:romantic_celebration_definition",
+                    "ontomedia:future_planning_definition",
+                    "ontomedia:final_reflection_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:community_relationships_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Community Relationships",
+                  "ontomedia:description": "Scenes involving community dynamics",
+                  "ontomedia:has_scene": [
+                    "ontomedia:community_resistance_meeting_definition",
+                    "ontomedia:community_breakthrough_definition",
+                    "ontomedia:cultural_integration_moments_definition",
+                    "ontomedia:community_event_definition",
+                    "ontomedia:community_celebration_definition",
+                    "ontomedia:community_crisis_definition",
+                    "ontomedia:community_discussion_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:cultural_scenes_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Cultural Scenes",
+              "ontomedia:description": "Hierarchy of cultural-related scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:traditional_practices_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Traditional Practices",
+                  "ontomedia:description": "Scenes involving traditional cultural practices",
+                  "ontomedia:has_scene": [
+                    "ontomedia:traditional_healer_consultation_definition",
+                    "ontomedia:cultural_conflicts_resolution_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:community_events_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Community Events",
+                  "ontomedia:description": "Scenes involving community celebrations",
+                  "ontomedia:has_scene": [
+                    "ontomedia:festival_preparation_definition",
+                    "ontomedia:medical_tent_setup_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:cultural_learning_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Cultural Learning",
+                  "ontomedia:description": "Scenes involving cultural education",
+                  "ontomedia:has_scene": [
+                    "ontomedia:cultural_integration_moments_definition",
+                    "ontomedia:traditional_medicine_observation_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:reflection_scenes_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Reflection Scenes",
+              "ontomedia:description": "Hierarchy of reflection-related scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:personal_reflection_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Personal Reflection",
+                  "ontomedia:description": "Scenes involving personal introspection",
+                  "ontomedia:has_scene": [
+                    "ontomedia:personal_doubts_reflection_definition",
+                    "ontomedia:personal_growth_definition",
+                    "ontomedia:personal_reflection_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:professional_reflection_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Professional Reflection",
+                  "ontomedia:description": "Scenes involving professional development",
+                  "ontomedia:has_scene": [
+                    "ontomedia:career_opportunity_definition",
+                    "ontomedia:professional_crisis_management_definition",
+                    "ontomedia:career_decision_definition",
+                    "ontomedia:professional_development_definition",
+                    "ontomedia:team_collaboration_definition",
+                    "ontomedia:practice_tour_definition",
+                    "ontomedia:team_introduction_definition",
+                    "ontomedia:evening_team_meeting_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:historical_reflection_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Historical Reflection",
+                  "ontomedia:description": "Scenes involving historical discovery",
+                  "ontomedia:has_scene": [
+                    "ontomedia:morning_discovery_definition",
+                    "ontomedia:historical_research_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:emotional_development_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Emotional Development",
+              "ontomedia:description": "Hierarchy of emotional development scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:personal_growth_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Personal Growth",
+                  "ontomedia:description": "Scenes involving personal development",
+                  "ontomedia:has_scene": [
+                    "ontomedia:personal_growth_definition",
+                    "ontomedia:personal_reflection_definition",
+                    "ontomedia:personal_doubts_reflection_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:professional_growth_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Professional Growth",
+                  "ontomedia:description": "Scenes involving professional development",
+                  "ontomedia:has_scene": [
+                    "ontomedia:career_opportunity_definition",
+                    "ontomedia:professional_crisis_management_definition",
+                    "ontomedia:team_problem_solving_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:relationship_growth_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Relationship Growth",
+                  "ontomedia:description": "Scenes involving relationship development",
+                  "ontomedia:has_scene": [
+                    "ontomedia:personal_connection_development_definition",
+                    "ontomedia:family_bonding_definition",
+                    "ontomedia:community_breakthrough_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:conflict_resolution_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Conflict Resolution",
+              "ontomedia:description": "Hierarchy of conflict resolution scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:professional_conflicts_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Professional Conflicts",
+                  "ontomedia:description": "Scenes involving professional conflicts",
+                  "ontomedia:has_scene": [
+                    "ontomedia:traditional_healer_consultation_definition",
+                    "ontomedia:medical_planning_definition",
+                    "ontomedia:professional_crisis_management_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:personal_conflicts_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Personal Conflicts",
+                  "ontomedia:description": "Scenes involving personal conflicts",
+                  "ontomedia:has_scene": [
+                    "ontomedia:personal_doubts_reflection_definition",
+                    "ontomedia:emotional_strain_moments_definition",
+                    "ontomedia:relationship_revelation_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:cultural_conflicts_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Cultural Conflicts",
+                  "ontomedia:description": "Scenes involving cultural conflicts",
+                  "ontomedia:has_scene": [
+                    "ontomedia:community_resistance_meeting_definition",
+                    "ontomedia:cultural_conflicts_resolution_definition",
+                    "ontomedia:traditional_medicine_observation_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:integration_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Integration",
+              "ontomedia:description": "Hierarchy of integration scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:professional_integration_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Professional Integration",
+                  "ontomedia:description": "Scenes involving professional integration",
+                  "ontomedia:has_scene": [
+                    "ontomedia:practice_introduction_definition",
+                    "ontomedia:team_problem_solving_definition",
+                    "ontomedia:medical_planning_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:personal_integration_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Personal Integration",
+                  "ontomedia:description": "Scenes involving personal integration",
+                  "ontomedia:has_scene": [
+                    "ontomedia:family_introduction_definition",
+                    "ontomedia:personal_connection_development_definition",
+                    "ontomedia:cultural_integration_moments_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:community_integration_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Community Integration",
+                  "ontomedia:description": "Scenes involving community integration",
+                  "ontomedia:has_scene": [
+                    "ontomedia:community_service_definition",
+                    "ontomedia:cultural_integration_moments_definition",
+                    "ontomedia:festival_preparation_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:discovery_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Discovery",
+              "ontomedia:description": "Hierarchy of discovery scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:professional_discovery_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Professional Discovery",
+                  "ontomedia:description": "Scenes involving professional discovery",
+                  "ontomedia:has_scene": [
+                    "ontomedia:traditional_medicine_observation_definition",
+                    "ontomedia:practice_introduction_definition",
+                    "ontomedia:team_problem_solving_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:personal_discovery_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Personal Discovery",
+                  "ontomedia:description": "Scenes involving personal discovery",
+                  "ontomedia:has_scene": [
+                    "ontomedia:family_dynamics_observation_definition",
+                    "ontomedia:personal_growth_definition",
+                    "ontomedia:personal_connection_development_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:cultural_discovery_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Cultural Discovery",
+                  "ontomedia:description": "Scenes involving cultural discovery",
+                  "ontomedia:has_scene": [
+                    "ontomedia:traditional_healer_consultation_definition",
+                    "ontomedia:community_resistance_meeting_definition",
+                    "ontomedia:historical_research_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:crisis_management_hierarchy",
+              "@type": "ontomedia:SceneTypeHierarchy",
+              "ontomedia:name": "Crisis Management",
+              "ontomedia:description": "Hierarchy of crisis management scenes",
+              "ontomedia:has_category": [
+                {
+                  "@id": "ontomedia:medical_crises_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Medical Crises",
+                  "ontomedia:description": "Scenes involving medical emergencies",
+                  "ontomedia:has_scene": [
+                    "ontomedia:emergency_response_definition",
+                    "ontomedia:weather_warning_definition",
+                    "ontomedia:emergency_preparation_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:personal_crises_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Personal Crises",
+                  "ontomedia:description": "Scenes involving personal emergencies",
+                  "ontomedia:has_scene": [
+                    "ontomedia:emotional_strain_moments_definition",
+                    "ontomedia:professional_crisis_management_definition",
+                    "ontomedia:relationship_revelation_definition"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:community_crises_category",
+                  "@type": "ontomedia:SceneCategory",
+                  "ontomedia:name": "Community Crises",
+                  "ontomedia:description": "Scenes involving community emergencies",
+                  "ontomedia:has_scene": [
+                    "ontomedia:community_resistance_meeting_definition",
+                    "ontomedia:cultural_conflicts_resolution_definition",
+                    "ontomedia:weather_warning_definition"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "ontomedia:professional_adaptation_definition",
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:name": "Professional Adaptation",
+              "ontomedia:description": "Scenes involving professional adjustment and growth",
+              "ontomedia:has_template": {
+                "@id": "ontomedia:professional_adaptation_template",
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:structure": [
+                  "Initial challenge",
+                  "Adaptation attempt",
+                  "Learning moment",
+                  "Integration",
+                  "Growth reflection"
+                ],
+                "ontomedia:requirements": [
+                  "Professional authenticity",
+                  "Learning progression",
+                  "Character growth",
+                  "Cultural sensitivity"
+                ],
+                "ontomedia:has_development_reference": {
+                  "@id": "ontomedia:professional_adaptation_development_reference",
+                  "@type": "ontomedia:DevelopmentPatternReference",
+                  "ontomedia:target": "ontomedia:professional_development_pattern",
+                  "ontomedia:relationship": "development_pattern_registry",
+                "ontomedia:version": "1.0"
+              }
+              }
+            },
+            {
+              "@id": "ontomedia:cultural_healthcare_learning_definition",
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:name": "Cultural Healthcare Learning",
+              "ontomedia:description": "Scenes involving learning about traditional healthcare practices",
+              "ontomedia:has_template": {
+                "@id": "ontomedia:cultural_healthcare_template",
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:structure": [
+                  "Cultural introduction",
+                  "Traditional practice observation",
+                  "Learning interaction",
+                  "Understanding development",
+                  "Integration moment"
+                ],
+                "ontomedia:requirements": [
+                  "Cultural accuracy",
+                  "Medical authenticity",
+                  "Learning progression",
+                  "Respectful interaction"
+                ],
+            "ontomedia:has_development_reference": {
+                  "@id": "ontomedia:cultural_healthcare_development_reference",
+                  "@type": "ontomedia:DevelopmentPatternReference",
+                  "ontomedia:target": "ontomedia:cultural_development_pattern",
+                  "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+            }
+          }
+            },
+            {
+              "@id": "ontomedia:community_integration_definition",
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:name": "Community Integration",
+              "ontomedia:description": "Scenes involving becoming part of the community",
+              "ontomedia:has_template": {
+                "@id": "ontomedia:community_integration_template",
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:structure": [
+                  "Community introduction",
+                  "Cultural observation",
+                  "Participation attempt",
+                  "Acceptance moment",
+                  "Integration celebration"
+                ],
+                "ontomedia:requirements": [
+                  "Community authenticity",
+                  "Cultural sensitivity",
+                  "Character development",
+                  "Relationship building"
+                ],
+                "ontomedia:has_development_reference": {
+                  "@id": "ontomedia:community_integration_development_reference",
+                  "@type": "ontomedia:DevelopmentPatternReference",
+                  "ontomedia:target": "ontomedia:community_development_pattern",
+                  "ontomedia:relationship": "development_pattern_registry",
+                "ontomedia:version": "1.0"
+                }
+              }
+            },
+            {
+              "@id": "ontomedia:emergency_scene_template",
+              "@type": "ontomedia:SceneTemplate",
+              "ontomedia:name": "Emergency Scene",
+              "ontomedia:description": "Template for emergency and crisis situations",
+              "ontomedia:structure": [
+                "Crisis introduction",
+                "Initial response",
+                "Team coordination",
+                "Resolution attempt",
+                "Outcome and reflection"
+              ],
+              "ontomedia:requirements": [
+                "High-stakes tension",
+                "Medical accuracy",
+                "Team dynamics",
+                "Emotional impact"
+              ],
+              "ontomedia:has_development_reference": {
+                "@id": "ontomedia:emergency_development_reference",
+                "@type": "ontomedia:DevelopmentPatternReference",
+                "ontomedia:target": "ontomedia:professional_development_pattern",
+                "ontomedia:relationship": "development_pattern_registry",
+                "ontomedia:version": "1.0"
+              }
+            },
+            {
+              "@id": "ontomedia:cultural_integration_template",
+              "@type": "ontomedia:SceneTemplate",
+              "ontomedia:name": "Cultural Integration",
+              "ontomedia:description": "Template for cultural learning and integration scenes",
+              "ontomedia:structure": [
+                "Cultural encounter",
+                "Learning moment",
+                "Adaptation attempt",
+                "Integration challenge",
+                "Acceptance and growth"
+              ],
+              "ontomedia:requirements": [
+                "Cultural authenticity",
+                "Learning progression",
+                "Character development",
+                "Community interaction"
+              ],
+              "ontomedia:has_development_reference": {
+                "@id": "ontomedia:cultural_integration_development_reference",
+                "@type": "ontomedia:DevelopmentPatternReference",
+                "ontomedia:target": "ontomedia:cultural_development_pattern",
+                "ontomedia:relationship": "development_pattern_registry",
+                "ontomedia:version": "1.0"
+              }
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:early_morning_arrival",
+              "ontomedia:scene_name": "Early Morning Arrival",
+              "ontomedia:scene_description": "Scenes involving early morning arrivals and first impressions",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Arrival moment",
+                  "First impressions",
+                  "Initial observations",
+                  "Setting establishment",
+                  "Character introduction"
+                ],
+                "ontomedia:template_requirements": [
+                  "Time of day",
+                  "Weather conditions",
+                  "Location details",
+                  "Character state",
+                  "Atmosphere setting"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:character_introduction"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:team_introduction",
+              "ontomedia:scene_name": "Team Introduction",
+              "ontomedia:scene_description": "Scenes involving team introductions and initial dynamics",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Team gathering",
+                  "Individual introductions",
+                  "Role explanations",
+                  "Initial interactions",
+                  "Team dynamics"
+                ],
+                "ontomedia:template_requirements": [
+                  "Team composition",
+                  "Individual roles",
+                  "Professional context",
+                  "Personal dynamics",
+                  "Cultural elements"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:professional_adaptation"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:practice_tour",
+              "ontomedia:scene_name": "Practice Tour",
+              "ontomedia:scene_description": "Scenes involving tours of medical facilities and practice areas",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Facility overview",
+                  "Area exploration",
+                  "Equipment introduction",
+                  "Practice explanation",
+                  "Cultural context"
+                ],
+                "ontomedia:template_requirements": [
+                  "Facility layout",
+                  "Medical equipment",
+                  "Practice methods",
+                  "Cultural elements",
+                  "Professional context"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:professional_adaptation"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:first_patient_consultation",
+              "ontomedia:scene_name": "First Patient Consultation",
+              "ontomedia:scene_description": "Scenes involving initial patient consultations and medical interactions",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Patient introduction",
+                  "Medical history",
+                  "Initial assessment",
+                  "Treatment discussion",
+                  "Cultural consideration"
+                ],
+                "ontomedia:template_requirements": [
+                  "Medical accuracy",
+                  "Cultural sensitivity",
+                  "Professional protocol",
+                  "Patient interaction",
+                  "Treatment approach"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:professional_adaptation"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:evening_team_meeting",
+              "ontomedia:scene_name": "Evening Team Meeting",
+              "ontomedia:scene_description": "Scenes involving team meetings and professional discussions",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Meeting setup",
+                  "Case discussion",
+                  "Team input",
+                  "Decision making",
+                  "Future planning"
+                ],
+                "ontomedia:template_requirements": [
+                  "Professional context",
+                  "Team dynamics",
+                  "Case details",
+                  "Decision process",
+                  "Cultural elements"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:professional_adaptation"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:island_sunset_walk",
+              "ontomedia:scene_name": "Island Sunset Walk",
+              "ontomedia:scene_description": "Scenes involving walks and personal interactions during sunset",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Setting establishment",
+                  "Character interaction",
+                  "Personal revelation",
+                  "Emotional moment",
+                  "Future hint"
+                ],
+                "ontomedia:template_requirements": [
+                  "Time of day",
+                  "Location details",
+                  "Character state",
+                  "Emotional context",
+                  "Relationship development"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:relationship_development"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:bnb_morning_visit",
+              "ontomedia:scene_name": "B&B Morning Visit",
+              "ontomedia:scene_description": "Scenes involving visits to the bed and breakfast",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Arrival moment",
+                  "Location exploration",
+                  "Character interaction",
+                  "Personal connection",
+                  "Cultural discovery"
+                ],
+                "ontomedia:template_requirements": [
+                  "Location details",
+                  "Character dynamics",
+                  "Cultural elements",
+                  "Personal context",
+                  "Relationship development"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:cultural_integration"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:lilys_art_studio",
+              "ontomedia:scene_name": "Lily's Art Studio",
+              "ontomedia:scene_description": "Scenes involving visits to Lily's art studio",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Studio introduction",
+                  "Art exploration",
+                  "Personal connection",
+                  "Cultural expression",
+                  "Relationship development"
+                ],
+                "ontomedia:template_requirements": [
+                  "Studio details",
+                  "Artistic elements",
+                  "Character interaction",
+                  "Cultural context",
+                  "Personal connection"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:cultural_integration"
+            },
+            {
+              "@type": "ontomedia:SceneDefinition",
+              "ontomedia:scene_id": "ontomedia:evening_conversation",
+              "ontomedia:scene_name": "Evening Conversation",
+              "ontomedia:scene_description": "Scenes involving evening conversations and personal revelations",
+              "ontomedia:has_template": {
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:template_structure": [
+                  "Setting establishment",
+                  "Conversation start",
+                  "Personal revelation",
+                  "Emotional moment",
+                  "Relationship development"
+                ],
+                "ontomedia:template_requirements": [
+                  "Time of day",
+                  "Location details",
+                  "Character state",
+                  "Conversation context",
+                  "Emotional development"
+                ]
+              },
+              "ontomedia:has_development_reference": "ontomedia:relationship_development"
+            },
+            {
+              "@id": "ontomedia:medical_scenes",
+              "@type": "ontomedia:SceneType",
+              "ontomedia:name": "Medical Scenes",
+              "ontomedia:description": "Scenes involving medical practice and procedures",
+              "ontomedia:requirements": [
+                "Medical accuracy",
+                "Professional conduct",
+                "Patient interaction",
+                "Medical terminology"
+              ],
+              "ontomedia:has_template": {
+                "@id": "ontomedia:medical_scene_template",
+                "@type": "ontomedia:SceneTemplate",
+                "ontomedia:structure": [
+                  "Setup",
+                  "Medical interaction",
+                  "Resolution",
+                  "Reflection"
+                ],
+                "ontomedia:requirements": [
+                  "Medical accuracy",
+                  "Professional conduct",
+                  "Patient interaction"
+                ]
+              },
+              "ontomedia:has_specialized_template": [
+                {
+                  "@id": "ontomedia:emergency_medical_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:name": "Emergency Medical Scene",
+                  "ontomedia:structure": [
+                    "Crisis introduction",
+                    "Emergency response",
+                    "Treatment",
+                    "Stabilization",
+                    "Aftermath"
+                  ],
+                  "ontomedia:requirements": [
+                    "High-stakes tension",
+                    "Medical urgency",
+                    "Team coordination",
+                    "Emotional impact"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:preventive_care_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:name": "Preventive Care Scene",
+                  "ontomedia:structure": [
+                    "Patient history",
+                    "Risk assessment",
+                    "Preventive measures",
+                    "Education",
+                    "Follow-up planning"
+                  ],
+                  "ontomedia:requirements": [
+                    "Medical accuracy",
+                    "Patient education",
+                    "Cultural sensitivity",
+                    "Long-term planning"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:traditional_integration_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:name": "Traditional Medicine Integration",
+                  "ontomedia:structure": [
+                    "Traditional consultation",
+                    "Modern assessment",
+                    "Treatment integration",
+                    "Cultural respect",
+                    "Healing approach"
+                  ],
+                  "ontomedia:requirements": [
+                    "Cultural authenticity",
+                    "Medical accuracy",
+                    "Integration balance",
+                    "Community trust"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:community_health_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:name": "Community Health Scene",
+                  "ontomedia:structure": [
+                    "Community assessment",
+                    "Health education",
+                    "Preventive measures",
+                    "Cultural adaptation",
+                    "Community engagement"
+                  ],
+                  "ontomedia:requirements": [
+                    "Community focus",
+                    "Cultural sensitivity",
+                    "Health education",
+                    "Community participation"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:research_innovation_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:name": "Medical Research and Innovation",
+                  "ontomedia:structure": [
+                    "Research question",
+                    "Data collection",
+                    "Analysis",
+                    "Innovation development",
+                    "Implementation planning"
+                  ],
+                  "ontomedia:requirements": [
+                    "Scientific accuracy",
+                    "Innovation focus",
+                    "Practical application",
+                    "Community benefit"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:scene_type_reference",
+            "@type": "ontomedia:SceneTypeReference",
+            "ontomedia:target": "ontomedia:scene_types",
+            "ontomedia:relationship": "scene_type_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+            {
+              "@id": "ontomedia:medical_scenes",
+              "@type": "ontomedia:SceneType",
+              "ontomedia:name": "Medical Scenes",
+                "ontomedia:description": "Scenes involving medical practice and procedures",
+                "ontomedia:requirements": [
+                  "Medical accuracy",
+                  "Professional conduct",
+                  "Patient interaction",
+                  "Medical terminology"
+                ],
+                "ontomedia:has_template": {
+                  "@id": "ontomedia:medical_scene_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:structure": [
+                    "Setup",
+                    "Medical interaction",
+                    "Resolution",
+                    "Reflection"
+                  ],
+                  "ontomedia:requirements": [
+                    "Medical accuracy",
+                    "Professional conduct",
+                    "Patient interaction"
+                  ],
+                  "ontomedia:has_development_reference": {
+                    "@id": "ontomedia:medical_development_reference",
+                    "@type": "ontomedia:DevelopmentPatternReference",
+                    "ontomedia:target": "ontomedia:professional_development_pattern",
+                    "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+              }
+            },
+                "ontomedia:has_specialized_template": [
+                  {
+                    "@id": "ontomedia:emergency_medical_template",
+                    "@type": "ontomedia:SceneTemplate",
+                    "ontomedia:name": "Emergency Medical Scene",
+                    "ontomedia:structure": [
+                      "Crisis introduction",
+                      "Emergency response",
+                      "Treatment",
+                      "Stabilization",
+                      "Aftermath"
+                    ],
+                    "ontomedia:requirements": [
+                      "High-stakes tension",
+                      "Medical urgency",
+                      "Team coordination",
+                      "Emotional impact"
+                    ],
+                    "ontomedia:has_development_reference": {
+                      "@id": "ontomedia:emergency_medical_development_reference",
+                      "@type": "ontomedia:DevelopmentPatternReference",
+                      "ontomedia:target": "ontomedia:professional_development_pattern",
+                      "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+              }
+            },
+            {
+                    "@id": "ontomedia:preventive_care_template",
+                    "@type": "ontomedia:SceneTemplate",
+                    "ontomedia:name": "Preventive Care Scene",
+                    "ontomedia:structure": [
+                      "Patient history",
+                      "Risk assessment",
+                      "Preventive measures",
+                      "Education",
+                      "Follow-up planning"
+                    ],
+                    "ontomedia:requirements": [
+                      "Medical accuracy",
+                      "Patient education",
+                      "Cultural sensitivity",
+                      "Long-term planning"
+                    ],
+                    "ontomedia:has_development_reference": {
+                      "@id": "ontomedia:preventive_care_development_reference",
+                      "@type": "ontomedia:DevelopmentPatternReference",
+                      "ontomedia:target": "ontomedia:professional_development_pattern",
+                      "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+            }
+                  },
+                  {
+                    "@id": "ontomedia:traditional_integration_template",
+                    "@type": "ontomedia:SceneTemplate",
+                    "ontomedia:name": "Traditional Medicine Integration",
+                    "ontomedia:structure": [
+                      "Traditional consultation",
+                      "Modern assessment",
+                      "Treatment integration",
+                      "Cultural respect",
+                      "Healing approach"
+                    ],
+                    "ontomedia:requirements": [
+                      "Cultural authenticity",
+                      "Medical accuracy",
+                      "Integration balance",
+                      "Community trust"
+                    ]
+                  },
+                  {
+                    "@id": "ontomedia:community_health_template",
+                    "@type": "ontomedia:SceneTemplate",
+                    "ontomedia:name": "Community Health Scene",
+                    "ontomedia:structure": [
+                      "Community assessment",
+                      "Health education",
+                      "Preventive measures",
+                      "Cultural adaptation",
+                      "Community engagement"
+                    ],
+                    "ontomedia:requirements": [
+                      "Community focus",
+                      "Cultural sensitivity",
+                      "Health education",
+                      "Community participation"
+                    ]
+                  },
+                  {
+                    "@id": "ontomedia:research_innovation_template",
+                    "@type": "ontomedia:SceneTemplate",
+                    "ontomedia:name": "Medical Research and Innovation",
+                    "ontomedia:structure": [
+                      "Research question",
+                      "Data collection",
+                      "Analysis",
+                      "Innovation development",
+                      "Implementation planning"
+                    ],
+                    "ontomedia:requirements": [
+                      "Scientific accuracy",
+                      "Innovation focus",
+                      "Practical application",
+                      "Community benefit"
+                    ]
+                  }
+                ]
+          },
+          {
+                "@id": "ontomedia:reflection_scenes",
+            "@type": "ontomedia:SceneType",
+                "ontomedia:name": "Reflection Scenes",
+                "ontomedia:description": "Scenes involving character introspection",
+                "ontomedia:requirements": [
+                  "Internal dialogue",
+                  "Emotional depth",
+                  "Character insight",
+                  "Personal growth"
+                ],
+                "ontomedia:has_template": {
+                  "@id": "ontomedia:reflection_scene_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:structure": [
+                    "Trigger",
+                    "Internal conflict",
+                    "Resolution",
+                    "Growth"
+                  ],
+                  "ontomedia:requirements": [
+                    "Emotional authenticity",
+                    "Character insight",
+                    "Meaningful reflection"
+                  ],
+                  "ontomedia:has_development_reference": {
+                    "@id": "ontomedia:reflection_development_reference",
+                    "@type": "ontomedia:DevelopmentPatternReference",
+                    "ontomedia:target": "ontomedia:personal_development_pattern",
+                    "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+            }
+          }
+      },
+            {
+                "@id": "ontomedia:cultural_scenes",
+              "@type": "ontomedia:SceneType",
+                "ontomedia:name": "Cultural Scenes",
+                "ontomedia:description": "Scenes involving cultural elements",
+                "ontomedia:requirements": [
+                  "Cultural accuracy",
+                  "Local customs",
+                  "Social dynamics",
+                  "Cultural context"
+                ],
+                "ontomedia:has_template": {
+                  "@id": "ontomedia:cultural_scene_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:structure": [
+                    "Cultural context",
+                    "Interaction",
+                    "Understanding",
+                    "Integration"
+                  ],
+                  "ontomedia:requirements": [
+                    "Cultural authenticity",
+                    "Social dynamics",
+                    "Cultural learning"
+                  ],
+                  "ontomedia:has_development_reference": {
+                    "@id": "ontomedia:cultural_development_reference",
+                    "@type": "ontomedia:DevelopmentPatternReference",
+                    "ontomedia:target": "ontomedia:cultural_development_pattern",
+                    "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+              }
+            },
+                "ontomedia:has_specialized_template": [
+                  {
+                    "@id": "ontomedia:festival_template",
+                    "@type": "ontomedia:SceneTemplate",
+                    "ontomedia:name": "Festival Scene",
+                    "ontomedia:structure": [
+                      "Festival atmosphere",
+                      "Cultural activities",
+                      "Community interaction",
+                      "Personal connection",
+                      "Cultural celebration"
+                    ],
+                    "ontomedia:requirements": [
+                      "Festival authenticity",
+                      "Community spirit",
+                      "Cultural traditions",
+                      "Personal engagement"
+                    ]
+                  },
+                  {
+                    "@id": "ontomedia:ritual_template",
+                    "@type": "ontomedia:SceneTemplate",
+                    "ontomedia:name": "Cultural Ritual Scene",
+                    "ontomedia:structure": [
+                      "Ritual preparation",
+                      "Traditional elements",
+                      "Community participation",
+                      "Personal significance",
+                      "Cultural meaning"
+                    ],
+                    "ontomedia:requirements": [
+                      "Ritual accuracy",
+                      "Cultural significance",
+                      "Community involvement",
+                      "Personal impact"
+                    ]
+                  }
+                ]
+              },
+              {
+                "@id": "ontomedia:relationship_scenes",
+              "@type": "ontomedia:SceneType",
+                "ontomedia:name": "Relationship Scenes",
+                "ontomedia:description": "Scenes involving character relationships and dynamics",
+                "ontomedia:requirements": [
+                  "Emotional authenticity",
+                  "Character dynamics",
+                  "Relationship development",
+                  "Social context"
+                ],
+                "ontomedia:has_template": {
+                  "@id": "ontomedia:relationship_scene_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:structure": [
+                    "Relationship context",
+                    "Interaction",
+                    "Development",
+                    "Impact"
+                  ],
+                  "ontomedia:requirements": [
+                    "Character chemistry",
+                    "Emotional depth",
+                    "Relationship progression"
+                  ],
+                  "ontomedia:has_development_reference": {
+                    "@id": "ontomedia:relationship_development_reference",
+                    "@type": "ontomedia:DevelopmentPatternReference",
+                    "ontomedia:target": "ontomedia:relationship_development_pattern",
+                    "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+                  }
+              }
+            },
+            {
+                "@id": "ontomedia:community_scenes",
+              "@type": "ontomedia:SceneType",
+                "ontomedia:name": "Community Scenes",
+                "ontomedia:description": "Scenes involving community interaction and dynamics",
+                "ontomedia:requirements": [
+                  "Community authenticity",
+                  "Social dynamics",
+                  "Cultural context",
+                  "Relationship development"
+                ],
+                "ontomedia:has_template": {
+                  "@id": "ontomedia:community_scene_template",
+                  "@type": "ontomedia:SceneTemplate",
+                  "ontomedia:structure": [
+                    "Community context",
+                    "Interaction",
+                    "Development",
+                    "Impact"
+                  ],
+                  "ontomedia:requirements": [
+                    "Community dynamics",
+                    "Cultural sensitivity",
+                    "Social progression"
+                  ],
+                  "ontomedia:has_development_reference": {
+                    "@id": "ontomedia:community_development_reference",
+                    "@type": "ontomedia:DevelopmentPatternReference",
+                    "ontomedia:target": "ontomedia:community_development_pattern",
+                    "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_layer_structure": {
+        "@id": "ontomedia:scene_layer_structure",
+        "@type": "ontomedia:SceneLayerStructure",
+        "ontomedia:has_layer": [
+          {
+            "@id": "ontomedia:professional_layer",
+            "@type": "ontomedia:ProfessionalLayer",
+            "ontomedia:name": "Professional Layer",
+            "ontomedia:description": "Professional and career-related elements",
+            "ontomedia:has_reference": [
+              {
+                "@id": "ontomedia:professional_type_reference",
+                "@type": "ontomedia:SceneTypeReference",
+                "ontomedia:target": "ontomedia:medical_scenes",
+                "ontomedia:relationship": "scene_type_registry",
+                "ontomedia:version": "1.0"
+              }
+            ],
+            "ontomedia:has_development_reference": {
+              "@id": "ontomedia:professional_layer_development_reference",
+              "@type": "ontomedia:DevelopmentPatternReference",
+              "ontomedia:target": "ontomedia:professional_development_pattern",
+              "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+            }
+          },
+          {
+            "@id": "ontomedia:personal_layer",
+            "@type": "ontomedia:PersonalLayer",
+            "ontomedia:name": "Personal Layer",
+            "ontomedia:description": "Personal and emotional elements",
+            "ontomedia:has_reference": [
+              {
+                "@id": "ontomedia:personal_type_reference",
+                "@type": "ontomedia:SceneTypeReference",
+                "ontomedia:target": "ontomedia:reflection_scenes",
+                "ontomedia:relationship": "scene_type_registry",
+                "ontomedia:version": "1.0"
+              }
+            ],
+            "ontomedia:has_development_reference": {
+              "@id": "ontomedia:personal_layer_development_reference",
+              "@type": "ontomedia:DevelopmentPatternReference",
+              "ontomedia:target": "ontomedia:personal_development_pattern",
+              "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+            }
+          },
+          {
+            "@id": "ontomedia:cultural_layer",
+            "@type": "ontomedia:CulturalLayer",
+            "ontomedia:name": "Cultural Layer",
+            "ontomedia:description": "Cultural and social elements",
+            "ontomedia:has_reference": [
+              {
+                "@id": "ontomedia:cultural_type_reference",
+                "@type": "ontomedia:SceneTypeReference",
+                "ontomedia:target": "ontomedia:cultural_scenes",
+                "ontomedia:relationship": "scene_type_registry",
+                "ontomedia:version": "1.0"
+              }
+            ],
+            "ontomedia:has_development_reference": {
+              "@id": "ontomedia:cultural_layer_development_reference",
+              "@type": "ontomedia:DevelopmentPatternReference",
+              "ontomedia:target": "ontomedia:cultural_development_pattern",
+              "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+            }
+          },
+          {
+            "@id": "ontomedia:relationship_layer",
+            "@type": "ontomedia:RelationshipLayer",
+            "ontomedia:name": "Relationship Layer",
+            "ontomedia:description": "Relationship and social interaction elements",
+            "ontomedia:has_reference": [
+              {
+                "@id": "ontomedia:relationship_type_reference",
+                "@type": "ontomedia:SceneTypeReference",
+                "ontomedia:target": "ontomedia:relationship_scenes",
+                "ontomedia:relationship": "scene_type_registry",
+                "ontomedia:version": "1.0"
+              }
+            ],
+            "ontomedia:has_development_reference": {
+              "@id": "ontomedia:relationship_layer_development_reference",
+              "@type": "ontomedia:DevelopmentPatternReference",
+              "ontomedia:target": "ontomedia:relationship_development_pattern",
+              "ontomedia:relationship": "development_pattern_registry",
+              "ontomedia:version": "1.0"
+            }
+          }
+        ]
+      },
+      "ontomedia:has_network_connections": {
+        "@id": "ontomedia:scene_network_connections",
+        "@type": "ontomedia:NetworkConnections",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:scene_character_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:character_network",
+            "ontomedia:relationship": "character_scene_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:scene_location_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:location_network",
+            "ontomedia:relationship": "location_scene_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:scene_theme_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:theme_network",
+            "ontomedia:relationship": "theme_scene_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:scene_development_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:development_network",
+            "ontomedia:relationship": "development_scene_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:scene_quality_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:quality_network",
+            "ontomedia:relationship": "quality_scene_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:scene_style_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:style_network",
+            "ontomedia:relationship": "style_scene_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:scene_network_validation",
+        "@type": "ontomedia:SceneNetworkValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:scene_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_rules": {
+              "@id": "ontomedia:scene_structure_rules",
+              "@type": "ontomedia:ValidationRules",
+              "ontomedia:rules": [
+                "Scene must follow template structure",
+                "All required elements must be present",
+                "Scene must maintain narrative flow"
+              ]
+            }
+          },
+          {
+            "@id": "ontomedia:scene_type_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_rules": {
+              "@id": "ontomedia:scene_type_rules",
+              "@type": "ontomedia:ValidationRules",
+              "ontomedia:rules": [
+                "Scene must match type requirements",
+                "All type-specific elements must be present",
+                "Scene must maintain type consistency"
+              ]
+            }
+          },
+          {
+            "@id": "ontomedia:scene_progression_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_rules": {
+              "@id": "ontomedia:scene_progression_rules",
+              "@type": "ontomedia:ValidationRules",
+              "ontomedia:rules": [
+                "Scene must follow development pattern",
+                "Progression must be logical",
+                "Character development must be consistent"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+} 

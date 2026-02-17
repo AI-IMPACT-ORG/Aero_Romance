@@ -1,0 +1,391 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:location_network",
+      "@type": "ontomedia:LocationNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:location_registry",
+        "@type": "ontomedia:LocationRegistry",
+        "ontomedia:has_location": [
+          {
+            "@id": "ontomedia:clinic",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Rural Medical Clinic",
+            "ontomedia:description": "The main medical facility serving the community",
+            "ontomedia:has_progression": {
+              "@id": "ontomedia:clinic_progression",
+              "@type": "ontomedia:LocationProgression",
+              "ontomedia:name": "Clinic Evolution",
+              "ontomedia:description": "The development of the clinic throughout the story",
+              "ontomedia:has_stage": [
+                {
+                  "@id": "ontomedia:clinic_initial",
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:name": "Initial State",
+                  "ontomedia:description": "Traditional rural clinic setup",
+                  "ontomedia:key_elements": [
+                    "Basic facilities",
+                    "Traditional methods",
+                    "Community familiarity"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:clinic_transition",
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:name": "Transition",
+                  "ontomedia:description": "Integration of modern and traditional approaches",
+                  "ontomedia:key_elements": [
+                    "Facility updates",
+                    "Method integration",
+                    "Community adaptation"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:clinic_integrated",
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:name": "Integrated State",
+                  "ontomedia:description": "Balanced modern-traditional facility",
+                  "ontomedia:key_elements": [
+                    "Modern facilities",
+                    "Cultural integration",
+                    "Community center"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@id": "ontomedia:community_center",
+            "@type": "ontomedia:Location",
+            "ontomedia:name": "Community Center",
+            "ontomedia:description": "The heart of community activities and gatherings",
+            "ontomedia:has_progression": {
+              "@id": "ontomedia:center_progression",
+              "@type": "ontomedia:LocationProgression",
+              "ontomedia:name": "Center Development",
+              "ontomedia:description": "The evolution of the community center",
+              "ontomedia:has_stage": [
+                {
+                  "@id": "ontomedia:center_traditional",
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:name": "Traditional Center",
+                  "ontomedia:description": "Traditional community gathering place",
+                  "ontomedia:key_elements": [
+                    "Cultural events",
+                    "Community meetings",
+                    "Traditional activities"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:center_expansion",
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:name": "Expansion",
+                  "ontomedia:description": "Growing community hub",
+                  "ontomedia:key_elements": [
+                    "New activities",
+                    "Cultural fusion",
+                    "Community growth"
+                  ]
+                },
+                {
+                  "@id": "ontomedia:center_integrated",
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:name": "Integrated Hub",
+                  "ontomedia:description": "Modern-traditional community center",
+                  "ontomedia:key_elements": [
+                    "Cultural events",
+                    "Health programs",
+                    "Community services"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ontomedia:Location",
+            "ontomedia:location_id": "ontomedia:bnb",
+            "ontomedia:location_name": "Bed and Breakfast",
+            "ontomedia:location_description": "The bed and breakfast establishment",
+            "ontomedia:has_progression": {
+              "@type": "ontomedia:LocationProgression",
+              "ontomedia:progression_name": "B&B Development",
+              "ontomedia:progression_description": "The development of the bed and breakfast",
+              "ontomedia:has_stage": [
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Initial State",
+                  "ontomedia:stage_description": "Initial state of the B&B",
+                  "ontomedia:has_key_element": [
+                    "Traditional setting",
+                    "Cultural elements",
+                    "Community connection",
+                    "Personal touch",
+                    "Future potential"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Development",
+                  "ontomedia:stage_description": "Development of the B&B",
+                  "ontomedia:has_key_element": [
+                    "Modern updates",
+                    "Cultural preservation",
+                    "Community growth",
+                    "Personal development",
+                    "Future vision"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Integrated State",
+                  "ontomedia:stage_description": "Integrated state of the B&B",
+                  "ontomedia:has_key_element": [
+                    "Modern-traditional balance",
+                    "Cultural integration",
+                    "Community hub",
+                    "Personal fulfillment",
+                    "Future legacy"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ontomedia:Location",
+            "ontomedia:location_id": "ontomedia:art_studio",
+            "ontomedia:location_name": "Art Studio",
+            "ontomedia:location_description": "Lily's art studio",
+            "ontomedia:has_progression": {
+              "@type": "ontomedia:LocationProgression",
+              "ontomedia:progression_name": "Studio Evolution",
+              "ontomedia:progression_description": "The evolution of the art studio",
+              "ontomedia:has_stage": [
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Initial Studio",
+                  "ontomedia:stage_description": "Initial state of the studio",
+                  "ontomedia:has_key_element": [
+                    "Artistic space",
+                    "Cultural elements",
+                    "Personal expression",
+                    "Community connection",
+                    "Future potential"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Studio Growth",
+                  "ontomedia:stage_description": "Growth of the studio",
+                  "ontomedia:has_key_element": [
+                    "Artistic development",
+                    "Cultural integration",
+                    "Personal growth",
+                    "Community engagement",
+                    "Future vision"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Studio Fulfillment",
+                  "ontomedia:stage_description": "Fulfillment of the studio",
+                  "ontomedia:has_key_element": [
+                    "Artistic achievement",
+                    "Cultural contribution",
+                    "Personal fulfillment",
+                    "Community celebration",
+                    "Future legacy"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ontomedia:Location",
+            "ontomedia:location_id": "ontomedia:medical_practice",
+            "ontomedia:location_name": "Medical Practice",
+            "ontomedia:location_description": "The medical practice facility",
+            "ontomedia:has_progression": {
+              "@type": "ontomedia:LocationProgression",
+              "ontomedia:progression_name": "Practice Expansion",
+              "ontomedia:progression_description": "The expansion of the medical practice",
+              "ontomedia:has_stage": [
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Initial Practice",
+                  "ontomedia:stage_description": "Initial state of the practice",
+                  "ontomedia:has_key_element": [
+                    "Traditional setup",
+                    "Cultural elements",
+                    "Community service",
+                    "Professional practice",
+                    "Future potential"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Practice Development",
+                  "ontomedia:stage_description": "Development of the practice",
+                  "ontomedia:has_key_element": [
+                    "Modern updates",
+                    "Cultural integration",
+                    "Community growth",
+                    "Professional development",
+                    "Future vision"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Practice Integration",
+                  "ontomedia:stage_description": "Integration of the practice",
+                  "ontomedia:has_key_element": [
+                    "Modern-traditional balance",
+                    "Cultural harmony",
+                    "Community hub",
+                    "Professional fulfillment",
+                    "Future legacy"
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ontomedia:Location",
+            "ontomedia:location_id": "ontomedia:community_center",
+            "ontomedia:location_name": "Community Center",
+            "ontomedia:location_description": "The community center",
+            "ontomedia:has_progression": {
+              "@type": "ontomedia:LocationProgression",
+              "ontomedia:progression_name": "Center Growth",
+              "ontomedia:progression_description": "The growth of the community center",
+              "ontomedia:has_stage": [
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Initial Center",
+                  "ontomedia:stage_description": "Initial state of the center",
+                  "ontomedia:has_key_element": [
+                    "Traditional gathering place",
+                    "Cultural events",
+                    "Community meetings",
+                    "Personal connections",
+                    "Future potential"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Center Development",
+                  "ontomedia:stage_description": "Development of the center",
+                  "ontomedia:has_key_element": [
+                    "Modern updates",
+                    "Cultural integration",
+                    "Community growth",
+                    "Personal development",
+                    "Future vision"
+                  ]
+                },
+                {
+                  "@type": "ontomedia:LocationStage",
+                  "ontomedia:stage_name": "Center Integration",
+                  "ontomedia:stage_description": "Integration of the center",
+                  "ontomedia:has_key_element": [
+                    "Modern-traditional balance",
+                    "Cultural harmony",
+                    "Community hub",
+                    "Personal fulfillment",
+                    "Future legacy"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "ontomedia:has_network_connections": {
+        "@id": "ontomedia:location_network_connections",
+        "@type": "ontomedia:NetworkConnections",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:location_scene_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:scene_network",
+            "ontomedia:relationship": "scene_location_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_character_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:character_network",
+            "ontomedia:relationship": "character_location_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_theme_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:theme_network",
+            "ontomedia:relationship": "theme_location_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_development_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:development_network",
+            "ontomedia:relationship": "development_location_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_quality_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:quality_network",
+            "ontomedia:relationship": "quality_location_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_style_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:style_network",
+            "ontomedia:relationship": "style_location_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:location_network_validation",
+        "@type": "ontomedia:LocationNetworkValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:location_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_type_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:location_progression_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

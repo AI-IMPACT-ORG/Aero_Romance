@@ -1,0 +1,581 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:development_network",
+      "@type": "ontomedia:DevelopmentNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:development_pattern_registry",
+        "@type": "ontomedia:DevelopmentPatternRegistry",
+        "ontomedia:has_pattern": [
+          {
+            "@id": "ontomedia:professional_development_pattern",
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:name": "Professional Development",
+            "ontomedia:description": "Pattern for professional growth and adaptation",
+            "ontomedia:has_stage": [
+              {
+                "@id": "ontomedia:professional_initial_challenge",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Initial Challenge",
+                "ontomedia:description": "Facing initial professional challenges",
+                "ontomedia:requirements": [
+                  "Professional conflict",
+                  "Cultural barrier",
+                  "Learning need"
+                ]
+              },
+              {
+                "@id": "ontomedia:professional_adaptation",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Adaptation",
+                "ontomedia:description": "Learning to adapt to new professional environment",
+                "ontomedia:requirements": [
+                  "Learning process",
+                  "Cultural understanding",
+                  "Skill development"
+                ]
+              },
+              {
+                "@id": "ontomedia:professional_integration",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Integration",
+                "ontomedia:description": "Successfully integrating into professional environment",
+                "ontomedia:requirements": [
+                  "Skill mastery",
+                  "Cultural competence",
+                  "Team acceptance"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:personal_development_pattern",
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:name": "Personal Development",
+            "ontomedia:description": "Pattern for personal growth and development",
+            "ontomedia:stages": [
+              "Self-discovery",
+              "Growth",
+              "Integration",
+              "Transformation"
+            ],
+            "ontomedia:requirements": [
+              "Personal growth",
+              "Emotional development",
+              "Self-awareness",
+              "Life balance"
+            ]
+          },
+          {
+            "@id": "ontomedia:relationship_development_pattern",
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:name": "Relationship Development",
+            "ontomedia:description": "Pattern for relationship growth and development",
+            "ontomedia:stages": [
+              "Initial connection",
+              "Building trust",
+              "Deepening bonds",
+              "Commitment"
+            ],
+            "ontomedia:requirements": [
+              "Trust building",
+              "Communication",
+              "Emotional connection",
+              "Mutual growth"
+            ]
+          },
+          {
+            "@id": "ontomedia:cultural_development_pattern",
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:name": "Cultural Development",
+            "ontomedia:description": "Pattern for cultural learning and integration",
+            "ontomedia:has_stage": [
+              {
+                "@id": "ontomedia:cultural_discovery",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Cultural Discovery",
+                "ontomedia:description": "Initial exposure to new culture",
+                "ontomedia:requirements": [
+                  "Cultural observation",
+                  "Initial understanding",
+                  "Curiosity"
+                ]
+              },
+              {
+                "@id": "ontomedia:cultural_learning",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Cultural Learning",
+                "ontomedia:description": "Active learning about culture",
+                "ontomedia:requirements": [
+                  "Active participation",
+                  "Cultural practice",
+                  "Relationship building"
+                ]
+              },
+              {
+                "@id": "ontomedia:cultural_integration",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Cultural Integration",
+                "ontomedia:description": "Becoming part of the culture",
+                "ontomedia:requirements": [
+                  "Cultural competence",
+                  "Community acceptance",
+                  "Personal growth"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:community_development_pattern",
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:name": "Community Development",
+            "ontomedia:description": "Pattern for community integration and service",
+            "ontomedia:has_stage": [
+              {
+                "@id": "ontomedia:community_introduction",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Community Introduction",
+                "ontomedia:description": "Initial community engagement",
+                "ontomedia:requirements": [
+                  "Community observation",
+                  "Initial contact",
+                  "Service opportunity"
+                ]
+              },
+              {
+                "@id": "ontomedia:community_participation",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Community Participation",
+                "ontomedia:description": "Active community involvement",
+                "ontomedia:requirements": [
+                  "Service provision",
+                  "Relationship building",
+                  "Cultural contribution"
+                ]
+              },
+              {
+                "@id": "ontomedia:community_leadership",
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:name": "Community Leadership",
+                "ontomedia:description": "Taking leadership role in community",
+                "ontomedia:requirements": [
+                  "Community trust",
+                  "Leadership initiative",
+                  "Cultural impact"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:pattern_id": "ontomedia:medical_team_dynamics",
+            "ontomedia:pattern_name": "Medical Team Dynamics",
+            "ontomedia:pattern_description": "Development of medical team relationships and dynamics",
+            "ontomedia:has_stage": [
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Initial Formation",
+                "ontomedia:stage_description": "Initial team formation and role establishment",
+                "ontomedia:has_requirement": [
+                  "Team introduction",
+                  "Role definition",
+                  "Initial dynamics",
+                  "Professional context",
+                  "Cultural elements"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Team Development",
+                "ontomedia:stage_description": "Team growth and relationship building",
+                "ontomedia:has_requirement": [
+                  "Team collaboration",
+                  "Relationship building",
+                  "Professional growth",
+                  "Cultural integration",
+                  "Trust development"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Team Integration",
+                "ontomedia:stage_description": "Full team integration and cohesion",
+                "ontomedia:has_requirement": [
+                  "Team cohesion",
+                  "Professional harmony",
+                  "Cultural unity",
+                  "Trust establishment",
+                  "Future vision"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:pattern_id": "ontomedia:mothers_medical_legacy",
+            "ontomedia:pattern_name": "Mother's Medical Legacy",
+            "ontomedia:pattern_description": "Development of understanding and honoring mother's medical legacy",
+            "ontomedia:has_stage": [
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Legacy Discovery",
+                "ontomedia:stage_description": "Initial discovery of mother's medical legacy",
+                "ontomedia:has_requirement": [
+                  "Historical discovery",
+                  "Personal connection",
+                  "Professional impact",
+                  "Cultural significance",
+                  "Emotional response"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Legacy Understanding",
+                "ontomedia:stage_description": "Understanding and processing the legacy",
+                "ontomedia:has_requirement": [
+                  "Historical research",
+                  "Personal reflection",
+                  "Professional learning",
+                  "Cultural understanding",
+                  "Emotional processing"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Legacy Integration",
+                "ontomedia:stage_description": "Integrating the legacy into current practice",
+                "ontomedia:has_requirement": [
+                  "Historical integration",
+                  "Personal growth",
+                  "Professional development",
+                  "Cultural preservation",
+                  "Emotional acceptance"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:pattern_id": "ontomedia:healthcare_traditions",
+            "ontomedia:pattern_name": "Healthcare Traditions",
+            "ontomedia:pattern_description": "Development of understanding and integrating healthcare traditions",
+            "ontomedia:has_stage": [
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Tradition Discovery",
+                "ontomedia:stage_description": "Initial discovery of healthcare traditions",
+                "ontomedia:has_requirement": [
+                  "Cultural discovery",
+                  "Traditional methods",
+                  "Historical context",
+                  "Community practices",
+                  "Professional interest"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Tradition Learning",
+                "ontomedia:stage_description": "Learning and understanding traditions",
+                "ontomedia:has_requirement": [
+                  "Cultural learning",
+                  "Method understanding",
+                  "Historical research",
+                  "Community engagement",
+                  "Professional adaptation"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Tradition Integration",
+                "ontomedia:stage_description": "Integrating traditions into modern practice",
+                "ontomedia:has_requirement": [
+                  "Cultural integration",
+                  "Method combination",
+                  "Historical preservation",
+                  "Community acceptance",
+                  "Professional innovation"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:pattern_id": "ontomedia:modern_traditional_methods",
+            "ontomedia:pattern_name": "Modern vs Traditional Methods",
+            "ontomedia:pattern_description": "Development of balancing modern and traditional medical methods",
+            "ontomedia:has_stage": [
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Method Discovery",
+                "ontomedia:stage_description": "Initial discovery of different methods",
+                "ontomedia:has_requirement": [
+                  "Method comparison",
+                  "Cultural context",
+                  "Professional evaluation",
+                  "Community input",
+                  "Personal assessment"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Method Understanding",
+                "ontomedia:stage_description": "Understanding and evaluating methods",
+                "ontomedia:has_requirement": [
+                  "Method analysis",
+                  "Cultural understanding",
+                  "Professional assessment",
+                  "Community feedback",
+                  "Personal growth"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Method Integration",
+                "ontomedia:stage_description": "Integrating and balancing methods",
+                "ontomedia:has_requirement": [
+                  "Method combination",
+                  "Cultural balance",
+                  "Professional innovation",
+                  "Community acceptance",
+                  "Personal development"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ontomedia:DevelopmentPattern",
+            "ontomedia:pattern_id": "ontomedia:professional_identity",
+            "ontomedia:pattern_name": "Professional Identity",
+            "ontomedia:pattern_description": "Development of professional identity and purpose",
+            "ontomedia:has_stage": [
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Identity Questioning",
+                "ontomedia:stage_description": "Initial questioning of professional identity",
+                "ontomedia:has_requirement": [
+                  "Professional doubt",
+                  "Personal reflection",
+                  "Cultural impact",
+                  "Community influence",
+                  "Future uncertainty"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Identity Exploration",
+                "ontomedia:stage_description": "Exploring and developing identity",
+                "ontomedia:has_requirement": [
+                  "Professional growth",
+                  "Personal development",
+                  "Cultural integration",
+                  "Community engagement",
+                  "Future vision"
+                ]
+              },
+              {
+                "@type": "ontomedia:DevelopmentStage",
+                "ontomedia:stage_name": "Identity Integration",
+                "ontomedia:stage_description": "Integrating and accepting identity",
+                "ontomedia:has_requirement": [
+                  "Professional acceptance",
+                  "Personal fulfillment",
+                  "Cultural belonging",
+                  "Community contribution",
+                  "Future commitment"
+                ]
+              }
+            ]
+          }
+        ],
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:development_type_reference",
+            "@type": "ontomedia:DevelopmentTypeReference",
+            "ontomedia:target": "ontomedia:development_types",
+            "ontomedia:relationship": "development_type_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:character_development",
+                "@type": "ontomedia:DevelopmentType",
+                "ontomedia:name": "Character Development",
+                "ontomedia:description": "Development of character arcs and growth",
+                "ontomedia:requirements": [
+                  "Personal growth",
+                  "Relationship development",
+                  "Conflict resolution",
+                  "Character evolution"
+                ],
+                "ontomedia:has_development_reference": {
+                  "@id": "ontomedia:character_development_reference",
+                  "@type": "ontomedia:DevelopmentPatternReference",
+                  "ontomedia:target": "ontomedia:personal_development_pattern",
+                  "ontomedia:relationship": "development_pattern_registry",
+                  "ontomedia:version": "1.0"
+                }
+              },
+              {
+                "@id": "ontomedia:plot_development",
+                "@type": "ontomedia:DevelopmentType",
+                "ontomedia:name": "Plot Development",
+                "ontomedia:description": "Development of story arcs and progression",
+                "ontomedia:requirements": [
+                  "Story progression",
+                  "Conflict escalation",
+                  "Resolution building",
+                  "Plot coherence"
+                ],
+                "ontomedia:has_development_reference": {
+                  "@id": "ontomedia:plot_development_reference",
+                  "@type": "ontomedia:DevelopmentPatternReference",
+                  "ontomedia:target": "ontomedia:professional_development_pattern",
+                  "ontomedia:relationship": "development_pattern_registry",
+                  "ontomedia:version": "1.0"
+                }
+              },
+              {
+                "@id": "ontomedia:theme_development",
+                "@type": "ontomedia:DevelopmentType",
+                "ontomedia:name": "Theme Development",
+                "ontomedia:description": "Development of thematic elements",
+                "ontomedia:requirements": [
+                  "Theme exploration",
+                  "Symbolic development",
+                  "Thematic resonance",
+                  "Meaningful progression"
+                ],
+                "ontomedia:has_development_reference": {
+                  "@id": "ontomedia:theme_development_reference",
+                  "@type": "ontomedia:DevelopmentPatternReference",
+                  "ontomedia:target": "ontomedia:cultural_development_pattern",
+                  "ontomedia:relationship": "development_pattern_registry",
+                  "ontomedia:version": "1.0"
+                }
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:development_progression_reference",
+            "@type": "ontomedia:DevelopmentProgressionReference",
+            "ontomedia:target": "ontomedia:development_progression",
+            "ontomedia:relationship": "development_progression_registry",
+            "ontomedia:version": "1.0",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:development_stages",
+                "@type": "ontomedia:ProgressionType",
+                "ontomedia:name": "Development Stages",
+                "ontomedia:description": "Stages of development progression",
+                "ontomedia:requirements": [
+                  "Clear progression",
+                  "Logical stages",
+                  "Meaningful transitions",
+                  "Satisfying development"
+                ]
+              },
+              {
+                "@id": "ontomedia:development_pacing",
+                "@type": "ontomedia:ProgressionType",
+                "ontomedia:name": "Development Pacing",
+                "ontomedia:description": "Pacing of development elements",
+                "ontomedia:requirements": [
+                  "Appropriate timing",
+                  "Rhythm variation",
+                  "Tension management",
+                  "Emotional impact"
+                ]
+              },
+              {
+                "@id": "ontomedia:development_integration",
+                "@type": "ontomedia:ProgressionType",
+                "ontomedia:name": "Development Integration",
+                "ontomedia:description": "Integration of development elements",
+                "ontomedia:requirements": [
+                  "Coherent integration",
+                  "Element interaction",
+                  "Story harmony",
+                  "Meaningful connections"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_network_connections": {
+        "@id": "ontomedia:development_network_connections",
+        "@type": "ontomedia:NetworkConnections",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:development_scene_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:scene_network",
+            "ontomedia:relationship": "scene_development_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:development_character_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:character_network",
+            "ontomedia:relationship": "character_development_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:development_theme_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:theme_network",
+            "ontomedia:relationship": "theme_development_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:development_location_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:location_network",
+            "ontomedia:relationship": "location_development_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:development_quality_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:quality_network",
+            "ontomedia:relationship": "quality_development_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:development_style_connection",
+            "@type": "ontomedia:NetworkReference",
+            "ontomedia:target": "ontomedia:style_network",
+            "ontomedia:relationship": "style_development_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:development_network_validation",
+        "@type": "ontomedia:DevelopmentNetworkValidation",
+        "ontomedia:has_rules": {
+          "@id": "ontomedia:development_validation_rules",
+          "@type": "ontomedia:ValidationRules",
+          "ontomedia:rules": [
+            "All development patterns must have unique IDs",
+            "All development patterns must have stages and requirements",
+            "All references must point to existing patterns",
+            "All references must include version and relationship information",
+            "No duplicate pattern definitions allowed"
+          ]
+        }
+      }
+    }
+  ]
+}

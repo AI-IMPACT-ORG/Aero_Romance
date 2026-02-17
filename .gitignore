@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+q.log
+
+# LaTeX build artifacts
+*.aux
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.pdf
+
+# Generated / build output
+Aero/out/
+
+# Generated LaTeX chapter outputs / snapshots
+Aero/Latex/chapters/
+Aero/ALT/SAVE_midpoint/
+

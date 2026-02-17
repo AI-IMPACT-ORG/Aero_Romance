@@ -1,0 +1,3890 @@
+license: GPL-3.0-only
+
+novel:
+  title: "The Doctor's Retreat"
+  overview:
+    premise: "A Copenhagen doctor flees an unwanted proposal to find unexpected love and community on the Danish island of Ærø"
+    genre: "Contemporary Romance"
+    heat_level: "Moderate"
+    heat_level_guidelines:
+      intensity:
+        - "Emotional intimacy first"
+        - "Physical progression natural"
+        - "Family-appropriate moments"
+        - "Community-aware settings"
+        - "Weather-enhanced privacy"
+        - "Island-inspired romance"
+        - "Cultural celebration moments"
+        - "Professional boundaries respected"
+        - "Subtle but clear attraction"
+        - "Natural physical awareness"
+
+      allowed_elements:
+        - "Passionate but tasteful kisses"
+        - "Emotional vulnerability"
+        - "Physical awareness"
+        - "Protective gestures"
+        - "Shared warmth"
+        - "Weather-enhanced intimacy"
+        - "Cultural celebration moments"
+        - "Family-appropriate settings"
+        - "Community-respectful privacy"
+        - "Natural progression"
+
+      forbidden_elements:
+        - "Explicit content"
+        - "Gratuitous scenes"
+        - "Inappropriate settings"
+        - "Disrespectful moments"
+        - "Family-inappropriate content"
+        - "Community-offensive behavior"
+        - "Professional boundary crossing"
+        - "Cultural insensitivity"
+        - "Forced intimacy"
+        - "Unnatural progression"
+
+      heat_level_moments:
+        first_kiss:
+          - "Storm-protected moment"
+          - "Emotional vulnerability"
+          - "Natural progression"
+          - "Weather-enhanced privacy"
+          - "Island atmosphere"
+          - "Cultural celebration"
+          - "Family-appropriate setting"
+          - "Community respect"
+          - "Professional boundaries"
+          - "Shared understanding"
+
+        intimate_moments:
+          - "Garden sanctuary privacy"
+          - "Storm shelter warmth"
+          - "Beach sunset romance"
+          - "Festival celebration"
+          - "Weather-enhanced closeness"
+          - "Cultural tradition sharing"
+          - "Family-appropriate setting"
+          - "Community-aware privacy"
+          - "Natural progression"
+          - "Emotional depth"
+
+        physical_awareness:
+          - "Subtle touches"
+          - "Protective gestures"
+          - "Shared warmth"
+          - "Weather influence"
+          - "Island atmosphere"
+          - "Cultural celebration"
+          - "Family presence"
+          - "Community respect"
+          - "Professional boundaries"
+          - "Natural chemistry"
+
+        romantic_tension:
+          - "Emotional longing"
+          - "Physical awareness"
+          - "Weather impact"
+          - "Island isolation"
+          - "Cultural celebration"
+          - "Family consideration"
+          - "Community awareness"
+          - "Professional respect"
+          - "Natural progression"
+          - "Shared vulnerability"
+
+    word_count: 90000
+    target_audience:
+      primary: "Readers who enjoy emotional depth and small-town romance"
+      age_range: "25-45"
+      interests:
+        - Medical romance
+        - Small island settings
+        - Second chances
+        - Family formation
+        - Modern relationships
+        - Work-life balance
+    marketing:
+      angle: "Running away can lead to finding home"
+      series_potential: "Ærø  Romance Series"
+      comparable_titles:
+        - "Modern small-town romances"
+        - "Contemporary medical romances"
+        - "Nordic contemporary fiction"
+
+characters:
+  protagonists:
+    ellie:
+      name: "Dr. Eleanor 'Ellie' Hart"
+      role: "Main Character"
+      profession: "General Practitioner with Emergency Medicine Experience"
+      qualifications:
+        - "Completed GP training during residency"
+        - "Specialized in Emergency Medicine for 5 years"
+        - "Maintained GP license while working in emergency medicine"
+        - "Regular continuing education in both fields"
+      career_transition:
+        timeline:
+          spring:
+            - "Initial assessment"
+            - "License verification"
+            - "Practice observation"
+            - "Community introduction"
+          early_summer:
+            - "Shared practice"
+            - "Emergency integration"
+            - "Community trust"
+            - "Family medical care"
+          mid_summer:
+            - "Full practice"
+            - "Emergency response"
+            - "Community leadership"
+            - "Family healthcare"
+          late_summer:
+            - "Practice establishment"
+            - "Emergency coordination"
+            - "Community integration"
+            - "Family legacy"
+        process:
+          - "Documentation review"
+          - "Board assessment"
+          - "Practice observation"
+          - "Community integration"
+          - "Full transition"
+      professional_boundaries:
+        - "Clear patient-doctor relationships"
+        - "Separate personal and professional life"
+        - "Ethical medical practice"
+        - "Community trust building"
+        - "Professional development"
+        - "Healthcare standards"
+        - "Island-specific adaptations"
+      cultural_integration:
+        - "Gradual adaptation to island life"
+        - "Learning local customs"
+        - "Respecting traditions"
+        - "Building community trust"
+        - "Balancing modern and traditional"
+        - "Professional networking"
+        - "Cultural sensitivity"
+      physical_description:
+        - "Mid-thirties"
+        - "Professional appearance"
+        - "Natural beauty"
+        - "Tired eyes showing stress"
+        - "Mother's pearl necklace"
+        - "Minimalist style"
+        - "Smartwatch always on"
+      key_traits:
+        - "Dedicated doctor"
+        - "City background"
+        - "Family legacy"
+        - "Professional pride"
+        - "Adaptable nature"
+        - "Compassionate care"
+        - "Modern outlook"
+      backstory:
+        - "Copenhagen roots"
+        - "Medical family"
+        - "Career focus"
+        - "Family loss"
+        - "Professional success"
+        - "Personal growth"
+        - "Island connection"
+      arc: "Finding home and love"
+      voice:
+        - "Professional confidence"
+        - "Growing island wisdom"
+        - "Medical expertise"
+        - "Personal warmth"
+        - "Cultural learning"
+        - "Family legacy"
+        - "Modern perspective"
+
+    tom:
+      name: "Tom Nielsen"
+      role: "Love Interest"
+      profession: "B&B Owner and Eco-Tourism Consultant"
+      business_background:
+        - "Inherited family B&B 10 years ago"
+        - "Transformed into eco-friendly establishment"
+        - "Consultant for other island businesses"
+        - "Sustainable tourism advocate"
+      business_operations:
+        spring:
+          - "Season preparation"
+          - "Staff training"
+          - "Consulting projects"
+          - "Marketing planning"
+          - "Family time coordination"
+          - "School schedule alignment"
+        early_summer:
+          - "Festival season"
+          - "Full occupancy"
+          - "Limited consulting"
+          - "Family focus"
+          - "School break activities"
+          - "Tourist season start"
+        mid_summer:
+          - "Peak season"
+          - "Staff management"
+          - "Guest relations"
+          - "Family balance"
+          - "Summer activities"
+          - "Tourist engagement"
+        late_summer:
+          - "Season transition"
+          - "Consulting focus"
+          - "Family time"
+          - "Future planning"
+          - "School preparation"
+          - "Tourist season end"
+      family_balance:
+        spring:
+          - "School schedule"
+          - "Family time"
+          - "Business preparation"
+          - "Consulting work"
+        early_summer:
+          - "Festival family time"
+          - "School break"
+          - "Business peak"
+          - "Limited consulting"
+        mid_summer:
+          - "Summer activities"
+          - "Family traditions"
+          - "Business management"
+          - "Guest relations"
+        late_summer:
+          - "School preparation"
+          - "Family transition"
+          - "Business planning"
+          - "Consulting focus"
+      physical_description:
+        - "Early forties"
+        - "Salt-and-pepper hair"
+        - "Weather-worn hands"
+        - "Gentle smile"
+        - "Practical clothing"
+        - "Outdoor tan"
+        - "Strong build"
+      key_traits:
+        - "Island native"
+        - "Single father"
+        - "Community pillar"
+        - "Nature lover"
+        - "Practical wisdom"
+        - "Quiet strength"
+        - "Protective instinct"
+      backstory:
+        - "Divorced father raising daughter"
+        - "Family B&B legacy"
+        - "Island preservation"
+        - "Co-parenting with ex-wife"
+        - "Preserved family garden"
+        - "Community leadership"
+        - "Tourism innovation"
+      arc: "Opening up to love"
+      voice:
+        - "Island wisdom"
+        - "Fatherly concern"
+        - "Business acumen"
+        - "Gentle humor"
+        - "Protective care"
+        - "Practical advice"
+        - "Quiet confidence"
+
+  supporting:
+    dr_jensen:
+      name: "Dr. Henrik Jensen"
+      role: "Retiring Island Doctor"
+      physical_description:
+        - "Mid-sixties"
+        - "Distinguished"
+        - "Weathered face"
+        - "Kind demeanor"
+        - "Professional attire"
+        - "Gentle smile"
+        - "Island wisdom"
+      key_traits:
+        - "Professional mentor"
+        - "Island historian"
+        - "Community elder"
+        - "Legacy concern"
+        - "Medical wisdom"
+        - "Cultural bridge"
+        - "Family friend"
+      backstory:
+        - "Lifetime of service"
+        - "Island dedication"
+        - "Family tradition"
+        - "Retirement concerns"
+        - "Community trust"
+        - "Medical legacy"
+        - "Family connections"
+      transition_plan:
+        spring:
+          - "Initial assessment"
+          - "Practice observation"
+          - "Community introduction"
+          - "Legacy planning"
+        early_summer:
+          - "Shared practice"
+          - "Emergency integration"
+          - "Community trust"
+          - "Family medical care"
+        mid_summer:
+          - "Gradual handover"
+          - "Emergency response"
+          - "Community leadership"
+          - "Healthcare coordination"
+        late_summer:
+          - "Consultant role"
+          - "Legacy preservation"
+          - "Community support"
+          - "Family healthcare"
+      arc: "Passing the torch"
+      voice:
+        - "Professional wisdom"
+        - "Island history"
+        - "Gentle guidance"
+        - "Legacy sharing"
+        - "Medical expertise"
+        - "Community care"
+        - "Family concern"
+
+    ingrid:
+      name: "Ingrid Jensen"
+      role: "Doctor's Wife"
+      physical_description:
+        - "Early sixties"
+        - "Graceful aging"
+        - "Warm presence"
+        - "Homemaker's hands"
+        - "Island style"
+        - "Gentle smile"
+        - "Natural beauty"
+      key_traits:
+        - "Community mother"
+        - "Island wisdom"
+        - "Natural mentor"
+        - "Bridge builder"
+        - "Family support"
+        - "Cultural guide"
+        - "Community pillar"
+      backstory:
+        - "Island life partner"
+        - "Community support"
+        - "Family tradition"
+        - "Future concern"
+        - "Cultural preservation"
+        - "Family legacy"
+        - "Community care"
+      arc: "Supporting transition"
+      voice:
+        - "Warm wisdom"
+        - "Island knowledge"
+        - "Natural guidance"
+        - "Community spirit"
+        - "Family care"
+        - "Cultural insight"
+        - "Future vision"
+
+    community_members:
+      mayor:
+        name: "Anders Nielsen"
+        role: "Island Mayor"
+        traits:
+          - "Community leader"
+          - "Tourism advocate"
+          - "Family man"
+          - "Island preservation"
+        arc: "Community development"
+        impact:
+          - "Tourist season"
+          - "Community events"
+          - "Healthcare support"
+          - "Family integration"
+
+      school_principal:
+        name: "Maria Hansen"
+        role: "School Principal"
+        traits:
+          - "Education advocate"
+          - "Community pillar"
+          - "Family support"
+          - "Cultural preservation"
+        arc: "Educational support"
+        impact:
+          - "School activities"
+          - "Family integration"
+          - "Community events"
+          - "Cultural education"
+
+      festival_organizer:
+        name: "Lars Petersen"
+        role: "Jazz Festival Director"
+        traits:
+          - "Cultural leader"
+          - "Tourism expert"
+          - "Community organizer"
+          - "Family supporter"
+        arc: "Cultural celebration"
+        impact:
+          - "Festival planning"
+          - "Tourist season"
+          - "Community events"
+          - "Family activities"
+
+      local_artists:
+        name: "The Island Artists Collective"
+        role: "Cultural Contributors"
+        traits:
+          - "Creative community"
+          - "Cultural preservation"
+          - "Tourism support"
+          - "Family friendly"
+        arc: "Cultural enrichment"
+        impact:
+          - "Gallery exhibitions"
+          - "Community events"
+          - "Family activities"
+          - "Tourist attractions"
+
+      emergency_team:
+        name: "Island Emergency Response"
+        role: "Healthcare Support"
+        traits:
+          - "Professional team"
+          - "Community service"
+          - "Family care"
+          - "Emergency response"
+        arc: "Healthcare support"
+        impact:
+          - "Emergency response"
+          - "Community health"
+          - "Family support"
+          - "Professional development"
+
+  community_roles:
+    healthcare:
+      - "Dr. Jensen (Retiring)"
+      - "Ellie (New Doctor)"
+      - "Emergency Team"
+      - "Community Health Workers"
+    education:
+      - "School Principal"
+      - "Teachers"
+      - "Parent Association"
+      - "Cultural Educators"
+    tourism:
+      - "Mayor"
+      - "Festival Director"
+      - "B&B Owners"
+      - "Local Artists"
+    family:
+      - "Community Elders"
+      - "Family Support"
+      - "Cultural Guides"
+      - "Community Care"
+
+  community_development:
+    spring:
+      - "Season preparation"
+      - "School activities"
+      - "Healthcare planning"
+      - "Tourist preparation"
+    early_summer:
+      - "Festival season"
+      - "Tourist arrival"
+      - "Community events"
+      - "Family gatherings"
+    mid_summer:
+      - "Peak tourism"
+      - "Summer festivals"
+      - "Community celebrations"
+      - "Family traditions"
+    late_summer:
+      - "Season transition"
+      - "School preparation"
+      - "Community reflection"
+      - "Family planning"
+
+relationship_dynamics:
+  core_relationships:
+    ellie_tom:
+      type: "Slow-Burn Romance"
+      dynamic: "Healing Together"
+      stages:
+        - "Professional respect"
+        - "Growing friendship"
+        - "Deepening bond"
+        - "Romantic realization"
+      conflicts:
+        - "Past vs Future"
+        - "City vs Island"
+        - "Career vs Family"
+        - "Independence vs Connection"
+
+    ellie_lily:
+      type: "Maternal Bond"
+      dynamic: "Finding Family"
+      stages:
+        - "Initial warmth"
+        - "Growing trust"
+        - "Deep bond"
+        - "Family formation"
+      activities:
+        - "Art lessons"
+        - "Beach walks"
+        - "Story sharing"
+        - "Emotional support"
+
+    tom_lily:
+      type: "Father-Daughter"
+      dynamic: "Protective Love"
+      stages:
+        - "Established bond"
+        - "New challenges"
+        - "Adaptation"
+        - "Blended family"
+      elements:
+        - "Daily routines"
+        - "Island adventures"
+        - "Emotional support"
+        - "Growth together"
+
+  community_relationships:
+    ellie_dr_jensen:
+      type: "Mentor-Protégé"
+      dynamic: "Passing the Torch"
+      elements:
+        - "Medical wisdom"
+        - "Island knowledge"
+        - "Professional respect"
+        - "Legacy planning"
+
+    ellie_ingrid:
+      type: "Friend-Mentor"
+      dynamic: "Island Wisdom"
+      elements:
+        - "Community integration"
+        - "Personal guidance"
+        - "Emotional support"
+        - "Future planning"
+
+story_structure:
+  timeline:
+    season: "Spring to Summer"
+    duration: "6 months"
+    key_events:
+      - "Spring arrival"
+      - "Jazz Festival (early summer)"
+      - "Medical practice transition"
+      - "Summer resolution"
+    weather_progression:
+      - "Spring arrival"
+      - "Early summer warmth"
+      - "Festival weather"
+      - "Summer storms"
+      - "Late summer calm"
+
+  acts:
+    act_1:
+      title: "The Arrival"
+      duration: "1 month"
+      theme: "Finding Refuge"
+      emotional_arc: "From chaos to hope"
+      beats:
+        opening_image:
+          location: "Copenhagen Hospital"
+          season: "Early Spring"
+          elements:
+            - Professional competence
+            - Unexpected proposal
+            - Sudden flight
+            - Spring storm
+            - Ærøskøbing Jazz Festival posters
+            - Mother's medical bag
+            - Smartphone notifications
+          mood: "Chaotic to contemplative"
+          emotional_state: "Overwhelmed, seeking escape"
+
+        theme_stated:
+          location: "Train to Svendborg"
+          season: "Early Spring"
+          key_line: "Sometimes the heart knows what the mind doesn't understand"
+          elements:
+            - City receding
+            - First moments of freedom
+            - Smartphone notifications
+            - Spring landscape
+          mood: "Contemplative"
+          emotional_state: "Beginning to question"
+
+        set_up:
+          location: "Svendborg Harbor"
+          season: "Early Spring"
+          elements:
+            - Baltic beauty
+            - Last ferry
+            - Growing storm
+            - Sense of escape
+            - Tourist season preparation
+            - Island anticipation
+          emotional_state: "Anticipation mixed with fear"
+
+        catalyst:
+          location: "Ferry to Ærø"
+          season: "Early Spring"
+          elements:
+            - Rough sea
+            - First meeting with Tom
+            - Lily's welcome
+            - Island approach
+            - Spring storm
+            - Tourist season beginning
+          emotional_state: "First glimmer of hope"
+
+        debate:
+          location: "B&B First Night"
+          season: "Early Spring"
+          elements:
+            - Uncertainty
+            - Cozy atmosphere
+            - Storm outside
+            - Future possibility
+            - Tourist season preparation
+            - Island community
+          emotional_state: "Tentative comfort"
+
+    act_2:
+      title: "The Connection"
+      duration: "3 months"
+      theme: "Finding Purpose"
+      emotional_arc: "From hope to heartbreak"
+      beats:
+        break_into_two:
+          location: "Dr. Jensen's House"
+          season: "Early Spring"
+          elements:
+            - Emergency call
+            - Professional need
+            - Community introduction
+            - Future possibility
+            - Medical practice assessment
+            - Island healthcare
+          emotional_state: "Purpose found"
+
+        b_story:
+          focus: "Ellie and Lily's bond"
+          season: "Spring to Early Summer"
+          elements:
+            - Art lessons
+            - Beach walks
+            - Maternal instincts
+            - Natural connection
+            - School activities
+            - Family integration
+          emotional_state: "Growing attachment"
+
+        fun_and_games:
+          locations:
+            - "Island exploration"
+            - "Medical practice"
+            - "Jazz Festival"
+          season: "Early Summer"
+          elements:
+            - Professional integration
+            - Community acceptance
+            - Family formation
+            - Growing attachment
+            - Danish traditions
+            - Cultural immersion
+            - Festival atmosphere
+            - Tourist season
+          emotional_state: "Joy and belonging"
+
+        midpoint:
+          title: "The Crisis"
+          location: "Medical Practice"
+          season: "Mid-Summer"
+          elements:
+            medical_emergency:
+              - "Critical patient condition"
+              - "Limited resources"
+              - "Storm isolation"
+              - "Professional pressure"
+              - "Community trust at stake"
+              - "Family medical crisis"
+              - "Emergency team coordination"
+              - "Weather challenges"
+            emotional_stakes:
+              - "Professional confidence"
+              - "Community acceptance"
+              - "Family trust"
+              - "Personal growth"
+              - "Future uncertainty"
+              - "Relationship test"
+              - "Island commitment"
+              - "Legacy pressure"
+            character_conflicts:
+              ellie:
+                - "Professional vs personal"
+                - "City training vs island practice"
+                - "Independence vs community"
+                - "Past vs future"
+                - "Fear vs courage"
+                - "Doubt vs confidence"
+                - "Isolation vs belonging"
+                - "Control vs trust"
+              tom:
+                - "Protection vs trust"
+                - "Business vs family"
+                - "Past hurt vs future hope"
+                - "Control vs vulnerability"
+                - "Island life vs change"
+                - "Father vs partner"
+                - "Community vs personal"
+                - "Tradition vs innovation"
+              lily:
+                - "Stability vs change"
+                - "Mother vs Ellie"
+                - "School vs home"
+                - "Friends vs family"
+                - "Island vs city"
+                - "Past vs future"
+                - "Trust vs fear"
+                - "Independence vs need"
+              sarah:
+                - "Art vs family"
+                - "City vs island"
+                - "Past vs present"
+                - "Control vs acceptance"
+                - "Success vs connection"
+                - "Independence vs belonging"
+                - "Professional vs personal"
+                - "Change vs stability"
+            resolution_elements:
+              - "Professional breakthrough"
+              - "Community support"
+              - "Family strength"
+              - "Personal growth"
+              - "Relationship deepening"
+              - "Island acceptance"
+              - "Future clarity"
+              - "Legacy beginning"
+
+        bad_guys_close_in:
+          season: "Mid-Summer"
+          elements:
+            - Sarah's meddling
+            - Copenhagen offer
+            - Lily's turmoil
+            - Tom's protection
+            - Artistic interference
+            - Family tension
+            - Tourist season pressure
+            - Business demands
+          emotional_state: "Growing tension"
+
+        all_is_lost:
+          location: "Beach"
+          season: "Late Summer"
+          elements:
+            - Decision to leave
+            - Heartbreak
+            - Community loss
+            - Future uncertainty
+            - Sarah's influence
+            - Family disruption
+            - Season transition
+            - Business changes
+          emotional_state: "Deep despair"
+
+        dark_night_of_soul:
+          location: "B&B Last Night"
+          season: "Late Summer"
+          elements:
+            - Deep reflection
+            - Emotional truth
+            - Life evaluation
+            - Future clarity
+            - Sarah's impact
+            - Family resolution
+            - Season ending
+            - Business planning
+          emotional_state: "Profound realization"
+
+    act_3:
+      title: "The Resolution"
+      duration: "2 months"
+      theme: "Finding Home"
+      emotional_arc: "From clarity to fulfillment"
+      beats:
+        break_into_three:
+          location: "Copenhagen"
+          season: "Late Summer"
+          elements:
+            - City emptiness
+            - Professional closure
+            - Heart's truth
+            - Clear decision
+            - Sarah's final attempt
+            - Professional legacy
+            - Season reflection
+            - Business assessment
+          emotional_state: "Certainty found"
+
+        journey:
+          location: "Ferry to Ærø"
+          season: "Late Summer"
+          elements:
+            - Emotional processing
+            - Future anticipation
+            - Community approach
+            - Natural beauty
+            - Seasonal changes
+            - Personal reflection
+            - Tourist season ending
+            - Business transition
+          emotional_state: "Growing hope"
+
+        finale:
+          location: "Ærø"
+          season: "Late Summer"
+          elements:
+            - Island welcome
+            - Family reunion
+            - Community celebration
+            - Love declaration
+            - Sarah's acceptance
+            - Family harmony
+            - Season closure
+            - Business future
+          emotional_state: "Joyful resolution"
+
+        final_image:
+          location: "Medical Practice Garden"
+          season: "Late Summer"
+          elements:
+            - Family together
+            - Professional fulfillment
+            - Community belonging
+            - Future promise
+            - Garden legacy
+            - Family traditions
+            - Season transition
+            - Business planning
+          emotional_state: "Complete fulfillment"
+
+  subplot_arcs:
+    sarah_arc:
+      title: "The Return"
+      emotional_arc:
+        stages:
+          spring:
+            - "Initial tension"
+            - "Gallery preparation"
+            - "Family uncertainty"
+            - "Professional focus"
+            - "Subtle romantic hints"
+            - "Past connection reminders"
+          early_summer:
+            - "Artistic success"
+            - "Festival exhibition"
+            - "Family reconnection"
+            - "Community integration"
+            - "Active romantic interference"
+            - "Co-parenting manipulation"
+          mid_summer:
+            - "Family reconnection"
+            - "Gallery peak"
+            - "Personal growth"
+            - "Island acceptance"
+            - "Direct romantic advances"
+            - "Family dynamic disruption"
+          late_summer:
+            - "Family harmony"
+            - "Personal growth"
+            - "Professional fulfillment"
+            - "Community belonging"
+            - "Final romantic attempt"
+            - "Acceptance of new reality"
+        development:
+          professional:
+            - "Gallery season planning"
+            - "Festival exhibition success"
+            - "Peak season management"
+            - "Future planning"
+            - "Professional competition with Ellie"
+            - "Artistic community influence"
+          family:
+            - "Co-parenting coordination"
+            - "Family time quality"
+            - "Relationship building"
+            - "Future harmony"
+            - "Active interference in Ellie-Tom relationship"
+            - "Lily's loyalty testing"
+          personal:
+            - "Artistic growth"
+            - "Island reconnection"
+            - "Community acceptance"
+            - "Personal peace"
+            - "Romantic regret"
+            - "Past relationship reflection"
+        resolution:
+          - "Family harmony"
+          - "Professional success"
+          - "Community acceptance"
+          - "Personal fulfillment"
+          - "Artistic legacy"
+          - "Romantic closure"
+
+    medical_challenge_arc:
+      title: "The Test"
+      timeline:
+        spring:
+          - "Initial assessment"
+          - "License verification"
+          - "Practice observation"
+          - "Community introduction"
+        early_summer:
+          - "Practice transition"
+          - "Emergency integration"
+          - "Community trust"
+          - "Family medical care"
+        mid_summer:
+          - "Professional test"
+          - "Emergency response"
+          - "Community leadership"
+          - "Healthcare coordination"
+        late_summer:
+          - "Legacy establishment"
+          - "Practice success"
+          - "Community impact"
+          - "Family healthcare"
+      emotional_arc:
+        professional:
+          - "Initial pressure"
+          - "Growing confidence"
+          - "Professional test"
+          - "Legacy establishment"
+        community:
+          - "Building trust"
+          - "Emergency response"
+          - "Healthcare leadership"
+          - "Community impact"
+        personal:
+          - "Professional growth"
+          - "Family strength"
+          - "Personal fulfillment"
+          - "Future certainty"
+      resolution:
+        - "Professional success"
+        - "Community trust"
+        - "Personal growth"
+        - "Family strength"
+        - "Medical legacy"
+        - "Community impact"
+
+  main_plot_arc:
+    ellie_arc:
+      title: "Finding Home"
+      emotional_progression:
+        spring:
+          - "Escape from chaos"
+          - "Initial hope"
+          - "Professional purpose"
+          - "Community introduction"
+        early_summer:
+          - "Growing attachment"
+          - "Family formation"
+          - "Professional integration"
+          - "Cultural immersion"
+        mid_summer:
+          - "Deep connection"
+          - "Family strength"
+          - "Professional test"
+          - "Community belonging"
+        late_summer:
+          - "Complete trust"
+          - "Family unity"
+          - "Professional legacy"
+          - "Home found"
+      relationship_development:
+        with_tom:
+          spring:
+            - "Initial attraction"
+            - "Professional respect"
+            - "Growing friendship"
+            - "Natural chemistry"
+          early_summer:
+            - "Deepening connection"
+            - "Festival romance"
+            - "Shared experiences"
+            - "Growing trust"
+          mid_summer:
+            - "Emotional intimacy"
+            - "Family integration"
+            - "Community acceptance"
+            - "Future vision"
+          late_summer:
+            - "Complete trust"
+            - "Family unity"
+            - "Community belonging"
+            - "Future certainty"
+        with_lily:
+          spring:
+            - "Initial warmth"
+            - "Art lessons"
+            - "Growing trust"
+            - "Natural connection"
+          early_summer:
+            - "Deepening bond"
+            - "Family activities"
+            - "School support"
+            - "Emotional growth"
+          mid_summer:
+            - "Family strength"
+            - "Shared experiences"
+            - "Community integration"
+            - "Future planning"
+          late_summer:
+            - "Family unity"
+            - "Complete trust"
+            - "Future certainty"
+            - "Lasting bond"
+      professional_growth:
+        spring:
+          - "Initial assessment"
+          - "Practice observation"
+          - "Community introduction"
+          - "Professional purpose"
+        early_summer:
+          - "Practice transition"
+          - "Emergency integration"
+          - "Community trust"
+          - "Family medical care"
+        mid_summer:
+          - "Professional test"
+          - "Emergency response"
+          - "Community leadership"
+          - "Healthcare coordination"
+        late_summer:
+          - "Legacy establishment"
+          - "Practice success"
+          - "Community impact"
+          - "Family healthcare"
+      resolution:
+        personal:
+          - "Complete trust"
+          - "Family unity"
+          - "Community belonging"
+          - "Home found"
+        professional:
+          - "Practice success"
+          - "Community impact"
+          - "Medical legacy"
+          - "Future certainty"
+        relationship:
+          - "Family harmony"
+          - "Community acceptance"
+          - "Future promise"
+          - "Lasting love"
+
+  professional_development:
+    ellie_transition:
+      timeline:
+        spring:
+          march_15_31:
+            - "Initial assessment"
+            - "License verification"
+            - "Practice observation"
+            - "Community introduction"
+          april_1_15:
+            - "Documentation review"
+            - "Board assessment"
+            - "Practice observation"
+            - "Community integration"
+          april_16_30:
+            - "Shared practice begins"
+            - "Emergency integration"
+            - "Community trust building"
+            - "Family medical care"
+          may_1_31:
+            - "Full practice transition"
+            - "Emergency response system"
+            - "Community leadership"
+            - "Healthcare coordination"
+        summer:
+          june_1_15:
+            - "Practice establishment"
+            - "Emergency coordination"
+            - "Community integration"
+            - "Family legacy"
+          june_16_30:
+            - "Practice expansion"
+            - "Emergency system refinement"
+            - "Community healthcare planning"
+            - "Family healthcare integration"
+          july_1_31:
+            - "Full practice operation"
+            - "Emergency response optimization"
+            - "Community healthcare leadership"
+            - "Family medical legacy"
+          august_1_31:
+            - "Practice legacy establishment"
+            - "Emergency system mastery"
+            - "Community healthcare impact"
+            - "Family healthcare future"
+      requirements:
+        professional:
+          - "GP license verification"
+          - "Emergency medicine credentials"
+          - "Danish medical board approval"
+          - "Island practice adaptation"
+        cultural:
+          - "Local healthcare traditions"
+          - "Community healthcare values"
+          - "Family healthcare practices"
+          - "Island medical culture"
+        practical:
+          - "Practice infrastructure"
+          - "Emergency response system"
+          - "Community healthcare network"
+          - "Family healthcare support"
+      process:
+        documentation:
+          - "License verification"
+          - "Credential assessment"
+          - "Practice requirements"
+          - "Community standards"
+        integration:
+          - "Practice observation"
+          - "Community introduction"
+          - "Emergency system"
+          - "Family healthcare"
+        transition:
+          - "Shared practice"
+          - "Full practice"
+          - "Emergency coordination"
+          - "Community leadership"
+      professional_boundaries:
+        medical:
+          - "Clear patient-doctor relationships"
+          - "Ethical medical practice"
+          - "Professional standards"
+          - "Healthcare regulations"
+        personal:
+          - "Separate personal and professional life"
+          - "Community relationships"
+          - "Family healthcare"
+          - "Personal privacy"
+        cultural:
+          - "Respect local traditions"
+          - "Balance modern and traditional"
+          - "Community healthcare values"
+          - "Family healthcare practices"
+
+    dr_jensen_transition:
+      timeline:
+        spring:
+          - "Initial assessment"
+          - "License verification"
+          - "Practice observation"
+          - "Community introduction"
+        early_summer:
+          - "Shared practice"
+          - "Emergency integration"
+          - "Community trust"
+          - "Family medical care"
+        mid_summer:
+          - "Practice transition"
+          - "Emergency response"
+          - "Community leadership"
+          - "Family healthcare"
+        late_summer:
+          - "Full practice"
+          - "Emergency coordination"
+          - "Community integration"
+          - "Family legacy"
+      process:
+        - "Documentation review"
+        - "Board assessment"
+        - "Practice observation"
+        - "Community integration"
+        - "Full transition"
+      professional_boundaries:
+        - "Clear patient-doctor relationships"
+        - "Separate personal and professional life"
+        - "Ethical medical practice"
+        - "Community trust building"
+        - "Professional development"
+        - "Healthcare standards"
+        - "Island-specific adaptations"
+      cultural_integration:
+        - "Gradual adaptation to island life"
+        - "Learning local customs"
+        - "Respecting traditions"
+        - "Building community trust"
+        - "Balancing modern and traditional"
+        - "Professional networking"
+        - "Cultural sensitivity"
+
+story_structure:
+  chapters:
+    act_1:
+      chapter_1:
+        title: "The Proposal"
+        location: "Copenhagen Hospital"
+        emotional_state: "Overwhelmed, seeking escape"
+        key_elements:
+          - Emergency room chaos
+          - Unexpected proposal
+          - Professional facade cracking
+          - Mother's medical bag reminder
+        purpose: "Establish Ellie's current life and immediate conflict"
+        scene_types:
+          - medical
+          - high_tension
+        required_elements:
+          - Professional authenticity
+          - Emotional intensity
+          - Immediate consequences
+
+      chapter_2:
+        title: "The Escape"
+        location: "Train to Svendborg"
+        emotional_state: "Beginning to question"
+        key_elements:
+          - Theme statement
+          - City receding
+          - First moments of freedom
+          - Smartphone notifications
+        purpose: "Show Ellie's first steps toward change"
+        scene_types:
+          - transition_scenes
+          - quiet_moments
+        required_elements:
+          - Emotional processing
+          - Character reflection
+          - Setting changes
+
+      chapter_3:
+        title: "The Harbor"
+        location: "Svendborg Harbor"
+        emotional_state: "Anticipation mixed with fear"
+        key_elements:
+          - Last ferry decision
+          - Growing storm
+          - Baltic beauty
+          - Sense of escape
+        purpose: "Build tension and sense of transition"
+        scene_types:
+          - high_tension
+          - transition_scenes
+        required_elements:
+          - Clear stakes
+          - Emotional intensity
+          - Natural transitions
+
+      chapter_4:
+        title: "The Crossing"
+        location: "Ferry to Ærø"
+        emotional_state: "First glimmer of hope"
+        key_elements:
+          - Rough sea
+          - First meeting with Tom
+          - Lily's welcome
+          - Island approach
+        purpose: "Introduce key characters and setting"
+        scene_types:
+          - high_tension
+          - cultural
+        required_elements:
+          - Character vulnerability
+          - Danish authenticity
+          - Community introduction
+
+      chapter_5:
+        title: "The B&B"
+        location: "B&B First Night"
+        emotional_state: "Tentative comfort"
+        key_elements:
+          - Cozy atmosphere
+          - Storm outside
+          - Future possibility
+          - First island night
+        purpose: "Establish new environment and potential"
+        scene_types:
+          - quiet_moments
+          - family
+        required_elements:
+          - Natural warmth
+          - Emotional depth
+          - Future hints
+
+    act_2:
+      chapter_6:
+        title: "The Call"
+        location: "Dr. Jensen's House"
+        emotional_state: "Purpose found"
+        key_elements:
+          - Emergency call
+          - Professional need
+          - Community introduction
+          - Medical practice glimpse
+        purpose: "Show Ellie's professional value"
+        scene_types:
+          - medical
+          - high_tension
+        required_elements:
+          - Professional authenticity
+          - Emotional connection
+          - Community context
+
+      chapter_7:
+        title: "The Art Lesson"
+        location: "B&B Garden"
+        emotional_state: "Growing attachment"
+        key_elements:
+          - First art lesson
+          - Lily's talent
+          - Maternal instincts
+          - Natural connection
+        purpose: "Develop Ellie-Lily bond"
+        scene_types:
+          - family
+          - quiet_moments
+        required_elements:
+          - Natural warmth
+          - Emotional depth
+          - Growth moments
+
+      chapter_8:
+        title: "The Practice"
+        location: "Medical Practice"
+        emotional_state: "Joy and belonging"
+        key_elements:
+          - Daily routines
+          - Community integration
+          - Professional satisfaction
+          - Cultural learning
+        purpose: "Show Ellie's growing roots"
+        scene_types:
+          - medical
+          - cultural
+        required_elements:
+          - Professional authenticity
+          - Danish authenticity
+          - Community integration
+
+      chapter_9:
+        title: "The Festival"
+        location: "Jazz Festival"
+        emotional_state: "Joy and belonging"
+        key_elements:
+          - Community celebration
+          - Cultural immersion
+          - Growing connections
+          - Future hints
+        purpose: "Show community acceptance"
+        scene_types:
+          - cultural
+          - high_tension
+        required_elements:
+          - Danish authenticity
+          - Community celebration
+          - Cultural immersion
+
+      chapter_10:
+        title: "The Offer"
+        location: "Medical Practice"
+        emotional_state: "Torn between past and future"
+        key_elements:
+          - Permanent position
+          - Internal conflict
+          - Growing attachments
+          - Future vision
+        purpose: "Create central conflict"
+        scene_types:
+          - medical
+          - quiet_moments
+        required_elements:
+          - Professional authenticity
+          - Emotional depth
+          - Character reflection
+
+      chapter_11:
+        title: "The Visit"
+        location: "B&B"
+        emotional_state: "Growing tension"
+        key_elements:
+          - Sarah's arrival
+          - Family dynamics
+          - Past confrontations
+          - Future uncertainty
+        purpose: "Introduce external conflict"
+        scene_types:
+          - family
+          - high_tension
+        required_elements:
+          - Emotional intensity
+          - Family dynamics
+          - Clear stakes
+
+      chapter_12:
+        title: "The Decision"
+        location: "Beach"
+        emotional_state: "Deep despair"
+        key_elements:
+          - Decision to leave
+          - Heartbreak
+          - Community loss
+          - Future uncertainty
+        purpose: "Create emotional low point"
+        scene_types:
+          - high_tension
+          - quiet_moments
+        required_elements:
+          - Emotional intensity
+          - Character vulnerability
+          - Deep reflection
+
+      chapter_13:
+        title: "The Last Night"
+        location: "B&B"
+        emotional_state: "Profound realization"
+        key_elements:
+          - Deep reflection
+          - Emotional truth
+          - Life evaluation
+          - Future clarity
+        purpose: "Set up resolution"
+        scene_types:
+          - quiet_moments
+          - family
+        required_elements:
+          - Emotional depth
+          - Character reflection
+          - Future hints
+
+    act_3:
+      chapter_14:
+        title: "The Return"
+        location: "Copenhagen"
+        emotional_state: "Certainty found"
+        key_elements:
+          - City emptiness
+          - Professional closure
+          - Heart's truth
+          - Clear decision
+          - Sarah's final attempt
+          - Professional legacy
+        purpose: "Show character growth and final decision"
+        scene_types:
+          - transition_scenes
+          - quiet_moments
+        required_elements:
+          - Emotional processing
+          - Character growth
+          - Setting changes
+          - Professional closure
+
+      chapter_15:
+        title: "The Crossing"
+        location: "Ferry to Ærø"
+        emotional_state: "Growing hope"
+        key_elements:
+          - Emotional processing
+          - Future anticipation
+          - Community approach
+          - Natural beauty
+          - Seasonal changes
+          - Personal reflection
+        purpose: "Show emotional transition and future hope"
+        scene_types:
+          - transition_scenes
+          - quiet_moments
+        required_elements:
+          - Emotional depth
+          - Natural elements
+          - Future vision
+          - Personal growth
+
+      chapter_16:
+        title: "The Homecoming"
+        location: "Ærø"
+        emotional_state: "Joyful resolution"
+        key_elements:
+          - Island welcome
+          - Family reunion
+          - Community celebration
+          - Love declaration
+          - Sarah's acceptance
+          - Family harmony
+        purpose: "Resolve main conflict and show community acceptance"
+        scene_types:
+          - cultural
+          - family
+        required_elements:
+          - Community celebration
+          - Family bonding
+          - Cultural authenticity
+          - Emotional resolution
+
+      chapter_17:
+        title: "The Garden"
+        location: "Medical Practice Garden"
+        emotional_state: "Complete fulfillment"
+        key_elements:
+          - Family together
+          - Professional fulfillment
+          - Community celebration
+          - Future promise
+        purpose: "Show family completion and professional legacy"
+        scene_types:
+          - family
+          - cultural
+        required_elements:
+          - Family bonding
+          - Professional legacy
+          - Cultural celebration
+          - Future vision
+
+      chapter_18:
+        title: "The Legacy"
+        location: "Island Medical Practice"
+        emotional_state: "Lasting fulfillment"
+        key_elements:
+          - Thriving practice
+          - Happy family
+          - Community growth
+          - Future plans
+          - Seasonal celebration
+          - Cultural integration
+        purpose: "Show lasting impact and future promise"
+        scene_types:
+          - family
+          - cultural
+        required_elements:
+          - Community celebration
+          - Family traditions
+          - Professional legacy
+          - Cultural integration
+
+  chapter_guidelines:
+    structure:
+      - Clear emotional progression
+      - Multiple scene types
+      - Character development
+      - Plot advancement
+      - Theme reinforcement
+    pacing:
+      - Varied chapter lengths
+      - Emotional highs and lows
+      - Natural transitions
+      - Tension management
+    elements:
+      - Opening hook
+      - Middle development
+      - Closing resonance
+      - Future hints
+    integration:
+      - Theme development
+      - Character growth
+      - Relationship building
+      - Setting enhancement
+
+subplots:
+  sarah_arc:
+    title: "The Return"
+    emotional_arc:
+      - Initial tension
+      - Artistic success
+      - Family reconnection
+      - Personal growth
+      - Meddling attempts
+      - Final acceptance
+      - Family harmony
+    key_elements:
+      - Artistic career
+      - Family dynamics
+      - Co-parenting journey
+      - Island reconnection
+      - Past regrets
+      - Future possibilities
+      - Meddling attempts
+      - Personal growth
+      - Family acceptance
+      - Community integration
+    character_development:
+      - Professional growth
+      - Family understanding
+      - Personal reflection
+      - Community integration
+      - Meddling tendencies
+      - Growth potential
+      - Family harmony
+    cultural_impact:
+      - Artistic community
+      - Family traditions
+      - Co-parenting culture
+      - Island reconnection
+      - Community acceptance
+    resolution:
+      - Family harmony
+      - Personal peace
+      - Community acceptance
+      - Future understanding
+      - Artistic fulfillment
+
+  medical_challenge_arc:
+    title: "The Test"
+    emotional_arc:
+      - Professional pressure
+      - Community trust
+      - Personal growth
+      - Family strength
+      - Professional legacy
+      - Community impact
+    key_elements:
+      - Medical emergency
+      - Professional test
+      - Community support
+      - Family bonds
+      - Practice establishment
+      - Healthcare legacy
+    character_development:
+      - Professional confidence
+      - Community trust
+      - Personal strength
+      - Family unity
+      - Medical leadership
+      - Community integration
+    cultural_impact:
+      - Island medical practice
+      - Community healthcare
+      - Professional traditions
+      - Family support
+      - Healthcare legacy
+    resolution:
+      - Professional success
+      - Community trust
+      - Personal growth
+      - Family strength
+      - Medical legacy
+      - Community impact
+
+romantic_guidelines:
+  development:
+    timeline:
+      spring:
+        - "Initial attraction"
+        - "Professional respect"
+        - "Growing friendship"
+        - "Natural chemistry"
+      early_summer:
+        - "Deepening connection"
+        - "Festival romance"
+        - "Shared experiences"
+        - "Growing trust"
+      mid_summer:
+        - "Emotional intimacy"
+        - "Family integration"
+        - "Community acceptance"
+        - "Future vision"
+      late_summer:
+        - "Complete trust"
+        - "Family unity"
+        - "Community belonging"
+        - "Future certainty"
+
+  romantic_moments:
+    first_meeting:
+      season: "Spring"
+      elements:
+        - "Electric moment on ferry"
+        - "Protective gesture"
+        - "Shared warmth"
+        - "Natural chemistry"
+        - "Island connection"
+
+    growing_connection:
+      season: "Early Summer"
+      elements:
+        - "Festival dancing"
+        - "Beach walks"
+        - "Garden moments"
+        - "Shared experiences"
+        - "Cultural celebration"
+
+    deepening_bond:
+      season: "Mid-Summer"
+      elements:
+        - "Storm shelter intimacy"
+        - "Beach sunset confessions"
+        - "Family integration"
+        - "Community acceptance"
+        - "Future planning"
+
+    romantic_tension:
+      season: "Late Summer"
+      elements:
+        - "Professional boundaries"
+        - "Family considerations"
+        - "Community awareness"
+        - "Future certainty"
+        - "Complete trust"
+
+  romantic_settings:
+    natural:
+      spring:
+        - "Garden renewal"
+        - "Beach walks"
+        - "Island paths"
+        - "Spring storms"
+      summer:
+        - "Festival atmosphere"
+        - "Beach privacy"
+        - "Garden sanctuary"
+        - "Summer storms"
+
+    cultural:
+      spring:
+        - "Community events"
+        - "Local traditions"
+        - "Island customs"
+        - "Spring celebrations"
+      summer:
+        - "Jazz Festival"
+        - "Summer festivals"
+        - "Community gatherings"
+        - "Cultural celebrations"
+
+  romantic_development:
+    emotional:
+      spring:
+        - "Initial attraction"
+        - "Professional respect"
+        - "Growing friendship"
+        - "Natural chemistry"
+      summer:
+        - "Deepening connection"
+        - "Family integration"
+        - "Community belonging"
+        - "Future certainty"
+
+    physical:
+      spring:
+        - "Natural progression"
+        - "Respectful boundaries"
+        - "Family consideration"
+        - "Community awareness"
+      summer:
+        - "Complete trust"
+        - "Family unity"
+        - "Community acceptance"
+        - "Future certainty"
+
+    cultural:
+      spring:
+        - "Danish traditions"
+        - "Island customs"
+        - "Family values"
+        - "Community respect"
+      summer:
+        - "Festival celebrations"
+        - "Summer traditions"
+        - "Family gatherings"
+        - "Community acceptance"
+
+weather_emotional_connection:
+  seasonal_patterns:
+    summer:
+      - "Long days of hope"
+      - "Festival atmosphere"
+      - "Community celebration"
+      - "New beginnings"
+      - "Beach romance"
+      - "Garden moments"
+      - "Sunset walks"
+      - "Festival dancing"
+      - "Outdoor dining"
+      - "Island exploration"
+    autumn:
+      - "Changing emotions"
+      - "Stormy transitions"
+      - "Deepening connections"
+      - "Personal reflection"
+      - "Storm shelter intimacy"
+      - "Cozy B&B moments"
+      - "Rain-protected walks"
+      - "Indoor warmth"
+      - "Cultural celebrations"
+      - "Family gatherings"
+    winter:
+      - "Inner warmth"
+      - "Family traditions"
+      - "Community gathering"
+      - "Future planning"
+      - "Fireplace moments"
+      - "Snow-covered walks"
+      - "Holiday celebrations"
+      - "Indoor activities"
+      - "Family bonding"
+      - "Community events"
+    spring:
+      - "Renewal and growth"
+      - "New possibilities"
+      - "Community awakening"
+      - "Personal transformation"
+      - "Garden renewal"
+      - "Beach walks"
+      - "Outdoor activities"
+      - "Cultural festivals"
+      - "Family traditions"
+      - "Community celebrations"
+  weather_impact:
+    storms:
+      - "Emotional turbulence"
+      - "Forced intimacy"
+      - "Natural protection"
+      - "Community support"
+      - "Shelter moments"
+      - "Shared warmth"
+      - "Protected privacy"
+      - "Island isolation"
+      - "Family bonding"
+      - "Community care"
+    sunshine:
+      - "Growing hope"
+      - "Open possibilities"
+      - "Community joy"
+      - "Personal warmth"
+      - "Beach romance"
+      - "Garden moments"
+      - "Outdoor activities"
+      - "Festival atmosphere"
+      - "Family outings"
+      - "Community events"
+    rain:
+      - "Emotional cleansing"
+      - "Reflective moments"
+      - "Cozy intimacy"
+      - "Community gathering"
+      - "Indoor warmth"
+      - "Protected walks"
+      - "Cultural celebrations"
+      - "Family activities"
+      - "Community support"
+      - "Personal growth"
+    wind:
+      - "Change and movement"
+      - "Emotional shifts"
+      - "Natural transitions"
+      - "Community adaptation"
+      - "Beach moments"
+      - "Garden changes"
+      - "Outdoor activities"
+      - "Cultural events"
+      - "Family traditions"
+      - "Community resilience"
+
+professional_personal_balance:
+  medical_practice:
+    professional_boundaries:
+      - "Clear patient-doctor relationships"
+      - "Community healthcare focus"
+      - "Professional competence"
+      - "Medical ethics"
+      - "Island healthcare traditions"
+      - "Emergency response"
+      - "Family medical care"
+      - "Community trust"
+      - "Professional growth"
+      - "Medical legacy"
+    personal_development:
+      - "Emotional healing"
+      - "Family formation"
+      - "Community belonging"
+      - "Cultural adaptation"
+      - "Personal growth"
+      - "Relationship development"
+      - "Family integration"
+      - "Community acceptance"
+      - "Professional fulfillment"
+      - "Personal happiness"
+    balance_points:
+      - "Emergency calls vs personal time"
+      - "Patient care vs family needs"
+      - "Professional growth vs personal growth"
+      - "Community service vs personal life"
+      - "Medical practice vs B&B life"
+      - "Island healthcare vs personal relationships"
+      - "Professional boundaries vs romantic development"
+      - "Community expectations vs personal desires"
+      - "Family medical care vs personal connections"
+      - "Medical legacy vs family future"
+
+  relationship_development:
+    professional_context:
+      - "Medical practice interactions"
+      - "Emergency response support"
+      - "Community healthcare"
+      - "Family medical care"
+      - "Island healthcare traditions"
+      - "Professional respect"
+      - "Medical ethics"
+      - "Community trust"
+      - "Professional growth"
+      - "Medical legacy"
+    personal_context:
+      - "B&B daily life"
+      - "Family activities"
+      - "Community events"
+      - "Cultural celebrations"
+      - "Island traditions"
+      - "Personal growth"
+      - "Relationship development"
+      - "Family formation"
+      - "Community belonging"
+      - "Personal happiness"
+    balance_development:
+      - "Professional to personal transition"
+      - "Medical practice to family life"
+      - "Community healthcare to personal care"
+      - "Island traditions to modern life"
+      - "Emergency response to family support"
+      - "Patient care to personal relationships"
+      - "Professional boundaries to personal connection"
+      - "Community service to family life"
+      - "Medical legacy to family future"
+      - "Professional growth to personal fulfillment"
+
+setting:
+  location: "Ærø Island, Denmark"
+  time_period: "Present day"
+  season: "Spring to Summer"
+  geography:
+    - "Southern Danish island"
+    - "Accessible by ferry (1.5 hours)"
+    - "Regular ferry service"
+    - "Small airport for emergencies"
+    - "Compact main town"
+    - "Scattered villages"
+    - "Protected nature areas"
+  community:
+    population: "~6,000"
+    seasonal_activities:
+      spring:
+        - "Easter celebrations"
+        - "School activities"
+        - "Community preparation"
+        - "Tourist planning"
+      early_summer:
+        - "Jazz Festival"
+        - "Tourist season start"
+        - "Community events"
+        - "Family gatherings"
+      mid_summer:
+        - "Peak tourism"
+        - "Summer festivals"
+        - "Community celebrations"
+        - "Family traditions"
+      late_summer:
+        - "Season transition"
+        - "School preparation"
+        - "Community reflection"
+        - "Family planning"
+
+    cultural_events:
+      spring:
+        - "Easter traditions"
+        - "Spring festivals"
+        - "Community gatherings"
+        - "Family celebrations"
+      early_summer:
+        - "Jazz Festival"
+        - "Summer solstice"
+        - "Tourist welcome"
+        - "Community integration"
+      mid_summer:
+        - "Summer festivals"
+        - "Cultural celebrations"
+        - "Tourist activities"
+        - "Family traditions"
+      late_summer:
+        - "Harvest festivals"
+        - "Season closure"
+        - "Community reflection"
+        - "Family preparation"
+
+    healthcare_needs:
+      spring:
+        - "Seasonal allergies"
+        - "Tourist preparation"
+        - "Community health"
+        - "Family care"
+      early_summer:
+        - "Festival health"
+        - "Tourist care"
+        - "Emergency response"
+        - "Family support"
+      mid_summer:
+        - "Peak season care"
+        - "Tourist health"
+        - "Community support"
+        - "Family healthcare"
+      late_summer:
+        - "Season transition"
+        - "Tourist departure"
+        - "Community health"
+        - "Family preparation"
+
+  weather_patterns:
+    spring:
+      - "Early warmth"
+      - "Spring storms"
+      - "Growing daylight"
+      - "Seasonal changes"
+    early_summer:
+      - "Festival weather"
+      - "Summer warmth"
+      - "Long days"
+      - "Baltic breezes"
+    mid_summer:
+      - "Peak summer"
+      - "Summer storms"
+      - "Warm nights"
+      - "Island climate"
+    late_summer:
+      - "Seasonal transition"
+      - "Cooling trends"
+      - "Changing light"
+      - "Autumn approach"
+
+  economic_cycles:
+    spring:
+      - "Season preparation"
+      - "Business planning"
+      - "Tourist anticipation"
+      - "Community investment"
+    early_summer:
+      - "Festival economy"
+      - "Tourist arrival"
+      - "Business peak"
+      - "Community growth"
+    mid_summer:
+      - "Peak tourism"
+      - "Business success"
+      - "Community prosperity"
+      - "Family stability"
+    late_summer:
+      - "Season transition"
+      - "Business planning"
+      - "Community preparation"
+      - "Family security"
+
+  culture:
+    - "Danish traditions"
+    - "Island identity"
+    - "Maritime heritage"
+    - "Modern influences"
+    - "Community values"
+    - "Environmental awareness"
+    - "Tourism adaptation"
+  weather:
+    - "Mild spring"
+    - "Warm summer"
+    - "Coastal breezes"
+    - "Seasonal storms"
+    - "Long daylight"
+    - "Clear nights"
+    - "Changeable conditions"
+  architecture:
+    - "Traditional houses"
+    - "Modern updates"
+    - "Historic buildings"
+    - "Maritime structures"
+    - "Tourist facilities"
+    - "Community spaces"
+    - "Natural integration"
+  economy:
+    - "Tourism focus"
+    - "Fishing industry"
+    - "Local businesses"
+    - "Seasonal work"
+    - "Sustainable practices"
+    - "Cultural preservation"
+    - "Modern adaptation"
+
+novel_quality:
+  plot_structure:
+    strengths:
+      - "Clear three-act structure"
+      - "Well-defined seasonal progression"
+      - "Balanced main plot and subplots"
+      - "Natural conflict escalation"
+      - "Satisfying resolution"
+    areas_for_enhancement:
+      - "Could strengthen midpoint crisis"
+      - "May need more tension in early summer"
+      - "Consider adding a false victory"
+      - "Could deepen the dark night of soul"
+      - "Might need stronger external conflict"
+
+  character_development:
+    strengths:
+      - "Rich main character arc"
+      - "Well-developed supporting cast"
+      - "Clear relationship progression"
+      - "Natural character growth"
+      - "Authentic voice for each character"
+    areas_for_enhancement:
+      - "Could deepen secondary character motivations"
+      - "May need more internal conflict for Ellie"
+      - "Consider adding more character flaws"
+      - "Could strengthen character backstories"
+      - "Might need more character-specific goals"
+
+  world_building:
+    strengths:
+      - "Rich island setting"
+      - "Authentic Danish culture"
+      - "Detailed seasonal changes"
+      - "Realistic community structure"
+      - "Believable professional environment"
+    areas_for_enhancement:
+      - "Could add more local traditions"
+      - "May need more sensory details"
+      - "Consider adding more local history"
+      - "Could strengthen cultural nuances"
+      - "Might need more environmental details"
+
+  emotional_resonance:
+    strengths:
+      - "Strong romantic development"
+      - "Authentic family dynamics"
+      - "Natural emotional progression"
+      - "Believable character reactions"
+      - "Effective emotional stakes"
+    areas_for_enhancement:
+      - "Could deepen emotional conflicts"
+      - "May need more emotional vulnerability"
+      - "Consider adding more emotional layers"
+      - "Could strengthen emotional payoffs"
+      - "Might need more emotional complexity"
+
+  theme_integration:
+    strengths:
+      - "Clear theme of finding home"
+      - "Well-integrated professional growth"
+      - "Natural family themes"
+      - "Effective community integration"
+      - "Strong cultural themes"
+    areas_for_enhancement:
+      - "Could strengthen theme variations"
+      - "May need more thematic contrast"
+      - "Consider adding more theme layers"
+      - "Could deepen theme resolution"
+      - "Might need more thematic complexity"
+
+  overall_assessment:
+    plot_quality: 8.5/10
+    character_quality: 9/10
+    world_building_quality: 8.5/10
+    emotional_quality: 9/10
+    theme_quality: 8.5/10
+    total_quality: 8.7/10
+
+  recommendations:
+    plot:
+      - "Strengthen midpoint crisis"
+      - "Add more external conflict"
+      - "Deepen the dark night"
+      - "Enhance tension in early summer"
+      - "Add a false victory moment"
+
+    characters:
+      - "Deepen secondary motivations"
+      - "Add more character flaws"
+      - "Strengthen backstories"
+      - "Enhance internal conflicts"
+      - "Add character-specific goals"
+
+    world:
+      - "Add more local traditions"
+      - "Enhance sensory details"
+      - "Include more local history"
+      - "Strengthen cultural nuances"
+      - "Add environmental details"
+
+    emotion:
+      - "Deepen emotional conflicts"
+      - "Add more vulnerability"
+      - "Enhance emotional layers"
+      - "Strengthen emotional payoffs"
+      - "Add emotional complexity"
+
+    theme:
+      - "Add theme variations"
+      - "Include thematic contrast"
+      - "Enhance theme layers"
+      - "Deepen theme resolution"
+      - "Add thematic complexity"
+
+  implementation_plan:
+    immediate_focus:
+      - "Strengthen midpoint crisis"
+      - "Deepen character motivations"
+      - "Add local traditions"
+      - "Enhance emotional conflicts"
+      - "Strengthen theme variations"
+
+    secondary_focus:
+      - "Add external conflict"
+      - "Enhance character flaws"
+      - "Include sensory details"
+      - "Add emotional vulnerability"
+      - "Include thematic contrast"
+
+    final_polish:
+      - "Deepen dark night"
+      - "Strengthen backstories"
+      - "Add local history"
+      - "Enhance emotional layers"
+      - "Deepen theme resolution"
+
+character_motivations:
+  ellie:
+    core_motivations:
+      - "Find true home"
+      - "Honor family legacy"
+      - "Prove professional worth"
+      - "Build meaningful connections"
+      - "Create lasting impact"
+    internal_conflicts:
+      - "Professional success vs personal happiness"
+      - "Independence vs community"
+      - "City life vs island life"
+      - "Control vs trust"
+      - "Past vs future"
+    external_pressures:
+      - "Medical board expectations"
+      - "Community trust building"
+      - "Family legacy pressure"
+      - "Professional standards"
+      - "Island adaptation"
+    growth_areas:
+      - "Emotional vulnerability"
+      - "Community integration"
+      - "Professional adaptation"
+      - "Relationship building"
+      - "Personal healing"
+
+  tom:
+    core_motivations:
+      - "Protect daughter"
+      - "Preserve island heritage"
+      - "Build sustainable future"
+      - "Find true partnership"
+      - "Heal past wounds"
+    internal_conflicts:
+      - "Protection vs trust"
+      - "Business growth vs tradition"
+      - "Past hurt vs future hope"
+      - "Control vs vulnerability"
+      - "Island life vs change"
+    external_pressures:
+      - "Tourist season demands"
+      - "Co-parenting challenges"
+      - "Community expectations"
+      - "Business sustainability"
+      - "Family balance"
+    growth_areas:
+      - "Emotional openness"
+      - "Trust building"
+      - "Future planning"
+      - "Relationship vulnerability"
+      - "Personal healing"
+
+  lily:
+    core_motivations:
+      - "Find stability"
+      - "Build family"
+      - "Express creativity"
+      - "Connect with nature"
+      - "Feel belonging"
+    internal_conflicts:
+      - "Mother vs Ellie"
+      - "School vs home"
+      - "Friends vs family"
+      - "Island vs city"
+      - "Past vs future"
+    external_pressures:
+      - "School transitions"
+      - "Family changes"
+      - "Community expectations"
+      - "Parental dynamics"
+      - "Island life"
+    growth_areas:
+      - "Emotional expression"
+      - "Family trust"
+      - "Creative development"
+      - "Social confidence"
+      - "Personal identity"
+
+  sarah:
+    core_motivations:
+      - "Artistic success"
+      - "Maintain connection"
+      - "Professional growth"
+      - "Family balance"
+      - "Personal fulfillment"
+    internal_conflicts:
+      - "Art vs family"
+      - "City vs island"
+      - "Past vs present"
+      - "Control vs acceptance"
+      - "Success vs connection"
+    external_pressures:
+      - "Gallery demands"
+      - "Co-parenting responsibilities"
+      - "Professional expectations"
+      - "Family dynamics"
+      - "Community integration"
+    growth_areas:
+      - "Emotional maturity"
+      - "Family acceptance"
+      - "Professional balance"
+      - "Community connection"
+      - "Personal growth"
+
+  sarah_arc:
+    title: "The Return"
+    emotional_arc:
+      - Initial tension
+      - Artistic success
+      - Family reconnection
+      - Personal growth
+      - Meddling attempts
+      - Final acceptance
+      - Family harmony
+    key_elements:
+      - Artistic career
+      - Family dynamics
+      - Co-parenting journey
+      - Island reconnection
+      - Past regrets
+      - Future possibilities
+      - Meddling attempts
+      - Personal growth
+      - Family acceptance
+      - Community integration
+    character_development:
+      - Professional growth
+      - Family understanding
+      - Personal reflection
+      - Community integration
+      - Meddling tendencies
+      - Growth potential
+      - Family harmony
+    cultural_impact:
+      - Artistic community
+      - Family traditions
+      - Co-parenting culture
+      - Island reconnection
+      - Community acceptance
+    resolution:
+      - Family harmony
+      - Personal peace
+      - Community acceptance
+      - Future understanding
+      - Artistic fulfillment
+
+  medical_challenge_arc:
+    title: "The Test"
+    emotional_arc:
+      - Professional pressure
+      - Community trust
+      - Personal growth
+      - Family strength
+      - Professional legacy
+      - Community impact
+    key_elements:
+      - Medical emergency
+      - Professional test
+      - Community support
+      - Family bonds
+      - Practice establishment
+      - Healthcare legacy
+    character_development:
+      - Professional confidence
+      - Community trust
+      - Personal strength
+      - Family unity
+      - Medical leadership
+      - Community integration
+    cultural_impact:
+      - Island medical practice
+      - Community healthcare
+      - Professional traditions
+      - Family support
+      - Healthcare legacy
+    resolution:
+      - Professional success
+      - Community trust
+      - Personal growth
+      - Family strength
+      - Medical legacy
+      - Community impact
+
+romantic_guidelines:
+  development:
+    timeline:
+      spring:
+        - "Initial attraction"
+        - "Professional respect"
+        - "Growing friendship"
+        - "Natural chemistry"
+      early_summer:
+        - "Deepening connection"
+        - "Festival romance"
+        - "Shared experiences"
+        - "Growing trust"
+      mid_summer:
+        - "Emotional intimacy"
+        - "Family integration"
+        - "Community acceptance"
+        - "Future vision"
+      late_summer:
+        - "Complete trust"
+        - "Family unity"
+        - "Community belonging"
+        - "Future certainty"
+
+  romantic_moments:
+    first_meeting:
+      season: "Spring"
+      elements:
+        - "Electric moment on ferry"
+        - "Protective gesture"
+        - "Shared warmth"
+        - "Natural chemistry"
+        - "Island connection"
+
+    growing_connection:
+      season: "Early Summer"
+      elements:
+        - "Festival dancing"
+        - "Beach walks"
+        - "Garden moments"
+        - "Shared experiences"
+        - "Cultural celebration"
+
+    deepening_bond:
+      season: "Mid-Summer"
+      elements:
+        - "Storm shelter intimacy"
+        - "Beach sunset confessions"
+        - "Family integration"
+        - "Community acceptance"
+        - "Future planning"
+
+    romantic_tension:
+      season: "Late Summer"
+      elements:
+        - "Professional boundaries"
+        - "Family considerations"
+        - "Community awareness"
+        - "Future certainty"
+        - "Complete trust"
+
+  romantic_settings:
+    natural:
+      spring:
+        - "Garden renewal"
+        - "Beach walks"
+        - "Island paths"
+        - "Spring storms"
+      summer:
+        - "Festival atmosphere"
+        - "Beach privacy"
+        - "Garden sanctuary"
+        - "Summer storms"
+
+    cultural:
+      spring:
+        - "Community events"
+        - "Local traditions"
+        - "Island customs"
+        - "Spring celebrations"
+      summer:
+        - "Jazz Festival"
+        - "Summer festivals"
+        - "Community gatherings"
+        - "Cultural celebrations"
+
+  romantic_development:
+    emotional:
+      spring:
+        - "Initial attraction"
+        - "Professional respect"
+        - "Growing friendship"
+        - "Natural chemistry"
+      summer:
+        - "Deepening connection"
+        - "Family integration"
+        - "Community belonging"
+        - "Future certainty"
+
+    physical:
+      spring:
+        - "Natural progression"
+        - "Respectful boundaries"
+        - "Family consideration"
+        - "Community awareness"
+      summer:
+        - "Complete trust"
+        - "Family unity"
+        - "Community acceptance"
+        - "Future certainty"
+
+    cultural:
+      spring:
+        - "Danish traditions"
+        - "Island customs"
+        - "Family values"
+        - "Community respect"
+      summer:
+        - "Festival celebrations"
+        - "Summer traditions"
+        - "Family gatherings"
+        - "Community acceptance"
+
+weather_emotional_connection:
+  seasonal_patterns:
+    summer:
+      - "Long days of hope"
+      - "Festival atmosphere"
+      - "Community celebration"
+      - "New beginnings"
+      - "Beach romance"
+      - "Garden moments"
+      - "Sunset walks"
+      - "Festival dancing"
+      - "Outdoor dining"
+      - "Island exploration"
+    autumn:
+      - "Changing emotions"
+      - "Stormy transitions"
+      - "Deepening connections"
+      - "Personal reflection"
+      - "Storm shelter intimacy"
+      - "Cozy B&B moments"
+      - "Rain-protected walks"
+      - "Indoor warmth"
+      - "Cultural celebrations"
+      - "Family gatherings"
+    winter:
+      - "Inner warmth"
+      - "Family traditions"
+      - "Community gathering"
+      - "Future planning"
+      - "Fireplace moments"
+      - "Snow-covered walks"
+      - "Holiday celebrations"
+      - "Indoor activities"
+      - "Family bonding"
+      - "Community events"
+    spring:
+      - "Renewal and growth"
+      - "New possibilities"
+      - "Community awakening"
+      - "Personal transformation"
+      - "Garden renewal"
+      - "Beach walks"
+      - "Outdoor activities"
+      - "Cultural festivals"
+      - "Family traditions"
+      - "Community celebrations"
+  weather_impact:
+    storms:
+      - "Emotional turbulence"
+      - "Forced intimacy"
+      - "Natural protection"
+      - "Community support"
+      - "Shelter moments"
+      - "Shared warmth"
+      - "Protected privacy"
+      - "Island isolation"
+      - "Family bonding"
+      - "Community care"
+    sunshine:
+      - "Growing hope"
+      - "Open possibilities"
+      - "Community joy"
+      - "Personal warmth"
+      - "Beach romance"
+      - "Garden moments"
+      - "Outdoor activities"
+      - "Festival atmosphere"
+      - "Family outings"
+      - "Community events"
+    rain:
+      - "Emotional cleansing"
+      - "Reflective moments"
+      - "Cozy intimacy"
+      - "Community gathering"
+      - "Indoor warmth"
+      - "Protected walks"
+      - "Cultural celebrations"
+      - "Family activities"
+      - "Community support"
+      - "Personal growth"
+    wind:
+      - "Change and movement"
+      - "Emotional shifts"
+      - "Natural transitions"
+      - "Community adaptation"
+      - "Beach moments"
+      - "Garden changes"
+      - "Outdoor activities"
+      - "Cultural events"
+      - "Family traditions"
+      - "Community resilience"
+
+professional_personal_balance:
+  medical_practice:
+    professional_boundaries:
+      - "Clear patient-doctor relationships"
+      - "Community healthcare focus"
+      - "Professional competence"
+      - "Medical ethics"
+      - "Island healthcare traditions"
+      - "Emergency response"
+      - "Family medical care"
+      - "Community trust"
+      - "Professional growth"
+      - "Medical legacy"
+    personal_development:
+      - "Emotional healing"
+      - "Family formation"
+      - "Community belonging"
+      - "Cultural adaptation"
+      - "Personal growth"
+      - "Relationship development"
+      - "Family integration"
+      - "Community acceptance"
+      - "Professional fulfillment"
+      - "Personal happiness"
+    balance_points:
+      - "Emergency calls vs personal time"
+      - "Patient care vs family needs"
+      - "Professional growth vs personal growth"
+      - "Community service vs personal life"
+      - "Medical practice vs B&B life"
+      - "Island healthcare vs personal relationships"
+      - "Professional boundaries vs romantic development"
+      - "Community expectations vs personal desires"
+      - "Family medical care vs personal connections"
+      - "Medical legacy vs family future"
+
+  relationship_development:
+    professional_context:
+      - "Medical practice interactions"
+      - "Emergency response support"
+      - "Community healthcare"
+      - "Family medical care"
+      - "Island healthcare traditions"
+      - "Professional respect"
+      - "Medical ethics"
+      - "Community trust"
+      - "Professional growth"
+      - "Medical legacy"
+    personal_context:
+      - "B&B daily life"
+      - "Family activities"
+      - "Community events"
+      - "Cultural celebrations"
+      - "Island traditions"
+      - "Personal growth"
+      - "Relationship development"
+      - "Family formation"
+      - "Community belonging"
+      - "Personal happiness"
+    balance_development:
+      - "Professional to personal transition"
+      - "Medical practice to family life"
+      - "Community healthcare to personal care"
+      - "Island traditions to modern life"
+      - "Emergency response to family support"
+      - "Patient care to personal relationships"
+      - "Professional boundaries to personal connection"
+      - "Community service to family life"
+      - "Medical legacy to family future"
+      - "Professional growth to personal fulfillment"
+
+setting:
+  location: "Ærø Island, Denmark"
+  time_period: "Present day"
+  season: "Spring to Summer"
+  geography:
+    - "Southern Danish island"
+    - "Accessible by ferry (1.5 hours)"
+    - "Regular ferry service"
+    - "Small airport for emergencies"
+    - "Compact main town"
+    - "Scattered villages"
+    - "Protected nature areas"
+  community:
+    population: "~6,000"
+    seasonal_activities:
+      spring:
+        - "Easter celebrations"
+        - "School activities"
+        - "Community preparation"
+        - "Tourist planning"
+      early_summer:
+        - "Jazz Festival"
+        - "Tourist season start"
+        - "Community events"
+        - "Family gatherings"
+      mid_summer:
+        - "Peak tourism"
+        - "Summer festivals"
+        - "Community celebrations"
+        - "Family traditions"
+      late_summer:
+        - "Season transition"
+        - "School preparation"
+        - "Community reflection"
+        - "Family planning"
+
+    cultural_events:
+      spring:
+        - "Easter traditions"
+        - "Spring festivals"
+        - "Community gatherings"
+        - "Family celebrations"
+      early_summer:
+        - "Jazz Festival"
+        - "Summer solstice"
+        - "Tourist welcome"
+        - "Community integration"
+      mid_summer:
+        - "Summer festivals"
+        - "Cultural celebrations"
+        - "Tourist activities"
+        - "Family traditions"
+      late_summer:
+        - "Harvest festivals"
+        - "Season closure"
+        - "Community reflection"
+        - "Family preparation"
+
+    healthcare_needs:
+      spring:
+        - "Seasonal allergies"
+        - "Tourist preparation"
+        - "Community health"
+        - "Family care"
+      early_summer:
+        - "Festival health"
+        - "Tourist care"
+        - "Emergency response"
+        - "Family support"
+      mid_summer:
+        - "Peak season care"
+        - "Tourist health"
+        - "Community support"
+        - "Family healthcare"
+      late_summer:
+        - "Season transition"
+        - "Tourist departure"
+        - "Community health"
+        - "Family preparation"
+
+  weather_patterns:
+    spring:
+      - "Early warmth"
+      - "Spring storms"
+      - "Growing daylight"
+      - "Seasonal changes"
+    early_summer:
+      - "Festival weather"
+      - "Summer warmth"
+      - "Long days"
+      - "Baltic breezes"
+    mid_summer:
+      - "Peak summer"
+      - "Summer storms"
+      - "Warm nights"
+      - "Island climate"
+    late_summer:
+      - "Seasonal transition"
+      - "Cooling trends"
+      - "Changing light"
+      - "Autumn approach"
+
+  economic_cycles:
+    spring:
+      - "Season preparation"
+      - "Business planning"
+      - "Tourist anticipation"
+      - "Community investment"
+    early_summer:
+      - "Festival economy"
+      - "Tourist arrival"
+      - "Business peak"
+      - "Community growth"
+    mid_summer:
+      - "Peak tourism"
+      - "Business success"
+      - "Community prosperity"
+      - "Family stability"
+    late_summer:
+      - "Season transition"
+      - "Business planning"
+      - "Community preparation"
+      - "Family security"
+
+  culture:
+    - "Danish traditions"
+    - "Island identity"
+    - "Maritime heritage"
+    - "Modern influences"
+    - "Community values"
+    - "Environmental awareness"
+    - "Tourism adaptation"
+  weather:
+    - "Mild spring"
+    - "Warm summer"
+    - "Coastal breezes"
+    - "Seasonal storms"
+    - "Long daylight"
+    - "Clear nights"
+    - "Changeable conditions"
+  architecture:
+    - "Traditional houses"
+    - "Modern updates"
+    - "Historic buildings"
+    - "Maritime structures"
+    - "Tourist facilities"
+    - "Community spaces"
+    - "Natural integration"
+  economy:
+    - "Tourism focus"
+    - "Fishing industry"
+    - "Local businesses"
+    - "Seasonal work"
+    - "Sustainable practices"
+    - "Cultural preservation"
+    - "Modern adaptation"
+
+novel_quality:
+  plot_structure:
+    strengths:
+      - "Clear three-act structure"
+      - "Well-defined seasonal progression"
+      - "Balanced main plot and subplots"
+      - "Natural conflict escalation"
+      - "Satisfying resolution"
+    areas_for_enhancement:
+      - "Could strengthen midpoint crisis"
+      - "May need more tension in early summer"
+      - "Consider adding a false victory"
+      - "Could deepen the dark night of soul"
+      - "Might need stronger external conflict"
+
+  character_development:
+    strengths:
+      - "Rich main character arc"
+      - "Well-developed supporting cast"
+      - "Clear relationship progression"
+      - "Natural character growth"
+      - "Authentic voice for each character"
+    areas_for_enhancement:
+      - "Could deepen secondary character motivations"
+      - "May need more internal conflict for Ellie"
+      - "Consider adding more character flaws"
+      - "Could strengthen character backstories"
+      - "Might need more character-specific goals"
+
+  world_building:
+    strengths:
+      - "Rich island setting"
+      - "Authentic Danish culture"
+      - "Detailed seasonal changes"
+      - "Realistic community structure"
+      - "Believable professional environment"
+    areas_for_enhancement:
+      - "Could add more local traditions"
+      - "May need more sensory details"
+      - "Consider adding more local history"
+      - "Could strengthen cultural nuances"
+      - "Might need more environmental details"
+
+  emotional_resonance:
+    strengths:
+      - "Strong romantic development"
+      - "Authentic family dynamics"
+      - "Natural emotional progression"
+      - "Believable character reactions"
+      - "Effective emotional stakes"
+    areas_for_enhancement:
+      - "Could deepen emotional conflicts"
+      - "May need more emotional vulnerability"
+      - "Consider adding more emotional layers"
+      - "Could strengthen emotional payoffs"
+      - "Might need more emotional complexity"
+
+  theme_integration:
+    strengths:
+      - "Clear theme of finding home"
+      - "Well-integrated professional growth"
+      - "Natural family themes"
+      - "Effective community integration"
+      - "Strong cultural themes"
+    areas_for_enhancement:
+      - "Could strengthen theme variations"
+      - "May need more thematic contrast"
+      - "Consider adding more theme layers"
+      - "Could deepen theme resolution"
+      - "Might need more thematic complexity"
+
+  overall_assessment:
+    plot_quality: 8.5/10
+    character_quality: 9/10
+    world_building_quality: 8.5/10
+    emotional_quality: 9/10
+    theme_quality: 8.5/10
+    total_quality: 8.7/10
+
+  recommendations:
+    plot:
+      - "Strengthen midpoint crisis"
+      - "Add more external conflict"
+      - "Deepen the dark night"
+      - "Enhance tension in early summer"
+      - "Add a false victory moment"
+
+    characters:
+      - "Deepen secondary motivations"
+      - "Add more character flaws"
+      - "Strengthen backstories"
+      - "Enhance internal conflicts"
+      - "Add character-specific goals"
+
+    world:
+      - "Add more local traditions"
+      - "Enhance sensory details"
+      - "Include more local history"
+      - "Strengthen cultural nuances"
+      - "Add environmental details"
+
+    emotion:
+      - "Deepen emotional conflicts"
+      - "Add more vulnerability"
+      - "Enhance emotional layers"
+      - "Strengthen emotional payoffs"
+      - "Add emotional complexity"
+
+    theme:
+      - "Add theme variations"
+      - "Include thematic contrast"
+      - "Enhance theme layers"
+      - "Deepen theme resolution"
+      - "Add thematic complexity"
+
+  implementation_plan:
+    immediate_focus:
+      - "Strengthen midpoint crisis"
+      - "Deepen character motivations"
+      - "Add local traditions"
+      - "Enhance emotional conflicts"
+      - "Strengthen theme variations"
+
+    secondary_focus:
+      - "Add external conflict"
+      - "Enhance character flaws"
+      - "Include sensory details"
+      - "Add emotional vulnerability"
+      - "Include thematic contrast"
+
+    final_polish:
+      - "Deepen dark night"
+      - "Strengthen backstories"
+      - "Add local history"
+      - "Enhance emotional layers"
+      - "Deepen theme resolution"
+
+character_motivations:
+  ellie:
+    core_motivations:
+      - "Find true home"
+      - "Honor family legacy"
+      - "Prove professional worth"
+      - "Build meaningful connections"
+      - "Create lasting impact"
+    internal_conflicts:
+      - "Professional success vs personal happiness"
+      - "Independence vs community"
+      - "City life vs island life"
+      - "Control vs trust"
+      - "Past vs future"
+    external_pressures:
+      - "Medical board expectations"
+      - "Community trust building"
+      - "Family legacy pressure"
+      - "Professional standards"
+      - "Island adaptation"
+    growth_areas:
+      - "Emotional vulnerability"
+      - "Community integration"
+      - "Professional adaptation"
+      - "Relationship building"
+      - "Personal healing"
+
+  tom:
+    core_motivations:
+      - "Protect daughter"
+      - "Preserve island heritage"
+      - "Build sustainable future"
+      - "Find true partnership"
+      - "Heal past wounds"
+    internal_conflicts:
+      - "Protection vs trust"
+      - "Business growth vs tradition"
+      - "Past hurt vs future hope"
+      - "Control vs vulnerability"
+      - "Island life vs change"
+    external_pressures:
+      - "Tourist season demands"
+      - "Co-parenting challenges"
+      - "Community expectations"
+      - "Business sustainability"
+      - "Family balance"
+    growth_areas:
+      - "Emotional openness"
+      - "Trust building"
+      - "Future planning"
+      - "Relationship vulnerability"
+      - "Personal healing"
+
+  lily:
+    core_motivations:
+      - "Find stability"
+      - "Build family"
+      - "Express creativity"
+      - "Connect with nature"
+      - "Feel belonging"
+    internal_conflicts:
+      - "Mother vs Ellie"
+      - "School vs home"
+      - "Friends vs family"
+      - "Island vs city"
+      - "Past vs future"
+    external_pressures:
+      - "School transitions"
+      - "Family changes"
+      - "Community expectations"
+      - "Parental dynamics"
+      - "Island life"
+    growth_areas:
+      - "Emotional expression"
+      - "Family trust"
+      - "Creative development"
+      - "Social confidence"
+      - "Personal identity"
+
+  sarah:
+    core_motivations:
+      - "Artistic success"
+      - "Maintain connection"
+      - "Professional growth"
+      - "Family balance"
+      - "Personal fulfillment"
+    internal_conflicts:
+      - "Art vs family"
+      - "City vs island"
+      - "Past vs present"
+      - "Control vs acceptance"
+      - "Success vs connection"
+    external_pressures:
+      - "Gallery demands"
+      - "Co-parenting responsibilities"
+      - "Professional expectations"
+      - "Family dynamics"
+      - "Community integration"
+    growth_areas:
+      - "Emotional maturity"
+      - "Family acceptance"
+      - "Professional balance"
+      - "Community connection"
+      - "Personal growth"
+
+  sarah_arc:
+    title: "The Return"
+    emotional_arc:
+      - Initial tension
+      - Artistic success
+      - Family reconnection
+      - Personal growth
+      - Meddling attempts
+      - Final acceptance
+      - Family harmony
+    key_elements:
+      - Artistic career
+      - Family dynamics
+      - Co-parenting journey
+      - Island reconnection
+      - Past regrets
+      - Future possibilities
+      - Meddling attempts
+      - Personal growth
+      - Family acceptance
+      - Community integration
+    character_development:
+      - Professional growth
+      - Family understanding
+      - Personal reflection
+      - Community integration
+      - Meddling tendencies
+      - Growth potential
+      - Family harmony
+    cultural_impact:
+      - Artistic community
+      - Family traditions
+      - Co-parenting culture
+      - Island reconnection
+      - Community acceptance
+    resolution:
+      - Family harmony
+      - Personal peace
+      - Community acceptance
+      - Future understanding
+      - Artistic fulfillment
+
+  medical_challenge_arc:
+    title: "The Test"
+    emotional_arc:
+      - Professional pressure
+      - Community trust
+      - Personal growth
+      - Family strength
+      - Professional legacy
+      - Community impact
+    key_elements:
+      - Medical emergency
+      - Professional test
+      - Community support
+      - Family bonds
+      - Practice establishment
+      - Healthcare legacy
+    character_development:
+      - Professional confidence
+      - Community trust
+      - Personal strength
+      - Family unity
+      - Medical leadership
+      - Community integration
+    cultural_impact:
+      - Island medical practice
+      - Community healthcare
+      - Professional traditions
+      - Family support
+      - Healthcare legacy
+    resolution:
+      - Professional success
+      - Community trust
+      - Personal growth
+      - Family strength
+      - Medical legacy
+      - Community impact
+
+romantic_guidelines:
+  development:
+    timeline:
+      spring:
+        - "Initial attraction"
+        - "Professional respect"
+        - "Growing friendship"
+        - "Natural chemistry"
+      early_summer:
+        - "Deepening connection"
+        - "Festival romance"
+        - "Shared experiences"
+        - "Growing trust"
+      mid_summer:
+        - "Emotional intimacy"
+        - "Family integration"
+        - "Community acceptance"
+        - "Future vision"
+      late_summer:
+        - "Complete trust"
+        - "Family unity"
+        - "Community belonging"
+        - "Future certainty"
+
+  romantic_moments:
+    first_meeting:
+      season: "Spring"
+      elements:
+        - "Electric moment on ferry"
+        - "Protective gesture"
+        - "Shared warmth"
+        - "Natural chemistry"
+        - "Island connection"
+
+    growing_connection:
+      season: "Early Summer"
+      elements:
+        - "Festival dancing"
+        - "Beach walks"
+        - "Garden moments"
+        - "Shared experiences"
+        - "Cultural celebration"
+
+    deepening_bond:
+      season: "Mid-Summer"
+      elements:
+        - "Storm shelter intimacy"
+        - "Beach sunset confessions"
+        - "Family integration"
+        - "Community acceptance"
+        - "Future planning"
+
+    romantic_tension:
+      season: "Late Summer"
+      elements:
+        - "Professional boundaries"
+        - "Family considerations"
+        - "Community awareness"
+        - "Future certainty"
+        - "Complete trust"
+
+  romantic_settings:
+    natural:
+      spring:
+        - "Garden renewal"
+        - "Beach walks"
+        - "Island paths"
+        - "Spring storms"
+      summer:
+        - "Festival atmosphere"
+        - "Beach privacy"
+        - "Garden sanctuary"
+        - "Summer storms"
+
+    cultural:
+      spring:
+        - "Community events"
+        - "Local traditions"
+        - "Island customs"
+        - "Spring celebrations"
+      summer:
+        - "Jazz Festival"
+        - "Summer festivals"
+        - "Community gatherings"
+        - "Cultural celebrations"
+
+  romantic_development:
+    emotional:
+      spring:
+        - "Initial attraction"
+        - "Professional respect"
+        - "Growing friendship"
+        - "Natural chemistry"
+      summer:
+        - "Deepening connection"
+        - "Family integration"
+        - "Community belonging"
+        - "Future certainty"
+
+    physical:
+      spring:
+        - "Natural progression"
+        - "Respectful boundaries"
+        - "Family consideration"
+        - "Community awareness"
+      summer:
+        - "Complete trust"
+        - "Family unity"
+        - "Community acceptance"
+        - "Future certainty"
+
+    cultural:
+      spring:
+        - "Danish traditions"
+        - "Island customs"
+        - "Family values"
+        - "Community respect"
+      summer:
+        - "Festival celebrations"
+        - "Summer traditions"
+        - "Family gatherings"
+        - "Community acceptance"
+
+weather_emotional_connection:
+  seasonal_patterns:
+    summer:
+      - "Long days of hope"
+      - "Festival atmosphere"
+      - "Community celebration"
+      - "New beginnings"
+      - "Beach romance"
+      - "Garden moments"
+      - "Sunset walks"
+      - "Festival dancing"
+      - "Outdoor dining"
+      - "Island exploration"
+    autumn:
+      - "Changing emotions"
+      - "Stormy transitions"
+      - "Deepening connections"
+      - "Personal reflection"
+      - "Storm shelter intimacy"
+      - "Cozy B&B moments"
+      - "Rain-protected walks"
+      - "Indoor warmth"
+      - "Cultural celebrations"
+      - "Family gatherings"
+    winter:
+      - "Inner warmth"
+      - "Family traditions"
+      - "Community gathering"
+      - "Future planning"
+      - "Fireplace moments"
+      - "Snow-covered walks"
+      - "Holiday celebrations"
+      - "Indoor activities"
+      - "Family bonding"
+      - "Community events"
+    spring:
+      - "Renewal and growth"
+      - "New possibilities"
+      - "Community awakening"
+      - "Personal transformation"
+      - "Garden renewal"
+      - "Beach walks"
+      - "Outdoor activities"
+      - "Cultural festivals"
+      - "Family traditions"
+      - "Community celebrations"
+  weather_impact:
+    storms:
+      - "Emotional turbulence"
+      - "Forced intimacy"
+      - "Natural protection"
+      - "Community support"
+      - "Shelter moments"
+      - "Shared warmth"
+      - "Protected privacy"
+      - "Island isolation"
+      - "Family bonding"
+      - "Community care"
+    sunshine:
+      - "Growing hope"
+      - "Open possibilities"
+      - "Community joy"
+      - "Personal warmth"
+      - "Beach romance"
+      - "Garden moments"
+      - "Outdoor activities"
+      - "Festival atmosphere"
+      - "Family outings"
+      - "Community events"
+    rain:
+      - "Emotional cleansing"
+      - "Reflective moments"
+      - "Cozy intimacy"
+      - "Community gathering"
+      - "Indoor warmth"
+      - "Protected walks"
+      - "Cultural celebrations"
+      - "Family activities"
+      - "Community support"
+      - "Personal growth"
+    wind:
+      - "Change and movement"
+      - "Emotional shifts"
+      - "Natural transitions"
+      - "Community adaptation"
+      - "Beach moments"
+      - "Garden changes"
+      - "Outdoor activities"
+      - "Cultural events"
+      - "Family traditions"
+      - "Community resilience"
+
+professional_personal_balance:
+  medical_practice:
+    professional_boundaries:
+      - "Clear patient-doctor relationships"
+      - "Community healthcare focus"
+      - "Professional competence"
+      - "Medical ethics"
+      - "Island healthcare traditions"
+      - "Emergency response"
+      - "Family medical care"
+      - "Community trust"
+      - "Professional growth"
+      - "Medical legacy"
+    personal_development:
+      - "Emotional healing"
+      - "Family formation"
+      - "Community belonging"
+      - "Cultural adaptation"
+      - "Personal growth"
+      - "Relationship development"
+      - "Family integration"
+      - "Community acceptance"
+      - "Professional fulfillment"
+      - "Personal happiness"
+    balance_points:
+      - "Emergency calls vs personal time"
+      - "Patient care vs family needs"
+      - "Professional growth vs personal growth"
+      - "Community service vs personal life"
+      - "Medical practice vs B&B life"
+      - "Island healthcare vs personal relationships"
+      - "Professional boundaries vs romantic development"
+      - "Community expectations vs personal desires"
+      - "Family medical care vs personal connections"
+      - "Medical legacy vs family future"
+
+  relationship_development:
+    professional_context:
+      - "Medical practice interactions"
+      - "Emergency response support"
+      - "Community healthcare"
+      - "Family medical care"
+      - "Island healthcare traditions"
+      - "Professional respect"
+      - "Medical ethics"
+      - "Community trust"
+      - "Professional growth"
+      - "Medical legacy"
+    personal_context:
+      - "B&B daily life"
+      - "Family activities"
+      - "Community events"
+      - "Cultural celebrations"
+      - "Island traditions"
+      - "Personal growth"
+      - "Relationship development"
+      - "Family formation"
+      - "Community belonging"
+      - "Personal happiness"
+    balance_development:
+      - "Professional to personal transition"
+      - "Medical practice to family life"
+      - "Community healthcare to personal care"
+      - "Island traditions to modern life"
+      - "Emergency response to family support"
+      - "Patient care to personal relationships"
+      - "Professional boundaries to personal connection"
+      - "Community service to family life"
+      - "Medical legacy to family future"
+      - "Professional growth to personal fulfillment"
+
+setting:
+  location: "Ærø Island, Denmark"
+  time_period: "Present day"
+  season: "Spring to Summer"
+  geography:
+    - "Southern Danish island"
+    - "Accessible by ferry (1.5 hours)"
+    - "Regular ferry service"
+    - "Small airport for emergencies"
+    - "Compact main town"
+    - "Scattered villages"
+    - "Protected nature areas"
+  community:
+    population: "~6,000"
+    seasonal_activities:
+      spring:
+        - "Easter celebrations"
+        - "School activities"
+        - "Community preparation"
+        - "Tourist planning"
+      early_summer:
+        - "Jazz Festival"
+        - "Tourist season start"
+        - "Community events"
+        - "Family gatherings"
+      mid_summer:
+        - "Peak tourism"
+        - "Summer festivals"
+        - "Community celebrations"
+        - "Family traditions"
+      late_summer:
+        - "Season transition"
+        - "School preparation"
+        - "Community reflection"
+        - "Family planning"
+
+    cultural_events:
+      spring:
+        - "Easter traditions"
+        - "Spring festivals"
+        - "Community gatherings"
+        - "Family celebrations"
+      early_summer:
+        - "Jazz Festival"
+        - "Summer solstice"
+        - "Tourist welcome"
+        - "Community integration"
+      mid_summer:
+        - "Summer festivals"
+        - "Cultural celebrations"
+        - "Tourist activities"
+        - "Family traditions"
+      late_summer:
+        - "Harvest festivals"
+        - "Season closure"
+        - "Community reflection"
+        - "Family preparation"
+
+    healthcare_needs:
+      spring:
+        - "Seasonal allergies"
+        - "Tourist preparation"
+        - "Community health"
+        - "Family care"
+      early_summer:
+        - "Festival health"
+        - "Tourist care"
+        - "Emergency response"
+        - "Family support"
+      mid_summer:
+        - "Peak season care"
+        - "Tourist health"
+        - "Community support"
+        - "Family healthcare"
+      late_summer:
+        - "Season transition"
+        - "Tourist departure"
+        - "Community health"
+        - "Family preparation"
+
+  weather_patterns:
+    spring:
+      - "Early warmth"
+      - "Spring storms"
+      - "Growing daylight"
+      - "Seasonal changes"
+    early_summer:
+      - "Festival weather"
+      - "Summer warmth"
+      - "Long days"
+      - "Baltic breezes"
+    mid_summer:
+      - "Peak summer"
+      - "Summer storms"
+      - "Warm nights"
+      - "Island climate"
+    late_summer:
+      - "Seasonal transition"
+      - "Cooling trends"
+      - "Changing light"
+      - "Autumn approach"
+
+  economic_cycles:
+    spring:
+      - "Season preparation"
+      - "Business planning"
+      - "Tourist anticipation"
+      - "Community investment"
+    early_summer:
+      - "Festival economy"
+      - "Tourist arrival"
+      - "Business peak"
+      - "Community growth"
+    mid_summer:
+      - "Peak tourism"
+      - "Business success"
+      - "Community prosperity"
+      - "Family stability"
+    late_summer:
+      - "Season transition"
+      - "Business planning"
+      - "Community preparation"
+      - "Family security"
+
+  culture:
+    - "Danish traditions"
+    - "Island identity"
+    - "Maritime heritage"
+    - "Modern influences"
+    - "Community values"
+    - "Environmental awareness"
+    - "Tourism adaptation"
+  weather:
+    - "Mild spring"
+    - "Warm summer"
+    - "Coastal breezes"
+    - "Seasonal storms"
+    - "Long daylight"
+    - "Clear nights"
+    - "Changeable conditions"
+  architecture:
+    - "Traditional houses"
+    - "Modern updates"
+    - "Historic buildings"
+    - "Maritime structures"
+    - "Tourist facilities"
+    - "Community spaces"
+    - "Natural integration"
+  economy:
+    - "Tourism focus"
+    - "Fishing industry"
+    - "Local businesses"
+    - "Seasonal work"
+    - "Sustainable practices"
+    - "Cultural preservation"
+    - "Modern adaptation"
+
+novel_quality:
+  plot_structure:
+    strengths:
+      - "Clear three-act structure"
+      - "Well-defined seasonal progression"
+      - "Balanced main plot and subplots"
+      - "Natural conflict escalation"
+      - "Satisfying resolution"
+    areas_for_enhancement:
+      - "Could strengthen midpoint crisis"
+      - "May need more tension in early summer"
+      - "Consider adding a false victory"
+      - "Could deepen the dark night of soul"
+      - "Might need stronger external conflict"
+
+  character_development:
+    strengths:
+      - "Rich main character arc"
+      - "Well-developed supporting cast"
+      - "Clear relationship progression"
+      - "Natural character growth"
+      - "Authentic voice for each character"
+    areas_for_enhancement:
+      - "Could deepen secondary character motivations"
+      - "May need more internal conflict for Ellie"
+      - "Consider adding more character flaws"
+      - "Could strengthen character backstories"
+      - "Might need more character-specific goals"
+
+  world_building:
+    strengths:
+      - "Rich island setting"
+      - "Authentic Danish culture"
+      - "Detailed seasonal changes"
+      - "Realistic community structure"
+      - "Believable professional environment"
+    areas_for_enhancement:
+      - "Could add more local traditions"
+      - "May need more sensory details"
+      - "Consider adding more local history"
+      - "Could strengthen cultural nuances"
+      - "Might need more environmental details"
+
+  emotional_resonance:
+    strengths:
+      - "Strong romantic development"
+      - "Authentic family dynamics"
+      - "Natural emotional progression"
+      - "Believable character reactions"
+      - "Effective emotional stakes"
+    areas_for_enhancement:
+      - "Could deepen emotional conflicts"
+      - "May need more emotional vulnerability"
+      - "Consider adding more emotional layers"
+      - "Could strengthen emotional payoffs"
+      - "Might need more emotional complexity"
+
+  theme_integration:
+    strengths:
+      - "Clear theme of finding home"
+      - "Well-integrated professional growth"
+      - "Natural family themes"
+      - "Effective community integration"
+      - "Strong cultural themes"
+    areas_for_enhancement:
+      - "Could strengthen theme variations"
+      - "May need more thematic contrast"
+      - "Consider adding more theme layers"
+      - "Could deepen theme resolution"
+      - "Might need more thematic complexity"
+
+  overall_assessment:
+    plot_quality: 8.5/10
+    character_quality: 9/10
+    world_building_quality: 8.5/10
+    emotional_quality: 9/10
+    theme_quality: 8.5/10
+    total_quality: 8.7/10
+
+  recommendations:
+    plot:
+      - "Strengthen midpoint crisis"
+      - "Add more external conflict"
+      - "Deepen the dark night"
+      - "Enhance tension in early summer"
+      - "Add a false victory moment"
+
+    characters:
+      - "Deepen secondary motivations"
+      - "Add more character flaws"
+      - "Strengthen backstories"
+      - "Enhance internal conflicts"
+      - "Add character-specific goals"
+
+    world:
+      - "Add more local traditions"
+      - "Enhance sensory details"
+      - "Include more local history"
+      - "Strengthen cultural nuances"
+      - "Add environmental details"
+
+    emotion:
+      - "Deepen emotional conflicts"
+      - "Add more vulnerability"
+      - "Enhance emotional layers"
+      - "Strengthen emotional payoffs"
+      - "Add emotional complexity"
+
+    theme:
+      - "Add theme variations"
+      - "Include thematic contrast"
+      - "Enhance theme layers"
+      - "Deepen theme resolution"
+      - "Add thematic complexity"
+
+  implementation_plan:
+    immediate_focus:
+      - "Strengthen midpoint crisis"
+      - "Deepen character motivations"
+      - "Add local traditions"
+      - "Enhance emotional conflicts"
+      - "Strengthen theme variations"
+
+    secondary_focus:
+      - "Add external conflict"
+      - "Enhance character flaws"
+      - "Include sensory details"
+      - "Add emotional vulnerability"
+      - "Include thematic contrast"
+
+    final_polish:
+      - "Deepen dark night"
+      - "Strengthen backstories"
+      - "Add local history"
+      - "Enhance emotional layers"
+      - "Deepen theme resolution"
+
+character_motivations:
+  ellie:
+    core_motivations:
+      - "Find true home"
+      - "Honor family legacy"
+      - "Prove professional worth"
+      - "Build meaningful connections"
+      - "Create lasting impact"
+    internal_conflicts:
+      - "Professional success vs personal happiness"
+      - "Independence vs community"
+      - "City life vs island life"
+      - "Control vs trust"
+      - "Past vs future"
+    external_pressures:
+      - "Medical board expectations"
+      - "Community trust building"
+      - "Family legacy pressure"
+      - "Professional standards"
+      - "Island adaptation"
+    growth_areas:
+      - "Emotional vulnerability"
+      - "Community integration"
+      - "Professional adaptation"
+      - "Relationship building"
+      - "Personal healing"
+
+  tom:
+    core_motivations:
+      - "Protect daughter"
+      - "Preserve island heritage"
+      - "Build sustainable future"
+      - "Find true partnership"
+      - "Heal past wounds"
+    internal_conflicts:
+      - "Protection vs trust"
+      - "Business growth vs tradition"
+      - "Past hurt vs future hope"
+      - "Control vs vulnerability"
+      - "Island life vs change"
+    external_pressures:
+      - "Tourist season demands"
+      - "Co-parenting challenges"
+      - "Community expectations"
+      - "Business sustainability"
+      - "Family balance"
+    growth_areas:
+      - "Emotional openness"
+      - "Trust building"
+      - "Future planning"
+      - "Relationship vulnerability"
+      - "Personal healing"
+
+  lily:
+    core_motivations:
+      - "Find stability"
+      - "Build family"
+      - "Express creativity"
+      - "Connect with nature"
+      - "Feel belonging"
+    internal_conflicts:
+      - "Mother vs Ellie"
+      - "School vs home"
+      - "Friends vs family"
+      - "Island vs city"
+      - "Past vs future"
+    external_pressures:
+      - "School transitions"
+      - "Family changes"
+      - "Community expectations"
+      - "Parental dynamics"
+      - "Island life"
+    growth_areas:
+      - "Emotional expression"
+      - "Family trust"
+      - "Creative development"
+      - "Social confidence"
+      - "Personal identity"
+
+  sarah:
+    core_motivations:
+      - "Artistic success"
+      - "Maintain connection"
+      - "Professional growth"
+      - "Family balance"
+      - "Personal fulfillment"
+    internal_conflicts:
+      - "Art vs family"
+      - "City vs island"
+      - "Past vs present"
+      - "Control vs acceptance"
+      - "Success vs connection"
+    external_pressures:
+      - "Gallery demands"
+      - "Co-parenting responsibilities"
+      - "Professional expectations"
+      - "Family dynamics"
+      - "Community integration"
+    growth_areas:
+      - "Emotional maturity"
+      - "Family acceptance"
+      - "Professional balance"
+      - "Community connection"
+      - "Personal growth" 

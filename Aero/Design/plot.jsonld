@@ -1,0 +1,549 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:plot_structure",
+      "@type": "ontomedia:PlotStructure",
+      "ontomedia:has_main_plot": {
+        "@id": "ontomedia:main_plot",
+        "@type": "ontomedia:Plot",
+        "ontomedia:name": "The Doctor's Journey",
+        "ontomedia:description": "Katrine's transformation from urban doctor to island healer",
+        "ontomedia:has_beat": [
+          {
+            "@id": "ontomedia:main_beat_1",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Proposal",
+            "ontomedia:description": "Katrine receives an unexpected marriage proposal from Dr. Marcus Nielsen in her modern Copenhagen apartment, the city lights reflecting off the Baltic Sea in the distance. As she looks at the sea, she feels a strange pull, a sense that something is missing from her carefully planned life. Fresh from completing her residency, she's at a crossroads in her career and her heart. The proposal comes with a prestigious position at Copenhagen's leading hospital, making her decision even more complicated. Her grandmother's necklace, a constant reminder of the family she never knew, feels heavier than usual as she considers leaving the city that has been her home since her parents' death.",
+            "ontomedia:location": "ontomedia:katrine_apartment",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Copenhagen winter",
+              "ontomedia:time": "February 28, 7:00 PM",
+              "ontomedia:significance": "The sea calls to her, foreshadowing her journey",
+              "ontomedia:address": "Nyhavn 17, Copenhagen",
+              "ontomedia:description": "Modern apartment overlooking the harbor, with a clear view of the Baltic Sea"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marcus"],
+            "ontomedia:triggers": ["ontomedia:grandmother_necklace", "ontomedia:job_offer", "ontomedia:family_loss"]
+          },
+          {
+            "@id": "ontomedia:main_beat_2",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Discovery",
+            "ontomedia:description": "Katrine finds her grandmother's journal in the coastal farmhouse, the Baltic Sea visible through the large sea window. As she reads the first entry, she feels an unexpected connection to this woman she never knew, and a growing sense that this house holds answers to questions she didn't know she had. The journal reveals a shocking truth: her grandmother was investigating a mysterious illness affecting the island's children, and her research was cut short by her sudden death. This discovery adds urgency to Katrine's decision to stay. The hidden room contains not just medical records, but a detailed map of the island with marked locations of the mysterious illness cases, and notes about a potential cure that could help Sarah, Mads's sister, who has been suffering from the same mysterious condition. For the first time since her parents' death, Katrine feels a connection to her family's past, and a sense of purpose that goes beyond her medical training. The journal entries reveal a deeper mystery - her grandmother's research suggests the illness might be connected to ancient island traditions, with patterns of occurrence that follow the lunar calendar and seasonal changes. The medicinal garden, now overgrown, contains plants that match descriptions in the journal, each with its own story of discovery and use. The house itself seems to hold secrets in its very structure, with the sea window positioned to catch the first light of dawn, a time when certain medicinal plants were traditionally harvested. As Katrine reads, she begins to understand that her grandmother's work was more than just medicine - it was a bridge between ancient island wisdom and modern science, a legacy that she now feels called to continue.",
+            "ontomedia:location": "ontomedia:grandmother_house",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Early March, spring sea mist",
+              "ontomedia:time": "March 3, 8:30 AM",
+              "ontomedia:significance": "Connection to family history and the sea, plus a medical mystery",
+              "ontomedia:address": "Coastal Road 42, Ærøskøbing",
+              "ontomedia:description": "Historic farmhouse with large sea window, hidden room behind the kitchen, and extensive medicinal garden"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie", "ontomedia:lars"],
+            "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:mysterious_illness", "ontomedia:island_map", "ontomedia:potential_cure", "ontomedia:family_connection", "ontomedia:cultural_wisdom"]
+          },
+          {
+            "@id": "ontomedia:main_beat_3",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Arrival",
+            "ontomedia:description": "Katrine arrives at the historic medical practice in Ærøskøbing's colorful town center. As she steps off the ferry, she feels both the weight of her decision and a strange sense of coming home. The sea air carries memories of her grandmother's stories, and she begins to understand this is more than just a job change - it's a life change. Her first patient is a child showing symptoms of the mysterious illness her grandmother was investigating, adding immediate urgency to her decision to stay.",
+            "ontomedia:location": "ontomedia:aeroskobing_clinic",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Mid-March, spring sunshine",
+              "ontomedia:time": "March 15, 11:00 AM",
+              "ontomedia:significance": "First step into her new life, plus immediate medical mystery",
+              "ontomedia:address": "Town Square 5, Ærøskøbing",
+              "ontomedia:description": "Historic building in the town center, combining modern medical equipment with traditional healing spaces"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:sick_child", "ontomedia:erik"],
+            "ontomedia:triggers": ["ontomedia:ferry_deck", "ontomedia:medical_mystery"]
+          },
+          {
+            "@id": "ontomedia:main_beat_4",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The First Morning",
+            "ontomedia:description": "Katrine's first morning in Ærøskøbing, exploring the town and feeling the weight of her decision. As she walks through the quiet streets, she begins to understand the depth of the change she's making. The sea, ever-present, seems to both challenge and welcome her, mirroring her own mixed feelings about this new life. Lily, the young apprentice healer, joins her on her walk, sharing stories about her grandmother's morning routines and pointing out the places where she used to gather herbs. This unexpected connection helps Katrine feel less alone in her new surroundings.",
+            "ontomedia:location": "ontomedia:aeroskobing_town",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Late March, spring morning",
+              "ontomedia:time": "Dawn",
+              "ontomedia:significance": "First real connection to the island"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie", "ontomedia:lily"],
+            "ontomedia:triggers": ["ontomedia:baltic_view"]
+          },
+          {
+            "@id": "ontomedia:main_beat_5",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Medical Infrastructure",
+            "ontomedia:description": "Katrine learns about the island's medical system: the main clinic in Ærøskøbing's historic town center where she'll work with Mads, and the network of traditional healers. As she tours the clinic, she feels both excitement and trepidation - this is where she'll need to prove herself, both as a doctor and as a person. The weight of her grandmother's legacy becomes more tangible.",
+            "ontomedia:location": "ontomedia:aeroskobing_clinic",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Early April, spring morning",
+              "ontomedia:time": "Morning",
+              "ontomedia:significance": "Understanding the medical system"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik"],
+            "ontomedia:triggers": ["ontomedia:medical_ledger"]
+          },
+          {
+            "@id": "ontomedia:main_beat_6",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The First Steps",
+            "ontomedia:description": "Katrine's first small victories - a successful house call, a patient's gratitude, a moment of connection with Mads. Each success feels like a piece of her grandmother's legacy coming to life, and she begins to understand what it means to be a healer, not just a doctor. The island's rhythms start to feel less foreign.",
+            "ontomedia:location": "ontomedia:fisherman_cottage",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Mid-April, spring morning",
+              "ontomedia:time": "Morning",
+              "ontomedia:significance": "Building confidence through small successes"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:marie"],
+            "ontomedia:triggers": ["ontomedia:medical_ledger"]
+          },
+          {
+            "@id": "ontomedia:main_beat_7",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Community Welcome",
+            "ontomedia:description": "A small gathering at Anna's café introduces Katrine to the community. She feels both the warmth of acceptance and the weight of expectation - they're welcoming her not just as a doctor, but as the granddaughter of their beloved healer. The connection to her grandmother's legacy becomes more real, and she begins to understand the responsibility she's taken on. The café's walls are decorated with old photographs of the island's history, including several of her grandmother at community events. As she listens to stories about her grandmother's work, Katrine begins to see how deeply the island's traditions are woven into its medical practices. The older residents share tales of how her grandmother would combine modern medicine with traditional remedies, creating treatments that honored both the island's past and its future. The gathering becomes a living history lesson, with each story adding another layer to Katrine's understanding of her grandmother's legacy. She learns about the annual Midsummer celebration, when the island's healers would gather to share knowledge and prepare remedies for the coming year. The café's owner, Anna, shows her a special corner where her grandmother used to meet with other healers, discussing cases and sharing wisdom. The scent of traditional pastries mixes with the smell of medicinal herbs hanging to dry, creating a sensory bridge between past and present. As the evening progresses, Katrine begins to see how the island's medical traditions are part of a larger cultural tapestry, one that she's now being invited to help preserve and evolve.",
+            "ontomedia:location": "ontomedia:anna_cafe",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Late April, spring afternoon",
+              "ontomedia:time": "Afternoon",
+              "ontomedia:significance": "First real community interaction"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:anna", "ontomedia:marie", "ontomedia:lily"],
+            "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:cultural_traditions", "ontomedia:community_history", "ontomedia:healing_wisdom"]
+          },
+          {
+            "@id": "ontomedia:main_beat_8",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The First Emergency",
+            "ontomedia:description": "A minor medical emergency tests Katrine's adaptation to island medicine. As she works alongside Mads, she feels the first real connection to her new role - not just as a doctor, but as part of this community. The emergency becomes a turning point in her understanding of what healing means here, and she begins to see how her grandmother's legacy and modern medicine can work together.",
+            "ontomedia:location": "ontomedia:aeroskobing_clinic",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Early May, spring afternoon",
+              "ontomedia:time": "Afternoon",
+              "ontomedia:significance": "First test of medical adaptation"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik"],
+            "ontomedia:triggers": ["ontomedia:medical_ledger"]
+          },
+          {
+            "@id": "ontomedia:main_beat_9",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Protocol Conflict",
+            "ontomedia:description": "Katrine's first major challenge comes when she must follow strict hospital protocols that conflict with island traditions. As she navigates between medical ethics and cultural sensitivity, she begins to understand the true complexity of her role - she's not just bringing modern medicine to the island, she's learning to bridge two worlds. The conflict forces her to question her assumptions about what it means to be a good doctor. The medical board's investigation, led by Dr. Henrik Nielsen - Marcus's mentor and the man who rejected her grandmother's research years ago - gives her 45 days to prove her methods are effective, with the deadline set for June 30th. The stakes are raised when several island residents show early signs of the mysterious illness, and Mads must choose between following protocol and trying Katrine's grandmother's traditional methods. This conflict mirrors Katrine's own struggle between her medical training and her growing connection to her grandmother's legacy, while Mads faces the painful choice between professional duty and community care. Dr. Nielsen sets up his temporary office in the clinic's back room, making his presence a constant reminder of the deadline.",
+            "ontomedia:location": "ontomedia:aeroskobing_clinic",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Mid-May, spring morning",
+              "ontomedia:time": "May 15, 9:00 AM",
+              "ontomedia:significance": "First real test of medical adaptation, plus personal stakes",
+              "ontomedia:address": "Town Square 5, Ærøskøbing",
+              "ontomedia:description": "Clinic's main treatment room, where modern equipment stands alongside traditional healing tools, with Dr. Nielsen's temporary office visible through the back door"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:marie", "ontomedia:erik", "ontomedia:henrik_nielsen", "ontomedia:lily", "ontomedia:sofia_andersen"],
+            "ontomedia:triggers": ["ontomedia:medical_ledger", "ontomedia:investigation_deadline", "ontomedia:medical_mystery", "ontomedia:family_duty"]
+          },
+          {
+            "@id": "ontomedia:main_beat_10",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Fun and Games",
+            "ontomedia:description": "Katrine experiences the joy of island life - her first successful traditional healing, a community celebration, and growing connection with Mads. For the first time, she feels truly at home, not just as a doctor, but as a person. The island's rhythms begin to match her own heartbeat, and she starts to see a future here that she hadn't imagined possible. However, Sofia's presence at the celebration, her Mediterranean beauty and deep connection to the island's traditions, creates an undercurrent of tension that Katrine can't ignore.",
+            "ontomedia:location": "ontomedia:town_square",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Late May, perfect summer day",
+              "ontomedia:time": "Afternoon",
+              "ontomedia:significance": "The idealized version of island life"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:marie", "ontomedia:lily", "ontomedia:jakob", "ontomedia:sofia_andersen"],
+            "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:romantic_tension"]
+          },
+          {
+            "@id": "ontomedia:main_beat_11",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Dinner",
+            "ontomedia:description": "Dinner at Mads's family home in the rural coast, surrounded by traditional gardens. As she sits with his family, Katrine feels the first real sense of belonging to a family again. The warmth of their acceptance helps heal old wounds she didn't know she carried. After dinner, Mads shows her the garden, and in the moonlight, they share their first real kiss, a moment of pure connection that changes everything. The garden's medicinal herbs release their evening scents, creating a heady atmosphere that seems to heighten every sensation. The kiss is like a diagnosis - precise, unexpected, and leaving no room for doubt about what's happening between them. However, the evening is interrupted by the arrival of Dr. Sofia Andersen, a childhood friend of Mads's who has returned to the island to take over her father's medical practice. Her presence, and the obvious history between her and Mads, creates an unexpected tension in the air. As Sofia shares stories of their childhood adventures, Katrine feels like an outsider looking in, while Mads seems caught between past and present. The garden's healing herbs suddenly feel like they're mocking her, their medicinal properties useless against the ache in her heart.",
+            "ontomedia:location": "ontomedia:mads_house",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Early June, summer evening",
+              "ontomedia:time": "Sunset",
+              "ontomedia:significance": "Integration into island family life and first romantic moment"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:sarah", "ontomedia:family", "ontomedia:sofia_andersen"],
+            "ontomedia:triggers": ["ontomedia:medical_success", "ontomedia:family_dinner", "ontomedia:harbor_kiss", "ontomedia:emotional_healing", "ontomedia:vulnerability", "ontomedia:past_connection", "ontomedia:outsider_feeling"]
+          },
+          {
+            "@id": "ontomedia:main_beat_12",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Gathering Storm",
+            "ontomedia:description": "As summer progresses, tensions build between modern and traditional medicine. The medical board's first warning arrives, and community doubts grow. Katrine feels her confidence wavering, caught between her medical training and her growing connection to the island's ways. The storm outside mirrors her inner turmoil, and she begins to question whether she can truly bridge these two worlds. Dr. Nielsen's daily presence in the clinic becomes more oppressive as the deadline approaches, while Sarah's condition continues to deteriorate despite conventional treatments. Lily, now a regular presence at the clinic, helps Katrine maintain her connection to traditional healing methods, even as the pressure mounts.",
+            "ontomedia:location": "ontomedia:aeroskobing_clinic",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Mid-June, storm clouds gathering",
+              "ontomedia:time": "Late afternoon",
+              "ontomedia:significance": "Gradual build-up to crisis",
+              "ontomedia:description": "The clinic's atmosphere grows tense, with Dr. Nielsen's office door often open, his disapproving gaze following their work"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik", "ontomedia:marie", "ontomedia:henrik_nielsen", "ontomedia:lily", "ontomedia:sarah"],
+            "ontomedia:triggers": ["ontomedia:medical_ledger", "ontomedia:investigation_deadline", "ontomedia:sarah_condition"]
+          },
+          {
+            "@id": "ontomedia:main_beat_13",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Storm",
+            "ontomedia:description": "A medical emergency during a Baltic storm becomes a life-or-death situation when a fishing boat capsizes. The clinic's windows rattle with sea wind as Katrine and Mads race against time to save multiple patients. In the chaos, she discovers a strength she didn't know she had - the ability to bridge two worlds, to be both doctor and healer. The storm becomes a crucible that forges her new identity. During the emergency, she notices a pattern in the symptoms that connects to her grandmother's research, adding another layer of urgency to her investigation. Sofia's traditional methods prove crucial in treating some of the patients, forcing Katrine to acknowledge her rival's value while also feeling the sting of professional jealousy. The house restoration, which had been progressing steadily with community help, is now complete except for the final touches on the treatment room, symbolizing the near-completion of Katrine's own transformation. The storm's fury outside mirrors the emotional tempest inside the clinic - each patient's condition a microcosm of the larger conflicts between tradition and modernity, between heart and duty. The antiseptic smell of the clinic battles with the salty sea air, creating a sensory metaphor for the clash of worlds that Katrine must navigate. In the midst of chaos, she catches Mads's eye across the treatment room, and for a moment, everything else fades away - the storm, the patients, even Sofia's presence. It's like a perfect diagnosis - sudden, clear, and leaving no room for doubt about what matters most.",
+            "ontomedia:location": "ontomedia:aeroskobing_clinic",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Late June, violent storm, power outage",
+              "ontomedia:time": "June 28, 8:00 PM",
+              "ontomedia:significance": "First major test of Katrine's commitment to island life, plus medical mystery breakthrough",
+              "ontomedia:address": "Town Square 5, Ærøskøbing",
+              "ontomedia:description": "Clinic's main treatment room, now fully equipped with both modern and traditional healing tools, with the restored house visible through the storm"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik", "ontomedia:lars", "ontomedia:sofia_andersen"],
+            "ontomedia:triggers": ["ontomedia:medical_ledger", "ontomedia:grandmother_journal", "ontomedia:medical_mystery", "ontomedia:investigation_deadline", "ontomedia:house_restoration", "ontomedia:professional_rivalry"]
+          },
+          {
+            "@id": "ontomedia:main_beat_14",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Calm After",
+            "ontomedia:description": "A quiet moment of reflection after the storm, showing Katrine and Mads processing their first major challenge together. As they watch the sunrise, she feels a deep connection not just to him, but to the island itself. The sea, now calm, reflects her growing sense of peace with her choices, and she begins to understand that her journey here is about more than just medicine - it's about finding her true self. The next few days bring a sense of normalcy as they work together to treat the remaining patients from the storm, their professional partnership strengthening their personal bond. Sofia, having proven her value during the emergency, begins to show a new respect for Katrine's methods, while Katrine learns to appreciate the depth of Sofia's traditional knowledge. This period of calm becomes a crucial time of healing and growth for all three doctors, as they begin to see how their different approaches can complement each other.",
+            "ontomedia:location": "ontomedia:coastal_path",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Early July, clear morning after storm",
+              "ontomedia:time": "Dawn",
+              "ontomedia:significance": "Emotional processing and connection"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:sofia_andersen"],
+            "ontomedia:triggers": ["ontomedia:baltic_view", "ontomedia:professional_growth", "ontomedia:emotional_healing"]
+          },
+          {
+            "@id": "ontomedia:main_beat_15",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Return",
+            "ontomedia:description": "Dr. Marcus Nielsen arrives at the historic ferry dock with a prestigious job offer and a marriage proposal. His presence forces Katrine to confront her past life and future choices. As she looks at the sea, she feels torn between the life she planned and the life she's found. Mads watches from the shadows, his heart breaking as he realizes he might lose her, and Katrine must face the hardest choice of all - between the safety of the known and the uncertainty of the heart. The timing of Marcus's arrival, coming just as Katrine has found her footing in both her professional and personal life, creates a perfect storm of emotional conflict. Sofia, having developed a new respect for Katrine, offers unexpected support, while Mads struggles with his own insecurities about whether he can compete with the life Marcus represents. The ferry's arrival is like a diagnosis she's been dreading - the symptoms were there all along, but she'd been too focused on her new life to see them. Marcus's proposal, wrapped in the promise of professional advancement, feels like a treatment plan she's outgrown. The sea air, usually a comfort, now carries the scent of her old life in Copenhagen, making her choice more difficult than she could have imagined. As she stands between two worlds, the medical bag at her side feels heavier than ever, its weight a reminder of the legacy she's building and the future she's creating.",
+            "ontomedia:location": "ontomedia:ferry_dock",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Mid-July, approaching storm, dark clouds",
+              "ontomedia:time": "Dusk",
+              "ontomedia:significance": "Past and future collide"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marcus_nielsen", "ontomedia:mads", "ontomedia:sofia_andersen"],
+            "ontomedia:triggers": ["ontomedia:ferry_deck", "ontomedia:grandmother_necklace", "ontomedia:emotional_conflict", "ontomedia:professional_choice"]
+          },
+          {
+            "@id": "ontomedia:main_beat_16",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Dark Night",
+            "ontomedia:description": "After a failed medical case that results in a patient's death and a devastating misunderstanding with Mads, Katrine reaches her lowest point. The Baltic storm outside mirrors her inner turmoil as she packs her bags to return to Copenhagen. In a moment of despair, she discovers her grandmother's final journal entry, written during a similar storm. The words speak directly to her heart, revealing that her grandmother faced the same choice between duty and love, between the known and the unknown, and found her answer in the healing power of the island. Sarah's condition takes a critical turn, forcing Katrine to stay and face her fears. Lily, who has been staying at the house to help with the restoration, finds Katrine in tears and shares her own story of doubt and renewal, helping Katrine see that her grandmother's legacy is not just about medicine, but about finding the courage to follow one's heart. In this moment, Katrine realizes that her journey is not just about healing others, but about healing herself - about finding a place where she can honor both her parents' memory and her grandmother's legacy. The storm's fury outside is like a patient in crisis - unpredictable, dangerous, but somehow beautiful in its raw power. The house creaks and groans like an old body fighting to stay alive, while the sea window frames a view of chaos that somehow makes perfect sense. The medical bag sits half-packed, its contents a jumble of past and present, like a treatment plan that needs to be rewritten. The scent of medicinal herbs from the garden mixes with the salt air, creating a healing atmosphere that seems to whisper of second chances and new beginnings.",
+            "ontomedia:location": "ontomedia:grandmother_house",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Late July, violent storm, house creaking",
+              "ontomedia:time": "Midnight",
+              "ontomedia:significance": "Soul-crushing moment of doubt and revelation"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie", "ontomedia:lily", "ontomedia:sarah"],
+            "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:sea_window", "ontomedia:sarah_condition", "ontomedia:family_healing", "ontomedia:emotional_crisis"]
+          },
+          {
+            "@id": "ontomedia:main_beat_17",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Morning After",
+            "ontomedia:description": "A quiet morning after the dark night, showing Katrine's first steps toward healing and acceptance. As she reads more of her grandmother's journal, she begins to understand that her journey is not just about becoming a doctor or finding love, but about discovering who she truly is. The sea, now calm, reflects her growing clarity, and she starts to see how all the pieces of her life - her medical training, her grandmother's legacy, her connection to the island - are coming together to form a complete picture.",
+            "ontomedia:location": "ontomedia:grandmother_house",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Early August, calm morning after storm",
+              "ontomedia:time": "Dawn",
+              "ontomedia:significance": "Emotional recovery and clarity"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie"],
+            "ontomedia:triggers": ["ontomedia:grandmother_journal"]
+          },
+          {
+            "@id": "ontomedia:main_beat_18",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Point of No Return",
+            "ontomedia:description": "In a life-or-death situation, Katrine makes a critical medical decision that saves a patient's life but goes against hospital protocol. As the storm clears at dawn, she faces the consequences of her choice, knowing it means she can never return to her old life. In this moment, she finally understands what it means to be both a doctor and a healer, to honor both her training and her heart. Mads stands by her side, their professional and personal futures now irrevocably intertwined, and she knows that this is where she belongs - not just as a doctor, but as a person.",
+            "ontomedia:location": "ontomedia:aeroskobing_clinic",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Mid-August, storm clearing, first light",
+              "ontomedia:time": "Dawn",
+              "ontomedia:significance": "Irrevocable commitment to new life"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik", "ontomedia:marie"],
+            "ontomedia:triggers": ["ontomedia:medical_ledger", "ontomedia:grandmother_journal"]
+          },
+          {
+            "@id": "ontomedia:main_beat_19",
+            "@type": "ontomedia:PlotBeat",
+            "@id": "ontomedia:main_beat_19",
+            "ontomedia:name": "The Community Response",
+            "ontomedia:description": "The community's reaction to Katrine's decision - some embrace her choice, others remain skeptical. As she faces their judgment, she feels the weight of her grandmother's legacy and her own choices. But in their eyes, she also sees the reflection of her own journey - from outsider to healer, from doctor to islander. The acceptance of the community becomes the final piece in her transformation.",
+            "ontomedia:location": "ontomedia:anna_cafe",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Late August, clear summer morning",
+              "ontomedia:time": "Morning",
+              "ontomedia:significance": "Community acceptance"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:anna", "ontomedia:marie", "ontomedia:lily", "ontomedia:jakob"],
+            "ontomedia:triggers": ["ontomedia:grandmother_journal"]
+          },
+          {
+            "@id": "ontomedia:main_beat_20",
+            "@type": "ontomedia:PlotBeat",
+            "ontomedia:name": "The Final Image",
+            "ontomedia:description": "A mirror of the opening scene - Katrine stands at her grandmother's house, but now the sea window frames a peaceful Baltic morning. The restoration is complete: the hidden room has been transformed into a modern treatment space, the medicinal garden flourishes with traditional herbs, and the house itself stands as a bridge between past and present. The medical practice is thriving, the community is united, and she's found her place. The mysterious illness has been solved through a breakthrough combination of modern medicine and traditional healing methods - the very cure her grandmother was researching. Sofia, having found her own path and a new romance with a visiting Greek doctor, has become a valuable colleague and friend. As she looks out at the sea, Mads joins her, holding a small box containing a key to his family's historic house. 'I've been thinking,' he says softly, 'about how two healers might be better than one. About how this house has always been a place of healing, and how it could be again.' He pulls her close, their bodies fitting together perfectly as they watch the sunrise. The grandmother's necklace, once a reminder of loss and the past, now symbolizes her future as she accepts his proposal to move in together, combining their lives and their healing traditions. The house, fully restored, becomes a symbol of their shared future - a place where modern medicine and traditional healing can coexist, where past and present merge into something new and beautiful. As she looks out at the sea, she feels not just the weight of her choices, but the rightness of them. She has become not just a doctor, not just a healer, but herself - complete and whole, at peace with both her past and her future, ready to build a new life with the man who has become her partner in every sense. In this moment, she understands that her parents' death, her grandmother's legacy, and her journey to the island were all leading her to this place of healing and wholeness.",
+            "ontomedia:location": "ontomedia:grandmother_house",
+            "ontomedia:location_details": {
+              "ontomedia:weather": "Early September, clear summer morning",
+              "ontomedia:time": "September 5, 6:30 AM",
+              "ontomedia:significance": "Completion of the journey and beginning of a new life together, with the house restoration symbolizing the merging of past and future",
+              "ontomedia:address": "Coastal Road 42, Ærøskøbing",
+              "ontomedia:description": "Fully restored farmhouse with modern treatment room, flourishing medicinal garden, and the iconic sea window framing the Baltic sunrise"
+            },
+            "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:marie", "ontomedia:lars", "ontomedia:jakob", "ontomedia:anna", "ontomedia:lily", "ontomedia:sofia_andersen"],
+            "ontomedia:triggers": ["ontomedia:sea_window", "ontomedia:grandmother_necklace", "ontomedia:house_key", "ontomedia:restored_garden", "ontomedia:medical_ledger", "ontomedia:medical_mystery", "ontomedia:healing_breakthrough", "ontomedia:family_wholeness"]
+          }
+        ]
+      },
+      "ontomedia:has_subplot": [
+        {
+          "@id": "ontomedia:house_legacy_plot",
+          "@type": "ontomedia:Subplot",
+          "ontomedia:name": "House and Legacy",
+          "ontomedia:description": "Combined plot of house restoration and family legacy discovery",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:house_legacy_beat_1",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Discovery",
+              "ontomedia:description": "Katrine discovers her grandmother's medical legacy while assessing the house's condition",
+              "ontomedia:location": "ontomedia:grandmother_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie", "ontomedia:jakob"],
+              "ontomedia:triggers": ["ontomedia:grandmother_journal"]
+            },
+            {
+              "@id": "ontomedia:house_legacy_beat_2",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The First Restoration",
+              "ontomedia:description": "Initial repairs reveal hidden medical equipment and supplies, connecting to the grandmother's practice",
+              "ontomedia:location": "ontomedia:grandmother_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:lars"],
+              "ontomedia:triggers": ["ontomedia:sea_window"]
+            },
+            {
+              "@id": "ontomedia:house_legacy_beat_3",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Hidden Room",
+              "ontomedia:description": "Discovery of a secret room containing the grandmother's medical records and traditional remedies",
+              "ontomedia:location": "ontomedia:grandmother_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie", "ontomedia:erik"],
+              "ontomedia:triggers": ["ontomedia:grandmother_journal"]
+            },
+            {
+              "@id": "ontomedia:house_legacy_beat_4",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Community Effort",
+              "ontomedia:description": "Island residents come together to restore the house, sharing stories about the grandmother's healing work",
+              "ontomedia:location": "ontomedia:grandmother_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:lars", "ontomedia:jakob", "ontomedia:anna"],
+              "ontomedia:triggers": ["ontomedia:sea_window"]
+            },
+            {
+              "@id": "ontomedia:house_legacy_beat_5",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Garden Restoration",
+              "ontomedia:description": "Restoring the medicinal garden reveals the grandmother's knowledge of traditional healing plants, including a rare herb that could be the key to treating the mysterious illness. The garden becomes a living connection to the past, with each plant telling a story of healing and hope. As Katrine works alongside Lily, she begins to understand that the garden is more than just a collection of plants - it's a map of her grandmother's medical discoveries, with each section representing different aspects of her research.",
+              "ontomedia:location": "ontomedia:grandmother_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie", "ontomedia:lily"],
+              "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:rare_herb", "ontomedia:medical_discovery"]
+            },
+            {
+              "@id": "ontomedia:house_legacy_beat_6",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Final Transformation",
+              "ontomedia:description": "The house's transformation is complete, with the hidden room now serving as a modern treatment space that honors both traditional and contemporary medicine. The garden's rare herb, combined with modern medical techniques, becomes the key to treating the mysterious illness. The house stands as a bridge between past and present, its restoration mirroring Katrine's own journey of healing and growth.",
+              "ontomedia:location": "ontomedia:grandmother_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:marie", "ontomedia:lily"],
+              "ontomedia:triggers": ["ontomedia:restored_house", "ontomedia:medical_breakthrough", "ontomedia:family_legacy"]
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:community_integration_plot",
+          "@type": "ontomedia:Subplot",
+          "ontomedia:name": "Community Integration",
+          "ontomedia:description": "Combined plot of community acceptance and support",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:community_beat_1",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The First Steps",
+              "ontomedia:description": "Initial cautious acceptance and small acts of support from the community, particularly from Anna at the café who shares stories of Katrine's grandmother. The first patients arrive hesitantly, testing the waters of this new doctor's methods.",
+              "ontomedia:location": "ontomedia:anna_cafe",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:anna", "ontomedia:marie"],
+              "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:first_patients"]
+            },
+            {
+              "@id": "ontomedia:community_beat_2",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Market Day",
+              "ontomedia:description": "Katrine's first experience of the weekly market, meeting more community members and learning about island life. Her successful treatment of a child's minor injury during the market becomes the first public demonstration of her medical skills, earning cautious respect from the community.",
+              "ontomedia:location": "ontomedia:town_square",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:anna", "ontomedia:lily", "ontomedia:jakob"],
+              "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:first_public_treatment"]
+            },
+            {
+              "@id": "ontomedia:community_beat_3",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Fishing Festival",
+              "ontomedia:description": "Participation in a traditional festival helps Katrine understand the island's connection to the sea. When a fisherman is injured during the festival, Katrine's quick response and combination of modern and traditional treatment methods earns her the respect of the fishing community, a crucial step in her acceptance.",
+              "ontomedia:location": "ontomedia:harbor",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:lars", "ontomedia:jakob"],
+              "ontomedia:triggers": ["ontomedia:baltic_view", "ontomedia:emergency_treatment"]
+            },
+            {
+              "@id": "ontomedia:community_beat_4",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Sankt Hans Aften",
+              "ontomedia:description": "During the island's Sankt Hans Aften celebration, Katrine experiences the magical atmosphere of the traditional Danish Midsummer's Eve. As bonfires light up the coastline and the community gathers to celebrate, she must balance her medical duties with cultural participation. When a child burns their hand on a sparkler, Katrine's quick response using a combination of modern first aid and traditional herbal remedies earns her the respect of the older generation. The celebration becomes a turning point as she witnesses the community's deep connection to both modern and traditional healing practices, with the bonfire symbolizing the burning away of old divisions between different approaches to medicine.",
+              "ontomedia:location": "ontomedia:beach_bonfire",
+              "ontomedia:location_details": {
+                "ontomedia:weather": "Clear summer evening",
+                "ontomedia:time": "June 23, 8:00 PM",
+                "ontomedia:significance": "Traditional Danish Midsummer celebration",
+                "ontomedia:description": "Beach bonfire with community gathered around, traditional music playing, and the Baltic Sea reflecting the firelight"
+              },
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:marie", "ontomedia:lily", "ontomedia:jakob", "ontomedia:community_elders"],
+              "ontomedia:triggers": ["ontomedia:grandmother_journal", "ontomedia:cultural_balance", "ontomedia:traditional_healing", "ontomedia:community_bonding"]
+            },
+            {
+              "@id": "ontomedia:community_beat_5",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Full Integration",
+              "ontomedia:description": "Katrine becomes fully integrated into community life through her successful treatment of the mysterious illness. The community gathers for a celebration of healing, where traditional and modern medicine are honored equally. In this moment, Katrine understands that she has not just been accepted by the community - she has become an essential part of its healing tradition, carrying forward her grandmother's legacy while creating her own. The celebration becomes a turning point for the entire island, as they witness the successful treatment of Sarah and other patients, proving that the integration of old and new methods can work.",
+              "ontomedia:location": "ontomedia:festival_tent",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:marie", "ontomedia:lily", "ontomedia:jakob", "ontomedia:community_members", "ontomedia:sarah"],
+              "ontomedia:triggers": ["ontomedia:grandmother_necklace", "ontomedia:community_celebration", "ontomedia:healing_tradition", "ontomedia:medical_success"]
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:romantic_development_plot",
+          "@type": "ontomedia:Subplot",
+          "ontomedia:name": "Romantic Development",
+          "ontomedia:description": "Development of romantic relationship with increased tension and chemistry",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:romantic_beat_1",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Meet Cute",
+              "ontomedia:description": "Katrine arrives at the ferry dock, her medical bag slipping from her shoulder. Mads catches it, their hands meeting over her grandmother's stethoscope. 'This belonged to Dr. Marie Nielsen,' he says, recognizing the family heirloom. 'She was my first mentor.' His eyes hold a mix of recognition and something deeper - a connection to her past she didn't know she was missing. The sea breeze carries the moment, making it feel like fate, while Katrine feels the first stirrings of something she thought she'd lost with her parents' death - a sense of belonging.",
+              "ontomedia:location": "ontomedia:ferry_dock",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads"],
+              "ontomedia:triggers": ["ontomedia:medical_bag", "ontomedia:stethoscope", "ontomedia:family_connection", "ontomedia:loss_healing"]
+            },
+            {
+              "@id": "ontomedia:romantic_beat_2",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The First Touch",
+              "ontomedia:description": "During a medical emergency with Sarah, Mads's sister, Katrine stumbles from exhaustion. Mads reaches out to steady her, their hands remaining clasped longer than necessary. 'You're not alone in this,' he whispers, the warmth of his touch sending unexpected shivers through her. In his eyes, she sees the same fear she feels - the terror of losing someone you love. The moment is broken by Sarah's condition worsening, but the memory lingers, along with the realization that she's not just fighting for a patient, but for a family she's beginning to care about. For the first time since her parents' death, she feels the weight of emotional connection, and it terrifies her. The moment is interrupted by Sofia's arrival, her presence bringing a subtle tension as she takes over Sarah's care with practiced ease, her familiarity with the family evident in every gesture. The clinic's antiseptic smell suddenly feels too sharp, too clinical, as if it's trying to sanitize the raw emotions hanging in the air.",
+              "ontomedia:location": "ontomedia:aeroskobing_clinic",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:sarah", "ontomedia:sofia_andersen"],
+              "ontomedia:triggers": ["ontomedia:medical_emergency", "ontomedia:family_stakes", "ontomedia:emotional_vulnerability", "ontomedia:fear_of_loss", "ontomedia:professional_rivalry"]
+            },
+            {
+              "@id": "ontomedia:romantic_beat_3",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The First Date",
+              "ontomedia:description": "After successfully treating Sarah with a combination of modern and traditional medicine, Mads invites Katrine to a celebration dinner at his family's home. The evening is filled with laughter, shared stories, and growing connection. As they walk home under the stars, he takes her hand. 'You saved my sister,' he says softly, 'and in doing so, you've shown me what it means to truly heal.' Their first kiss by the harbor seals their growing bond, but it's more than just physical attraction - it's the meeting of two souls who understand loss and healing. Katrine feels the walls around her heart begin to crumble, while Mads sees in her the strength he's been searching for. The moment is charged with both joy and fear - the joy of connection and the fear of vulnerability. However, the evening is interrupted by the arrival of Dr. Sofia Andersen, a childhood friend of Mads's who has returned to the island to take over her father's medical practice. Her presence, and the obvious history between her and Mads, creates an unexpected tension in the air. As Sofia shares stories of their childhood adventures, Katrine feels like an outsider looking in, while Mads seems caught between past and present.",
+              "ontomedia:location": "ontomedia:mads_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:sarah", "ontomedia:family", "ontomedia:sofia_andersen"],
+              "ontomedia:triggers": ["ontomedia:medical_success", "ontomedia:family_dinner", "ontomedia:harbor_kiss", "ontomedia:emotional_healing", "ontomedia:vulnerability", "ontomedia:past_connection", "ontomedia:outsider_feeling"]
+            },
+            {
+              "@id": "ontomedia:romantic_beat_4",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Breakup",
+              "ontomedia:description": "After the failed medical case that results in a patient's death, Mads accuses Katrine of putting her career and modern medicine before the community's traditions. 'You're trying to change everything,' he says, 'but some things shouldn't change.' Their professional conflict spills into their personal relationship, leading to a painful breakup. The storm outside mirrors their emotional turmoil as they part ways, each carrying the weight of their convictions. Katrine feels the familiar pain of loss, while Mads struggles with the fear of losing another person he loves to change. Their breakup isn't just about medical philosophy - it's about their deepest fears and insecurities. Katrine's fear of emotional connection clashes with Mads's fear of change, creating a perfect storm of emotional conflict. The situation is complicated by Sofia's growing presence in the clinic, her traditional approach to medicine earning the community's trust, and her obvious feelings for Mads. As Katrine watches them work together, she begins to question whether she truly belongs on the island, or if she's just another outsider trying to change things. Sofia's gentle reminders of island traditions and her shared history with Mads become a constant presence, making Katrine feel more isolated than ever. The clinic's antiseptic smell, usually a comfort, now feels like a barrier between her and the life she thought she was building.",
+              "ontomedia:location": "ontomedia:grandmother_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:sofia_andersen"],
+              "ontomedia:triggers": ["ontomedia:medical_failure", "ontomedia:tradition_conflict", "ontomedia:storm", "ontomedia:emotional_fear", "ontomedia:personal_growth", "ontomedia:professional_rivalry", "ontomedia:belonging_conflict"]
+            },
+            {
+              "@id": "ontomedia:romantic_beat_5",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Grand Gesture",
+              "ontomedia:description": "After saving multiple patients during the storm using a combination of modern and traditional medicine, Mads arrives at the clinic with a restored version of Katrine's grandmother's medical bag. 'I was wrong,' he says, getting down on one knee. 'You haven't changed everything - you've shown us how to honor both the old ways and the new. I've been thinking about how two healers might be better than one, about how this bag has always been a place of healing, and how it could be again.' The community gathers, witnessing not just a proposal, but the healing of their own divisions. In this moment, Katrine sees not just a proposal, but a man who has faced his fears and chosen growth. Mads sees not just a doctor, but a woman who has learned to open her heart again. Their love story becomes a metaphor for the island's own journey - the beautiful dance between tradition and change, between holding on and letting go, between fear and courage. As she accepts his proposal, Katrine finally lets go of the fear that has held her back since her parents' death, understanding that love is not about avoiding loss, but about embracing the courage to love again. The clinic's antiseptic smell is now mixed with the scent of fresh flowers brought by the community, creating a perfect balance of medical precision and emotional warmth.",
+              "ontomedia:location": "ontomedia:aeroskobing_clinic",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:community_members", "ontomedia:sarah"],
+              "ontomedia:triggers": ["ontomedia:restored_medical_bag", "ontomedia:proposal", "ontomedia:community_unity", "ontomedia:emotional_growth", "ontomedia:healing_wholeness", "ontomedia:past_trauma_resolution"]
+            }
+          ]
+        },
+        {
+          "@id": "ontomedia:professional_challenges_plot",
+          "@type": "ontomedia:Subplot",
+          "ontomedia:name": "Professional Challenges",
+          "ontomedia:description": "Consolidated medical and professional challenges",
+          "ontomedia:has_beat": [
+            {
+              "@id": "ontomedia:professional_beat_1",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Adaptation",
+              "ontomedia:description": "Katrine faces the challenges of adapting urban medicine to island life",
+              "ontomedia:location": "ontomedia:aeroskobing_clinic",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik"],
+              "ontomedia:triggers": ["ontomedia:medical_ledger"]
+            },
+            {
+              "@id": "ontomedia:professional_beat_2",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The First Warning",
+              "ontomedia:description": "Initial concerns from the medical board about Katrine's methods",
+              "ontomedia:location": "ontomedia:aeroskobing_clinic",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik"],
+              "ontomedia:triggers": ["ontomedia:medical_ledger"]
+            },
+            {
+              "@id": "ontomedia:professional_beat_3",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Traditional Healing",
+              "ontomedia:description": "Learning traditional healing methods from Marie and other island healers",
+              "ontomedia:location": "ontomedia:marie_house",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:marie", "ontomedia:lily"],
+              "ontomedia:triggers": ["ontomedia:grandmother_journal"]
+            },
+            {
+              "@id": "ontomedia:professional_beat_4",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Investigation",
+              "ontomedia:description": "The medical board's investigation reaches its climax, testing Katrine's commitment to her new approach",
+              "ontomedia:location": "ontomedia:aeroskobing_clinic",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik"],
+              "ontomedia:triggers": ["ontomedia:medical_ledger"]
+            },
+            {
+              "@id": "ontomedia:professional_beat_5",
+              "@type": "ontomedia:PlotBeat",
+              "ontomedia:name": "The Resolution",
+              "ontomedia:description": "The breakthrough comes when Katrine combines the rare herb from her grandmother's garden with modern medical techniques to successfully treat the mysterious illness. The medical board, led by Dr. Nielsen, witnesses the successful treatment of multiple patients, including Sarah. In this moment, the integration of modern and traditional medicine is proven effective, and Katrine's methods are officially recognized. The clinic becomes a model for how different healing traditions can work together, with Katrine and Mads leading the way in this new approach to medicine.",
+              "ontomedia:location": "ontomedia:aeroskobing_clinic",
+              "ontomedia:characters": ["ontomedia:katrine", "ontomedia:mads", "ontomedia:erik", "ontomedia:marie", "ontomedia:henrik_nielsen", "ontomedia:sarah"],
+              "ontomedia:triggers": ["ontomedia:medical_ledger", "ontomedia:grandmother_journal", "ontomedia:medical_breakthrough", "ontomedia:professional_recognition"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,229 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:style_network",
+      "@type": "ontomedia:StyleNetwork",
+      "ontomedia:version": "1.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:style_registry",
+        "@type": "ontomedia:StyleRegistry",
+        "ontomedia:has_style": [
+          {
+            "@id": "ontomedia:medical_narrative_style",
+            "@type": "ontomedia:Style",
+            "ontomedia:name": "Medical Narrative",
+            "ontomedia:description": "Style for medical and healthcare scenes",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:medical_technical",
+                "@type": "ontomedia:StyleElement",
+                "ontomedia:name": "Technical Accuracy",
+                "ontomedia:description": "Precise medical terminology and procedures",
+                "ontomedia:requirements": [
+                  "Medical terminology",
+                  "Procedure accuracy",
+                  "Professional dialogue",
+                  "Clinical atmosphere"
+                ]
+              },
+              {
+                "@id": "ontomedia:medical_emotional",
+                "@type": "ontomedia:StyleElement",
+                "ontomedia:name": "Emotional Balance",
+                "ontomedia:description": "Balancing technical and emotional elements",
+                "ontomedia:requirements": [
+                  "Patient care focus",
+                  "Emotional resonance",
+                  "Human connection",
+                  "Professional empathy"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:cultural_narrative_style",
+            "@type": "ontomedia:Style",
+            "ontomedia:name": "Cultural Narrative",
+            "ontomedia:description": "Style for cultural and community scenes",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:cultural_authentic",
+                "@type": "ontomedia:StyleElement",
+                "ontomedia:name": "Cultural Authenticity",
+                "ontomedia:description": "Authentic cultural representation",
+                "ontomedia:requirements": [
+                  "Cultural accuracy",
+                  "Traditional elements",
+                  "Community voice",
+                  "Cultural respect"
+                ]
+              },
+              {
+                "@id": "ontomedia:cultural_integration",
+                "@type": "ontomedia:StyleElement",
+                "ontomedia:name": "Cultural Integration",
+                "ontomedia:description": "Integration of cultural elements",
+                "ontomedia:requirements": [
+                  "Cultural fusion",
+                  "Modern adaptation",
+                  "Community evolution",
+                  "Cultural growth"
+                ]
+              }
+            ]
+          },
+          {
+            "@id": "ontomedia:romantic_narrative_style",
+            "@type": "ontomedia:Style",
+            "ontomedia:name": "Romantic Narrative",
+            "ontomedia:description": "Style for romantic and relationship scenes",
+            "ontomedia:has_element": [
+              {
+                "@id": "ontomedia:romantic_development",
+                "@type": "ontomedia:StyleElement",
+                "ontomedia:name": "Relationship Development",
+                "ontomedia:description": "Development of romantic relationships",
+                "ontomedia:requirements": [
+                  "Chemistry building",
+                  "Emotional depth",
+                  "Conflict resolution",
+                  "Growth together"
+                ]
+              },
+              {
+                "@id": "ontomedia:romantic_balance",
+                "@type": "ontomedia:StyleElement",
+                "ontomedia:name": "Professional-Personal Balance",
+                "ontomedia:description": "Balancing professional and personal lives",
+                "ontomedia:requirements": [
+                  "Work-life balance",
+                  "Professional boundaries",
+                  "Personal growth",
+                  "Relationship evolution"
+                ]
+              }
+            ]
+          }
+        ],
+        "ontomedia:has_style_element": [
+          {
+            "@type": "ontomedia:StyleElement",
+            "ontomedia:element_id": "ontomedia:family_interaction",
+            "ontomedia:element_name": "Family Interaction",
+            "ontomedia:element_description": "Style elements for family interaction scenes",
+            "ontomedia:has_style_requirement": [
+              "Family dialogue authenticity",
+              "Cultural family context",
+              "Personal family dynamics",
+              "Community family standards",
+              "Family development progression"
+            ]
+          },
+          {
+            "@type": "ontomedia:StyleElement",
+            "ontomedia:element_id": "ontomedia:artistic_expression",
+            "ontomedia:element_name": "Artistic Expression",
+            "ontomedia:element_description": "Style elements for artistic expression scenes",
+            "ontomedia:has_style_requirement": [
+              "Artistic practice authenticity",
+              "Cultural artistic context",
+              "Personal artistic expression",
+              "Community artistic standards",
+              "Artistic development progression"
+            ]
+          },
+          {
+            "@type": "ontomedia:StyleElement",
+            "ontomedia:element_id": "ontomedia:professional_boundary",
+            "ontomedia:element_name": "Professional Boundary",
+            "ontomedia:element_description": "Style elements for professional boundary scenes",
+            "ontomedia:has_style_requirement": [
+              "Professional relationship authenticity",
+              "Cultural professional context",
+              "Personal professional balance",
+              "Community professional standards",
+              "Professional development progression"
+            ]
+          },
+          {
+            "@type": "ontomedia:StyleElement",
+            "ontomedia:element_id": "ontomedia:cultural_tradition",
+            "ontomedia:element_name": "Cultural Tradition",
+            "ontomedia:element_description": "Style elements for cultural tradition scenes",
+            "ontomedia:has_style_requirement": [
+              "Cultural practice authenticity",
+              "Traditional method preservation",
+              "Cultural integration balance",
+              "Community cultural standards",
+              "Cultural development progression"
+            ]
+          },
+          {
+            "@type": "ontomedia:StyleElement",
+            "ontomedia:element_id": "ontomedia:relationship_development",
+            "ontomedia:element_name": "Relationship Development",
+            "ontomedia:element_description": "Style elements for relationship development scenes",
+            "ontomedia:has_style_requirement": [
+              "Relationship progression authenticity",
+              "Cultural relationship context",
+              "Personal relationship growth",
+              "Community relationship standards",
+              "Relationship development progression"
+            ]
+          },
+          {
+            "@type": "ontomedia:StyleElement",
+            "ontomedia:element_id": "ontomedia:community_integration",
+            "ontomedia:element_name": "Community Integration",
+            "ontomedia:element_description": "Style elements for community integration scenes",
+            "ontomedia:has_style_requirement": [
+              "Community interaction authenticity",
+              "Cultural community context",
+              "Personal community growth",
+              "Community standards",
+              "Community development progression"
+            ]
+          }
+        ]
+      },
+      "ontomedia:has_validation": {
+        "@id": "ontomedia:style_network_validation",
+        "@type": "ontomedia:StyleNetworkValidation",
+        "ontomedia:has_reference": [
+          {
+            "@id": "ontomedia:style_structure_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:style_type_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          },
+          {
+            "@id": "ontomedia:style_progression_validation",
+            "@type": "ontomedia:ValidationReference",
+            "ontomedia:target": "ontomedia:validation_network",
+            "ontomedia:relationship": "validation_registry",
+            "ontomedia:version": "1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

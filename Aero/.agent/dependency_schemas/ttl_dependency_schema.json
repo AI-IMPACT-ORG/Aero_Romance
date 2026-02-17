@@ -1,0 +1,219 @@
+{
+  "license": "GPL-3.0-only",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TTL File Dependency Resolution Schema",
+  "description": "Schema defining dependency resolution capabilities for Turtle (TTL) files",
+  "type": "object",
+  "properties": {
+    "fileType": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": ["Turtle"],
+          "description": "The file type name"
+        },
+        "extensions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [".ttl"],
+          "description": "File extensions associated with this type"
+        },
+        "mimeType": {
+          "type": "string",
+          "enum": ["text/turtle"],
+          "description": "MIME type for TTL files"
+        }
+      },
+      "required": ["name", "extensions", "mimeType"]
+    },
+    "resolutionCapabilities": {
+      "type": "object",
+      "properties": {
+        "importTypes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "DirectImport",
+                  "PrefixImport",
+                  "BaseImport",
+                  "OntologyImport"
+                ],
+                "description": "Type of import statement"
+              },
+              "patterns": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Regex patterns for matching import statements"
+              },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Example import statements"
+              }
+            },
+            "required": ["type", "patterns", "examples"]
+          },
+          "default": [
+            {
+              "type": "DirectImport",
+              "patterns": [
+                "@import\\s+<([^>]+)>",
+                "LOAD\\s+<([^>]+)>"
+              ],
+              "examples": [
+                "@import <http://example.org/ontology.ttl>",
+                "LOAD <http://example.org/ontology.ttl>"
+              ]
+            },
+            {
+              "type": "PrefixImport",
+              "patterns": [
+                "@prefix\\s+\\w+\\s*:\\s*<([^>]+)>"
+              ],
+              "examples": [
+                "@prefix ex: <http://example.org/ontology#>"
+              ]
+            },
+            {
+              "type": "BaseImport",
+              "patterns": [
+                "@base\\s+<([^>]+)>"
+              ],
+              "examples": [
+                "@base <http://example.org/ontology/>"
+              ]
+            },
+            {
+              "type": "OntologyImport",
+              "patterns": [
+                "<([^>]+)>\\s+a\\s+owl:Ontology"
+              ],
+              "examples": [
+                "<http://example.org/ontology> a owl:Ontology"
+              ]
+            }
+          ]
+        },
+        "autoResolution": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether dependencies can be automatically resolved"
+        },
+        "resolutionStrategies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the resolution strategy"
+              },
+              "description": {
+                "type": "string",
+                "description": "Description of the strategy"
+              },
+              "capabilities": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Capabilities of this strategy"
+              }
+            },
+            "required": ["name", "description", "capabilities"]
+          },
+          "default": [
+            {
+              "name": "HTTPResolution",
+              "description": "Resolve dependencies via HTTP/HTTPS",
+              "capabilities": [
+                "HTTP",
+                "HTTPS",
+                "ContentNegotiation"
+              ]
+            },
+            {
+              "name": "LocalResolution",
+              "description": "Resolve dependencies from local filesystem",
+              "capabilities": [
+                "RelativePath",
+                "AbsolutePath",
+                "FileSystem"
+              ]
+            },
+            {
+              "name": "OntologyResolution",
+              "description": "Resolve ontology dependencies",
+              "capabilities": [
+                "OntologyImports",
+                "VersionResolution",
+                "DependencyChain"
+              ]
+            }
+          ]
+        }
+      },
+      "required": ["importTypes", "autoResolution", "resolutionStrategies"]
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "syntaxValidation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to validate TTL syntax"
+        },
+        "ontologyValidation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to validate ontology structure"
+        },
+        "dependencyValidation": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to validate dependencies"
+        }
+      },
+      "required": ["syntaxValidation", "ontologyValidation", "dependencyValidation"]
+    },
+    "integration": {
+      "type": "object",
+      "properties": {
+        "ontologies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported ontology formats"
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported ontology tools"
+        },
+        "formats": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Supported RDF formats"
+        }
+      },
+      "required": ["ontologies", "tools", "formats"]
+    }
+  },
+  "required": ["fileType", "resolutionCapabilities", "validation", "integration"]
+} 

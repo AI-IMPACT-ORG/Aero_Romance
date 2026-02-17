@@ -1,0 +1,1576 @@
+{
+  "license": "GPL-3.0-only",
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "ontomedia": "http://example.org/ontomedia/",
+    "type": "@type",
+    "id": "@id",
+    "value": "@value",
+    "graph": "@graph"
+  },
+  "@graph": [
+    {
+      "@id": "ontomedia:narrative_network",
+      "@type": "ontomedia:NarrativeNetwork",
+      "ontomedia:version": "3.0",
+      "ontomedia:last_updated": "2024-03-21",
+      "ontomedia:has_registry": {
+        "@id": "ontomedia:narrative_registry",
+        "@type": "ontomedia:NarrativeRegistry",
+        "ontomedia:has_scene_registry": {
+          "@id": "ontomedia:scene_registry_reference",
+          "@type": "ontomedia:SceneRegistryReference",
+          "ontomedia:target": "ontomedia:scene_network",
+          "ontomedia:relationship": "scene_registry",
+          "ontomedia:version": "1.0"
+        },
+        "ontomedia:has_development_registry": {
+          "@id": "ontomedia:development_registry_reference",
+          "@type": "ontomedia:DevelopmentRegistryReference",
+          "ontomedia:target": "ontomedia:development_network",
+          "ontomedia:relationship": "development_registry",
+          "ontomedia:version": "1.0"
+        },
+        "ontomedia:has_validation_registry": {
+          "@id": "ontomedia:validation_registry_reference",
+          "@type": "ontomedia:ValidationRegistryReference",
+          "ontomedia:target": "ontomedia:validation_network",
+          "ontomedia:relationship": "validation_registry",
+          "ontomedia:version": "1.0"
+        }
+      }
+    },
+    {
+      "@id": "ontomedia:act_registry",
+      "@type": "ontomedia:ActRegistry",
+      "ontomedia:has_act": [
+        {
+          "@id": "ontomedia:act_1",
+          "@type": "ontomedia:Act",
+          "ontomedia:name": "The Escape",
+          "ontomedia:description": "Ellie's journey from Copenhagen to Ærø",
+          "ontomedia:has_timeline": {
+            "@id": "ontomedia:act_1_timeline",
+            "@type": "ontomedia:Timeline",
+            "ontomedia:start_date": "April 1",
+            "ontomedia:end_date": "April 15",
+            "ontomedia:has_key_event": [
+              {
+                "@id": "ontomedia:act_1_event_1",
+                "@type": "ontomedia:KeyEvent",
+                "ontomedia:date": "April 1",
+                "ontomedia:event": "Unwanted proposal",
+                "ontomedia:has_impact": {
+                  "@id": "ontomedia:act_1_event_1_impact",
+                  "@type": "ontomedia:EventImpact",
+                  "ontomedia:professional": "Career decision",
+                  "ontomedia:personal": "Life change",
+                  "ontomedia:cultural": "Location shift"
+                }
+              }
+            ]
+          },
+          "ontomedia:has_chapter_registry": {
+            "@id": "ontomedia:act_1_chapter_registry",
+            "@type": "ontomedia:ChapterRegistry",
+            "ontomedia:has_chapter": [
+              {
+                "@id": "ontomedia:chapter_1",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 1,
+                "ontomedia:name": "The Proposal",
+                "ontomedia:description": "Ellie faces an unwanted proposal",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_1_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_1_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Career crossroads",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Choosing between career advancement and personal happiness",
+                      "ontomedia:development": "Initial conflict to decision",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_1_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_1_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Personal freedom",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Breaking free from societal expectations",
+                      "ontomedia:development": "Confinement to liberation",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_1_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_1_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_1_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Morning Proposal",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Ellie receives an unexpected proposal",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_1_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:morning_proposal_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_1_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Career Opportunity",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Ellie considers a career opportunity in Copenhagen",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_1_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:career_opportunity_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_1_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Personal Doubts",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Ellie reflects on her personal and professional future",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_1_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_doubts_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_1_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Professional Crisis",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Ellie faces a professional crisis in her current position",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_1_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:professional_crisis_management_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_1_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Personal Growth",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Ellie experiences personal growth through the challenges",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_1_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_growth_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_1_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Decision Moment",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Ellie makes the decision to leave Copenhagen",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_1_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:career_decision_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_2",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 2,
+                "@type": "ontomedia:Chapter",
+                "ontomedia:name": "The Journey",
+                "ontomedia:description": "Ellie's journey to Ærø and initial impressions",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_2_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_2_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Cultural transition",
+                      "ontomedia:type": "cultural",
+                      "ontomedia:description": "Adapting to island life and customs",
+                      "ontomedia:development": "Initial culture shock to adaptation",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_2_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:cultural_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_2_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Personal reflection",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Contemplating the life change",
+                      "ontomedia:development": "Uncertainty to determination",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_2_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_2_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_2_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Morning departure",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Leaving Copenhagen and starting the journey",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_2_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_2_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Ferry crossing",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Journey across the water to Ærø",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_2_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:cultural_integration_moments_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_2_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Island arrival",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "First impressions of Ærø",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_2_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:cultural_integration_moments_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_2_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Village exploration",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Discovering the local community",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_2_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_resistance_meeting_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_2_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "B&B check-in",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Meeting the O'Sullivan family",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_2_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:family_introduction_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_2_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Evening reflection",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Processing the day's events",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_2_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_3",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 3,
+                "@type": "ontomedia:Chapter",
+                "ontomedia:name": "The Arrival",
+                "ontomedia:description": "First days on the island and community integration",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_3_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_3_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Community integration",
+                      "ontomedia:type": "cultural",
+                      "ontomedia:description": "Navigating island social dynamics",
+                      "ontomedia:development": "Initial resistance to acceptance",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_3_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:cultural_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_3_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Professional preparation",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Preparing for medical practice",
+                      "ontomedia:development": "Uncertainty to confidence",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_3_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_3_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_3_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Morning exploration",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Discovering the island's natural beauty",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_3_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:cultural_integration_moments_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_3_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Village introduction",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Meeting key community members",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_3_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_resistance_meeting_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_3_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Medical practice visit",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Initial tour of the medical facility",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_3_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:practice_tour_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_3_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Local traditions",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Learning about island customs",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_3_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:cultural_integration_moments_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_3_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Evening gathering",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Community welcome dinner",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_3_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_celebration_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_3_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Night reflection",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Processing the day's experiences",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_3_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_4",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 4,
+                "@type": "ontomedia:Chapter",
+                "ontomedia:name": "The Practice",
+                "ontomedia:description": "Initial experiences at the medical practice",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_4_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_4_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Medical team dynamics",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Building relationships with the medical team",
+                      "ontomedia:development": "Initial tension to mutual respect",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_4_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_4_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Medical practice adaptation",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Adapting to island medical practices",
+                      "ontomedia:development": "Uncertainty to understanding",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_4_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_4_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_4_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "First day arrival",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Arriving at the medical practice",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_4_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:practice_introduction_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_4_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Team meeting",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Introduction to the medical team",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_4_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:team_introduction_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_4_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Facility tour",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Exploring the medical practice",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_4_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:practice_tour_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_4_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Traditional medicine introduction",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Learning about local healing practices",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_4_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:traditional_medicine_observation_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_4_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Patient observation",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Observing patient consultations",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_4_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:patient_consultation_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_4_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Evening debrief",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Reviewing the day's experiences",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_4_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:evening_team_meeting_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@id": "ontomedia:act_2",
+          "@type": "ontomedia:Act",
+          "ontomedia:name": "The Confrontation",
+          "ontomedia:description": "Facing challenges and building relationships",
+          "ontomedia:season": "Spring",
+          "ontomedia:has_timeline": {
+            "@id": "ontomedia:act_2_timeline",
+            "@type": "ontomedia:Timeline",
+            "ontomedia:start_date": "May 1",
+            "ontomedia:end_date": "June 30",
+            "ontomedia:has_key_event": [
+              {
+                "@id": "ontomedia:act_2_event_1",
+                "@type": "ontomedia:KeyEvent",
+                "ontomedia:date": "May 15",
+                "ontomedia:event": "First Patient Crisis",
+                "ontomedia:has_impact": {
+                  "@id": "ontomedia:act_2_event_1_impact",
+                  "@type": "ontomedia:EventImpact",
+                  "ontomedia:professional": "Medical practice validation",
+                  "ontomedia:personal": "Community acceptance",
+                  "ontomedia:cultural": "Traditional medicine integration"
+                }
+              }
+            ]
+          },
+          "ontomedia:has_chapter_registry": {
+            "@id": "ontomedia:act_2_chapter_registry",
+            "@type": "ontomedia:ChapterRegistry",
+            "ontomedia:has_chapter": [
+              {
+                "@id": "ontomedia:chapter_5",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 5,
+                "ontomedia:name": "The Challenge",
+                "ontomedia:description": "Facing the first major medical crisis",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_5_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_5_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Medical crisis",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Handling a critical medical situation",
+                      "ontomedia:development": "Challenge to triumph",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_5_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_5_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Community trust",
+                      "ontomedia:type": "cultural",
+                      "ontomedia:description": "Building trust through medical care",
+                      "ontomedia:development": "Skepticism to acceptance",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_5_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:cultural_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_5_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_5_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Emergency call",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Receiving the emergency call",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_5_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:emergency_response_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_5_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Patient assessment",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Evaluating the critical patient",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_5_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:patient_assessment_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_5_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Treatment decision",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Making critical treatment choices",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_5_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:medical_decision_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_5_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Team coordination",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Working with the medical team",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_5_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:team_coordination_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_5_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Treatment execution",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Implementing the treatment plan",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_5_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:treatment_execution_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_5_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Outcome and reflection",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Processing the medical outcome",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_5_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:medical_outcome_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_6",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 6,
+                "ontomedia:name": "The Aftermath",
+                "ontomedia:description": "Facing the consequences of the medical crisis and personal doubts",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_6_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_6_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Professional crisis",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Facing professional failure and self-doubt",
+                      "ontomedia:development": "Failure to resilience",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_6_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_6_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Community integration",
+                      "ontomedia:type": "cultural",
+                      "ontomedia:description": "Strengthening ties with the island community",
+                      "ontomedia:development": "Acceptance to belonging",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_6_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:cultural_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_6_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_6_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Morning rounds",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Checking on the recovering patient",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_6_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:patient_follow_up_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_6_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Team debrief",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Reviewing the crisis response",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_6_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:team_debrief_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_6_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Community visit",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Visiting the patient's family",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_6_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:family_visit_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_6_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Village gathering",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Community celebration of recovery",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_6_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_celebration_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_6_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Personal reflection",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Processing the emotional impact",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_6_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_6_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Future planning",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Looking ahead to new challenges",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_6_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:future_planning_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_7",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 7,
+                "ontomedia:name": "The Connection",
+                "ontomedia:description": "Building deeper relationships with the community and confronting past relationships",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_7_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_7_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Personal relationships",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Developing deeper connections with key characters and confronting past relationships",
+                      "ontomedia:development": "Acquaintance to friendship",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_7_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_7_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Past relationships",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Confronting and resolving past relationship issues",
+                      "ontomedia:development": "Confrontation to resolution",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_7_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_7_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_7_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Beach encounter",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "An unexpected meeting with Tom's ex at the famous Ærø bathhouses leads to revelations about the past",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_7_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:relationship_conflict_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_7_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Lily's future",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "A deep conversation about Lily's artistic future and family dynamics",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_7_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:family_dynamics_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_7_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Cultural celebration",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "A community celebration that brings together past and present relationships",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_7_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_celebration_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_7_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Relationship breakthrough",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "A pivotal moment in the relationship between Ellie and Tom, influenced by past revelations",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_7_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:relationship_breakthrough_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_8",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 8,
+                "ontomedia:name": "The Festival",
+                "ontomedia:description": "The summer festival brings the community together",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_8_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_8_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Community celebration",
+                      "ontomedia:type": "cultural",
+                      "ontomedia:description": "Participating in the summer festival traditions",
+                      "ontomedia:development": "Observation to active participation",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_8_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:cultural_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_8_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Romantic development",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Deepening relationship with Tom",
+                      "ontomedia:development": "Friendship to romance",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_8_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_8_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_8_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Festival preparation",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Helping prepare for the summer festival",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_8_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:festival_preparation_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_8_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Opening ceremony",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Participating in the festival's opening",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_8_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:festival_ceremony_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_8_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Traditional dance",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Learning and performing traditional dances",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_8_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:cultural_performance_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_8_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Festival games",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Participating in traditional games with Tom",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_8_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:festival_games_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_8_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Evening celebration",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Dancing and celebrating with the community",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_8_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:festival_celebration_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_8_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Moonlight moment",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "A special moment with Tom under the stars",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_8_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:romantic_moment_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@id": "ontomedia:act_3",
+          "@type": "ontomedia:Act",
+          "ontomedia:name": "The Resolution",
+          "ontomedia:description": "Finding home and fulfillment on the island",
+          "ontomedia:season": "Summer",
+          "ontomedia:has_timeline": {
+            "@id": "ontomedia:act_3_timeline",
+            "@type": "ontomedia:Timeline",
+            "ontomedia:start_date": "July 1",
+            "ontomedia:end_date": "August 31",
+            "ontomedia:has_key_event": [
+              {
+                "@id": "ontomedia:act_3_event_1",
+                "@type": "ontomedia:KeyEvent",
+                "ontomedia:date": "July 15",
+                "ontomedia:event": "Final Decision",
+                "ontomedia:has_impact": {
+                  "@id": "ontomedia:act_3_event_1_impact",
+                  "@type": "ontomedia:EventImpact",
+                  "ontomedia:professional": "Career commitment",
+                  "ontomedia:personal": "Life choice",
+                  "ontomedia:cultural": "Community belonging"
+                }
+              }
+            ]
+          },
+          "ontomedia:has_chapter_registry": {
+            "@id": "ontomedia:act_3_chapter_registry",
+            "@type": "ontomedia:ChapterRegistry",
+            "ontomedia:has_chapter": [
+              {
+                "@id": "ontomedia:chapter_9",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 9,
+                "ontomedia:name": "The Decision",
+                "ontomedia:description": "Facing the ultimate choice between past and future",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_9_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_9_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Professional crossroads",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Facing a career-defining opportunity that threatens her island life",
+                      "ontomedia:development": "Conflict to clarity",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_9_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_9_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Personal crisis",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Confronting the fear of commitment and change",
+                      "ontomedia:development": "Fear to courage",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_9_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_9_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_9_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Unexpected offer",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Receiving a prestigious job offer from Copenhagen that would require immediate relocation",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_9_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:career_opportunity_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_9_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Medical emergency",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "A life-threatening emergency at the practice that tests her commitment",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_9_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:medical_crisis_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_9_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Relationship ultimatum",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Tom presents an ultimatum about their future together",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_9_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:relationship_conflict_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_9_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Community crisis",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "A community-wide health crisis that demands her immediate attention",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_9_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_crisis_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_9_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Moment of truth",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "A critical moment that forces her to confront her deepest fears and desires",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_9_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_revelation_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_9_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Final choice",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Making the definitive decision that will change everything",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_9_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:final_decision_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_10",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 10,
+                "ontomedia:name": "The Transition",
+                "ontomedia:description": "Beginning the transition to island life",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_10_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_10_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Initial adjustment",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Adjusting to the decision and new life",
+                      "ontomedia:development": "Decision to adaptation",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_10_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_10_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Professional transition",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Beginning the transition in the medical practice",
+                      "ontomedia:development": "Commitment to implementation",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_10_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_10_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_10_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Morning after",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Waking up to the new reality",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_10_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_10_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Practice transition",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "Beginning the transition at the medical practice",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_10_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:practice_transition_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_10_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Community reaction",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "Seeing how the community responds to the decision",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_10_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_reaction_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_10_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Family support",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "Receiving support from the O'Sullivans",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_10_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:family_support_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_10_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Evening walk",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "Processing the day's changes with Tom",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_10_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:evening_walk_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_10_6",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Transition reflection",
+                      "ontomedia:sequence": 6,
+                      "ontomedia:description": "Reflecting on the beginning of the transition",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_10_6_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "@id": "ontomedia:chapter_11",
+                "@type": "ontomedia:Chapter",
+                "ontomedia:number": 11,
+                "ontomedia:name": "The Beginning",
+                "ontomedia:description": "Embracing a new life and future on the island",
+                "ontomedia:has_subplot": {
+                  "@id": "ontomedia:chapter_11_subplots",
+                  "@type": "ontomedia:Subplots",
+                  "ontomedia:has_subplot": [
+                    {
+                      "@id": "ontomedia:subplot_11_1",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Professional fulfillment",
+                      "ontomedia:type": "professional",
+                      "ontomedia:description": "Building a thriving medical practice and team",
+                      "ontomedia:development": "Growth to leadership",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_11_1_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:professional_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:subplot_11_2",
+                      "@type": "ontomedia:Subplot",
+                      "ontomedia:name": "Personal transformation",
+                      "ontomedia:type": "personal",
+                      "ontomedia:description": "Finding complete fulfillment in island life",
+                      "ontomedia:development": "Adaptation to belonging",
+                      "ontomedia:has_development_reference": {
+                        "@id": "ontomedia:subplot_11_2_development_reference",
+                        "@type": "ontomedia:DevelopmentPatternReference",
+                        "ontomedia:target": "ontomedia:personal_development_pattern",
+                        "ontomedia:relationship": "development_pattern_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                },
+                "ontomedia:has_scene_registry": {
+                  "@id": "ontomedia:chapter_11_scene_registry",
+                  "@type": "ontomedia:SceneRegistry",
+                  "ontomedia:has_scene": [
+                    {
+                      "@id": "ontomedia:scene_11_1",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Practice vision",
+                      "ontomedia:sequence": 1,
+                      "ontomedia:description": "Leading the medical team in planning the practice's future",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_11_1_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:team_leadership_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_11_2",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Community celebration",
+                      "ontomedia:sequence": 2,
+                      "ontomedia:description": "A special gathering celebrating the island's healthcare future",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_11_2_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:community_celebration_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_11_3",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Personal reflection",
+                      "ontomedia:sequence": 3,
+                      "ontomedia:description": "A moment of deep reflection on the journey and transformation",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_11_3_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:personal_reflection_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_11_4",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "Relationship affirmation",
+                      "ontomedia:sequence": 4,
+                      "ontomedia:description": "A meaningful moment with key relationships that have developed",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_11_4_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:relationship_moment_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    },
+                    {
+                      "@id": "ontomedia:scene_11_5",
+                      "@type": "ontomedia:Scene",
+                      "ontomedia:name": "New dawn",
+                      "ontomedia:sequence": 5,
+                      "ontomedia:description": "A powerful final scene showing the beginning of a new life",
+                      "ontomedia:scene_definition_reference": {
+                        "@id": "ontomedia:scene_11_5_definition_reference",
+                        "@type": "ontomedia:SceneDefinitionReference",
+                        "ontomedia:target": "ontomedia:new_beginning_definition",
+                        "ontomedia:relationship": "scene_definition_registry",
+                        "ontomedia:version": "1.0"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+} 
