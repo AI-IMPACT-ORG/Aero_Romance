@@ -4,6 +4,8 @@ license: GPL-3.0-only
 
 ## Romance (Aero) — novel + structured design graphs
 
+This is **course material** for a course on **Cursor** and **coding agent usage**. It explores “coding with an AI agent” workflows for people who may not be familiar with software development.
+
 This repository contains working materials for the romance novel **“Ærø's Healing Heart”**:
 
 - **Manuscript text**: Markdown chapter drafts
